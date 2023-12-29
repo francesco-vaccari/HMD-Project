@@ -1,0 +1,35 @@
+- side dishes
+- promotions
+- calories
+- doughs
+- custom pizza (ingredients)
+- handle requests about everything
+
+
+Drink/dessert come possibilità da ordinare:
+- se alcol -> dire controllo persona/carta identità tavolo/delivery/asporto
+- fanta/cocacola/te/sprite/acqua
+- cheesecake/…
+
+Modificare ordine fatto (delivery/asporto/tavolo):
+- modificare menu
+- modificare orario
+- modificare indirizzo
+- modificare numero di persone
+
+Possibilità di richiedere informazioni riguardo al ristorante:
+- indirizzo
+- orari di apertura
+- menu
+- affluenza (chiedere giorno e ora)
+- pizza raccomandata del giorno
+
+Gestire se l’utente chiede riguardo allergie/intolleranze:
+- ti passo una persona (fallback)
+- proporre opzioni alternative nel menu
+- check automatico se ordinazione contiene gli ingredienti dell’allergia/intolleranza
+
+Alla fine della ordinazione, chiedere se vuole fare da:
+- asporto (orario)
+- delivery (orario, indirizzo)
+- prenotare tavolo (n.persone, orario)
