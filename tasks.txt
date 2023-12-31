@@ -6,6 +6,8 @@ Other possibilities:
 - custom pizza (ingredients)
 - handle requests about everything
 
+More complex ordering system, that can handle multiple types of pizza (on menu) with different sizes and different amounts of each.
+
 
 Drink/dessert come possibilità da ordinare:
 - se alcol -> dire controllo persona/carta identità tavolo/delivery/asporto
