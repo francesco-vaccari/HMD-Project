@@ -8,6 +8,7 @@ from rasa_sdk import Tracker, FormValidationAction
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.types import DomainDict
 
+
 def get_size_for_group(pizza_sizes, group):
     for size in pizza_sizes:
         if size[1] == group:
@@ -19,6 +20,7 @@ def get_amount_for_group(pizza_amounts, group):
         if amount[1] == group:
             return amount[0]
     return "1"
+
 
 class ActionOrder(Action):
     def name(self) -> Text:
@@ -91,6 +93,7 @@ class ActionOrderConfirmed(Action):
         dispatcher.utter_message(text="Your order has been confirmed.")
 
         return [SlotSet("order", order), SlotSet("temp_order", None), SlotSet("temp_order_set", False)]
+
 
 class ActionOrderNotConfirmed(Action):
     def name(self) -> Text:
