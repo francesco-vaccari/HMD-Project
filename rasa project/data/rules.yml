@@ -2,6 +2,11 @@ version: "3.1"
 
 rules:
 
+- rule: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
 - rule: bot challenge
   steps:
   - intent: bot_challenge
