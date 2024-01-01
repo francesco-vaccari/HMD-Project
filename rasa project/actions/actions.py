@@ -63,8 +63,9 @@ class ActionOrder(Action):
             if len(pizza_amounts) > 0 and len(pizza_types) == 0:
                 dispatcher.utter_message(text="What would you like to order?")
                 return []
-        for i in range(len(pizza_types)):
-            order.append((get_amount_for_group(pizza_amounts, pizza_types[i][1]), pizza_types[i][0], get_size_for_group(pizza_sizes, pizza_types[i][1])))
+        if order == []:
+            for i in range(len(pizza_types)):
+                order.append((get_amount_for_group(pizza_amounts, pizza_types[i][1]), pizza_types[i][0], get_size_for_group(pizza_sizes, pizza_types[i][1])))
 
         utter = "Your order is: "
         if new:
