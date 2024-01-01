@@ -1,0 +1,276 @@
+version: "3.1"
+nlu:
+- intent: confirm
+  examples: |
+    - yes
+    - yep
+    - yeah
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - definitely
+    - absolutely
+    - yes please
+    - yes it is
+    - positive
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - nah
+    - not really
+    - no thanks
+    - definitely not
+    - no it is not
+    - no it isn't
+    - not correct
+    - negative
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - is this a bot?
+    - is this a human?
+    - what are you?
+    - what am I talking to?
+    - who are you?
+    - are you a real person?
+    - are you a human or a bot?
+    - are you a bot or a human?
+    - are you a bot or a person?
+- intent: out_of_scope
+  examples: |
+    - What is 2 + 2?
+    - Who's the US President?
+    - book a flight from milan to ny
+    - give me the directions to time square
+    - Tell me a joke.
+    - What's the weather like today?
+    - Can you play music for me?
+    - Recommend a good book.
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good evening
+    - hey there
+- intent: order_pizza
+  examples: |
+    - i changed my mind
+    - actually i want another pizza
+    - i want to change my order
+    - can i change my order
+    - i want to change my pizza
+    - i want to change my pizza order
+    - i want to order a pizza
+    - i would like to order a pizza
+    - a pizza please
+    - pizza please
+    - pizza
+    - a pizza
+    - i'd like a pizza please
+    - i'd like a pizza
+    - i would like a pizza
+    - i would like a pizza please
+    - i want a pizza
+    - i want pizza
+    - i want to order pizza
+    - i would like to order pizza
+    - i want to order [1]{"entity": "pizza_amounts", "group": "1"} pizza
+    - i want to order [2]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - i want to order [3]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - i want to order [4]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - i would like to order [1]{"entity": "pizza_amounts", "group": "1"} pizza
+    - i would like to order [2]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - i would like to order [3]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - i would like to order [4]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - [1]{"entity": "pizza_amounts", "group": "1"} pizza please
+    - [2]{"entity": "pizza_amounts", "group": "1"} pizzas please
+    - [3]{"entity": "pizza_amounts", "group": "1"} pizzas please
+    - [4]{"entity": "pizza_amounts", "group": "1"} pizzas please
+    - [1]{"entity": "pizza_amounts", "group": "1"} pizza
+    - [2]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - [3]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - [4]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - [1]{"entity": "pizza_amounts", "group": "1"}
+    - [2]{"entity": "pizza_amounts", "group": "1"}
+    - [3]{"entity": "pizza_amounts", "group": "1"}
+    - [4]{"entity": "pizza_amounts", "group": "1"}
+    - [1]{"entity": "pizza_amounts", "group": "1"} please
+    - [2]{"entity": "pizza_amounts", "group": "1"} please
+    - [3]{"entity": "pizza_amounts", "group": "1"} please
+    - [4]{"entity": "pizza_amounts", "group": "1"} please
+    - i want [1]{"entity": "pizza_amounts", "group": "1"} pizza
+    - i want [2]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - i want [3]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - i want [4]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - i would like [1]{"entity": "pizza_amounts", "group": "1"} pizza
+    - i would like [2]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - i would like [3]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - i would like [4]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - i'd like [1]{"entity": "pizza_amounts", "group": "1"} pizza
+    - i'd like [2]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - i'd like [3]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - i'd like [4]{"entity": "pizza_amounts", "group": "1"} pizzas
+    - i would like to order [1]{"entity": "pizza_amounts", "group": "1"} pizza please
+    - i would like to order [2]{"entity": "pizza_amounts", "group": "1"} pizzas please
+    - i would like to order [3]{"entity": "pizza_amounts", "group": "1"} pizzas please
+    - i would like to order [4]{"entity": "pizza_amounts", "group": "1"} pizzas please
+    - i want to order a [margherita]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
+    - i want to order a [margherita]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i want to order a [funghi]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i want to order a [funghi]{"entity": "pizza_types", "group": "1"} and a [margherita]{"entity": "pizza_types", "group": "2"}
+    - i want to order a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
+    - i want to order a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [margherita]{"entity": "pizza_types", "group": "2"}
+    - i would like to order a [margherita]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
+    - i would like to order a [margherita]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i would like to order a [funghi]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i would like to order a [funghi]{"entity": "pizza_types", "group": "1"} and a [margherita]{"entity": "pizza_types", "group": "2"}
+    - i would like to order a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
+    - i would like to order a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [margherita]{"entity": "pizza_types", "group": "2"}
+    - a [margherita]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
+    - a [margherita]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - a [funghi]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - a [funghi]{"entity": "pizza_types", "group": "1"} and a [margherita]{"entity": "pizza_types", "group": "2"}
+    - a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
+    - a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [margherita]{"entity": "pizza_types", "group": "2"}
+    - i want a [margherita]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
+    - i want a [margherita]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i want a [funghi]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i want a [funghi]{"entity": "pizza_types", "group": "1"} and a [margherita]{"entity": "pizza_types", "group": "2"}
+    - i want a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
+    - i want a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [margherita]{"entity": "pizza_types", "group": "2"}
+    - i would like a [margherita]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
+    - i would like a [margherita]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i would like a [funghi]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i would like a [funghi]{"entity": "pizza_types", "group": "1"} and a [margherita]{"entity": "pizza_types", "group": "2"}
+    - i would like a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
+    - i would like a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [margherita]{"entity": "pizza_types", "group": "2"}
+    - i'd like a [margherita]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
+    - i'd like a [margherita]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i'd like a [funghi]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i'd like a [funghi]{"entity": "pizza_types", "group": "1"} and a [margherita]{"entity": "pizza_types", "group": "2"}
+    - i'd like a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
+    - i'd like a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [margherita]{"entity": "pizza_types", "group": "2"}
+    - i want to order [1]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i want to order [2]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "pizza_amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i want to order [3]{"entity": "pizza_amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i want to order [4]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [1]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i want to order [1]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i want to order [2]{"entity": "pizza_amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "pizza_amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i would like to order [1]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i would like to order [2]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "pizza_amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i would like to order [3]{"entity": "pizza_amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i would like to order [4]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [1]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "1"}
+    - i would like to order [1]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i would like to order [2]{"entity": "pizza_amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "pizza_amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - [1]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - [2]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "pizza_amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - [3]{"entity": "pizza_amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - [4]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [1]{"entity": "pizza_amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"}
+    - [1]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - [2]{"entity": "pizza_amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "pizza_amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i want [1]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i want [2]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "pizza_amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i want [3]{"entity": "pizza_amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i want [4]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [1]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "1"}
+    - i want [1]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i want [2]{"entity": "pizza_amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "pizza_amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i would like [1]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i would like [2]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "pizza_amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i would like [3]{"entity": "pizza_amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i would like [4]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [1]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i would like [1]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i would like [2]{"entity": "pizza_amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "pizza_amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i'd like [1]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i'd like [2]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "pizza_amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i'd like [3]{"entity": "pizza_amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i'd like [4]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [1]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i'd like [1]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i'd like [2]{"entity": "pizza_amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "pizza_amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i want to order a [margherita]{"entity": "pizza_types", "group": "1"} a [funghi]{"entity": "pizza_types", "group": "2"} and a [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i want to order a [pepperoni]{"entity": "pizza_types", "group": "1"} a [margherita]{"entity": "pizza_types", "group": "2"} and a [funghi]{"entity": "pizza_types", "group": "3"}
+    - i want to order a [funghi]{"entity": "pizza_types", "group": "1"} a [pepperoni]{"entity": "pizza_types", "group": "2"} and a [margherita]{"entity": "pizza_types", "group": "3"}
+    - i would like to order a [margherita]{"entity": "pizza_types", "group": "1"} a [funghi]{"entity": "pizza_types", "group": "2"} and a [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i would like to order a [pepperoni]{"entity": "pizza_types", "group": "1"} a [margherita]{"entity": "pizza_types", "group": "2"} and a [funghi]{"entity": "pizza_types", "group": "3"}
+    - i would like to order a [funghi]{"entity": "pizza_types", "group": "1"} a [pepperoni]{"entity": "pizza_types", "group": "2"} and a [margherita]{"entity": "pizza_types", "group": "3"}
+    - a [margherita]{"entity": "pizza_types", "group": "1"} a [funghi]{"entity": "pizza_types", "group": "2"} and a [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - a [pepperoni]{"entity": "pizza_types", "group": "1"} a [margherita]{"entity": "pizza_types", "group": "2"} and a [funghi]{"entity": "pizza_types", "group": "3"}
+    - a [funghi]{"entity": "pizza_types", "group": "1"} a [pepperoni]{"entity": "pizza_types", "group": "2"} and a [margherita]{"entity": "pizza_types", "group": "3"}
+    - i want a [margherita]{"entity": "pizza_types", "group": "1"} a [funghi]{"entity": "pizza_types", "group": "2"} and a [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i want a [pepperoni]{"entity": "pizza_types", "group": "1"} a [margherita]{"entity": "pizza_types", "group": "2"} and a [funghi]{"entity": "pizza_types", "group": "3"}
+    - i want a [funghi]{"entity": "pizza_types", "group": "1"} a [pepperoni]{"entity": "pizza_types", "group": "2"} and a [margherita]{"entity": "pizza_types", "group": "3"}
+    - i would like a [margherita]{"entity": "pizza_types", "group": "1"} a [funghi]{"entity": "pizza_types", "group": "2"} and a [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i would like a [pepperoni]{"entity": "pizza_types", "group": "1"} a [margherita]{"entity": "pizza_types", "group": "2"} and a [funghi]{"entity": "pizza_types", "group": "3"}
+    - i would like a [funghi]{"entity": "pizza_types", "group": "1"} a [pepperoni]{"entity": "pizza_types", "group": "2"} and a [margherita]{"entity": "pizza_types", "group": "3"}
+    - i'd like a [margherita]{"entity": "pizza_types", "group": "1"} a [funghi]{"entity": "pizza_types", "group": "2"} and a [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i'd like a [pepperoni]{"entity": "pizza_types", "group": "1"} a [margherita]{"entity": "pizza_types", "group": "2"} and a [funghi]{"entity": "pizza_types", "group": "3"}
+    - i'd like a [funghi]{"entity": "pizza_types", "group": "1"} a [pepperoni]{"entity": "pizza_types", "group": "2"} and a [margherita]{"entity": "pizza_types", "group": "3"}
+    - i want to order [1]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [2]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [3]{"entity": "pizza_amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i want to order [2]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [3]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [4]{"entity": "pizza_amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i want to order [3]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [4]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [1]{"entity": "pizza_amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i want to order [4]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [1]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [2]{"entity": "pizza_amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i want to order [1]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [2]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [3]{"entity": "pizza_amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i want to order [2]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [3]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [4]{"entity": "pizza_amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i want to order [3]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [4]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [1]{"entity": "pizza_amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i want to order [4]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [1]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [2]{"entity": "pizza_amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i would like to order [1]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [2]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [3]{"entity": "pizza_amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i would like to order [2]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [3]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [4]{"entity": "pizza_amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i would like to order [3]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [4]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [1]{"entity": "pizza_amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i would like to order [4]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [1]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [2]{"entity": "pizza_amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i would like to order [1]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [2]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [3]{"entity": "pizza_amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i would like to order [2]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [3]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [4]{"entity": "pizza_amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i would like to order [3]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [4]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [1]{"entity": "pizza_amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i would like to order [4]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [1]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [2]{"entity": "pizza_amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i'd like to order [1]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [2]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [3]{"entity": "pizza_amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i'd like to order [2]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [3]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [4]{"entity": "pizza_amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i'd like to order [3]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [4]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [1]{"entity": "pizza_amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i'd like to order [4]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [1]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [2]{"entity": "pizza_amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i'd like to order [1]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [2]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [3]{"entity": "pizza_amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i'd like to order [2]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [3]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [4]{"entity": "pizza_amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i'd like to order [3]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [4]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [1]{"entity": "pizza_amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i'd like to order [4]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [1]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [2]{"entity": "pizza_amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - [1]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [2]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [3]{"entity": "pizza_amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - [2]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [3]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [4]{"entity": "pizza_amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - [3]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [4]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [1]{"entity": "pizza_amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - [4]{"entity": "pizza_amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [1]{"entity": "pizza_amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [2]{"entity": "pizza_amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - [1]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [2]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [3]{"entity": "pizza_amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - [2]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [3]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [4]{"entity": "pizza_amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - [3]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [4]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [1]{"entity": "pizza_amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - [4]{"entity": "pizza_amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [1]{"entity": "pizza_amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [2]{"entity": "pizza_amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i want to order [1]{"entity": "pizza_amounts", "group": "1"} [small]{"entity": "pizza_sizes", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "pizza_amounts", "group": "2"} [medium]{"entity": "pizza_sizes", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i would like [3]{"entity": "pizza_amounts", "group": "1"} [large]{"entity": "pizza_sizes", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"}
+    - i'd like [2]{"entity": "pizza_amounts", "group": "1"} [extra large]{"entity": "pizza_sizes", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"}, a [small]{"entity": "pizza_sizes", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [one]{"entity": "pizza_amounts", "group": "3"} [medium]{"entity": "pizza_sizes", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - a [extra large]{"entity": "pizza_sizes", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "pizza_amounts", "group": "2"} [small]{"entity": "pizza_sizes", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} please
+    - [1]{"entity": "pizza_amounts", "group": "1"} [small]{"entity": "pizza_sizes", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"}
+    - [2]{"entity": "pizza_amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"}
+    - can i have [1]{"entity": "pizza_amounts", "group": "1"} [small]{"entity": "pizza_sizes", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"}
+    - could i have [2]{"entity": "pizza_amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "pizza_amounts", "group": "2"} [large]{"entity": "pizza_sizes", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i want a [small]{"entity": "pizza_sizes", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and a [medium]{"entity": "pizza_sizes", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - a [large]{"entity": "pizza_sizes", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and a [small]{"entity": "pizza_sizes", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i want to order a [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "pizza_amounts", "group": "2"} [small]{"entity": "pizza_sizes", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - a [margherita]{"entity": "pizza_types", "group": "1"}
+    - i would like [1]{"entity": "pizza_amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and a [small]{"entity": "pizza_sizes", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+- lookup: pizza_amounts
+  examples: |
+    - 1
+    - 2
+    - 3
+    - 4
+- lookup: pizza_types
+  examples: |
+    - funghi
+    - margherita
+    - pepperoni
+- lookup: pizza_sizes
+  examples: |
+    - small
+    - medium
+    - large
+    - extra large

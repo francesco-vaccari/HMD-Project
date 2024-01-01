@@ -17,7 +17,7 @@ pipeline:
 policies:
 - name: TEDPolicy
   max_history: 10
-  epochs: 3
+  epochs: 5
   constrain_similarities: True
 - name: AugmentedMemoizationPolicy
   max_history: 4
@@ -26,7 +26,7 @@ policies:
   # Confidence threshold for the `core_fallback_action_name` to apply.
   # The action will apply if no other action was predicted with
   # a confidence >= core_fallback_threshold
-  core_fallback_threshold: 0.4
-  core_fallback_action_name: "action_default_fallback"
+  core_fallback_threshold: 0.10
+  core_fallback_action_name: "action_listen"
   enable_fallback_prediction: True
 assistant_id: 20231202-221250-mode-flour
