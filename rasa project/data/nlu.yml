@@ -257,6 +257,192 @@ nlu:
     - i want to order a [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "pizza_amounts", "group": "2"} [small]{"entity": "pizza_sizes", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
     - a [margherita]{"entity": "pizza_types", "group": "1"}
     - i would like [1]{"entity": "pizza_amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and a [small]{"entity": "pizza_sizes", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+- intent: ask_address
+  examples: |
+    - what is your address?
+    - where are you located?
+    - what is your location?
+    - where can i find you?
+    - where are you?
+    - where is your restaurant?
+- intent: ask_opening_hours
+  examples: |
+    - when are you open?
+    - when do you open?
+    - when do you close?
+    - what are your opening hours?
+    - what are your opening times?
+    - what time do you open?
+    - what time do you close?
+    - what time are you open?
+    - what time are you closed?
+    - what are your hours?
+    - what are your times?
+    - what time do you open and close?
+    - when do you open and close?
+- intent: ask_menu
+  examples: |
+    - what is on the menu?
+    - what is the menu?
+    - what do you have?
+    - what do you serve?
+    - what do you offer?
+    - what is your menu?
+    - what is on your menu?
+    - what pizzas do you have?
+    - what pizzas do you serve?
+    - what pizzas do you offer?
+    - what is your pizza menu?
+    - what kind of pizzas do you have?
+    - what kind of pizzas do you serve?
+    - what kind of pizzas do you offer?
+- intent: ask_affluence
+  examples: |
+    - how busy is it?
+    - how busy is the restaurant?
+    - how busy is the pizzeria?
+    - how busy is the place?
+    - how busy is the pizza place?
+    - is it crowded?
+    - is the restaurant crowded?
+    - is the pizzeria crowded?
+    - is the place crowded?
+    - are there many people?
+    - is it full?
+    - is the restaurant full?
+    - is the pizzeria full?
+    - is the place full?
+    - how busy is it on [monday](day)?
+    - how busy is it on [tuesday](day)?
+    - how busy is it on [wednesday](day)?
+    - how busy is it on [thursday](day)?
+    - how busy is it on [friday](day)?
+    - how busy is it on [saturday](day)?
+    - how busy is it on [sunday](day)?
+    - how busy is the restaurant on [monday](day)?
+    - how busy is the restaurant on [tuesday](day)?
+    - how busy is the restaurant on [wednesday](day)?
+    - how busy is the restaurant on [thursday](day)?
+    - how busy is the restaurant on [friday](day)?
+    - how busy is the restaurant on [saturday](day)?
+    - how busy is the restaurant on [sunday](day)?
+    - how busy is the pizzeria on [monday](day)?
+    - how busy is the pizzeria on [tuesday](day)?
+    - how busy is the pizzeria on [wednesday](day)?
+    - how busy is the pizzeria on [thursday](day)?
+    - how busy is the pizzeria on [friday](day)?
+    - how busy is the pizzeria on [saturday](day)?
+    - how busy is the pizzeria on [sunday](day)?
+    - how busy is the place on [monday](day)?
+    - how busy is the place on [tuesday](day)?
+    - how busy is the place on [wednesday](day)?
+    - how busy is the place on [thursday](day)?
+    - how busy is the place on [friday](day)?
+    - how busy is the place on [saturday](day)?
+    - how busy is the place on [sunday](day)?
+    - how busy is the pizza place on [monday](day)?
+    - how busy is the pizza place on [tuesday](day)?
+    - how busy is the pizza place on [wednesday](day)?
+    - how busy is the pizza place on [thursday](day)?
+    - how busy is the pizza place on [friday](day)?
+    - how busy is the pizza place on [saturday](day)?
+    - how busy is the pizza place on [sunday](day)?
+    - is it crowded on [monday](day)?
+    - is it crowded on [tuesday](day)?
+    - is it crowded on [wednesday](day)?
+    - is it crowded on [thursday](day)?
+    - is it crowded on [friday](day)?
+    - is it crowded on [saturday](day)?
+    - is it crowded on [sunday](day)?
+    - is the restaurant crowded on [monday](day)?
+    - is the restaurant crowded on [tuesday](day)?
+    - is the restaurant crowded on [wednesday](day)?
+    - is the restaurant crowded on [thursday](day)?
+    - is the restaurant crowded on [friday](day)?
+    - is the restaurant crowded on [saturday](day)?
+    - is the restaurant crowded on [sunday](day)?
+    - is the pizzeria crowded on [monday](day)?
+    - is the pizzeria crowded on [tuesday](day)?
+    - is the pizzeria crowded on [wednesday](day)?
+    - is the pizzeria crowded on [thursday](day)?
+    - is the pizzeria crowded on [friday](day)?
+    - is the pizzeria crowded on [saturday](day)?
+    - is the pizzeria crowded on [sunday](day)?
+    - is the place crowded on [monday](day)?
+    - is the place crowded on [tuesday](day)?
+    - is the place crowded on [wednesday](day)?
+    - is the place crowded on [thursday](day)?
+    - is the place crowded on [friday](day)?
+    - is the place crowded on [saturday](day)?
+    - is the place crowded on [sunday](day)?
+    - are there many people on [monday](day)?
+    - are there many people on [tuesday](day)?
+    - are there many people on [wednesday](day)?
+    - are there many people on [thursday](day)?
+    - are there many people on [friday](day)?
+    - are there many people on [saturday](day)?
+    - are there many people on [sunday](day)?
+    - is it full on [monday](day)?
+    - is it full on [tuesday](day)?
+    - is it full on [wednesday](day)?
+    - is it full on [thursday](day)?
+    - is it full on [friday](day)?
+    - is it full on [saturday](day)?
+    - is it full on [sunday](day)?
+    - is the restaurant full on [monday](day)?
+    - is the restaurant full on [tuesday](day)?
+    - is the restaurant full on [wednesday](day)?
+    - is the restaurant full on [thursday](day)?
+    - is the restaurant full on [friday](day)?
+    - is the restaurant full on [saturday](day)?
+    - is the restaurant full on [sunday](day)?
+    - how busy is it [today](day)?
+    - how busy is the restaurant [today](day)?
+    - how busy is the pizzeria [today](day)?
+    - how busy is the place [today](day)?
+    - how busy is the pizza place [today](day)?
+    - is it crowded [today](day)?
+    - is the restaurant crowded [today](day)?
+    - is the pizzeria crowded [today](day)?
+    - is the place crowded [today](day)?
+    - are there many people [today](day)?
+    - is it full [today](day)?
+    - is the restaurant full [today](day)?
+    - is the pizzeria full [today](day)?
+    - is the place full [today](day)?
+    - how busy is it [tomorrow](day)?
+    - how busy is the restaurant [tomorrow](day)?
+    - how busy is the pizzeria [tomorrow](day)?
+    - how busy is the place [tomorrow](day)?
+    - how busy is the pizza place [tomorrow](day)?
+    - is it crowded [tomorrow](day)?
+    - is the restaurant crowded [tomorrow](day)?
+    - is the pizzeria crowded [tomorrow](day)?
+    - is the place crowded [tomorrow](day)?
+    - are there many people [tomorrow](day)?
+    - is it full [tomorrow](day)?
+    - is the restaurant full [tomorrow](day)?
+    - is the pizzeria full [tomorrow](day)?
+    - is the place full [tomorrow](day)?
+- intent: ask_allergies
+  examples: |
+    - do you have [gluten](allergies) free pizza?
+    - do you have [lactose](allergies) free pizza?
+    - do you have [vegetarian](allergies) pizza?
+    - do you have [vegan](allergies) pizza?
+    - do you have [gluten](allergies) free pizzas?
+    - do you have [lactose](allergies) free pizzas?
+    - do you have [vegetarian](allergies) pizzas?
+    - do you have [vegan](allergies) pizzas?
+    - do you have [gluten](allergies) free options?
+    - do you have [lactose](allergies) free options?
+    - do you have [vegetarian](allergies) options?
+    - do you have [vegan](allergies) options?
+    - do you have [gluten](allergies) alternatives?
+    - do you have [lactose](allergies) alternatives?
+    - do you have [vegetarian](allergies) alternatives?
+    - do you have [vegan](allergies) alternatives?
+
 - lookup: pizza_amounts
   examples: |
     - 1
@@ -274,3 +460,20 @@ nlu:
     - medium
     - large
     - extra large
+- lookup: day
+  examples: |
+    - monday
+    - tuesday
+    - wednesday
+    - thursday
+    - friday
+    - saturday
+    - sunday
+    - today
+    - tomorrow
+- lookup: allergies
+  examples: |
+    - vegetarian
+    - vegan
+    - gluten
+    - lactose

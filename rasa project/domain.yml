@@ -6,7 +6,14 @@ intents:
 - greet
 - order_pizza
 - out_of_scope
+- ask_address
+- ask_opening_hours
+- ask_menu
+- ask_affluence
+- ask_allergies
 entities:
+- day
+- allergies
 - pizza_types:
     groups:
     - 1
@@ -57,6 +64,21 @@ slots:
     type: any
     mappings:
     - type: custom
+  order_set:
+    type: bool
+    initial_value: False
+    mappings:
+    - type: custom
+  day:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: day
+  allergies:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: allergies
 responses:
   utter_iamabot:
   - text: I am PizzaBot, a bot powered by Rasa. What would you like to order?
@@ -64,6 +86,10 @@ responses:
   - text: Sorry, I cannot answer that.
   utter_greet:
   - text: Hello, I am PizzaBot. What would you like to order?
+  utter_address:
+  - text: Our address is Via Sommarive, 9, 38123 Povo TN.
+  utter_opening_hours:
+  - text: We are open from 18:00 to 23:00 on weekdays and from 11:00 to midnight on weekends.
 actions:
 - utter_greet
 - action_order_confirmed
@@ -71,6 +97,11 @@ actions:
 - action_order
 - utter_iamabot
 - utter_out_of_scope
+- utter_address
+- utter_opening_hours
+- action_utter_menu
+- action_utter_affluence
+- action_utter_allergies
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

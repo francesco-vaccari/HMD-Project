@@ -37,3 +37,28 @@ rules:
   steps:
   - intent: deny
   - action: action_order_not_confirmed
+
+- rule: ask address
+  steps:
+  - intent: ask_address
+  - action: utter_address
+
+- rule: ask opening hours
+  steps:
+  - intent: ask_opening_hours
+  - action: utter_opening_hours
+
+- rule: ask menu
+  steps:
+  - intent: ask_menu
+  - action: action_utter_menu
+
+- rule: ask affluence
+  steps:
+  - intent: ask_affluence
+  - action: action_utter_affluence
+
+- rule: ask allergies
+  steps:
+  - intent: ask_allergies
+  - action: action_utter_allergies
