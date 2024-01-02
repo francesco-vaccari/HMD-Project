@@ -257,6 +257,7 @@ nlu:
     - i want to order a [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "pizza_amounts", "group": "2"} [small]{"entity": "pizza_sizes", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
     - a [margherita]{"entity": "pizza_types", "group": "1"}
     - i would like [1]{"entity": "pizza_amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and a [small]{"entity": "pizza_sizes", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i want a [cocacola]{"entity": "other_item", "group": "1"} and a [fanta]{"entity": "other_item", "group": "2"}
 - intent: ask_address
   examples: |
     - what is your address?
@@ -477,3 +478,13 @@ nlu:
     - vegan
     - gluten
     - lactose
+- lookup: other_item
+  examples: |
+    - cocacola
+    - fanta
+    - sprite
+    - water
+    - tea
+    - cheesecake
+    - tiramisu
+    - ice cream

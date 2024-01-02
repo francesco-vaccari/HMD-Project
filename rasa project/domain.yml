@@ -35,6 +35,13 @@ entities:
     - 3
     - 4
     - 5
+- other_item:
+    groups:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
 slots:
   pizza_amounts:
     type: list
@@ -51,6 +58,11 @@ slots:
     mappings:
     - type: from_entity
       entity: pizza_sizes
+  other_item:
+    type: list
+    mappings:
+    - type: from_entity
+      entity: other_item
   temp_order:
     type: any
     mappings:
