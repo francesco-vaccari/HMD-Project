@@ -17,8 +17,8 @@ def get_size_for_group(pizza_sizes, group):
             return size[0]
     return "medium"
 
-def get_amount_for_group(pizza_amounts, group):
-    for amount in pizza_amounts:
+def get_amount_for_group(amounts, group):
+    for amount in amounts:
         if amount[1] == group:
             return amount[0]
     return "1"
@@ -32,98 +32,120 @@ class ActionOrder(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
         
-        new = False
-        if tracker.get_slot("order") is not None and tracker.get_slot("temp_order") is None:
-            order_set = True
-            dispatcher.utter_message(text="You already made an order. I'm going to cancel your old order.")
-            new = True
-
-        entities = tracker.latest_message['entities']
-        pizza_amounts = []
-        pizza_types_temp = []
-        pizza_sizes = []
-        order = []
-
-        for e in entities:
-            if e['entity'] == 'pizza_amounts':
-                pizza_amounts.append((e['value'], e['group']))
-            elif e['entity'] == 'pizza_types':
-                pizza_types_temp.append((e['value'], e['group']))
-            elif e['entity'] == 'pizza_sizes':
-                pizza_sizes.append((e['value'], e['group']))
+        if tracker.get_slot("order_confirmed"):
+            dispatcher.utter_message(text="I'm sorry but your order has already been confirmed.")
+            return []
         
-        menu = ["margherita", "pepperoni", "funghi"]
+        entities = tracker.latest_message['entities']
+        amounts = []
         pizza_types = []
-        for type in pizza_types_temp:
-            for line in menu:
-                if type[0] in line:
-                    pizza_types.append(type)
+        pizza_sizes = []
+        other_items_types = []
 
-        if len(pizza_amounts) == 0:
-            if len(pizza_types) == 0:
-                dispatcher.utter_message(text="What would you like to order?")
-                return [SlotSet("order", None), SlotSet("order_set", False)]
-        else:
-            if len(pizza_amounts) == len(pizza_types):
-                for i in range(len(pizza_amounts)):
-                    order.append((get_amount_for_group(pizza_amounts, pizza_types[i][1]), pizza_types[i][0], get_size_for_group(pizza_sizes, pizza_types[i][1])))
-            if len(pizza_amounts) > 0 and len(pizza_types) == 0:
-                dispatcher.utter_message(text="What would you like to order?")
-                return [SlotSet("order", None), SlotSet("order_set", False)]
-        if order == []:
-            for i in range(len(pizza_types)):
-                order.append((get_amount_for_group(pizza_amounts, pizza_types[i][1]), pizza_types[i][0], get_size_for_group(pizza_sizes, pizza_types[i][1])))
+        old_order = [] if tracker.get_slot("order") is None else tracker.get_slot("order")
+        temp_order = [] if tracker.get_slot("temp_order") is None else tracker.get_slot("temp_order")
+        old_order += temp_order
 
-        allergies = tracker.get_slot("allergies")
-        if allergies == "gluten":
-            # check if order contains gluten, if it does, warn the user and the proceed
-            dispatcher.utter_message(text="Looks like you have asked us for gluten free options but...")
-        elif allergies == "lactose":
-            # check if order contains gluten, if it does, warn the user and the proceed
-            dispatcher.utter_message(text="Looks like you have asked us for lactose free options but...")
-        elif allergies == "vegan":
-            # check if order contains gluten, if it does, warn the user and the proceed
-            dispatcher.utter_message(text="Looks like you have asked us for " + allergies + " options but...")
-        elif allergies == "vegetarian":
-            # check if order contains gluten, if it does, warn the user and the proceed
-            dispatcher.utter_message(text="Looks like you have asked us for " + allergies + " options but...")
+        # extract from entities items, amounts and sizes the user has specified
+        for entity in entities:
+            if entity['entity'] == 'amounts':
+                amounts.append((entity['value'], entity['group']))
+            elif entity['entity'] == 'pizza_types':
+                pizza_types.append((entity['value'], entity['group']))
+            elif entity['entity'] == 'pizza_sizes':
+                pizza_sizes.append((entity['value'], entity['group']))
+            elif entity['entity'] == 'other_item_types':
+                other_items_types.append((entity['value'], entity['group']))
 
+        # general order, no specific item, like "i want to order a pizza"
+        if len(pizza_types) == 0 and len(other_items_types) == 0:
+            dispatcher.utter_message(text="What would you like to order?")
+            return [SlotSet("order", old_order), SlotSet("asking_anything_else", False), SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", False)]
+        
+        temp_order = []
+
+        # try to match items with amounts and sizes
+        for pizza in pizza_types:
+            value = pizza[0]
+            group = pizza[1]
+            temp_order.append((get_amount_for_group(amounts, group), get_size_for_group(pizza_sizes, group), value))
+        for item in other_items_types:
+            value = item[0]
+            group = item[1]
+            temp_order.append((get_amount_for_group(amounts, group), value))
+        
         utter = "Your order is: "
-        if new:
-            utter = "Your new order is: "
-        for pizza in order:
-            utter += pizza[0] + " " + pizza[2] + " " + pizza[1] + ", "
-        utter = utter[:-2]
-        utter += ". Do you confirm?"
+        for elem in temp_order + old_order:
+            for value in elem:
+                utter += value + " "
+            utter = utter[:-1] + ", "
+        utter = utter[:-2] + "."
         dispatcher.utter_message(text=utter)
 
-        return [SlotSet("order", None), SlotSet("order_set", False), SlotSet("temp_order", order), SlotSet("temp_order_set", True)]
+        dispatcher.utter_message(text="Is it correct?")
+
+        return [SlotSet("order", old_order), SlotSet("temp_order", temp_order), SlotSet("asking_correct", True), SlotSet("asking_anything_else", False), SlotSet("order_confirmed", False)]
 
 
-class ActionOrderConfirmed(Action):
+class ActionOrderCorrect(Action):
     def name(self) -> Text:
-        return "action_order_confirmed"
+        return "action_order_correct"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
-    
-        order = tracker.get_slot("temp_order")
-        dispatcher.utter_message(text="Your order has been confirmed.")
 
-        return [SlotSet("order", order), SlotSet("order_set", True), SlotSet("temp_order", None), SlotSet("temp_order_set", False)]
+        old_order = [] if tracker.get_slot("order") is None else tracker.get_slot("order")
+
+        order = tracker.get_slot("temp_order") + old_order
+        dispatcher.utter_message(text="Ok, do you want anything else?")
+
+        return [SlotSet("order", order), SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("asking_anything_else", True), SlotSet("order_confirmed", False)]
 
 
-class ActionOrderNotConfirmed(Action):
+class ActionOrderIncorrect(Action):
     def name(self) -> Text:
-        return "action_order_not_confirmed"
+        return "action_order_incorrect"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict]:
+
+        dispatcher.utter_message(text="Sorry, could you repeat your order? Try rephrasing it.")
+        return [SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", False)]
+
+
+class ActionChangeOrder(Action):
+    def name(self) -> Text:
+        return "action_change_order"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
         
-        dispatcher.utter_message(text="I'm sorry. Could you repeat you order? Please try rephrasing it.")
-        return [SlotSet("temp_order", None), SlotSet("temp_order_set", False)]
+        if tracker.get_slot("order_confirmed"):
+            dispatcher.utter_message(text="I'm sorry but your order has already been confirmed.")
+            return []
+
+        dispatcher.utter_message(text="Ok, let's start over. What would you like to order?")
+        return [SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order", None), SlotSet("order_confirmed", False)]
+
+
+class ActionConfirmOrder(Action):
+    def name(self) -> Text:
+        return "action_confirm_order"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict]:
+        
+        allergies = tracker.get_slot("allergies")
+        if allergies is not None:
+            dispatcher.utter_message(text="Looks like you have asked us for " + allergies + " options but... (here goes the check)")
+
+        dispatcher.utter_message(text="Your order has been confirmed.")
+        dispatcher.utter_message(text="Would you like to do take away, have the order delivered to you or do you prefer to eat here?")
+        return [SlotSet("asking_anything_else", False), SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", True), SlotSet("choosing_eating_place", True)]
 
 
 class ActionUtterMenu(Action):
@@ -204,3 +226,39 @@ class ActionUtterAllergies(Action):
         dispatcher.utter_message(text="Our vegan options are... Our vegetarian options are...")
         
         return []
+
+
+class ActionTakeaway(Action):
+    def name(self) -> Text:
+        return "action_takeaway"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict]:
+        
+        dispatcher.utter_message(text="takeaway action")
+        return [SlotSet("choosing_eating_place", False)]
+
+
+class ActionDelivery(Action):
+    def name(self) -> Text:
+        return "action_delivery"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict]:
+        
+        dispatcher.utter_message(text="delivery action")
+        return [SlotSet("choosing_eating_place", False)]
+
+
+class ActionTable(Action):
+    def name(self) -> Text:
+        return "action_table"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict]:
+        
+        dispatcher.utter_message(text="table action")
+        return [SlotSet("choosing_eating_place", False)]

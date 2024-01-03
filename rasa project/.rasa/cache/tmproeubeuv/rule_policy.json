@@ -1,0 +1,50 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"order_pizza\"}}]": "action_order",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"order_pizza\"}}, {\"prev_action\": {\"action_name\": \"action_order\"}, \"user\": {\"intent\": \"order_pizza\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_menu\"}}]": "action_utter_menu",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_menu\"}}, {\"prev_action\": {\"action_name\": \"action_utter_menu\"}, \"user\": {\"intent\": \"ask_menu\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_affluence\"}}]": "action_utter_affluence",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_affluence\"}}, {\"prev_action\": {\"action_name\": \"action_utter_affluence\"}, \"user\": {\"intent\": \"ask_affluence\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_address\"}}]": "utter_address",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_address\"}}, {\"prev_action\": {\"action_name\": \"utter_address\"}, \"user\": {\"intent\": \"ask_address\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_allergies\"}}]": "action_utter_allergies",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_allergies\"}}, {\"prev_action\": {\"action_name\": \"action_utter_allergies\"}, \"user\": {\"intent\": \"ask_allergies\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"out_of_scope\"}}]": "utter_out_of_scope",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"out_of_scope\"}}, {\"prev_action\": {\"action_name\": \"utter_out_of_scope\"}, \"user\": {\"intent\": \"out_of_scope\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_opening_hours\"}}]": "utter_opening_hours",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_opening_hours\"}}, {\"prev_action\": {\"action_name\": \"utter_opening_hours\"}, \"user\": {\"intent\": \"ask_opening_hours\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "utter_iamabot",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"order_pizza\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_menu\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_address\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_affluence\"}}, {\"prev_action\": {\"action_name\": \"action_utter_affluence\"}, \"user\": {\"intent\": \"ask_affluence\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_allergies\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_address\"}}, {\"prev_action\": {\"action_name\": \"utter_address\"}, \"user\": {\"intent\": \"ask_address\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"out_of_scope\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_allergies\"}}, {\"prev_action\": {\"action_name\": \"action_utter_allergies\"}, \"user\": {\"intent\": \"ask_allergies\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"order_pizza\"}}, {\"prev_action\": {\"action_name\": \"action_order\"}, \"user\": {\"intent\": \"order_pizza\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_opening_hours\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_affluence\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"out_of_scope\"}}, {\"prev_action\": {\"action_name\": \"utter_out_of_scope\"}, \"user\": {\"intent\": \"out_of_scope\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_menu\"}}, {\"prev_action\": {\"action_name\": \"action_utter_menu\"}, \"user\": {\"intent\": \"ask_menu\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ask_opening_hours\"}}, {\"prev_action\": {\"action_name\": \"utter_opening_hours\"}, \"user\": {\"intent\": \"ask_opening_hours\"}}]"
+    ]
+  }
+}

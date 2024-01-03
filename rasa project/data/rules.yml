@@ -19,24 +19,69 @@ rules:
 
 - rule: pizza order
   steps:
-  - intent: order_pizza
+  - intent: order
   - action: action_order
 
-- rule: confirm order
+- rule: asking correct
   condition:
   - slot_was_set:
-    - temp_order_set: True
+    - asking_correct: True
   steps:
   - intent: confirm
-  - action: action_order_confirmed
+  - action: action_order_correct
 
-- rule: deny order
+- rule: asking incorrect
   condition:
   - slot_was_set:
-    - temp_order_set: True
+    - asking_correct: True
   steps:
   - intent: deny
-  - action: action_order_not_confirmed
+  - action: action_order_incorrect
+
+- rule: asking anything else
+  condition:
+  - slot_was_set:
+    - asking_anything_else: True
+  steps:
+  - intent: confirm
+  - action: action_order
+
+- rule: end order
+  condition:
+  - slot_was_set:
+    - asking_anything_else: True
+  steps:
+  - intent: deny
+  - action: action_confirm_order
+
+- rule: change order
+  steps:
+  - intent: change_order
+  - action: action_change_order
+
+- rule: takeaway
+  condition:
+  - slot_was_set:
+    - choosing_eating_place: True
+  steps:
+  - intent: takeaway
+  - action: action_takeaway
+
+- rule: delivery
+  condition:
+  - slot_was_set:
+    - choosing_eating_place: True
+  steps:
+  - intent: delivery
+  - action: action_delivery
+
+- rule: table
+  condition:
+  - slot_was_set:
+    - choosing_eating_place: True
+  steps:
+  - intent: table
+  - action: action_table
 
 - rule: ask address
   steps:

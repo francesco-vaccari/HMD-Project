@@ -4,24 +4,28 @@ intents:
 - confirm
 - deny
 - greet
-- order_pizza
+- order
 - out_of_scope
 - ask_address
 - ask_opening_hours
 - ask_menu
 - ask_affluence
 - ask_allergies
+- change_order
+- takeaway
+- delivery
+- table
 entities:
 - day
 - allergies
-- pizza_types:
+- amounts:
     groups:
     - 1
     - 2
     - 3
     - 4
     - 5
-- pizza_amounts:
+- pizza_types:
     groups:
     - 1
     - 2
@@ -35,7 +39,7 @@ entities:
     - 3
     - 4
     - 5
-- other_item:
+- other_item_types:
     groups:
     - 1
     - 2
@@ -43,11 +47,11 @@ entities:
     - 4
     - 5
 slots:
-  pizza_amounts:
+  amounts:
     type: list
     mappings:
     - type: from_entity
-      entity: pizza_amounts
+      entity: amounts
   pizza_types:
     type: list
     mappings:
@@ -58,29 +62,11 @@ slots:
     mappings:
     - type: from_entity
       entity: pizza_sizes
-  other_item:
+  other_item_types:
     type: list
     mappings:
     - type: from_entity
-      entity: other_item
-  temp_order:
-    type: any
-    mappings:
-    - type: custom
-  temp_order_set:
-    type: bool
-    initial_value: False
-    mappings:
-    - type: custom
-  order:
-    type: any
-    mappings:
-    - type: custom
-  order_set:
-    type: bool
-    initial_value: False
-    mappings:
-    - type: custom
+      entity: other_item_types
   day:
     type: any
     mappings:
@@ -91,6 +77,34 @@ slots:
     mappings:
     - type: from_entity
       entity: allergies
+  order:
+    type: list
+    mappings:
+    - type: custom
+  temp_order:
+    type: list
+    mappings:
+    - type: custom
+  asking_correct:
+    type: bool
+    initial_value: False
+    mappings:
+    - type: custom
+  asking_anything_else:
+    type: bool
+    initial_value: False
+    mappings:
+    - type: custom
+  order_confirmed:
+    type: bool
+    initial_value: False
+    mappings:
+    - type: custom
+  choosing_eating_place:
+    type: bool
+    initial_value: False
+    mappings:
+    - type: custom
 responses:
   utter_iamabot:
   - text: I am PizzaBot, a bot powered by Rasa. What would you like to order?
@@ -104,8 +118,6 @@ responses:
   - text: We are open from 18:00 to 23:00 on weekdays and from 11:00 to midnight on weekends.
 actions:
 - utter_greet
-- action_order_confirmed
-- action_order_not_confirmed
 - action_order
 - utter_iamabot
 - utter_out_of_scope
@@ -114,6 +126,13 @@ actions:
 - action_utter_menu
 - action_utter_affluence
 - action_utter_allergies
+- action_order_correct
+- action_order_incorrect
+- action_change_order
+- action_confirm_order
+- action_takeaway
+- action_delivery
+- action_table
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
