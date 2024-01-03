@@ -254,13 +254,13 @@ class ActionTakeaway(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
         
-        if tracker.get_slot("asking_time"):
+        if tracker.get_slot("asking_time_takeaway"):
             if tracker.get_slot("time") is None:
                 dispatcher.utter_message(text="Sorry, I didn't get that. When would you like to pick up your order?")
                 return []
             dispatcher.utter_message(text="Ok. Your order will be ready at " + tracker.get_slot("time") + ".")
             dispatcher.utter_message(text="The procedure is complete! Thank you for using PizzaBot. Goodbye!")
-            return [SlotSet("asking_time", False), SlotSet("last_message", "The procedure is complete. Thank you for using PizzaBot! Goodbye!")]
+            return [SlotSet("asking_time_takeaway", False), SlotSet("last_message", "The procedure is complete. Thank you for using PizzaBot! Goodbye!")]
         
         order = tracker.get_slot("order")
 
@@ -279,7 +279,7 @@ class ActionTakeaway(Action):
 
         dispatcher.utter_message(text=utter)
 
-        return [SlotSet("choosing_eating_place", False), SlotSet("last_message", "When would you like to pick up your order?"), SlotSet("asking_time", True)]
+        return [SlotSet("choosing_eating_place", False), SlotSet("last_message", "When would you like to pick up your order?"), SlotSet("asking_time_takeaway", True)]
 
 
 class ActionDelivery(Action):
@@ -290,15 +290,38 @@ class ActionDelivery(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
         
-        dispatcher.utter_message(text="delivery action")
+        if tracker.get_slot("asking_time_delivery"):
+            if tracker.get_slot("time") is None:
+                dispatcher.utter_message(text="Sorry, I didn't get that. When would you like the order to be delivered?")
+                return []
+            dispatcher.utter_message(text="Ok. Your order will be delivered at " + tracker.get_slot("time") + ".")
+            dispatcher.utter_message(text="What is the address for the delivery?")
+            return [SlotSet("asking_time_delivery", False), SlotSet("last_message", "What is the address for the delivery?"), SlotSet("asking_address", True)]
 
-        # payment will be done at delivery
-        # say price
-        # ask address for delivery
-        # ask time for delivery
-        # say goodbye
+        if tracker.get_slot("asking_address"):
+            if tracker.get_slot("address") is None:
+                dispatcher.utter_message(text="Sorry, I didn't get that. What is the address for the delivery?")
+                return []
+            dispatcher.utter_message(text="Ok. Your order will be delivered at " + tracker.get_slot("address") + ".")
+            dispatcher.utter_message(text="The procedure is complete! Thank you for using PizzaBot. Goodbye!")
+            return [SlotSet("asking_address", False), SlotSet("last_message", "The procedure is complete. Thank you for using PizzaBot! Goodbye!")]
+        
+        order = tracker.get_slot("order")
+        
+        utter = "Your order consists of:\n"
+        for elem in order:
+            utter += "- "
+            for value in elem:
+                utter += value + " "
+            utter = utter[:-1] + "\n"
+        utter = utter[:-1] + "\nThe total is "
+        
+        utter += str(get_total(order)) + "€.\nPayment will be done at delivery time."
+        utter += "\nWhen would you like the order to be delivered?"
 
-        return [SlotSet("choosing_eating_place", False)]
+        dispatcher.utter_message(text=utter)
+
+        return [SlotSet("choosing_eating_place", False), SlotSet("last_message", "When would you like the order to be delivered?"), SlotSet("asking_time_delivery", True)]
 
 
 class ActionTable(Action):
@@ -310,6 +333,8 @@ class ActionTable(Action):
             domain: Dict[Text, Any]) -> List[Dict]:
         
         dispatcher.utter_message(text="table action")
+
+        # maybe also add confirmation when asking address and time in takeaway and delivery
 
         # say price for current menu
         # ask how many people for table reservation

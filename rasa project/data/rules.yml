@@ -108,13 +108,29 @@ rules:
   - intent: ask_allergies
   - action: action_utter_allergies
 
-- rule: tell time
+- rule: tell time takeaway
   condition:
   - slot_was_set:
-    - asking_time: True
+    - asking_time_takeaway: True
   steps:
   - intent: tell_time
   - action: action_takeaway
+
+- rule: tell time delivery
+  condition:
+  - slot_was_set:
+    - asking_time_delivery: True
+  steps:
+  - intent: tell_time
+  - action: action_delivery
+
+- rule: tell address
+  condition:
+  - slot_was_set:
+    - asking_address: True
+  steps:
+  - intent: tell_address
+  - action: action_delivery
 
 - rule: say again 
   condition:
@@ -151,7 +167,7 @@ rules:
 - rule: say again 5
   condition:
   - slot_was_set:
-    - asking_time: False
+    - time
   steps:
   - intent: tell_time
   - action: action_repeat_last_message
@@ -178,4 +194,12 @@ rules:
     - choosing_eating_place: False
   steps:
   - intent: table
+  - action: action_repeat_last_message
+
+- rule: say again 9
+  condition:
+  - slot_was_set:
+    - asking_address: False
+  steps:
+  - intent: tell_address
   - action: action_repeat_last_message

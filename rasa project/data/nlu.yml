@@ -503,6 +503,12 @@ nlu:
     - (one fifteen)[time]
     - (one thirty)[time]
     - (one forty five)[time]
+- intent: tell_address
+  examples: |
+    - [address](address)
+    - my [address](address)
+    - [address](address) intent
+    - my [address](address) is 
 - lookup: amounts
   examples: |
     - 1

@@ -16,10 +16,12 @@ intents:
 - delivery
 - table
 - tell_time
+- tell_address
 entities:
 - day
 - allergies
 - time
+- address
 - amounts:
     groups:
     - 1
@@ -112,7 +114,12 @@ slots:
     initial_value: "What would you like to order?"
     mappings:
     - type: custom
-  asking_time:
+  asking_time_delivery:
+    type: bool
+    initial_value: False
+    mappings:
+    - type: custom
+  asking_time_takeaway:
     type: bool
     initial_value: False
     mappings:
@@ -122,6 +129,16 @@ slots:
     mappings:
     - type: from_entity
       entity: time
+  asking_address:
+    type: bool
+    initial_value: False
+    mappings:
+    - type: custom
+  address:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: address
 actions:
 - action_utter_greet
 - action_order
