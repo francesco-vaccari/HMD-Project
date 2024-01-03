@@ -8,7 +8,14 @@ Other possibilities:
 
 
 
-More complex ordering system, that can handle multiple types of pizza (on menu) with different sizes and different amounts of each type of pizza.
+More complex ordering system:
+- handle single sentence complex order
+- handle multiple amounts of same or different pizzas
+- handle different sizes for different pizzas
+- handle amounts of drinks or desserts
+- handle if the order takes is not correct
+- handle start over with menu if user wants
+- handle additions to order outside of single sentence order
 
 Drink/dessert come possibilità da ordinare:
 - se alcol -> dire controllo persona/carta identità tavolo/delivery/asporto

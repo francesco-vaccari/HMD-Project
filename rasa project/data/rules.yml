@@ -116,8 +116,6 @@ rules:
   - intent: tell_time
   - action: action_takeaway
 
-
-
 - rule: say again 
   condition:
   - slot_was_set:
