@@ -23,6 +23,24 @@ def get_amount_for_group(amounts, group):
             return amount[0]
     return "1"
 
+def get_menu():
+    return ["margherita", "pepperoni", "funghi", "coke", "fanta", "sprite", "water", "tea", "cheesecake", "tiramisu", "ice cream"]
+
+def get_menu_prices():
+    return {"margherita": 5, "pepperoni": 6, "funghi": 5.50, "coke": 2.50, "fanta": 2, "sprite": 2, "water": 1, "tea": 2, "cheesecake": 4, "tiramisu": 4.50, "ice cream": 3}
+
+def get_total(order):
+    total = 0
+    menu_prices = get_menu_prices()
+    for elem in order:
+        if len(elem) == 3:
+            extra = -1 if elem[1] == "small" else 1 if elem[1] == "large" else 2 if elem[1] == "family" else 0
+            total += (menu_prices[elem[2]] + extra) * float(elem[0])
+        else:
+            total += menu_prices[elem[1]] * float(elem[0])
+
+    return total
+
 
 class ActionOrder(Action):
     def name(self) -> Text:
@@ -34,7 +52,7 @@ class ActionOrder(Action):
         
         if tracker.get_slot("order_confirmed"):
             dispatcher.utter_message(text="I'm sorry but your order has already been confirmed.")
-            return []
+            return [FollowupAction(name = "action_repeat_last_message")]
         
         entities = tracker.latest_message['entities']
         amounts = []
@@ -125,7 +143,7 @@ class ActionChangeOrder(Action):
         
         if tracker.get_slot("order_confirmed"):
             dispatcher.utter_message(text="I'm sorry but your order has already been confirmed.")
-            return []
+            return [FollowupAction(name = "action_repeat_last_message")]
 
         dispatcher.utter_message(text="Ok, let's start over. What would you like to order?")
         return [SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order", None), SlotSet("order_confirmed", False), SlotSet("last_message", "What would you like to order?")]
@@ -236,15 +254,32 @@ class ActionTakeaway(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
         
-        dispatcher.utter_message(text="takeaway action")
+        if tracker.get_slot("asking_time"):
+            if tracker.get_slot("time") is None:
+                dispatcher.utter_message(text="Sorry, I didn't get that. When would you like to pick up your order?")
+                return []
+            dispatcher.utter_message(text="Ok. Your order will be ready at " + tracker.get_slot("time") + ".")
+            dispatcher.utter_message(text="The procedure is complete! Thank you for using PizzaBot. Goodbye!")
+            return [SlotSet("asking_time", False), SlotSet("last_message", "The procedure is complete. Thank you for using PizzaBot! Goodbye!")]
+        
+        order = tracker.get_slot("order")
 
-        # payment will be done at takeaway
-        # say address and price
-        # ask time for takeaway
-        # ask phone number for takeaway
-        # say goodbye
+        utter = "Your order consists of:\n"
+        for elem in order:
+            utter += "- "
+            for value in elem:
+                utter += value + " "
+            utter = utter[:-1] + "\n"
+        utter = utter[:-1] + "\nThe total is "
+        
+        utter += str(get_total(order)) + "€.\nPayment will be done at takeaway."
 
-        return [SlotSet("choosing_eating_place", False)]
+        utter += "\nOur address is Via Sommarive, 9, 38123 Povo TN."
+        utter += "\nWhen would you like to pick up your order?"
+
+        dispatcher.utter_message(text=utter)
+
+        return [SlotSet("choosing_eating_place", False), SlotSet("last_message", "When would you like to pick up your order?"), SlotSet("asking_time", True)]
 
 
 class ActionDelivery(Action):
@@ -260,7 +295,6 @@ class ActionDelivery(Action):
         # payment will be done at delivery
         # say price
         # ask address for delivery
-        # ask phone number for delivery
         # ask time for delivery
         # say goodbye
 
@@ -280,7 +314,6 @@ class ActionTable(Action):
         # say price for current menu
         # ask how many people for table reservation
         # ask time and day for table reservation
-        # ask phone number
         # say goodbye
 
         return [SlotSet("choosing_eating_place", False)]

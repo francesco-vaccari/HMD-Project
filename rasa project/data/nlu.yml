@@ -251,13 +251,13 @@ nlu:
     - i want to order a [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "amounts", "group": "2"} [small]{"entity": "pizza_sizes", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
     - a [margherita]{"entity": "pizza_types", "group": "1"}
     - i would like [1]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and a [small]{"entity": "pizza_sizes", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
-    - i want a [cocacola]{"entity": "other_item_types", "group": "1"} and a [fanta]{"entity": "other_item_types", "group": "2"}
-    - i want a [fanta]{"entity": "other_item_types", "group": "1"} and a [cocacola]{"entity": "other_item_types", "group": "2"}
-    - i want a [cocacola]{"entity": "other_item_types", "group": "1"} and a [sprite]{"entity": "other_item_types", "group": "2"}
-    - i want a [sprite]{"entity": "other_item_types", "group": "1"} and a [cocacola]{"entity": "other_item_types", "group": "2"}
+    - i want a [coke]{"entity": "other_item_types", "group": "1"} and a [fanta]{"entity": "other_item_types", "group": "2"}
+    - i want a [fanta]{"entity": "other_item_types", "group": "1"} and a [coke]{"entity": "other_item_types", "group": "2"}
+    - i want a [coke]{"entity": "other_item_types", "group": "1"} and a [sprite]{"entity": "other_item_types", "group": "2"}
+    - i want a [sprite]{"entity": "other_item_types", "group": "1"} and a [coke]{"entity": "other_item_types", "group": "2"}
     - i want a [fanta]{"entity": "other_item_types", "group": "1"} and a [sprite]{"entity": "other_item_types", "group": "2"}
     - i want a [sprite]{"entity": "other_item_types", "group": "1"} and a [fanta]{"entity": "other_item_types", "group": "2"}
-    - i want a [cocacola]{"entity": "other_item_types", "group": "1"}
+    - i want a [coke]{"entity": "other_item_types", "group": "1"}
     - i want a [fanta]{"entity": "other_item_types", "group": "1"}
     - i want a [sprite]{"entity": "other_item_types", "group": "1"}
     - i want a [cheesecake]{"entity": "other_item_types", "group": "1"}
@@ -456,6 +456,9 @@ nlu:
     - do you have [vegan](allergies) alternatives?
 - intent: takeaway
   examples: |
+    - pick up
+    - pick up the order
+    - pick up the food
     - takeaway
     - take away
     - takeout
@@ -473,6 +476,8 @@ nlu:
     - deliver to my home
 - intent: table
   examples: |
+    - table
+    - table please
     - eat here
     - eat there
     - eat in the pizzeria
@@ -490,7 +495,14 @@ nlu:
     - i want to eat at a table in the restaurant
     - i want to eat at a table here
     - i want to eat at a table there
-
+- intent: tell_time
+  examples: |
+    - [1am](time)
+    - [1pm](time)
+    - [1 o'clock](time)
+    - (one fifteen)[time]
+    - (one thirty)[time]
+    - (one forty five)[time]
 - lookup: amounts
   examples: |
     - 1
@@ -527,7 +539,7 @@ nlu:
     - lactose
 - lookup: other_item_types
   examples: |
-    - cocacola
+    - coke
     - fanta
     - sprite
     - water

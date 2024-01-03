@@ -107,3 +107,77 @@ rules:
   steps:
   - intent: ask_allergies
   - action: action_utter_allergies
+
+- rule: tell time
+  condition:
+  - slot_was_set:
+    - asking_time: True
+  steps:
+  - intent: tell_time
+  - action: action_takeaway
+
+
+
+- rule: say again 
+  condition:
+  - slot_was_set:
+    - asking_correct: False
+  steps:
+  - intent: confirm
+  - action: action_repeat_last_message
+
+- rule: say again 2
+  condition:
+  - slot_was_set:
+    - asking_correct: False
+  steps:
+  - intent: deny
+  - action: action_repeat_last_message
+
+- rule: say again 3
+  condition:
+  - slot_was_set:
+    - asking_anything_else: False
+  steps:
+  - intent: confirm
+  - action: action_repeat_last_message
+
+- rule: say again 4
+  condition:
+  - slot_was_set:
+    - asking_anything_else: False
+  steps:
+  - intent: deny
+  - action: action_repeat_last_message
+
+- rule: say again 5
+  condition:
+  - slot_was_set:
+    - asking_time: False
+  steps:
+  - intent: tell_time
+  - action: action_repeat_last_message
+
+- rule: say again 6
+  condition:
+  - slot_was_set:
+    - choosing_eating_place: False
+  steps:
+  - intent: takeaway
+  - action: action_repeat_last_message
+
+- rule: say again 7
+  condition:
+  - slot_was_set:
+    - choosing_eating_place: False
+  steps:
+  - intent: delivery
+  - action: action_repeat_last_message
+
+- rule: say again 8
+  condition:
+  - slot_was_set:
+    - choosing_eating_place: False
+  steps:
+  - intent: table
+  - action: action_repeat_last_message

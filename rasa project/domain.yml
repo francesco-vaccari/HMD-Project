@@ -15,9 +15,11 @@ intents:
 - takeaway
 - delivery
 - table
+- tell_time
 entities:
 - day
 - allergies
+- time
 - amounts:
     groups:
     - 1
@@ -110,6 +112,16 @@ slots:
     initial_value: "What would you like to order?"
     mappings:
     - type: custom
+  asking_time:
+    type: bool
+    initial_value: False
+    mappings:
+    - type: custom
+  time:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: time
 actions:
 - action_utter_greet
 - action_order
