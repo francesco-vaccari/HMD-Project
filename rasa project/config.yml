@@ -23,10 +23,7 @@ policies:
   max_history: 4
 - name: MemoizationPolicy
 - name: RulePolicy
-  # Confidence threshold for the `core_fallback_action_name` to apply.
-  # The action will apply if no other action was predicted with
-  # a confidence >= core_fallback_threshold
-  core_fallback_threshold: 0.10
+  core_fallback_threshold: 0.4
   core_fallback_action_name: "action_listen"
   enable_fallback_prediction: True
 assistant_id: 20231202-221250-mode-flour

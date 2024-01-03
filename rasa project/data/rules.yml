@@ -5,17 +5,17 @@ rules:
 - rule: greet
   steps:
   - intent: greet
-  - action: utter_greet
+  - action: action_utter_greet
 
 - rule: bot challenge
   steps:
   - intent: bot_challenge
-  - action: utter_iamabot
+  - action: action_utter_imabot
 
 - rule: out of scope
   steps:
   - intent: out_of_scope
-  - action: utter_out_of_scope
+  - action: action_utter_out_of_scope
 
 - rule: pizza order
   steps:
@@ -86,12 +86,12 @@ rules:
 - rule: ask address
   steps:
   - intent: ask_address
-  - action: utter_address
+  - action: action_utter_address
 
 - rule: ask opening hours
   steps:
   - intent: ask_opening_hours
-  - action: utter_opening_hours
+  - action: action_utter_opening_hours
 
 - rule: ask menu
   steps:

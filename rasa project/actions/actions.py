@@ -1,7 +1,7 @@
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.events import SlotSet
+from rasa_sdk.events import SlotSet, FollowupAction
 from typing import Text, List, Any, Dict
 
 from rasa_sdk import Tracker, FormValidationAction
@@ -60,7 +60,7 @@ class ActionOrder(Action):
         # general order, no specific item, like "i want to order a pizza"
         if len(pizza_types) == 0 and len(other_items_types) == 0:
             dispatcher.utter_message(text="What would you like to order?")
-            return [SlotSet("order", old_order), SlotSet("asking_anything_else", False), SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", False)]
+            return [SlotSet("order", old_order), SlotSet("asking_anything_else", False), SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", False), SlotSet("last_message", "What would you like to order?")]
         
         temp_order = []
 
@@ -79,12 +79,12 @@ class ActionOrder(Action):
             for value in elem:
                 utter += value + " "
             utter = utter[:-1] + ", "
-        utter = utter[:-2] + "."
+        utter = utter[:-2] + ". "
         dispatcher.utter_message(text=utter)
 
         dispatcher.utter_message(text="Is it correct?")
 
-        return [SlotSet("order", old_order), SlotSet("temp_order", temp_order), SlotSet("asking_correct", True), SlotSet("asking_anything_else", False), SlotSet("order_confirmed", False)]
+        return [SlotSet("order", old_order), SlotSet("temp_order", temp_order), SlotSet("asking_correct", True), SlotSet("asking_anything_else", False), SlotSet("order_confirmed", False), SlotSet("last_message", utter + "Is it correct?")]
 
 
 class ActionOrderCorrect(Action):
@@ -100,7 +100,7 @@ class ActionOrderCorrect(Action):
         order = tracker.get_slot("temp_order") + old_order
         dispatcher.utter_message(text="Ok, do you want anything else?")
 
-        return [SlotSet("order", order), SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("asking_anything_else", True), SlotSet("order_confirmed", False)]
+        return [SlotSet("order", order), SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("asking_anything_else", True), SlotSet("order_confirmed", False), SlotSet("last_message", "Do you want anything else?")]
 
 
 class ActionOrderIncorrect(Action):
@@ -111,8 +111,8 @@ class ActionOrderIncorrect(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
 
-        dispatcher.utter_message(text="Sorry, could you repeat your order? Try rephrasing it.")
-        return [SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", False)]
+        dispatcher.utter_message(text="I'm sorry, I misunderstood. Try rephrasing you order. What would you like to order?")
+        return [SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", False), SlotSet("last_message", "Sorry for my confusion, what would you like to order?")]
 
 
 class ActionChangeOrder(Action):
@@ -128,7 +128,7 @@ class ActionChangeOrder(Action):
             return []
 
         dispatcher.utter_message(text="Ok, let's start over. What would you like to order?")
-        return [SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order", None), SlotSet("order_confirmed", False)]
+        return [SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order", None), SlotSet("order_confirmed", False), SlotSet("last_message", "What would you like to order?")]
 
 
 class ActionConfirmOrder(Action):
@@ -145,7 +145,7 @@ class ActionConfirmOrder(Action):
 
         dispatcher.utter_message(text="Your order has been confirmed.")
         dispatcher.utter_message(text="Would you like to do take away, have the order delivered to you or do you prefer to eat here?")
-        return [SlotSet("asking_anything_else", False), SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", True), SlotSet("choosing_eating_place", True)]
+        return [SlotSet("asking_anything_else", False), SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", True), SlotSet("choosing_eating_place", True), SlotSet("last_message", "Would you like to do take away, have the order delivered to you or do you prefer to eat here?")]
 
 
 class ActionUtterMenu(Action):
@@ -169,7 +169,7 @@ class ActionUtterMenu(Action):
 
         dispatcher.utter_message(text=utter)
 
-        return []
+        return [FollowupAction(name = "action_repeat_last_message")]
 
 
 class ActionUtterAffluence(Action):
@@ -189,7 +189,7 @@ class ActionUtterAffluence(Action):
             elif day == "tomorrow": dispatcher.utter_message(text="Tomorrow it's usually not crowded.")
             else: dispatcher.utter_message(text="On " + day + " it's usually not crowded.")
         
-        return []
+        return [FollowupAction(name = "action_repeat_last_message")]
 
 
 class ActionUtterAllergies(Action):
@@ -225,7 +225,7 @@ class ActionUtterAllergies(Action):
         dispatcher.utter_message(text="Our gluten free options are... Our lactose free options are...")
         dispatcher.utter_message(text="Our vegan options are... Our vegetarian options are...")
         
-        return []
+        return [FollowupAction(name = "action_repeat_last_message")]
 
 
 class ActionTakeaway(Action):
@@ -237,6 +237,13 @@ class ActionTakeaway(Action):
             domain: Dict[Text, Any]) -> List[Dict]:
         
         dispatcher.utter_message(text="takeaway action")
+
+        # payment will be done at takeaway
+        # say address and price
+        # ask time for takeaway
+        # ask phone number for takeaway
+        # say goodbye
+
         return [SlotSet("choosing_eating_place", False)]
 
 
@@ -249,6 +256,14 @@ class ActionDelivery(Action):
             domain: Dict[Text, Any]) -> List[Dict]:
         
         dispatcher.utter_message(text="delivery action")
+
+        # payment will be done at delivery
+        # say price
+        # ask address for delivery
+        # ask phone number for delivery
+        # ask time for delivery
+        # say goodbye
+
         return [SlotSet("choosing_eating_place", False)]
 
 
@@ -261,4 +276,81 @@ class ActionTable(Action):
             domain: Dict[Text, Any]) -> List[Dict]:
         
         dispatcher.utter_message(text="table action")
+
+        # say price for current menu
+        # ask how many people for table reservation
+        # ask time and day for table reservation
+        # ask phone number
+        # say goodbye
+
         return [SlotSet("choosing_eating_place", False)]
+
+
+class ActionRepeatLastMessage(Action):
+    def name(self) -> Text:
+        return "action_repeat_last_message"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict]:
+        
+        last_message = tracker.get_slot("last_message")
+        if last_message is not None:
+            dispatcher.utter_message(text=last_message)
+
+        return [FollowupAction(name = "action_listen")]
+
+
+class ActionUtterImABot(Action):
+    def name(self) -> Text:
+        return "action_utter_imabot"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict]:
+        dispatcher.utter_message(text="I am PizzaBot, a bot powered by Rasa to handle your order.")
+        return [FollowupAction(name = "action_repeat_last_message")]
+
+
+class ActionUtterOutOfScope(Action):
+    def name(self) -> Text:
+        return "action_utter_out_of_scope"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict]:
+        dispatcher.utter_message(text="Sorry, I cannot answer that.")
+        return [FollowupAction(name = "action_repeat_last_message")]
+
+
+class ActionUtterGreet(Action):
+    def name(self) -> Text:
+        return "action_utter_greet"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict]:
+        dispatcher.utter_message(text="Hello, I am PizzaBot, here to handle you order.")
+        return [FollowupAction(name = "action_repeat_last_message")]
+
+
+class ActionUtterAddress(Action):
+    def name(self) -> Text:
+        return "action_utter_address"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict]:
+        dispatcher.utter_message(text="Our address is Via Sommarive, 9, 38123 Povo TN.")
+        return [FollowupAction(name = "action_repeat_last_message")]
+
+
+class ActionUtterOpeningHours(Action):
+    def name(self) -> Text:
+        return "action_utter_opening_hours"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict]:
+        dispatcher.utter_message(text="We are open from 18:00 to 23:00 on weekdays and from 11:00 to midnight on weekends.")
+        return [FollowupAction(name = "action_repeat_last_message")]

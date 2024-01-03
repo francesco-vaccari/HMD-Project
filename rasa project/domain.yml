@@ -105,24 +105,18 @@ slots:
     initial_value: False
     mappings:
     - type: custom
-responses:
-  utter_iamabot:
-  - text: I am PizzaBot, a bot powered by Rasa. What would you like to order?
-  utter_out_of_scope:
-  - text: Sorry, I cannot answer that.
-  utter_greet:
-  - text: Hello, I am PizzaBot. What would you like to order?
-  utter_address:
-  - text: Our address is Via Sommarive, 9, 38123 Povo TN.
-  utter_opening_hours:
-  - text: We are open from 18:00 to 23:00 on weekdays and from 11:00 to midnight on weekends.
+  last_message:
+    type: text
+    initial_value: "What would you like to order?"
+    mappings:
+    - type: custom
 actions:
-- utter_greet
+- action_utter_greet
 - action_order
-- utter_iamabot
-- utter_out_of_scope
-- utter_address
-- utter_opening_hours
+- action_utter_imabot
+- action_utter_out_of_scope
+- action_utter_address
+- action_utter_opening_hours
 - action_utter_menu
 - action_utter_affluence
 - action_utter_allergies
@@ -133,6 +127,7 @@ actions:
 - action_takeaway
 - action_delivery
 - action_table
+- action_repeat_last_message
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
