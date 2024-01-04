@@ -2,12 +2,6 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet, FollowupAction
-from typing import Text, List, Any, Dict
-
-from rasa_sdk import Tracker, FormValidationAction
-from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.types import DomainDict
-
 import random
 
 
@@ -140,13 +134,56 @@ class ActionChangeOrder(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
-        
-        if tracker.get_slot("order_confirmed"):
-            dispatcher.utter_message(text="I'm sorry but your order has already been confirmed.")
-            return [FollowupAction(name = "action_repeat_last_message")]
 
-        dispatcher.utter_message(text="Ok, let's start over. What would you like to order?")
-        return [SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order", None), SlotSet("order_confirmed", False), SlotSet("last_message", "What would you like to order?")]
+        if tracker.get_slot("asking_correct"):
+            return [FollowupAction(name = "action_order_incorrect")]
+        if tracker.get_slot("asking_anything_else"):
+            dispatcher.utter_message(text="I'm sorry, you cannot change an order once confirmed.")
+            return [FollowupAction(name = "action_order")]
+
+        if tracker.get_slot("order") is not None:
+            dispatcher.utter_message(text="I'm sorry, you cannot change an order once confirmed.")
+            return [FollowupAction(name = "action_repeat_last_message")]
+        
+        dispatcher.utter_message(text="Do you wish to change an order made in a previous call/conversation?")
+        return [SlotSet("asking_change_order", True), SlotSet("last_message", "Do you wish to change an order made in a previous call/conversation?")]
+
+
+class ActionChangeOrderConfirmed(Action):
+    def name(self) -> Text:
+        return "action_change_order_confirmed"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict]:
+
+        dispatcher.utter_message(text="ACTION CHANGE ORDER")
+
+        # get phone number, maybe instead of having phone numbers i can just have a unique id for each order
+        # that the system tells to the user when the order is confirmed
+        # retrieve information from file
+        # display information
+        # ask what the user wants to change
+        # ask what the user wants to change it to for each element said
+        # ask confirmation for new order
+        # save new order in file and delete old one
+
+        # then procedure complete, if the user wants to make a new ordination he has to start over
+
+        return []
+
+
+class ActionChangeOrderNotConfirmed(Action):
+    def name(self) -> Text:
+        return "action_change_order_not_confirmed"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict]:
+        
+        dispatcher.utter_message(text="Ok, so what would you like to order?")
+
+        return [SlotSet("asking_change_order", False), SlotSet("last_message", "What would you like to order?")]
 
 
 class ActionConfirmOrder(Action):
@@ -162,8 +199,20 @@ class ActionConfirmOrder(Action):
             dispatcher.utter_message(text="Looks like you have asked us for " + allergies + " options but... (here goes the check)")
 
         dispatcher.utter_message(text="Your order has been confirmed.")
+        
+        order = tracker.get_slot("order")
+        utter = "Your order consists of:\n"
+        for elem in order:
+            utter += "- "
+            for value in elem:
+                utter += value + " "
+            utter = utter[:-1] + "\n"
+        utter = utter[:-1] + "\nThe total is "
+        utter += str(get_total(order)) + "€."
+        dispatcher.utter_message(text=utter)
+
         dispatcher.utter_message(text="Would you like to do take away, have the order delivered to you or do you prefer to eat here?")
-        return [SlotSet("asking_anything_else", False), SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", True), SlotSet("choosing_eating_place", True), SlotSet("last_message", "Would you like to do take away, have the order delivered to you or do you prefer to eat here?")]
+        return [SlotSet("asking_anything_else", False), SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", True), SlotSet("choosing_eating_place", True), SlotSet("last_message", "Would you like to do take away, have the order delivered to you or do you prefer to eat here?"), SlotSet("total", get_total(order))]
 
 
 class ActionUtterMenu(Action):
@@ -259,27 +308,28 @@ class ActionTakeaway(Action):
                 dispatcher.utter_message(text="Sorry, I didn't get that. When would you like to pick up your order?")
                 return []
             dispatcher.utter_message(text="Ok. Your order will be ready at " + tracker.get_slot("time") + ".")
+            dispatcher.utter_message(text="Last thing, if you want to change your order in the future we need a phone number to reference your order.")
+            dispatcher.utter_message(text="What is your phone number?")
+            return [SlotSet("asking_time_takeaway", False), SlotSet("last_message", "What is your phone number?"), SlotSet("asking_phone_number_takeaway", True)]
+        
+        if tracker.get_slot("asking_phone_number_takeaway"):
+            if tracker.get_slot("phone_number") is None:
+                dispatcher.utter_message(text="Sorry, I didn't get that. What is your phone number?")
+                return []
+            dispatcher.utter_message(text="Ok. The phone number registered is " + tracker.get_slot("phone_number") + ".")
             dispatcher.utter_message(text="The procedure is complete! Thank you for using PizzaBot. Goodbye!")
-            return [SlotSet("asking_time_takeaway", False), SlotSet("last_message", "The procedure is complete. Thank you for using PizzaBot! Goodbye!")]
-        
-        order = tracker.get_slot("order")
+            return [SlotSet("asking_time_takeaway", False), SlotSet("last_message", "The procedure is complete. Thank you for using PizzaBot! Goodbye!"),
+                    FollowupAction(name = "action_save_order")]
 
-        utter = "You have decided to do take-away.\nYour order consists of:\n"
-        for elem in order:
-            utter += "- "
-            for value in elem:
-                utter += value + " "
-            utter = utter[:-1] + "\n"
-        utter = utter[:-1] + "\nThe total is "
-        
-        utter += str(get_total(order)) + "€.\nPayment will be done at takeaway."
-
+        utter = "You have decided to do takeaway."
         utter += "\nOur address is Via Sommarive, 9, 38123 Povo TN."
+        utter += "\nPayment will be done at takeaway."
         utter += "\nWhen would you like to pick up your order?"
 
         dispatcher.utter_message(text=utter)
 
-        return [SlotSet("choosing_eating_place", False), SlotSet("last_message", "When would you like to pick up your order?"), SlotSet("asking_time_takeaway", True)]
+        return [SlotSet("choosing_eating_place", False), SlotSet("last_message", "When would you like to pick up your order?"), SlotSet("asking_time_takeaway", True),
+                SlotSet("method", "takeaway")]
 
 
 class ActionDelivery(Action):
@@ -303,25 +353,26 @@ class ActionDelivery(Action):
                 dispatcher.utter_message(text="Sorry, I didn't get that. What is the address for the delivery?")
                 return []
             dispatcher.utter_message(text="Ok. Your order will be delivered at " + tracker.get_slot("address") + ".")
-            dispatcher.utter_message(text="The procedure is complete! Thank you for using PizzaBot. Goodbye!")
-            return [SlotSet("asking_address", False), SlotSet("last_message", "The procedure is complete. Thank you for using PizzaBot! Goodbye!")]
-        
-        order = tracker.get_slot("order")
-        
-        utter = "You have decided to get you order delivered.\nYour order consists of:\n"
-        for elem in order:
-            utter += "- "
-            for value in elem:
-                utter += value + " "
-            utter = utter[:-1] + "\n"
-        utter = utter[:-1] + "\nThe total is "
-        
-        utter += str(get_total(order)) + "€.\nPayment will be done at delivery time."
-        utter += "\nWhen would you like the order to be delivered?"
+            dispatcher.utter_message(text="Last thing, if you want to change your order in the future we need a phone number to reference your order.")
+            dispatcher.utter_message(text="What is your phone number?")
+            return [SlotSet("asking_address", False), SlotSet("last_message", "What is your phone number?"), SlotSet("asking_phone_number_delivery", True)]
 
+        if tracker.get_slot("asking_phone_number_delivery"):
+            if tracker.get_slot("phone_number") is None:
+                dispatcher.utter_message(text="Sorry, I didn't get that. What is your phone number?")
+                return []
+            dispatcher.utter_message(text="Ok. The phone number registered is " + tracker.get_slot("phone_number") + ".")
+            dispatcher.utter_message(text="The procedure is complete! Thank you for using PizzaBot. Goodbye!")
+            return [SlotSet("asking_address", False), SlotSet("last_message", "The procedure is complete. Thank you for using PizzaBot! Goodbye!"),
+                    FollowupAction(name = "action_save_order")]
+        
+        utter = "You have decided to have the order delivered."
+        utter += "\nPayment will be done at delivery time."
+        utter += "\nWhen would you like the order to be delivered?"
         dispatcher.utter_message(text=utter)
 
-        return [SlotSet("choosing_eating_place", False), SlotSet("last_message", "When would you like the order to be delivered?"), SlotSet("asking_time_delivery", True)]
+        return [SlotSet("choosing_eating_place", False), SlotSet("last_message", "When would you like the order to be delivered?"), SlotSet("asking_time_delivery", True)
+                , SlotSet("method", "delivery")]
 
 
 class ActionTable(Action):
@@ -343,30 +394,33 @@ class ActionTable(Action):
                 return []
             dispatcher.utter_message(text="Ok. Your reservation is for " + amounts[0] + " people.")
             dispatcher.utter_message(text="For what day and time do you want to make the reservation for?")
-            return [SlotSet("asking_people", False), SlotSet("last_message", "For what day and time do you want to make the reservation for?"), SlotSet("asking_time_table", True)]
+            return [SlotSet("asking_people", False), SlotSet("last_message", "For what day and time do you want to make the reservation for?"), SlotSet("asking_time_table", True)
+                    , SlotSet("n_people", amounts[0])]
 
         if tracker.get_slot("asking_time_table"):
             if tracker.get_slot("day") is None or tracker.get_slot("time") is None:
                 dispatcher.utter_message(text="Sorry, I didn't get that. For what day and time do you want to make the reservation for?")
                 return [SlotSet("time", None), SlotSet("day", None)]
             dispatcher.utter_message(text="Ok. Your reservation is for " + tracker.get_slot("day") + " at " + tracker.get_slot("time") + ".")
-            dispatcher.utter_message(text="The procedure is complete! Thank you for using PizzaBot. Goodbye!")
-            return [SlotSet("asking_time_table", False), SlotSet("last_message", "The procedure is complete. Thank you for using PizzaBot! Goodbye!")]
-
-        order = tracker.get_slot("order")
-
-        utter = "You decided to make a reservation in our restaurant.\nYour order consists of:\n"
-        for elem in order:
-            utter += "- "
-            for value in elem:
-                utter += value + " "
-            utter = utter[:-1] + "\n"
-        utter = utter[:-1] + "\nThe total is "
+            dispatcher.utter_message(text="Last thing, if you want to change your order in the future we need a phone number to reference your order.")
+            dispatcher.utter_message(text="What is your phone number?")
+            return [SlotSet("asking_time_table", False), SlotSet("last_message", "What is your phone number?"), SlotSet("asking_phone_number_table", True)]
         
-        utter += str(get_total(order)) + "€.\nYou can decide to change it at the restaurant."
-        utter += "\nI just need some more information. How many people do you want to make the reservation for?"
+        if tracker.get_slot("asking_phone_number_table"):
+            if tracker.get_slot("phone_number") is None:
+                dispatcher.utter_message(text="Sorry, I didn't get that. What is your phone number?")
+                return []
+            dispatcher.utter_message(text="Ok. The phone number registered is " + tracker.get_slot("phone_number") + ".")
+            dispatcher.utter_message(text="The procedure is complete! Thank you for using PizzaBot. Goodbye!")
+            return [SlotSet("asking_time_table", False), SlotSet("last_message", "The procedure is complete. Thank you for using PizzaBot! Goodbye!"), 
+                    FollowupAction(name = "action_save_order")]
 
-        return [SlotSet("choosing_eating_place", False), SlotSet("asking_people", True), SlotSet("last_message", "How many people do you want to make the reservation for?")]
+        utter = "You have decided to make a reservation."
+        utter += "\nI just need some more information.\nHow many people do you want to make the reservation for?"
+        dispatcher.utter_message(text=utter)
+
+        return [SlotSet("choosing_eating_place", False), SlotSet("asking_people", True), SlotSet("last_message", "How many people do you want to make the reservation for?")
+                , SlotSet("method", "table")]
 
 
 class ActionRepeatLastMessage(Action):
@@ -437,3 +491,28 @@ class ActionUtterOpeningHours(Action):
             domain: Dict[Text, Any]) -> List[Dict]:
         dispatcher.utter_message(text="We are open from 18:00 to 23:00 on weekdays and from 11:00 to midnight on weekends.")
         return [FollowupAction(name = "action_repeat_last_message")]
+
+
+class ActionSaveOrder(Action):
+    def name(self) -> Text:
+        return "action_save_order"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict]:
+        
+        phone_number = tracker.get_slot("phone_number")
+        method = tracker.get_slot("method")
+        order = tracker.get_slot("order")
+        total = tracker.get_slot("total")
+        time = tracker.get_slot("time")
+        day = tracker.get_slot("day")
+        n_people = tracker.get_slot("n_people")
+        address = tracker.get_slot("address")
+
+        file = open("orders.txt", "a")
+        file.write(str(phone_number) + "*/*" + str(order) + "*/*" + str(total) + "*/*" + str(method) + "*/*" + str(time) + "*/*" + 
+                   str(day) + "*/*" + str(n_people) + "*/*" + str(address) + "\n")
+        file.close()
+
+        return []

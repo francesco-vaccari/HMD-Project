@@ -18,11 +18,13 @@ intents:
 - tell_time
 - tell_address
 - tell_people
+- tell_phone_number
 entities:
 - day
 - allergies
 - time
 - address
+- phone_number
 - amounts:
     groups:
     - 1
@@ -150,6 +152,43 @@ slots:
     initial_value: False
     mappings:
     - type: custom
+  method:
+    type: text
+    mappings:
+    - type: custom
+  n_people:
+    type: text
+    mappings:
+    - type: custom
+  total:
+    type: text
+    mappings:
+    - type: custom
+  phone_number:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: phone_number
+  asking_phone_number_takeaway:
+    type: bool
+    initial_value: False
+    mappings:
+    - type: custom
+  asking_phone_number_delivery:
+    type: bool
+    initial_value: False
+    mappings:
+    - type: custom
+  asking_phone_number_table:
+    type: bool
+    initial_value: False
+    mappings:
+    - type: custom
+  asking_change_order:
+    type: bool
+    initial_value: False
+    mappings:
+    - type: custom
 actions:
 - action_utter_greet
 - action_order
@@ -168,6 +207,9 @@ actions:
 - action_delivery
 - action_table
 - action_repeat_last_message
+- action_save_order
+- action_change_order_confirmed
+- action_change_order_not_confirmed
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

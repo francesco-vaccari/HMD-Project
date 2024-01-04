@@ -148,37 +148,45 @@ rules:
   - intent: tell_people
   - action: action_table
 
-- rule: say again 
+- rule: tell phone number takeaway
   condition:
   - slot_was_set:
-    - asking_correct: False
+    - asking_phone_number_takeaway: True
+  steps:
+  - intent: tell_phone_number
+  - action: action_takeaway
+
+- rule: tell phone number delivery
+  condition:
+  - slot_was_set:
+    - asking_phone_number_delivery: True
+  steps:
+  - intent: tell_phone_number
+  - action: action_delivery
+
+- rule: tell phone number table
+  condition:
+  - slot_was_set:
+    - asking_phone_number_table: True
+  steps:
+  - intent: tell_phone_number
+  - action: action_table
+
+- rule: asking change order
+  condition:
+  - slot_was_set:
+    - asking_change_order: True
   steps:
   - intent: confirm
-  - action: action_repeat_last_message
+  - action: action_change_order_confirmed
 
-- rule: say again 2
+- rule: asking change order
   condition:
   - slot_was_set:
-    - asking_correct: False
+    - asking_change_order: True
   steps:
   - intent: deny
-  - action: action_repeat_last_message
-
-- rule: say again 3
-  condition:
-  - slot_was_set:
-    - asking_anything_else: False
-  steps:
-  - intent: confirm
-  - action: action_repeat_last_message
-
-- rule: say again 4
-  condition:
-  - slot_was_set:
-    - asking_anything_else: False
-  steps:
-  - intent: deny
-  - action: action_repeat_last_message
+  - action: action_change_order_not_confirmed
 
 - rule: say again 5
   condition:
@@ -226,4 +234,12 @@ rules:
     - asking_people: False
   steps:
   - intent: tell_people
+  - action: action_repeat_last_message
+
+- rule: say again 11
+  condition:
+  - slot_was_set:
+    - phone_number
+  steps:
+  - intent: tell_phone_number
   - action: action_repeat_last_message

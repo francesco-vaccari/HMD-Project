@@ -1,0 +1,3 @@
+phone number */* order */* total */* method */* time */* day */* n */* people */* address
+123456789*/*[['1', 'coke'], ['1', 'medium', 'margherita']]*/*7.5*/*table*/*7pm*/*monday*/*3*/*None
+123*/*[['1', 'large', 'margherita'], ['1', 'medium', 'pepperoni'], ['1', 'coke']]*/*14.5*/*delivery*/*7pm*/*today*/*None*/*address

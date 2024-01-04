@@ -263,12 +263,18 @@ nlu:
     - i want a [cheesecake]{"entity": "other_item_types", "group": "1"}
 - intent: change_order
   examples: |
-    - i changed my mind
-    - actually i want another pizza
+    - change order
+    - change my order
+    - change my previous order
     - i want to change my order
+    - i want to change a previous order
+    - can i change an order
     - can i change my order
-    - i want to change my pizza
-    - i want to change my pizza order
+    - i want to change my previous order
+    - i want to change my order from before
+    - i want to change my order from earlier
+    - i want to change my order from yesterday
+    - can i change a previous order
 - intent: ask_address
   examples: |
     - what is your address?
@@ -521,6 +527,13 @@ nlu:
     - [1](amounts) person please
     - [2](amounts) people please
     - [3](amounts) people please
+- intent: tell_phone_number
+  examples: |
+    - [123456789](phone_number)
+    - [123456789](phone_number) intent
+    - my [phone number](phone_number) is [123456789](phone_number)
+    - [123](phone_number)
+    - [phone number](phone_number)
 - lookup: amounts
   examples: |
     - 1
