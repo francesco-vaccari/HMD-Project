@@ -17,6 +17,7 @@ intents:
 - table
 - tell_time
 - tell_address
+- tell_people
 entities:
 - day
 - allergies
@@ -124,6 +125,11 @@ slots:
     initial_value: False
     mappings:
     - type: custom
+  asking_time_table:
+    type: bool
+    initial_value: False
+    mappings:
+    - type: custom
   time:
     type: any
     mappings:
@@ -139,6 +145,11 @@ slots:
     mappings:
     - type: from_entity
       entity: address
+  asking_people:
+    type: bool
+    initial_value: False
+    mappings:
+    - type: custom
 actions:
 - action_utter_greet
 - action_order

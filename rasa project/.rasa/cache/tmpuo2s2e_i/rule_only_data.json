@@ -1,0 +1,13 @@
+{
+  "rule_only_slots": [
+    "asking_time_takeaway",
+    "asking_time_table",
+    "asking_correct",
+    "asking_people",
+    "choosing_eating_place",
+    "asking_time_delivery",
+    "asking_anything_else",
+    "asking_address"
+  ],
+  "rule_only_loops": []
+}

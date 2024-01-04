@@ -207,7 +207,7 @@ class ActionUtterAffluence(Action):
             elif day == "tomorrow": dispatcher.utter_message(text="Tomorrow it's usually not crowded.")
             else: dispatcher.utter_message(text="On " + day + " it's usually not crowded.")
         
-        return [FollowupAction(name = "action_repeat_last_message")]
+        return [SlotSet("day", None), FollowupAction(name = "action_repeat_last_message")]
 
 
 class ActionUtterAllergies(Action):
@@ -222,16 +222,16 @@ class ActionUtterAllergies(Action):
         
         if allergies == "gluten":
             dispatcher.utter_message(text="Our gluten free options are...")
-            return []
+            return [FollowupAction(name = "action_repeat_last_message")]
         elif allergies == "lactose":
             dispatcher.utter_message(text="Our lactose free options are...")
-            return []
+            return [FollowupAction(name = "action_repeat_last_message")]
         elif allergies == "vegan":
             dispatcher.utter_message(text="Our vegan options are...")
-            return []
+            return [FollowupAction(name = "action_repeat_last_message")]
         elif allergies == "vegetarian":
             dispatcher.utter_message(text="Our vegetarian options are...")
-            return []
+            return [FollowupAction(name = "action_repeat_last_message")]
 
         menu = ["margherita", "pepperoni", "funghi"]
         utter = "Our menu is: "
@@ -264,7 +264,7 @@ class ActionTakeaway(Action):
         
         order = tracker.get_slot("order")
 
-        utter = "Your order consists of:\n"
+        utter = "You have decided to do take-away.\nYour order consists of:\n"
         for elem in order:
             utter += "- "
             for value in elem:
@@ -308,7 +308,7 @@ class ActionDelivery(Action):
         
         order = tracker.get_slot("order")
         
-        utter = "Your order consists of:\n"
+        utter = "You have decided to get you order delivered.\nYour order consists of:\n"
         for elem in order:
             utter += "- "
             for value in elem:
@@ -332,16 +332,41 @@ class ActionTable(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
         
-        dispatcher.utter_message(text="table action")
+        if tracker.get_slot("asking_people"):
+            entities = tracker.latest_message['entities']
+            amounts = []
+            for entity in entities:
+                if entity['entity'] == 'amounts':
+                    amounts.append(entity['value'])
+            if len(amounts) == 0:
+                dispatcher.utter_message(text="Sorry, I didn't get that. How many people do you want to make the reservation for?")
+                return []
+            dispatcher.utter_message(text="Ok. Your reservation is for " + amounts[0] + " people.")
+            dispatcher.utter_message(text="For what day and time do you want to make the reservation for?")
+            return [SlotSet("asking_people", False), SlotSet("last_message", "For what day and time do you want to make the reservation for?"), SlotSet("asking_time_table", True)]
 
-        # maybe also add confirmation when asking address and time in takeaway and delivery
+        if tracker.get_slot("asking_time_table"):
+            if tracker.get_slot("day") is None or tracker.get_slot("time") is None:
+                dispatcher.utter_message(text="Sorry, I didn't get that. For what day and time do you want to make the reservation for?")
+                return [SlotSet("time", None), SlotSet("day", None)]
+            dispatcher.utter_message(text="Ok. Your reservation is for " + tracker.get_slot("day") + " at " + tracker.get_slot("time") + ".")
+            dispatcher.utter_message(text="The procedure is complete! Thank you for using PizzaBot. Goodbye!")
+            return [SlotSet("asking_time_table", False), SlotSet("last_message", "The procedure is complete. Thank you for using PizzaBot! Goodbye!")]
 
-        # say price for current menu
-        # ask how many people for table reservation
-        # ask time and day for table reservation
-        # say goodbye
+        order = tracker.get_slot("order")
 
-        return [SlotSet("choosing_eating_place", False)]
+        utter = "You decided to make a reservation in our restaurant.\nYour order consists of:\n"
+        for elem in order:
+            utter += "- "
+            for value in elem:
+                utter += value + " "
+            utter = utter[:-1] + "\n"
+        utter = utter[:-1] + "\nThe total is "
+        
+        utter += str(get_total(order)) + "€.\nYou can decide to change it at the restaurant."
+        utter += "\nI just need some more information. How many people do you want to make the reservation for?"
+
+        return [SlotSet("choosing_eating_place", False), SlotSet("asking_people", True), SlotSet("last_message", "How many people do you want to make the reservation for?")]
 
 
 class ActionRepeatLastMessage(Action):

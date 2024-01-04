@@ -124,6 +124,14 @@ rules:
   - intent: tell_time
   - action: action_delivery
 
+- rule: tell time table
+  condition:
+  - slot_was_set:
+    - asking_time_table: True
+  steps:
+  - intent: tell_time
+  - action: action_table
+
 - rule: tell address
   condition:
   - slot_was_set:
@@ -131,6 +139,14 @@ rules:
   steps:
   - intent: tell_address
   - action: action_delivery
+
+- rule: tell people
+  condition:
+  - slot_was_set:
+    - asking_people: True
+  steps:
+  - intent: tell_people
+  - action: action_table
 
 - rule: say again 
   condition:
@@ -202,4 +218,12 @@ rules:
     - asking_address: False
   steps:
   - intent: tell_address
+  - action: action_repeat_last_message
+
+- rule: say again 10
+  condition:
+  - slot_was_set:
+    - asking_people: False
+  steps:
+  - intent: tell_people
   - action: action_repeat_last_message

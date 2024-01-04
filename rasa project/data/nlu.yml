@@ -500,15 +500,27 @@ nlu:
     - [1am](time)
     - [1pm](time)
     - [1 o'clock](time)
-    - (one fifteen)[time]
-    - (one thirty)[time]
-    - (one forty five)[time]
+    - [7pm](time) on [monday](day)
 - intent: tell_address
   examples: |
     - [address](address)
     - my [address](address)
     - [address](address) intent
     - my [address](address) is 
+- intent: tell_people
+  examples: |
+    - [1](amounts) person
+    - [2](amounts) people
+    - [3](amounts) people
+    - reservation for [1](amounts)
+    - reservation for [2](amounts)
+    - reservation for [3](amounts)
+    - reservation for [1](amounts) person
+    - reservation for [2](amounts) people
+    - reservation for [3](amounts) people
+    - [1](amounts) person please
+    - [2](amounts) people please
+    - [3](amounts) people please
 - lookup: amounts
   examples: |
     - 1
