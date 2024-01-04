@@ -18,6 +18,9 @@ rules:
   - action: action_utter_out_of_scope
 
 - rule: pizza order
+  condition:
+  - slot_was_set:
+    - change_order_procedure: False
   steps:
   - intent: order
   - action: action_order
@@ -55,6 +58,9 @@ rules:
   - action: action_confirm_order
 
 - rule: change order
+  condition:
+  - slot_was_set:
+    - change_order_procedure: False
   steps:
   - intent: change_order
   - action: action_change_order
@@ -148,30 +154,6 @@ rules:
   - intent: tell_people
   - action: action_table
 
-- rule: tell phone number takeaway
-  condition:
-  - slot_was_set:
-    - asking_phone_number_takeaway: True
-  steps:
-  - intent: tell_phone_number
-  - action: action_takeaway
-
-- rule: tell phone number delivery
-  condition:
-  - slot_was_set:
-    - asking_phone_number_delivery: True
-  steps:
-  - intent: tell_phone_number
-  - action: action_delivery
-
-- rule: tell phone number table
-  condition:
-  - slot_was_set:
-    - asking_phone_number_table: True
-  steps:
-  - intent: tell_phone_number
-  - action: action_table
-
 - rule: asking change order
   condition:
   - slot_was_set:
@@ -236,10 +218,18 @@ rules:
   - intent: tell_people
   - action: action_repeat_last_message
 
-- rule: say again 11
+- rule: change order procedure
   condition:
   - slot_was_set:
-    - phone_number
+    - change_order_procedure: True
   steps:
-  - intent: tell_phone_number
+  - intent: change_order
+  - action: action_repeat_last_message
+
+- rule: change order procedure 2
+  condition:
+  - slot_was_set:
+    - change_order_procedure: True
+  steps:
+  - intent: order
   - action: action_repeat_last_message

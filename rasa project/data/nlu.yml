@@ -527,13 +527,6 @@ nlu:
     - [1](amounts) person please
     - [2](amounts) people please
     - [3](amounts) people please
-- intent: tell_phone_number
-  examples: |
-    - [123456789](phone_number)
-    - [123456789](phone_number) intent
-    - my [phone number](phone_number) is [123456789](phone_number)
-    - [123](phone_number)
-    - [phone number](phone_number)
 - lookup: amounts
   examples: |
     - 1

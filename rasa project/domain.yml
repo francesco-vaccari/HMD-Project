@@ -18,13 +18,11 @@ intents:
 - tell_time
 - tell_address
 - tell_people
-- tell_phone_number
 entities:
 - day
 - allergies
 - time
 - address
-- phone_number
 - amounts:
     groups:
     - 1
@@ -164,27 +162,12 @@ slots:
     type: text
     mappings:
     - type: custom
-  phone_number:
-    type: text
-    mappings:
-    - type: from_entity
-      entity: phone_number
-  asking_phone_number_takeaway:
-    type: bool
-    initial_value: False
-    mappings:
-    - type: custom
-  asking_phone_number_delivery:
-    type: bool
-    initial_value: False
-    mappings:
-    - type: custom
-  asking_phone_number_table:
-    type: bool
-    initial_value: False
-    mappings:
-    - type: custom
   asking_change_order:
+    type: bool
+    initial_value: False
+    mappings:
+    - type: custom
+  change_order_procedure:
     type: bool
     initial_value: False
     mappings:
