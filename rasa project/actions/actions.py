@@ -70,7 +70,7 @@ def retrieve_order(id):
     file.close()
 
     for order in orders:
-        if int(order[0]) == id:
+        if str(order[0]) == id:
             return order
 
     return None
@@ -195,29 +195,34 @@ class ActionChangeOrderConfirmed(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
+
+        if tracker.get_slot("asking_id"):
+            id = tracker.latest_message['text']
+            dispatcher.utter_message(text="You inserted the id: <" + str(id) + ">.")
+
+            order = retrieve_order(id)
+            if order is None:
+                dispatcher.utter_message(text="Sorry, I couldn't find any order with that id.")
+                return [SlotSet("last_message", "What is the id of the order you want to change? Please insert only the id in your message.")]
+            
+            utter = "The order you made consists of:\n"
+            for elem in order:
+                utter += "- "
+                for value in elem:
+                    utter += value + " "
+                utter = utter[:-1] + "\n"
+            utter = utter[:-1] + "\nThe total is "
+            utter += str(get_total(order)) + "€."
+            dispatcher.utter_message(text=utter)
+
+            return [SlotSet("asking_id", False), SlotSet("last_message", "What would you like to change in your order?"), SlotSet("order_id", id)]
+
+        dispatcher.utter_message(text="First I need the order id you were given during checkout. Please tell my your order id?")
+
+        return [SlotSet("change_order_procedure", True), SlotSet("asking_change_order", False), SlotSet("last_message", "What is the id of the order you want to change?"), SlotSet("asking_id", True)]
+
         
-        dispatcher.utter_message(text="First I need the order id you were given during checkout. Can you tell me your order id?")
-
-        # handle if the user says that he does not remember or does not have the order id
-
-        return [SlotSet("change_order_procedure", True), SlotSet("asking_change_order", False), SlotSet("last_message", "What is the id of the order you want to change?")]
-
-        # get the id from user
-        # retrieve information from file
-        order = retrieve_order(order_id)
-        if order is None:
-            dispatcher.utter_message(text="Sorry, I couldn't find any order with that id.")
-            return []
         
-        # display information
-        utter = "The order you made consists of:\n"
-        for elem in order:
-            utter += "- "
-            for value in elem:
-                utter += value + " "
-            utter = utter[:-1] + "\n"
-        utter = utter[:-1] + "\nThe total is "
-        utter += str(get_total(order)) + "€."
         # ask what the user wants to change
         # ask what the user wants to change it to for each element said
         # ask confirmation for new order
@@ -284,7 +289,6 @@ class ActionUtterMenu(Action):
         for pizza in menu:
             utter += pizza + ", "
         utter = utter[:-2] + "."
-
 
         recommendation = menu[random.randint(0, len(menu)-1)]
         utter += " Today we recommend " + recommendation + "."

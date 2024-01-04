@@ -172,6 +172,15 @@ slots:
     initial_value: False
     mappings:
     - type: custom
+  order_id:
+    type: text
+    mappings:
+    - type: custom
+  asking_id:
+    type: bool
+    initial_value: False
+    mappings:
+    - type: custom
 actions:
 - action_utter_greet
 - action_order
