@@ -18,11 +18,13 @@ intents:
 - tell_time
 - tell_address
 - tell_people
+- tell_id
 entities:
 - day
 - allergies
 - time
 - address
+- order_id
 - amounts:
     groups:
     - 1
@@ -175,8 +177,14 @@ slots:
   order_id:
     type: text
     mappings:
-    - type: custom
+    - type: from_entity
+      entity: order_id
   asking_id:
+    type: bool
+    initial_value: False
+    mappings:
+    - type: custom
+  asking_cancel:
     type: bool
     initial_value: False
     mappings:

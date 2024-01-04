@@ -1,7 +1,0 @@
-1*/*[['1', 'coke'], ['1', 'medium', 'margherita']]*/*7.5*/*table*/*7pm*/*monday*/*3*/*None
-2*/*[['1', 'large', 'margherita'], ['1', 'medium', 'pepperoni'], ['1', 'coke']]*/*14.5*/*delivery*/*7pm*/*today*/*None*/*address
-3*/*[['1', 'medium', 'margherita']]*/*5.0*/*table*/*7pm*/*monday*/*3*/*None
-4*/*[['1', 'medium', 'margherita']]*/*5.0*/*takeaway*/*7pm*/*None*/*None*/*None
-0*/*['4', "[['1', 'medium', 'margherita']]", '5.0', 'takeaway', '7pm', 'None', 'None', 'None\n']*/*7.0*/*table*/*7pm*/*monday*/*1*/*None
-5*/*['0', '[\'4\', "[[\'1\', \'medium\', \'margherita\']]", \'5.0\', \'takeaway\', \'7pm\', \'None\', \'None\', \'None\\n\']', '7.0', 'table', '7pm', 'monday', '1', 'None\n']*/*5.0*/*takeaway*/*7pm*/*None*/*None*/*None
-6*/*['5', '[\'0\', \'[\\\'4\\\', "[[\\\'1\\\', \\\'medium\\\', \\\'margherita\\\']]", \\\'5.0\\\', \\\'takeaway\\\', \\\'7pm\\\', \\\'None\\\', \\\'None\\\', \\\'None\\\\n\\\']\', \'7.0\', \'table\', \'7pm\', \'monday\', \'1\', \'None\\n\']', '5.0', 'takeaway', '7pm', 'None', 'None', 'None\n']*/*5.0*/*delivery*/*7pm*/*None*/*None*/*address

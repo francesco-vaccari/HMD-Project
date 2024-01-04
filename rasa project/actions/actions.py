@@ -75,6 +75,22 @@ def retrieve_order(id):
 
     return None
 
+def cancel_order(id):
+    file = open("orders.txt", "r")
+    lines = file.readlines()
+    orders = []
+    for line in lines:
+        orders.append(line.split("*/*"))
+    file.close()
+
+    file = open("orders.txt", "w")
+    for order in orders:
+        if str(order[0]) != id:
+            file.write(str(order[0]) + "*/*" + str(order[1]) + "*/*" + str(order[2]) + "*/*" + str(order[3]) + "*/*" + str(order[4]) + "*/*" + 
+                str(order[5]) + "*/*" + str(order[6]) + "*/*" + str(order[7]))
+    file.close()
+
+
 class ActionOrder(Action):
     def name(self) -> Text:
         return "action_order"
@@ -184,8 +200,8 @@ class ActionChangeOrder(Action):
             dispatcher.utter_message(text="I'm sorry, you cannot change an order once confirmed.")
             return [FollowupAction(name = "action_repeat_last_message")]
         
-        dispatcher.utter_message(text="Do you wish to change an order made in a previous call/conversation?")
-        return [SlotSet("asking_change_order", True), SlotSet("last_message", "Do you wish to change an order made in a previous call/conversation?")]
+        dispatcher.utter_message(text="Do you wish to cancel an order made in a previous call/conversation?")
+        return [SlotSet("asking_change_order", True), SlotSet("last_message", "Do you wish to cancel an order made in a previous call/conversation?")]
 
 
 class ActionChangeOrderConfirmed(Action):
@@ -195,42 +211,59 @@ class ActionChangeOrderConfirmed(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
+        
+        if tracker.get_slot("asking_cancel"):
+            if tracker.latest_message['intent']['name'] == 'confirm':
+                id = tracker.get_slot("order_id")
+                cancel_order(id)
+                dispatcher.utter_message(text="Ok, your order has been cancelled.")
+                return [SlotSet("asking_cancel", False), SlotSet("last_message", "What would you like to order?"), SlotSet("order_id", None), SlotSet("order_confirmed", False), SlotSet("order", None), SlotSet("temp_order", None), SlotSet("change_order_procedure", False), SlotSet("asking_change_order", False)]
+            else: 
+                dispatcher.utter_message(text="Ok, your order has not been cancelled.")
+                return [SlotSet("asking_cancel", False), SlotSet("last_message", "What would you like to order?"), SlotSet("order_id", None), SlotSet("order_confirmed", False), SlotSet("order", None), SlotSet("temp_order", None), SlotSet("change_order_procedure", False), SlotSet("asking_change_order", False)]
+
 
         if tracker.get_slot("asking_id"):
-            id = tracker.latest_message['text']
+            id = tracker.get_slot("order_id")
             dispatcher.utter_message(text="You inserted the id: <" + str(id) + ">.")
 
-            order = retrieve_order(id)
-            if order is None:
+            ordination = retrieve_order(id)
+            if ordination is None:
                 dispatcher.utter_message(text="Sorry, I couldn't find any order with that id.")
-                return [SlotSet("last_message", "What is the id of the order you want to change? Please insert only the id in your message.")]
+                dispatcher.utter_message(text="What is the id of the order you want to cancel? Please insert only the id in your message.")
+                return [SlotSet("last_message", "What is the id of the order you want to cancel? Please insert only the id in your message.")]
             
-            utter = "The order you made consists of:\n"
+            order = eval(ordination[1])
+            total = ordination[2]
+            method = ordination[3]
+            time = ordination[4]
+            day = ordination[5]
+            n_people = ordination[6]
+            address = ordination[7]
+
+            utter="The order you made consists of:\n"
             for elem in order:
                 utter += "- "
                 for value in elem:
                     utter += value + " "
                 utter = utter[:-1] + "\n"
             utter = utter[:-1] + "\nThe total is "
-            utter += str(get_total(order)) + "€."
+            utter += total + "€.\n"
+            if method == 'takeaway':
+                utter += "You chose to do takeaway. The order will be ready at " + time + "."
+            elif method == 'delivery':
+                utter += "You chose to have the order delivered. The order will be delivered at " + time + " to " + address + "."
+            else:
+                utter += "You chose to make a reservation for " + n_people + " people on " + day + " at " + time + "."
+            
             dispatcher.utter_message(text=utter)
+            dispatcher.utter_message(text="Do you confirm you want to cancel this order?")
 
-            return [SlotSet("asking_id", False), SlotSet("last_message", "What would you like to change in your order?"), SlotSet("order_id", id)]
+            return [SlotSet("asking_id", False), SlotSet("last_message", "Do you confirm you want to cancel this order?"), SlotSet("order_id", id), SlotSet("asking_cancel", True)]
 
-        dispatcher.utter_message(text="First I need the order id you were given during checkout. Please tell my your order id?")
+        dispatcher.utter_message(text="First I need the order id you were given during checkout. Please tell me your order id?")
 
         return [SlotSet("change_order_procedure", True), SlotSet("asking_change_order", False), SlotSet("last_message", "What is the id of the order you want to change?"), SlotSet("asking_id", True)]
-
-        
-        
-        # ask what the user wants to change
-        # ask what the user wants to change it to for each element said
-        # ask confirmation for new order
-        # save new order in file and delete old one
-
-        # then procedure complete, if the user wants to make a new ordination he has to start over
-
-        return []
 
 
 class ActionChangeOrderNotConfirmed(Action):

@@ -224,7 +224,7 @@ rules:
     - change_order_procedure: True
   steps:
   - intent: change_order
-  - action: action_repeat_last_message
+  - action: action_change_order_confirmed
 
 - rule: change order procedure 2
   condition:
@@ -234,3 +234,26 @@ rules:
   - intent: order
   - action: action_repeat_last_message
 
+- rule: tell id
+  condition:
+  - slot_was_set:
+    - asking_id: True
+  steps:
+  - intent: tell_id
+  - action: action_change_order_confirmed
+
+- rule: confirm cancel order
+  condition:
+  - slot_was_set:
+    - asking_cancel: True
+  steps:
+  - intent: confirm
+  - action: action_change_order_confirmed
+
+- rule: deny cancel order
+  condition:
+  - slot_was_set:
+    - asking_cancel: True
+  steps:
+  - intent: deny
+  - action: action_change_order_confirmed
