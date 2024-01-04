@@ -126,8 +126,7 @@ class ActionOrder(Action):
 
         # general order, no specific item, like "i want to order a pizza"
         if len(pizza_types) == 0 and len(other_items_types) == 0:
-            dispatcher.utter_message(text="What would you like to order?")
-            return [SlotSet("order", old_order), SlotSet("asking_anything_else", False), SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", False), SlotSet("last_message", "What would you like to order?"), SlotSet("asking_change_order", False)]
+            return [SlotSet("order", old_order), SlotSet("asking_anything_else", False), SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", False), SlotSet("asking_change_order", False), FollowupAction(name = "action_repeat_last_message")]
         
         temp_order = []
 
