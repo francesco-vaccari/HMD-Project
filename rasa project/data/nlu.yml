@@ -309,6 +309,8 @@ nlu:
     - where is your restaurant?
 - intent: ask_opening_hours
   examples: |
+    - open hours
+    - opening hours
     - when are you open?
     - when do you open?
     - when do you close?
@@ -324,6 +326,7 @@ nlu:
     - when do you open and close?
 - intent: ask_menu
   examples: |
+    - menu
     - what is on the menu?
     - what is the menu?
     - what do you have?
@@ -354,118 +357,7 @@ nlu:
     - is the restaurant full?
     - is the pizzeria full?
     - is the place full?
-    - how busy is it on [monday](day)?
-    - how busy is it on [tuesday](day)?
-    - how busy is it on [wednesday](day)?
-    - how busy is it on [thursday](day)?
-    - how busy is it on [friday](day)?
-    - how busy is it on [saturday](day)?
-    - how busy is it on [sunday](day)?
-    - how busy is the restaurant on [monday](day)?
-    - how busy is the restaurant on [tuesday](day)?
-    - how busy is the restaurant on [wednesday](day)?
-    - how busy is the restaurant on [thursday](day)?
-    - how busy is the restaurant on [friday](day)?
-    - how busy is the restaurant on [saturday](day)?
-    - how busy is the restaurant on [sunday](day)?
-    - how busy is the pizzeria on [monday](day)?
-    - how busy is the pizzeria on [tuesday](day)?
-    - how busy is the pizzeria on [wednesday](day)?
-    - how busy is the pizzeria on [thursday](day)?
-    - how busy is the pizzeria on [friday](day)?
-    - how busy is the pizzeria on [saturday](day)?
-    - how busy is the pizzeria on [sunday](day)?
-    - how busy is the place on [monday](day)?
-    - how busy is the place on [tuesday](day)?
-    - how busy is the place on [wednesday](day)?
-    - how busy is the place on [thursday](day)?
-    - how busy is the place on [friday](day)?
-    - how busy is the place on [saturday](day)?
-    - how busy is the place on [sunday](day)?
-    - how busy is the pizza place on [monday](day)?
-    - how busy is the pizza place on [tuesday](day)?
-    - how busy is the pizza place on [wednesday](day)?
-    - how busy is the pizza place on [thursday](day)?
-    - how busy is the pizza place on [friday](day)?
-    - how busy is the pizza place on [saturday](day)?
-    - how busy is the pizza place on [sunday](day)?
-    - is it crowded on [monday](day)?
-    - is it crowded on [tuesday](day)?
-    - is it crowded on [wednesday](day)?
-    - is it crowded on [thursday](day)?
-    - is it crowded on [friday](day)?
-    - is it crowded on [saturday](day)?
-    - is it crowded on [sunday](day)?
-    - is the restaurant crowded on [monday](day)?
-    - is the restaurant crowded on [tuesday](day)?
-    - is the restaurant crowded on [wednesday](day)?
-    - is the restaurant crowded on [thursday](day)?
-    - is the restaurant crowded on [friday](day)?
-    - is the restaurant crowded on [saturday](day)?
-    - is the restaurant crowded on [sunday](day)?
-    - is the pizzeria crowded on [monday](day)?
-    - is the pizzeria crowded on [tuesday](day)?
-    - is the pizzeria crowded on [wednesday](day)?
-    - is the pizzeria crowded on [thursday](day)?
-    - is the pizzeria crowded on [friday](day)?
-    - is the pizzeria crowded on [saturday](day)?
-    - is the pizzeria crowded on [sunday](day)?
-    - is the place crowded on [monday](day)?
-    - is the place crowded on [tuesday](day)?
-    - is the place crowded on [wednesday](day)?
-    - is the place crowded on [thursday](day)?
-    - is the place crowded on [friday](day)?
-    - is the place crowded on [saturday](day)?
-    - is the place crowded on [sunday](day)?
-    - are there many people on [monday](day)?
-    - are there many people on [tuesday](day)?
-    - are there many people on [wednesday](day)?
-    - are there many people on [thursday](day)?
-    - are there many people on [friday](day)?
-    - are there many people on [saturday](day)?
-    - are there many people on [sunday](day)?
-    - is it full on [monday](day)?
-    - is it full on [tuesday](day)?
-    - is it full on [wednesday](day)?
-    - is it full on [thursday](day)?
-    - is it full on [friday](day)?
-    - is it full on [saturday](day)?
-    - is it full on [sunday](day)?
-    - is the restaurant full on [monday](day)?
-    - is the restaurant full on [tuesday](day)?
-    - is the restaurant full on [wednesday](day)?
-    - is the restaurant full on [thursday](day)?
-    - is the restaurant full on [friday](day)?
-    - is the restaurant full on [saturday](day)?
-    - is the restaurant full on [sunday](day)?
-    - how busy is it [today](day)?
-    - how busy is the restaurant [today](day)?
-    - how busy is the pizzeria [today](day)?
-    - how busy is the place [today](day)?
-    - how busy is the pizza place [today](day)?
-    - is it crowded [today](day)?
-    - is the restaurant crowded [today](day)?
-    - is the pizzeria crowded [today](day)?
-    - is the place crowded [today](day)?
-    - are there many people [today](day)?
-    - is it full [today](day)?
-    - is the restaurant full [today](day)?
-    - is the pizzeria full [today](day)?
-    - is the place full [today](day)?
-    - how busy is it [tomorrow](day)?
-    - how busy is the restaurant [tomorrow](day)?
-    - how busy is the pizzeria [tomorrow](day)?
-    - how busy is the place [tomorrow](day)?
-    - how busy is the pizza place [tomorrow](day)?
-    - is it crowded [tomorrow](day)?
-    - is the restaurant crowded [tomorrow](day)?
-    - is the pizzeria crowded [tomorrow](day)?
-    - is the place crowded [tomorrow](day)?
-    - are there many people [tomorrow](day)?
-    - is it full [tomorrow](day)?
-    - is the restaurant full [tomorrow](day)?
-    - is the pizzeria full [tomorrow](day)?
-    - is the place full [tomorrow](day)?
+    - is it busy? 
 - intent: ask_allergies
   examples: |
     - do you have [gluten](allergies) free pizza?
@@ -486,6 +378,15 @@ nlu:
     - do you have [vegan](allergies) alternatives?
 - intent: takeaway
   examples: |
+    - i want to pick up the order
+    - i want to pick up the food
+    - i would like to pick up the order
+    - i would like to pick up the food
+    - i would like to do pick up
+    - i want to come and get the order
+    - i would like to come and get the order
+    - i want to come and get the food
+    - i would like to come and get the food
     - pick up
     - pick up the order
     - pick up the food
@@ -525,12 +426,35 @@ nlu:
     - i want to eat at a table in the restaurant
     - i want to eat at a table here
     - i want to eat at a table there
+    - i want to make a reservation
+    - i want to make a reservation for a table
+    - i would like to make a reservation
+    - i would like to make a reservation for a table
+    - i want to book a table
+    - i want to book a table in the pizzeria
+    - i would like to book a table
+    - book a table
+    - make a reservation
 - intent: tell_time
   examples: |
-    - [1am](time)
-    - [1pm](time)
-    - [1 o'clock](time)
-    - [7pm](time) on [monday](day)
+    - 7 pm
+    - i would like to pick up the order at 7:30 am
+    - i would like to pick at nine thirthy pm
+    - i will come at 7:30 pm
+    - i will pick the order up at nine o' clock
+    - at nine pm
+    - for eight o' clock
+    - i would like the order to be delivered at 
+    - i would like the order to be delivered for 19:15
+    - deliver at 
+    - deliver for 9 thirty pm
+    - delivery to me for nine this evening
+    - delivery to my house at 8:00 am
+    - delivery to my home for 7:30 pm
+    - i would like to eat at 7 pm
+    - reserve a table for wednesday at 5 pm
+    - reserve a table for monday for seven pm
+    - reserve for tuesday at 
 - intent: tell_address
   examples: |
     - i am at [777 brockton avenue abington](address)
@@ -1069,6 +993,36 @@ nlu:
     - i am located in [strada canavere 13 savigliano](address)
 - intent: tell_people
   examples: |
+    - i want a table for [1](amounts) person
+    - i want a table for [2](amounts) people
+    - i want a table for [3](amounts) people
+    - i want a table for [1](amounts)
+    - i want a table for [2](amounts)
+    - i want a table for [3](amounts)
+    - i want to make a reservation for [1](amounts) person
+    - i want to make a reservation for [2](amounts) people
+    - i want to make a reservation for [3](amounts) people
+    - i want to make a reservation for [1](amounts)
+    - i want to make a reservation for [2](amounts)
+    - i want to make a reservation for [3](amounts)
+    - i would like to make a reservation for [1](amounts) person
+    - i would like to make a reservation for [2](amounts) people
+    - i would like to make a reservation for [3](amounts) people
+    - i would like to make a reservation for [1](amounts)
+    - i would like to make a reservation for [2](amounts)
+    - i would like to make a reservation for [3](amounts)
+    - i would like to reserve a table for [1](amounts) person
+    - i would like to reserve a table for [2](amounts) people
+    - i would like to reserve a table for [3](amounts) people
+    - i would like to reserve a table for [1](amounts)
+    - i would like to reserve a table for [2](amounts)
+    - i would like to reserve a table for [3](amounts)
+    - for [1](amounts) person
+    - for [2](amounts) people
+    - for [3](amounts) people
+    - for [1](amounts)
+    - for [2](amounts)
+    - for [3](amounts)
     - [1](amounts) person
     - [2](amounts) people
     - [3](amounts) people
@@ -1104,6 +1058,22 @@ nlu:
     - 2
     - 3
     - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
 - lookup: pizza_types
   examples: |
     - funghi
@@ -1115,17 +1085,6 @@ nlu:
     - medium
     - large
     - extra large
-- lookup: day
-  examples: |
-    - monday
-    - tuesday
-    - wednesday
-    - thursday
-    - friday
-    - saturday
-    - sunday
-    - today
-    - tomorrow
 - lookup: allergies
   examples: |
     - vegetarian

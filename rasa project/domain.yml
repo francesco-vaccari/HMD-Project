@@ -21,7 +21,6 @@ intents:
 - tell_id
 - thank_you
 entities:
-- day
 - allergies
 - time
 - address
@@ -75,11 +74,6 @@ slots:
     mappings:
     - type: from_entity
       entity: other_item_types
-  day:
-    type: any
-    mappings:
-    - type: from_entity
-      entity: day
   allergies:
     type: text
     mappings:
@@ -134,10 +128,9 @@ slots:
     mappings:
     - type: custom
   time:
-    type: any
+    type: text
     mappings:
-    - type: from_entity
-      entity: time
+    - type: custom
   asking_address:
     type: bool
     initial_value: False

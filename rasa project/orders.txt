@@ -1,2 +1,1 @@
-0*/*[['1', 'fanta'], ['1', 'fanta']]*/*4.0*/*takeaway*/*7pm*/*None*/*None*/*None
-1*/*['0', "[['1', 'fanta'], ['1', 'fanta']]", '4.0', 'takeaway', '7pm', 'None', 'None', 'None\n']*/*9.0*/*table*/*7pm*/*tuesday*/*3*/*None
+0*/*[['1', 'medium', 'margherita'], ['2', 'fanta']]*/*9.0*/*takeaway*/*2024-01-05T19:00:00.000+01:00*/*None*/*None
