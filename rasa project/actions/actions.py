@@ -421,7 +421,7 @@ class ActionTakeaway(Action):
                     FollowupAction(name = "action_save_order")]
 
         utter = "You have decided to do takeaway."
-        utter += "\nOur address is Via Sommarive, 9, 38123 Povo TN."
+        utter += "\nOur address is Sommarive Street, 9, 38123 Povo TN."
         utter += "\nPayment will be done at takeaway."
         utter += "\nWhen would you like to pick up your order?"
 
@@ -557,7 +557,7 @@ class ActionUtterAddress(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
-        dispatcher.utter_message(text="Our address is Via Sommarive, 9, 38123 Povo TN.")
+        dispatcher.utter_message(text="Our address is Sommarive Street, 9, 38123 Povo TN.")
         return [FollowupAction(name = "action_repeat_last_message")]
 
 
