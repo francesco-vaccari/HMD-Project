@@ -19,6 +19,7 @@ intents:
 - tell_address
 - tell_people
 - tell_id
+- thank_you
 entities:
 - day
 - allergies
@@ -210,6 +211,7 @@ actions:
 - action_save_order
 - action_change_order_confirmed
 - action_change_order_not_confirmed
+- action_you_are_welcome
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

@@ -105,9 +105,9 @@ class ActionOrder(Action):
         
         entities = tracker.latest_message['entities']
         amounts = []
-        pizza_types = []
+        temp_pizza_types = []
         pizza_sizes = []
-        other_items_types = []
+        temp_other_items_types = []
 
         old_order = [] if tracker.get_slot("order") is None else tracker.get_slot("order")
         temp_order = [] if tracker.get_slot("temp_order") is None else tracker.get_slot("temp_order")
@@ -118,18 +118,33 @@ class ActionOrder(Action):
             if entity['entity'] == 'amounts':
                 amounts.append((entity['value'], entity['group']))
             elif entity['entity'] == 'pizza_types':
-                pizza_types.append((entity['value'], entity['group']))
+                temp_pizza_types.append((entity['value'], entity['group']))
             elif entity['entity'] == 'pizza_sizes':
                 pizza_sizes.append((entity['value'], entity['group']))
             elif entity['entity'] == 'other_item_types':
-                other_items_types.append((entity['value'], entity['group']))
+                temp_other_items_types.append((entity['value'], entity['group']))
 
+        temp_order = []
+
+        # check if the items the entities (types, sizes, amounts and other items) are in the menu
+        menu = get_menu()
+        pizza_types = []
+        for pizza in temp_pizza_types:
+            if pizza[0] in menu:
+                pizza_types.append(pizza)
+            else:
+                dispatcher.utter_message(text="Sorry, we don't have " + pizza[0] + " in our menu.")
+        other_items_types = []
+        for item in temp_other_items_types:
+            if item[0] in menu:
+                other_items_types.append(item)
+            else:
+                dispatcher.utter_message(text="Sorry, we don't have " + item[0] + " in our menu.")
+        
         # general order, no specific item, like "i want to order a pizza"
         if len(pizza_types) == 0 and len(other_items_types) == 0:
             return [SlotSet("order", old_order), SlotSet("asking_anything_else", False), SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", False), SlotSet("asking_change_order", False), FollowupAction(name = "action_repeat_last_message")]
         
-        temp_order = []
-
         # try to match items with amounts and sizes
         for pizza in pizza_types:
             value = pizza[0]
@@ -576,3 +591,14 @@ class ActionSaveOrder(Action):
         dispatcher.utter_message(text="The procedure is complete! Thank you for using PizzaBot. Goodbye!")
 
         return []
+
+
+class ActionYouAreWelcome(Action):
+    def name(self) -> Text:
+        return "action_you_are_welcome"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict]:
+        dispatcher.utter_message(text="You are welcome!")
+        return [FollowupAction(name = "action_repeat_last_message")]

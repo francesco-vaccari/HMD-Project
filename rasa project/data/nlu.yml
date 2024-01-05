@@ -562,6 +562,12 @@ nlu:
     - [1](order_id)
     - [2](order_id)
     - [3](order_id)
+- intent: thank_you
+  examples: |
+    - thanks
+    - thank you
+    - thanks a lot
+    - thank you very much
 - lookup: amounts
   examples: |
     - 1

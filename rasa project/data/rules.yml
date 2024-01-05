@@ -257,3 +257,8 @@ rules:
   steps:
   - intent: deny
   - action: action_change_order_confirmed
+
+- rule: thank you
+  steps:
+  - intent: thank_you
+  - action: action_you_are_welcome
