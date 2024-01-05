@@ -239,13 +239,16 @@ class ActionChangeOrderConfirmed(Action):
 
         if tracker.get_slot("asking_id"):
             id = tracker.get_slot("order_id")
+            if id is None:
+                dispatcher.utter_message(text="Sorry, I didn't get that. What is the id of the order you want to cancel? Please insert only the id in your message.")
+                return [SlotSet("last_message", "What is the id of the order you want to cancel? Please insert only the id in your message.")]
             dispatcher.utter_message(text="You inserted the id: <" + str(id) + ">.")
 
             ordination = retrieve_order(id)
             if ordination is None:
                 dispatcher.utter_message(text="Sorry, I couldn't find any order with that id.")
                 dispatcher.utter_message(text="What is the id of the order you want to cancel? Please insert only the id in your message.")
-                return [SlotSet("last_message", "What is the id of the order you want to cancel? Please insert only the id in your message.")]
+                return [SlotSet("last_message", "What is the id of the order you want to cancel? Please insert only the id in your message."), SlotSet("order_id", None)]
             
             order = eval(ordination[1])
             total = ordination[2]
@@ -587,7 +590,7 @@ class ActionSaveOrder(Action):
 
         order_id = save_new_order(method, order, total, time, day, n_people, address)
 
-        dispatcher.utter_message(text="If you want to modify your order in the future, please remember your order id: " + str(order_id) + ".")
+        dispatcher.utter_message(text="If you want to cancel your order in the future, please remember your order id: " + str(order_id) + ".")
         dispatcher.utter_message(text="The procedure is complete! Thank you for using PizzaBot. Goodbye!")
 
         return []

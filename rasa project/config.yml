@@ -4,15 +4,37 @@ language: en
 
 pipeline:
 - name: WhitespaceTokenizer
-- name: CountVectorsFeaturizer
+- name: RegexFeaturizer
 - name: CountVectorsFeaturizer
   analyzer: "char_wb"
   min_ngram: 1
   max_ngram: 4
 - name: LogisticRegressionClassifier
 - name: CRFEntityExtractor
+  "features": [
+    ["low", "title", "upper"],
+    [
+      "bias",
+      "low",
+      "prefix5",
+      "prefix2",
+      "suffix5",
+      "suffix3",
+      "suffix2",
+      "upper",
+      "title",
+      "digit",
+      "pattern",
+      "text_dense_features"
+    ],
+    ["low", "title", "upper"],
+  ]
+  "max_iterations": 50
+  "L1_c": 0.1
+  "L2_c": 0.1
 - name: ResponseSelector
   epochs: 2
+  constrain_similarities: True
 
 policies:
 - name: TEDPolicy

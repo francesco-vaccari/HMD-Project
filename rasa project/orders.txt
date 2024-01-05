@@ -1,1 +1,2 @@
 0*/*[['1', 'fanta'], ['1', 'fanta']]*/*4.0*/*takeaway*/*7pm*/*None*/*None*/*None
+1*/*['0', "[['1', 'fanta'], ['1', 'fanta']]", '4.0', 'takeaway', '7pm', 'None', 'None', 'None\n']*/*9.0*/*table*/*7pm*/*tuesday*/*3*/*None
