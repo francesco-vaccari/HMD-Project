@@ -3,6 +3,7 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet, FollowupAction
 import random
+from datetime import datetime
 
 
 def get_size_for_group(pizza_sizes, group):
@@ -35,19 +36,55 @@ def get_total(order):
 
     return total
 
+def parse_date(input_string):
+    # Parse the input date string
+    date_object = datetime.strptime(input_string, "%Y-%m-%dT%H:%M:%S.%f%z")
+
+    days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
+    # Format the date components
+    day_date = date_object.strftime("%d")
+    month_name = date_object.strftime("%B")
+    hour_date = date_object.strftime("%H")
+    minute_date = date_object.strftime("%M")
+    day_name = days[date_object.weekday()]
+
+    # If first digit of day is 0, remove it
+    if day_date[0] == "0":
+        day_date = day_date[1:]
+    
+    # Turn hour into 12-hour format
+    if int(hour_date) > 12:
+        hour_date = str(int(hour_date) - 12)
+        am_pm = "pm"
+    else:
+        am_pm = "am"
+
+    # Create the output dictionary
+    output_dict = {
+        "day_name": day_name,
+        "day_date": day_date,
+        "month_name": month_name,
+        "hour_date": hour_date,
+        "minute_date": minute_date,
+        "am/pm": am_pm
+    }
+
+    return output_dict
+
 def save_new_order(method, order, total, time, n_people, address):
     file = open("orders.txt", "r")
     lines = file.readlines()
-    orders = []
+    lines_split = []
     for line in lines:
-        orders.append(line.split("*/*"))
+        lines_split.append(line.split("*/*"))
     file.close()
 
     id = 0
     for i in range(0, 100000):
         found = False
-        for order in orders:
-            if int(order[0]) == i:
+        for line in lines_split:
+            if int(line[0]) == i:
                 found = True
                 break
         if not found:
@@ -265,11 +302,17 @@ class ActionChangeOrderConfirmed(Action):
             utter = utter[:-1] + "\nThe total is "
             utter += total + "€.\n"
             if method == 'takeaway':
-                utter += "You chose to do takeaway. The order will be ready at " + date + "."
+                parsed_date = parse_date(date)
+                date_utter = parsed_date['hour_date'] + ":" + parsed_date['minute_date'] + " " + parsed_date['am/pm']
+                utter += "You chose to do takeaway. The order will be ready at " + date_utter + "."
             elif method == 'delivery':
-                utter += "You chose to have the order delivered. The order will be delivered at " + date + " to " + address + "."
+                parsed_date = parse_date(date)
+                date_utter = parsed_date['hour_date'] + ":" + parsed_date['minute_date'] + " " + parsed_date['am/pm']
+                utter += "You chose to have the order delivered. The order will be delivered at " + date_utter + " to " + address + "."
             else:
-                utter += "You chose to make a reservation for " + n_people + " people for " + date + "."
+                parsed_date = parse_date(date)
+                date_utter = parsed_date['day_name'] + " " + parsed_date['day_date'] + " " + parsed_date['month_name'] + " at " + parsed_date['hour_date'] + ":" + parsed_date['minute_date'] + " " + parsed_date['am/pm']
+                utter += "You chose to make a reservation for " + n_people + " people for " + date_utter + "."
             
             dispatcher.utter_message(text=utter)
             dispatcher.utter_message(text="Do you confirm you want to cancel this order?")
@@ -362,7 +405,9 @@ class ActionUtterAffluence(Action):
         if date is None:
             dispatcher.utter_message(text="Today/right now it's not usually crowded.")
         else:
-            dispatcher.utter_message(text="On " + date + " it's not crowded.")
+            parsed_date = parse_date(date)
+            date_utter = parsed_date['day_name'] + "s"
+            dispatcher.utter_message(text="On " + date_utter + " it's usually not crowded.")
         
         return [FollowupAction(name = "action_repeat_last_message")]
 
@@ -419,7 +464,10 @@ class ActionTakeaway(Action):
             if date is None:
                 dispatcher.utter_message(text="Sorry, I didn't get that. When would you like to pick up your order?")
                 return []
-            dispatcher.utter_message(text="Ok. Your order will be ready at " + date + ".")
+            
+            parsed_date = parse_date(date)
+            date_utter = parsed_date['hour_date'] + ":" + parsed_date['minute_date'] + " " + parsed_date['am/pm']
+            dispatcher.utter_message(text="Ok. Your order will be ready at " + date_utter + ".")
             return [SlotSet("asking_time_takeaway", False), SlotSet("time", date), SlotSet("last_message", "The procedure is complete. Thank you for using PizzaBot! Goodbye!"), FollowupAction(name = "action_save_order")]
 
         utter = "You have decided to do takeaway."
@@ -448,7 +496,10 @@ class ActionDelivery(Action):
             if date is None:
                 dispatcher.utter_message(text="Sorry, I didn't get that. When would you like the order to be delivered?")
                 return []
-            dispatcher.utter_message(text="Ok. Your order will be delivered at " + date + ".")
+            
+            parsed_date = parse_date(date)
+            date_utter = parsed_date['hour_date'] + ":" + parsed_date['minute_date'] + " " + parsed_date['am/pm']
+            dispatcher.utter_message(text="Ok. Your order will be delivered at " + date_utter + ".")
             dispatcher.utter_message(text="What is the address for the delivery?")
             return [SlotSet("asking_time_delivery", False), SlotSet("time", date), SlotSet("last_message", "What is the address for the delivery?"), SlotSet("asking_address", True)]
 
@@ -496,15 +547,17 @@ class ActionTable(Action):
             if date is None:
                 dispatcher.utter_message(text="Sorry, I didn't get that. For what day and time do you want to make the reservation for?")
                 return [SlotSet("time", None)]
-            dispatcher.utter_message(text="Ok. Your reservation is for " + date + ".")
+            
+            parsed_date = parse_date(date)
+            date_utter = parsed_date['day_name'] + " " + parsed_date['day_date'] + " " + parsed_date['month_name'] + " at " + parsed_date['hour_date'] + ":" + parsed_date['minute_date'] + " " + parsed_date['am/pm']
+            dispatcher.utter_message(text="Ok. Your reservation is for " + date_utter + ".")
             return [SlotSet("asking_time_table", False), SlotSet("time", date), SlotSet("last_message", "The procedure is complete. Thank you for using PizzaBot! Goodbye!"), FollowupAction(name = "action_save_order")]
 
         utter = "You have decided to make a reservation."
         utter += "\nI just need some more information.\nHow many people do you want to make the reservation for?"
         dispatcher.utter_message(text=utter)
 
-        return [SlotSet("choosing_eating_place", False), SlotSet("asking_people", True), SlotSet("last_message", "How many people do you want to make the reservation for?")
-                , SlotSet("method", "table")]
+        return [SlotSet("choosing_eating_place", False), SlotSet("asking_people", True), SlotSet("last_message", "How many people do you want to make the reservation for?"), SlotSet("method", "table")]
 
 
 class ActionRepeatLastMessage(Action):

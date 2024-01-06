@@ -455,6 +455,25 @@ nlu:
     - reserve a table for wednesday at 5 pm
     - reserve a table for monday for seven pm
     - reserve for tuesday at 
+    - next monday at seven thirty am
+    - next tuesday at pm
+    - next wednesday at 7 am
+    - next thursday at seven pm
+    - next friday at eight pm
+    - next saturday at 6 30 am
+    - next sunday at 8 pm
+    - reservation for next monday at 7 pm
+    - reservation for this wednesday
+    - reservation for this thursday
+    - today at
+    - tomorrow at
+    - monday at
+    - tuesday at
+    - wednesday at
+    - thursday at
+    - friday at
+    - saturday at
+    - sunday at
 - intent: tell_address
   examples: |
     - i am at [777 brockton avenue abington](address)
