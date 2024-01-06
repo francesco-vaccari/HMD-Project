@@ -1,8 +1,0 @@
-{
-  "rule_only_slots": [
-    "asking_anything_else",
-    "order_confirmed",
-    "asking_correct"
-  ],
-  "rule_only_loops": []
-}

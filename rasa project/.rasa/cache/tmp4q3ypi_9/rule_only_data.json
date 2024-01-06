@@ -1,8 +1,0 @@
-{
-  "rule_only_slots": [
-    "asking_correct",
-    "asking_anything_else",
-    "choosing_eating_place"
-  ],
-  "rule_only_loops": []
-}
