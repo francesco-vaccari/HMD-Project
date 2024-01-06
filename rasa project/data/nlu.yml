@@ -1012,7 +1012,7 @@ nlu:
     - i am at [vicolo bartume' 11 vallo torinese](address)
     - i am located at [strada collarelle 37 levaldigi](address)
     - i am located in [strada canavere 13 savigliano](address)
-- intent: tell_people
+- intent: tell_number
   examples: |
     - i want a table for [1](amounts) person
     - i want a table for [2](amounts) people
@@ -1056,8 +1056,6 @@ nlu:
     - [1](amounts) person please
     - [2](amounts) people please
     - [3](amounts) people please
-- intent: tell_id
-  examples: |
     - my id is [1](order_id)
     - my id is [2](order_id)
     - my id is [3](order_id)

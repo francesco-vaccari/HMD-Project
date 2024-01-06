@@ -17,8 +17,7 @@ intents:
 - table
 - tell_time
 - tell_address
-- tell_people
-- tell_id
+- tell_number
 - thank_you
 entities:
 - allergies

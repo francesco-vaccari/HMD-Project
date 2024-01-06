@@ -151,7 +151,7 @@ rules:
   - slot_was_set:
     - asking_people: True
   steps:
-  - intent: tell_people
+  - intent: tell_number
   - action: action_table
 
 - rule: asking change order
@@ -210,14 +210,6 @@ rules:
   - intent: tell_address
   - action: action_repeat_last_message
 
-- rule: say again 10
-  condition:
-  - slot_was_set:
-    - asking_people: False
-  steps:
-  - intent: tell_people
-  - action: action_repeat_last_message
-
 - rule: change order procedure
   condition:
   - slot_was_set:
@@ -239,7 +231,7 @@ rules:
   - slot_was_set:
     - asking_id: True
   steps:
-  - intent: tell_id
+  - intent: tell_number
   - action: action_change_order_confirmed
 
 - rule: confirm cancel order
