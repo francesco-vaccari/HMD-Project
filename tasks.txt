@@ -23,7 +23,7 @@ Possibilità di richiedere informazioni riguardo al ristorante:
 
 Gestire se l’utente chiede riguardo allergie/intolleranze:
 - proporre opzioni alternative nel menu (con o senza specifica)
-- check automatico se ordinazione contiene gli ingredienti dell’allergia/intolleranza
+- check automatico se ordinazione contiene conflitti con allergia/intolleranza specificata
 
 Alla fine della ordinazione, chiedere se vuole fare da:
 - asporto (orario)

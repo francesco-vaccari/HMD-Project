@@ -15,6 +15,8 @@ nlu:
     - yes please
     - yes it is
     - positive
+    - i'm sure
+    - i am sure
 - intent: deny
   examples: |
     - no
@@ -1071,7 +1073,6 @@ nlu:
     - thank you
     - thanks a lot
     - thank you very much
-
 - lookup: amounts
   examples: |
     - 1
@@ -1094,7 +1095,6 @@ nlu:
     - 18
     - 19
     - 20
-
 - lookup: pizza_types
   examples: |
     - margherita
