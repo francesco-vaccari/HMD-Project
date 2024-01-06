@@ -129,8 +129,7 @@ def cancel_order(id):
     file = open("orders.txt", "w")
     for order in orders:
         if str(order[0]) != id:
-            file.write(str(order[0]) + "*/*" + str(order[1]) + "*/*" + str(order[2]) + "*/*" + str(order[3]) + "*/*" + str(order[4]) + "*/*" + 
-                str(order[5]) + "*/*" + str(order[6]) + "*/*" + str(order[7]))
+            file.write("*/*".join(order))
     file.close()
 
 def get_lactose_options():
