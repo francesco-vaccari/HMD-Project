@@ -23,7 +23,6 @@ entities:
 - allergies
 - time
 - address
-- order_id
 - amounts:
     groups:
     - 1
@@ -150,7 +149,7 @@ slots:
     mappings:
     - type: custom
   n_people:
-    type: text
+    type: any
     mappings:
     - type: custom
   total:
@@ -168,10 +167,9 @@ slots:
     mappings:
     - type: custom
   order_id:
-    type: text
+    type: any
     mappings:
-    - type: from_entity
-      entity: order_id
+    - type: custom
   asking_id:
     type: bool
     initial_value: False

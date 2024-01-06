@@ -1056,15 +1056,15 @@ nlu:
     - [1](amounts) person please
     - [2](amounts) people please
     - [3](amounts) people please
-    - my id is [1](order_id)
-    - my id is [2](order_id)
-    - my id is [3](order_id)
-    - my order id is [1](order_id)
-    - my order id is [2](order_id)
-    - my order id is [3](order_id)
-    - [1](order_id)
-    - [2](order_id)
-    - [3](order_id)
+    - my id is one
+    - my id is two
+    - my id is three
+    - my order id is one
+    - my order id is two
+    - my order id is three
+    - one
+    - two
+    - three
 - intent: thank_you
   examples: |
     - thanks
@@ -1128,6 +1128,3 @@ nlu:
     - vegan
     - gluten
     - lactose
-- regex: id
-  examples: |
-    - \d{1,4}

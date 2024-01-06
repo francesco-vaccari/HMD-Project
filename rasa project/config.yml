@@ -34,7 +34,7 @@ pipeline:
   "L2_c": 0.1
 - name: "DucklingEntityExtractor"
   url: "http://localhost:8000"
-  dimensions: ["time"]
+  dimensions: ["time", "number"]
   locale: "en_EN"
   timezone: "Europe/Berlin"
   timeout : 3

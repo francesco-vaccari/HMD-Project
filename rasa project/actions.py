@@ -331,7 +331,14 @@ class ActionChangeOrderConfirmed(Action):
 
 
         if tracker.get_slot("asking_id"):
-            id = tracker.get_slot("order_id")
+            id = []
+            for entity in tracker.latest_message['entities']:
+                if entity['entity'] == "number":
+                    id.append(str(entity['value']))
+            if len(id) == 0:
+                id = None
+            else:
+                id = "".join(id)
             if id is None:
                 dispatcher.utter_message(text="Sorry, I didn't get that. What is the id of the order you want to cancel? Please insert only the id in your message.")
                 return [SlotSet("last_message", "What is the id of the order you want to cancel? Please insert only the id in your message.")]
@@ -670,12 +677,11 @@ class ActionTable(Action):
             for entity in entities:
                 if entity['entity'] == 'amounts':
                     amounts.append(entity['value'])
+                if entity['entity'] == 'number':
+                    amounts.append(str(entity['value']))
             if len(amounts) == 0:
-                if tracker.get_slot("order_id") is None:
-                    dispatcher.utter_message(text="Sorry, I didn't get that. How many people do you want to make the reservation for?")
-                    return []
-                else:
-                    amounts.append(tracker.get_slot("order_id"))
+                dispatcher.utter_message(text="Sorry, I didn't get that. How many people do you want to make the reservation for?")
+                return []
             dispatcher.utter_message(text="Ok. Your reservation is for " + amounts[0] + " people.")
             dispatcher.utter_message(text="For what day and time do you want to make the reservation for?")
             return [SlotSet("asking_people", False), SlotSet("last_message", "For what day and time do you want to make the reservation for?"), SlotSet("asking_time_table", True), SlotSet("n_people", amounts[0])]
