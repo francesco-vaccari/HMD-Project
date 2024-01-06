@@ -1071,6 +1071,7 @@ nlu:
     - thank you
     - thanks a lot
     - thank you very much
+
 - lookup: amounts
   examples: |
     - 1
@@ -1093,23 +1094,26 @@ nlu:
     - 18
     - 19
     - 20
+
 - lookup: pizza_types
   examples: |
-    - funghi
     - margherita
     - pepperoni
+    - funghi
+    - capricciosa
+    - four seasons
+    - vegetarian
+    - hawaii
+    - marinara
+    - ham
+    - salami
+    - cheese
 - lookup: pizza_sizes
   examples: |
     - small
     - medium
     - large
     - extra large
-- lookup: allergies
-  examples: |
-    - vegetarian
-    - vegan
-    - gluten
-    - lactose
 - lookup: other_item_types
   examples: |
     - coke
@@ -1120,6 +1124,12 @@ nlu:
     - cheesecake
     - tiramisu
     - ice cream
+- lookup: allergies
+  examples: |
+    - vegetarian
+    - vegan
+    - gluten
+    - lactose
 - regex: id
   examples: |
     - \d{1,4}

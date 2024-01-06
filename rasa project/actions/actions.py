@@ -19,10 +19,17 @@ def get_amount_for_group(amounts, group):
     return "1"
 
 def get_menu():
-    return ["margherita", "pepperoni", "funghi", "coke", "fanta", "sprite", "water", "tea", "cheesecake", "tiramisu", "ice cream"]
+    return ["margherita", "pepperoni", "funghi", "capricciosa", "four seasons", "vegetarian", "hawaii", "marinara", "ham", "salami", "cheese", 
+            "coke", "fanta", "sprite", "water", "tea", 
+            "cheesecake", "tiramisu", "ice cream"]
+
+def get_menu_pizzas():
+    return ["margherita", "pepperoni", "funghi", "capricciosa", "four seasons", "vegetarian", "hawaii", "marinara", "ham", "salami", "cheese"]
 
 def get_menu_prices():
-    return {"margherita": 5, "pepperoni": 6, "funghi": 5.50, "coke": 2.50, "fanta": 2, "sprite": 2, "water": 1, "tea": 2, "cheesecake": 4, "tiramisu": 4.50, "ice cream": 3}
+    return {"margherita": 5, "pepperoni": 6, "funghi": 6, "capricciosa": 7, "four seasons": 8, "vegetarian": 7, "hawaii": 7, "marinara": 6, "ham": 1, "salami": 1, "cheese": 1,
+            "coke": 2, "fanta": 2, "sprite": 2, "water": 1, "tea": 1,
+            "cheesecake": 3, "tiramisu": 3, "ice cream": 2}
 
 def get_total(order):
     total = 0
@@ -126,6 +133,17 @@ def cancel_order(id):
                 str(order[5]) + "*/*" + str(order[6]) + "*/*" + str(order[7]))
     file.close()
 
+def get_lactose_options():
+    return ["marinara"]
+
+def get_vegan_options():
+    return ["marinara"]
+
+def get_vegetarian_options():
+    return ["margherita", "pepperoni", "funghi", "capricciosa", "four seasons", "vegetarian", "hawaii", "marinara"]
+
+def get_gluten_options():
+    return []
 
 class ActionOrder(Action):
     def name(self) -> Text:
@@ -199,7 +217,47 @@ class ActionOrder(Action):
         utter = utter[:-2] + ". "
         dispatcher.utter_message(text=utter)
 
-        dispatcher.utter_message(text="Is it correct?")
+        allergies = tracker.get_slot("allergies")
+        if allergies is not None:
+            if allergies == "gluten":
+                options = get_gluten_options()
+                conflict = False
+                for elem in temp_order:
+                    if len(elem) == 3 and elem[2] not in options:
+                        conflict = True
+                        break
+                if conflict:
+                    dispatcher.utter_message(text="Looks like you asked for gluten free options but you also ordered something that contains gluten.")
+            if allergies == "lactose":
+                options = get_lactose_options()
+                conflict = False
+                for elem in temp_order:
+                    if len(elem) == 3 and elem[2] not in options:
+                        conflict = True
+                        break
+                if conflict:
+                    dispatcher.utter_message(text="Looks like you asked for lactose free options but you also ordered something that contains lactose.")
+            if allergies == "vegan":
+                options = get_vegan_options()
+                conflict = False
+                for elem in temp_order:
+                    if len(elem) == 3 and elem[2] not in options:
+                        conflict = True
+                        break
+                if conflict:
+                    dispatcher.utter_message(text="Looks like you asked for vegan options but you also ordered something that is not vegan.")
+            if allergies == "vegetarian":
+                options = get_vegetarian_options()
+                conflict = False
+                for elem in temp_order:
+                    if len(elem) == 3 and elem[2] not in options:
+                        conflict = True
+                        break
+                if conflict:
+                    dispatcher.utter_message(text="Looks like you asked for vegetarian options but you also ordered something that is not vegetarian.")
+            dispatcher.utter_message(text="Is you order correct?")
+        else:
+            dispatcher.utter_message(text="Is it correct?")
 
         return [SlotSet("order", old_order), SlotSet("temp_order", temp_order), SlotSet("asking_correct", True), SlotSet("asking_anything_else", False), SlotSet("order_confirmed", False), SlotSet("last_message", utter + "Is it correct?"), SlotSet("asking_change_order", False)]
 
@@ -344,10 +402,6 @@ class ActionConfirmOrder(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
-        
-        allergies = tracker.get_slot("allergies")
-        if allergies is not None:
-            dispatcher.utter_message(text="Looks like you have asked us for " + allergies + " options but... (here goes the check)")
 
         dispatcher.utter_message(text="Your order has been confirmed.")
         
@@ -374,14 +428,14 @@ class ActionUtterMenu(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
         
-        menu = ["margherita", "pepperoni", "funghi"]
+        menu = get_menu()
 
         utter = "We have "
         for pizza in menu:
             utter += pizza + ", "
         utter = utter[:-2] + "."
 
-        recommendation = menu[random.randint(0, len(menu)-1)]
+        recommendation = menu[random.randint(0, 10)]
         utter += " Today we recommend " + recommendation + "."
 
         dispatcher.utter_message(text=utter)
@@ -423,27 +477,112 @@ class ActionUtterAllergies(Action):
         allergies = tracker.get_slot("allergies")
         
         if allergies == "gluten":
-            dispatcher.utter_message(text="Our gluten free options are...")
+            options = get_gluten_options()
+            if len(options) == 0:
+                dispatcher.utter_message(text="Sorry. We don't have gluten free options.")
+            if len(options) == 1:
+                dispatcher.utter_message(text="Our only gluten free option is " + options[0] + ".")
+            else:
+                utter = "Our gluten free options are "
+                for option in options:
+                    utter += option + ", "
+                utter = utter[:-2] + "."
+                dispatcher.utter_message(text=utter)
             return [FollowupAction(name = "action_repeat_last_message")]
         elif allergies == "lactose":
-            dispatcher.utter_message(text="Our lactose free options are...")
+            options = get_lactose_options()
+            if len(options) == 0:
+                dispatcher.utter_message(text="Sorry. We don't have lactose free options.")
+            if len(options) == 1:
+                dispatcher.utter_message(text="Our only lactose free option is " + options[0] + ".")
+            else:
+                utter = "Our lactose free options are "
+                for option in options:
+                    utter += option + ", "
+                utter = utter[:-2] + "."
+                dispatcher.utter_message(text=utter)
             return [FollowupAction(name = "action_repeat_last_message")]
         elif allergies == "vegan":
-            dispatcher.utter_message(text="Our vegan options are...")
+            options = get_vegan_options()
+            if len(options) == 0:
+                dispatcher.utter_message(text="Sorry. We don't have vegan options.")
+            if len(options) == 1:
+                dispatcher.utter_message(text="Our only vegan option is " + options[0] + ".")
+            else:
+                utter = "Our vegan options are "
+                for option in options:
+                    utter += option + ", "
+                utter = utter[:-2] + "."
+                dispatcher.utter_message(text=utter)
             return [FollowupAction(name = "action_repeat_last_message")]
         elif allergies == "vegetarian":
-            dispatcher.utter_message(text="Our vegetarian options are...")
+            options = get_vegetarian_options()
+            if len(options) == 0:
+                dispatcher.utter_message(text="Sorry. We don't have vegetarian options.")
+            if len(options) == 1:
+                dispatcher.utter_message(text="Our only vegetarian option is " + options[0] + ".")
+            else:
+                utter = "Our vegetarian options are "
+                for option in options:
+                    utter += option + ", "
+                utter = utter[:-2] + "."
+                dispatcher.utter_message(text=utter)
             return [FollowupAction(name = "action_repeat_last_message")]
 
-        menu = ["margherita", "pepperoni", "funghi"]
+        menu = get_menu()
         utter = "Our menu is: "
         for pizza in menu:
             utter += pizza + ", "
         utter = utter[:-2] + "."
         dispatcher.utter_message(text=utter)
 
-        dispatcher.utter_message(text="Our gluten free options are... Our lactose free options are...")
-        dispatcher.utter_message(text="Our vegan options are... Our vegetarian options are...")
+        options = get_gluten_options()
+        if len(options) == 0:
+            dispatcher.utter_message(text="Sorry. We don't have gluten free options.")
+        if len(options) == 1:
+            dispatcher.utter_message(text="Our only gluten free option is " + options[0] + ".")
+        else:
+            utter = "Our gluten free options are "
+            for option in options:
+                utter += option + ", "
+            utter = utter[:-2] + "."
+            dispatcher.utter_message(text=utter)
+
+        options = get_lactose_options()
+        if len(options) == 0:
+            dispatcher.utter_message(text="Sorry. We don't have lactose free options.")
+        if len(options) == 1:
+            dispatcher.utter_message(text="Our only lactose free option is " + options[0] + ".")
+        else:
+            utter = "Our lactose free options are "
+            for option in options:
+                utter += option + ", "
+            utter = utter[:-2] + "."
+            dispatcher.utter_message(text=utter)
+
+        options = get_vegan_options()
+        if len(options) == 0:
+            dispatcher.utter_message(text="Sorry. We don't have vegan options.")
+        if len(options) == 1:
+            dispatcher.utter_message(text="Our only vegan option is " + options[0] + ".")
+        else:
+            utter = "Our vegan options are "
+            for option in options:
+                utter += option + ", "
+            utter = utter[:-2] + "."
+            dispatcher.utter_message(text=utter)
+            
+        options = get_vegetarian_options()
+        if len(options) == 0:
+            dispatcher.utter_message(text="Sorry. We don't have vegetarian options.")
+        if len(options) == 1:
+            dispatcher.utter_message(text="Our only vegetarian option is " + options[0] + ".")
+        else:
+            utter = "Our vegetarian options are "
+            for option in options:
+                utter += option + ", "
+            utter = utter[:-2] + "."
+            dispatcher.utter_message(text=utter)
         
         return [FollowupAction(name = "action_repeat_last_message")]
 

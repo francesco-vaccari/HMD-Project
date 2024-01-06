@@ -2,3 +2,4 @@
 1*/*[['1', 'medium', 'margherita'], ['1', 'fanta']]*/*7.0*/*table*/*2024-01-08T00:00:00.000+01:00*/*2*/*None
 2*/*[['2', 'large', 'pepperoni'], ['2', 'coke']]*/*19.0*/*table*/*2024-01-07T19:00:00.000+01:00*/*2*/*None
 3*/*[['1', 'large', 'margherita'], ['2', 'small', 'pepperoni'], ['1', 'large', 'funghi'], ['2', 'coke']]*/*27.5*/*delivery*/*2024-01-06T20:00:00.000+01:00*/*None*/*via rossi in verona
+4*/*[['1', 'coke'], ['1', 'medium', 'margherita'], ['1', 'fanta'], ['1', 'coke'], ['1', 'medium', 'funghi'], ['1', 'medium', 'margherita']]*/*22.0*/*takeaway*/*2024-01-06T20:00:00.000+01:00*/*None*/*None
