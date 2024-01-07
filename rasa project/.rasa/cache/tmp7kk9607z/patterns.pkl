@@ -1,0 +1,22 @@
+[
+  {
+    "name": "amounts",
+    "pattern": "(\\bone\\b|\\btwo\\b|\\bthree\\b|\\bfour\\b|\\bfive\\b|\\bsix\\b|\\bseven\\b|\\beight\\b|\\bnine\\b|\\bten\\b|\\beleven\\b|\\btwelve\\b|\\bthirteen\\b|\\bfourteen\\b|\\bfifteen\\b|\\bsixteen\\b|\\bseventeen\\b|\\beighteen\\b|\\bnineteen\\b|\\btwenty\\b)"
+  },
+  {
+    "name": "pizza_types",
+    "pattern": "(\\bmargherita\\b|\\bpepperoni\\b|\\bfunghi\\b|\\bcapricciosa\\b|\\bfour\\ seasons\\b|\\bveggie\\b|\\bhawaii\\b|\\bmarinara\\b|\\bham\\b|\\bsalami\\b|\\bcheese\\b)"
+  },
+  {
+    "name": "pizza_sizes",
+    "pattern": "(\\bsmall\\b|\\bmedium\\b|\\blarge\\b|\\bextra\\ large\\b)"
+  },
+  {
+    "name": "other_item_types",
+    "pattern": "(\\bcoke\\b|\\bfanta\\b|\\bsprite\\b|\\bwater\\b|\\btea\\b|\\bcheesecake\\b|\\btiramisu\\b|\\bice\\ cream\\b)"
+  },
+  {
+    "name": "allergies",
+    "pattern": "(\\bvegetarian\\b|\\bvegan\\b|\\bgluten\\b|\\blactose\\b)"
+  }
+]

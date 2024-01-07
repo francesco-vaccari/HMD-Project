@@ -23,6 +23,7 @@ entities:
 - allergies
 - time
 - address
+- number
 - amounts:
     groups:
     - 1

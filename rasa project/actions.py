@@ -169,13 +169,27 @@ class ActionOrder(Action):
         # extract from entities items, amounts and sizes the user has specified
         for entity in entities:
             if entity['entity'] == 'amounts':
-                amounts.append((entity['value'], entity['group']))
+                # if entity['group'] exists append value and group
+                # else append value and -1
+                if 'group' in entity:
+                    amounts.append((entity['value'], entity['group']))
+                else:
+                    amounts.append((entity['value'], -1))
             elif entity['entity'] == 'pizza_types':
-                temp_pizza_types.append((entity['value'], entity['group']))
+                if 'group' in entity:
+                    temp_pizza_types.append((entity['value'], entity['group']))
+                else:
+                    temp_pizza_types.append((entity['value'], -1))
             elif entity['entity'] == 'pizza_sizes':
-                pizza_sizes.append((entity['value'], entity['group']))
+                if 'group' in entity:
+                    pizza_sizes.append((entity['value'], entity['group']))
+                else:
+                    pizza_sizes.append((entity['value'], -1))
             elif entity['entity'] == 'other_item_types':
-                temp_other_items_types.append((entity['value'], entity['group']))
+                if 'group' in entity:
+                    temp_other_items_types.append((entity['value'], entity['group']))
+                else:
+                    temp_other_items_types.append((entity['value'], -1))
 
         temp_order = []
 

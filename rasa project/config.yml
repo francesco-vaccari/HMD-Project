@@ -38,6 +38,7 @@ pipeline:
   locale: "en_EN"
   timezone: "Europe/Berlin"
   timeout : 3
+- name: EntitySynonymMapper
 - name: ResponseSelector
   epochs: 2
   constrain_similarities: True
