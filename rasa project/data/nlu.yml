@@ -31,29 +31,29 @@ nlu:
     - negative
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
-    - is this a bot?
-    - is this a human?
-    - what are you?
-    - what am I talking to?
-    - who are you?
-    - are you a real person?
-    - are you a human or a bot?
-    - are you a bot or a human?
-    - are you a bot or a person?
+    - are you a bot
+    - are you a human
+    - am I talking to a bot
+    - am I talking to a human
+    - is this a bot
+    - is this a human
+    - what are you
+    - what am I talking to
+    - who are you
+    - are you a real person
+    - are you a human or a bot
+    - are you a bot or a human
+    - are you a bot or a person
 - intent: out_of_scope
   examples: |
-    - What is 2 + 2?
-    - Who's the US President?
+    - what is two plus two
+    - who's the US President
     - book a flight from milan to ny
     - give me the directions to time square
-    - Tell me a joke.
-    - What's the weather like today?
-    - Can you play music for me?
-    - Recommend a good book.
+    - tell me a joke
+    - what's the weather like today
+    - can you play music for me
+    - recommend a good book
 - intent: greet
   examples: |
     - hello
@@ -78,38 +78,38 @@ nlu:
     - i want pizza
     - i want to order pizza
     - i would like to order pizza
-    - i want to order [1]{"entity": "amounts", "group": "1"} pizza
-    - i want to order [2]{"entity": "amounts", "group": "1"} pizzas
-    - i want to order [3]{"entity": "amounts", "group": "1"} pizzas
-    - i want to order [4]{"entity": "amounts", "group": "1"} pizzas
-    - i would like to order [1]{"entity": "amounts", "group": "1"} pizza
-    - i would like to order [2]{"entity": "amounts", "group": "1"} pizzas
-    - i would like to order [3]{"entity": "amounts", "group": "1"} pizzas
-    - i would like to order [4]{"entity": "amounts", "group": "1"} pizzas
-    - [1]{"entity": "amounts", "group": "1"} pizza please
-    - [2]{"entity": "amounts", "group": "1"} pizzas please
-    - [3]{"entity": "amounts", "group": "1"} pizzas please
-    - [4]{"entity": "amounts", "group": "1"} pizzas please
-    - [1]{"entity": "amounts", "group": "1"} pizza
-    - [2]{"entity": "amounts", "group": "1"} pizzas
-    - [3]{"entity": "amounts", "group": "1"} pizzas
-    - [4]{"entity": "amounts", "group": "1"} pizzas
-    - i want [1]{"entity": "amounts", "group": "1"} pizza
-    - i want [2]{"entity": "amounts", "group": "1"} pizzas
-    - i want [3]{"entity": "amounts", "group": "1"} pizzas
-    - i want [4]{"entity": "amounts", "group": "1"} pizzas
-    - i would like [1]{"entity": "amounts", "group": "1"} pizza
-    - i would like [2]{"entity": "amounts", "group": "1"} pizzas
-    - i would like [3]{"entity": "amounts", "group": "1"} pizzas
-    - i would like [4]{"entity": "amounts", "group": "1"} pizzas
-    - i'd like [1]{"entity": "amounts", "group": "1"} pizza
-    - i'd like [2]{"entity": "amounts", "group": "1"} pizzas
-    - i'd like [3]{"entity": "amounts", "group": "1"} pizzas
-    - i'd like [4]{"entity": "amounts", "group": "1"} pizzas
-    - i would like to order [1]{"entity": "amounts", "group": "1"} pizza please
-    - i would like to order [2]{"entity": "amounts", "group": "1"} pizzas please
-    - i would like to order [3]{"entity": "amounts", "group": "1"} pizzas please
-    - i would like to order [4]{"entity": "amounts", "group": "1"} pizzas please
+    - i want to order [one]{"entity": "amounts", "group": "1"} pizza
+    - i want to order [two]{"entity": "amounts", "group": "1"} pizzas
+    - i want to order [three]{"entity": "amounts", "group": "1"} pizzas
+    - i want to order [four]{"entity": "amounts", "group": "1"} pizzas
+    - i would like to order [one]{"entity": "amounts", "group": "1"} pizza
+    - i would like to order [two]{"entity": "amounts", "group": "1"} pizzas
+    - i would like to order [three]{"entity": "amounts", "group": "1"} pizzas
+    - i would like to order [four]{"entity": "amounts", "group": "1"} pizzas
+    - [one]{"entity": "amounts", "group": "1"} pizza please
+    - [two]{"entity": "amounts", "group": "1"} pizzas please
+    - [three]{"entity": "amounts", "group": "1"} pizzas please
+    - [four]{"entity": "amounts", "group": "1"} pizzas please
+    - [one]{"entity": "amounts", "group": "1"} pizza
+    - [two]{"entity": "amounts", "group": "1"} pizzas
+    - [three]{"entity": "amounts", "group": "1"} pizzas
+    - [four]{"entity": "amounts", "group": "1"} pizzas
+    - i want [one]{"entity": "amounts", "group": "1"} pizza
+    - i want [two]{"entity": "amounts", "group": "1"} pizzas
+    - i want [three]{"entity": "amounts", "group": "1"} pizzas
+    - i want [four]{"entity": "amounts", "group": "1"} pizzas
+    - i would like [one]{"entity": "amounts", "group": "1"} pizza
+    - i would like [two]{"entity": "amounts", "group": "1"} pizzas
+    - i would like [three]{"entity": "amounts", "group": "1"} pizzas
+    - i would like [four]{"entity": "amounts", "group": "1"} pizzas
+    - i'd like [one]{"entity": "amounts", "group": "1"} pizza
+    - i'd like [two]{"entity": "amounts", "group": "1"} pizzas
+    - i'd like [three]{"entity": "amounts", "group": "1"} pizzas
+    - i'd like [four]{"entity": "amounts", "group": "1"} pizzas
+    - i would like to order [one]{"entity": "amounts", "group": "1"} pizza please
+    - i would like to order [two]{"entity": "amounts", "group": "1"} pizzas please
+    - i would like to order [three]{"entity": "amounts", "group": "1"} pizzas please
+    - i would like to order [four]{"entity": "amounts", "group": "1"} pizzas please
     - i want to order a [margherita]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
     - i want to order a [margherita]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
     - i want to order a [funghi]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
@@ -146,42 +146,42 @@ nlu:
     - i'd like a [funghi]{"entity": "pizza_types", "group": "1"} and a [margherita]{"entity": "pizza_types", "group": "2"}
     - i'd like a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
     - i'd like a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [margherita]{"entity": "pizza_types", "group": "2"}
-    - i want to order [1]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
-    - i want to order [2]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
-    - i want to order [3]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
-    - i want to order [4]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [1]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
-    - i want to order [1]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
-    - i want to order [2]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
-    - i would like to order [1]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
-    - i would like to order [2]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
-    - i would like to order [3]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
-    - i would like to order [4]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [1]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "1"}
-    - i would like to order [1]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
-    - i would like to order [2]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
-    - [1]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
-    - [2]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
-    - [3]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
-    - [4]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [1]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"}
-    - [1]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
-    - [2]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
-    - i want [1]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
-    - i want [2]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
-    - i want [3]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
-    - i want [4]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [1]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "1"}
-    - i want [1]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
-    - i want [2]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
-    - i would like [1]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
-    - i would like [2]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
-    - i would like [3]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
-    - i would like [4]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [1]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
-    - i would like [1]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
-    - i would like [2]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
-    - i'd like [1]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
-    - i'd like [2]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
-    - i'd like [3]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
-    - i'd like [4]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [1]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
-    - i'd like [1]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
-    - i'd like [2]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [4]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i want to order [one]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [two]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i want to order [two]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i want to order [three]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i want to order [four]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i want to order [one]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i want to order [two]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i would like to order [one]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [two]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i would like to order [two]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i would like to order [three]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i would like to order [four]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "1"}
+    - i would like to order [one]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i would like to order [two]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - [one]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [two]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - [two]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - [three]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - [four]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"}
+    - [one]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - [two]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i want [one]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [two]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i want [two]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i want [three]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i want [four]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "1"}
+    - i want [one]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i want [two]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i would like [one]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [two]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i would like [two]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i would like [three]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i would like [four]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i would like [one]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i would like [two]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i'd like [one]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [two]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i'd like [two]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i'd like [three]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i'd like [four]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i'd like [one]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
+    - i'd like [two]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
     - i want to order a [margherita]{"entity": "pizza_types", "group": "1"} a [funghi]{"entity": "pizza_types", "group": "2"} and a [pepperoni]{"entity": "pizza_types", "group": "3"}
     - i want to order a [pepperoni]{"entity": "pizza_types", "group": "1"} a [margherita]{"entity": "pizza_types", "group": "2"} and a [funghi]{"entity": "pizza_types", "group": "3"}
     - i want to order a [funghi]{"entity": "pizza_types", "group": "1"} a [pepperoni]{"entity": "pizza_types", "group": "2"} and a [margherita]{"entity": "pizza_types", "group": "3"}
@@ -200,51 +200,51 @@ nlu:
     - i'd like a [margherita]{"entity": "pizza_types", "group": "1"} a [funghi]{"entity": "pizza_types", "group": "2"} and a [pepperoni]{"entity": "pizza_types", "group": "3"}
     - i'd like a [pepperoni]{"entity": "pizza_types", "group": "1"} a [margherita]{"entity": "pizza_types", "group": "2"} and a [funghi]{"entity": "pizza_types", "group": "3"}
     - i'd like a [funghi]{"entity": "pizza_types", "group": "1"} a [pepperoni]{"entity": "pizza_types", "group": "2"} and a [margherita]{"entity": "pizza_types", "group": "3"}
-    - i want to order [1]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [2]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [3]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
-    - i want to order [2]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [3]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [4]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
-    - i want to order [3]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [4]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [1]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
-    - i want to order [4]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [1]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [2]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
-    - i want to order [1]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [2]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [3]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
-    - i want to order [2]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [3]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [4]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
-    - i want to order [3]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [4]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [1]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
-    - i want to order [4]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [1]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [2]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
-    - i would like to order [1]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [2]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [3]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
-    - i would like to order [2]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [3]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [4]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
-    - i would like to order [3]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [4]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [1]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
-    - i would like to order [4]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [1]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [2]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
-    - i would like to order [1]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [2]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [3]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
-    - i would like to order [2]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [3]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [4]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
-    - i would like to order [3]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [4]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [1]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
-    - i would like to order [4]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [1]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [2]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
-    - i'd like to order [1]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [2]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [3]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
-    - i'd like to order [2]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [3]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [4]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
-    - i'd like to order [3]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [4]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [1]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
-    - i'd like to order [4]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [1]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [2]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
-    - i'd like to order [1]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [2]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [3]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
-    - i'd like to order [2]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [3]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [4]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
-    - i'd like to order [3]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [4]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [1]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
-    - i'd like to order [4]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [1]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [2]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
-    - [1]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [2]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [3]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
-    - [2]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [3]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [4]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
-    - [3]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [4]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [1]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
-    - [4]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [1]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [2]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
-    - [1]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [2]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [3]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
-    - [2]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [3]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [4]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
-    - [3]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [4]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [1]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
-    - [4]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [1]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [2]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
-    - i want to order [1]{"entity": "amounts", "group": "1"} [small]{"entity": "pizza_sizes", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "amounts", "group": "2"} [medium]{"entity": "pizza_sizes", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
-    - i would like [3]{"entity": "amounts", "group": "1"} [large]{"entity": "pizza_sizes", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"}
-    - i'd like [2]{"entity": "amounts", "group": "1"} [extra large]{"entity": "pizza_sizes", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"}, a [small]{"entity": "pizza_sizes", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [one]{"entity": "amounts", "group": "3"} [medium]{"entity": "pizza_sizes", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i want to order [one]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [two]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [three]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i want to order [two]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [three]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [four]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i want to order [three]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [four]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [one]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i want to order [four]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [one]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [two]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i want to order [one]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [two]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [three]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i want to order [two]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [three]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [four]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i want to order [three]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [four]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [one]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i want to order [four]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [one]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [two]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i would like to order [one]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [two]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [three]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i would like to order [two]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [three]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [four]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i would like to order [three]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [four]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [one]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i would like to order [four]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [one]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [two]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i would like to order [one]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [two]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [three]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i would like to order [two]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [three]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [four]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i would like to order [three]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [four]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [one]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i would like to order [four]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [one]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [two]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i'd like to order [one]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [two]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [three]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i'd like to order [two]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [three]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [four]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i'd like to order [three]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [four]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [one]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i'd like to order [four]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [one]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [two]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - i'd like to order [one]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [two]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [three]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i'd like to order [two]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [three]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [four]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i'd like to order [three]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [four]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [one]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i'd like to order [four]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [one]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [two]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - [one]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [two]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [three]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - [two]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [three]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [four]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - [three]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [four]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [one]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - [four]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [one]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [two]{"entity": "amounts", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
+    - [one]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [two]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [three]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - [two]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [three]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [four]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - [three]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [four]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [one]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - [four]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [one]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"} and [two]{"entity": "amounts", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"}
+    - i want to order [one]{"entity": "amounts", "group": "1"} [small]{"entity": "pizza_sizes", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [two]{"entity": "amounts", "group": "2"} [medium]{"entity": "pizza_sizes", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
+    - i would like [three]{"entity": "amounts", "group": "1"} [large]{"entity": "pizza_sizes", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"}
+    - i'd like [two]{"entity": "amounts", "group": "1"} [extra large]{"entity": "pizza_sizes", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"}, a [small]{"entity": "pizza_sizes", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} and [one]{"entity": "amounts", "group": "3"} [medium]{"entity": "pizza_sizes", "group": "3"} [pepperoni]{"entity": "pizza_types", "group": "3"}
     - a [extra large]{"entity": "pizza_sizes", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "amounts", "group": "2"} [small]{"entity": "pizza_sizes", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"} please
-    - [1]{"entity": "amounts", "group": "1"} [small]{"entity": "pizza_sizes", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"}
-    - [2]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"}
-    - can i have [1]{"entity": "amounts", "group": "1"} [small]{"entity": "pizza_sizes", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"}
-    - could i have [2]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [3]{"entity": "amounts", "group": "2"} [large]{"entity": "pizza_sizes", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - [one]{"entity": "amounts", "group": "1"} [small]{"entity": "pizza_sizes", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"}
+    - [two]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"}
+    - can i have [one]{"entity": "amounts", "group": "1"} [small]{"entity": "pizza_sizes", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"}
+    - could i have [two]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [large]{"entity": "pizza_sizes", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
     - i want a [small]{"entity": "pizza_sizes", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and a [medium]{"entity": "pizza_sizes", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
     - a [large]{"entity": "pizza_sizes", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and a [small]{"entity": "pizza_sizes", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
-    - i want to order a [margherita]{"entity": "pizza_types", "group": "1"} and [2]{"entity": "amounts", "group": "2"} [small]{"entity": "pizza_sizes", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i want to order a [margherita]{"entity": "pizza_types", "group": "1"} and [two]{"entity": "amounts", "group": "2"} [small]{"entity": "pizza_sizes", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
     - a [margherita]{"entity": "pizza_types", "group": "1"}
-    - i would like [1]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and a [small]{"entity": "pizza_sizes", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
+    - i would like [one]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and a [small]{"entity": "pizza_sizes", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
     - i want a [coke]{"entity": "other_item_types", "group": "1"} and a [fanta]{"entity": "other_item_types", "group": "2"}
     - i want a [fanta]{"entity": "other_item_types", "group": "1"} and a [coke]{"entity": "other_item_types", "group": "2"}
     - i want a [coke]{"entity": "other_item_types", "group": "1"} and a [sprite]{"entity": "other_item_types", "group": "2"}
@@ -303,81 +303,81 @@ nlu:
     - can i cancel my order
 - intent: ask_address
   examples: |
-    - what is your address?
-    - where are you located?
-    - what is your location?
-    - where can i find you?
-    - where are you?
-    - where is your restaurant?
+    - what is your address
+    - where are you located
+    - what is your location
+    - where can i find you
+    - where are you
+    - where is your restaurant
 - intent: ask_opening_hours
   examples: |
     - open hours
     - opening hours
-    - when are you open?
-    - when do you open?
-    - when do you close?
-    - what are your opening hours?
-    - what are your opening times?
-    - what time do you open?
-    - what time do you close?
-    - what time are you open?
-    - what time are you closed?
-    - what are your hours?
-    - what are your times?
-    - what time do you open and close?
-    - when do you open and close?
+    - when are you open
+    - when do you open
+    - when do you close
+    - what are your opening hours
+    - what are your opening times
+    - what time do you open
+    - what time do you close
+    - what time are you open
+    - what time are you closed
+    - what are your hours
+    - what are your times
+    - what time do you open and close
+    - when do you open and close
 - intent: ask_menu
   examples: |
     - menu
-    - what is on the menu?
-    - what is the menu?
-    - what do you have?
-    - what do you serve?
-    - what do you offer?
-    - what is your menu?
-    - what is on your menu?
-    - what pizzas do you have?
-    - what pizzas do you serve?
-    - what pizzas do you offer?
-    - what is your pizza menu?
-    - what kind of pizzas do you have?
-    - what kind of pizzas do you serve?
-    - what kind of pizzas do you offer?
+    - what is on the menu
+    - what is the menu
+    - what do you have
+    - what do you serve
+    - what do you offer
+    - what is your menu
+    - what is on your menu
+    - what pizzas do you have
+    - what pizzas do you serve
+    - what pizzas do you offer
+    - what is your pizza menu
+    - what kind of pizzas do you have
+    - what kind of pizzas do you serve
+    - what kind of pizzas do you offer
 - intent: ask_affluence
   examples: |
-    - how busy is it?
-    - how busy is the restaurant?
-    - how busy is the pizzeria?
-    - how busy is the place?
-    - how busy is the pizza place?
-    - is it crowded?
-    - is the restaurant crowded?
-    - is the pizzeria crowded?
-    - is the place crowded?
-    - are there many people?
-    - is it full?
-    - is the restaurant full?
-    - is the pizzeria full?
-    - is the place full?
-    - is it busy? 
+    - how busy is it
+    - how busy is the restaurant
+    - how busy is the pizzeria
+    - how busy is the place
+    - how busy is the pizza place
+    - is it crowded
+    - is the restaurant crowded
+    - is the pizzeria crowded
+    - is the place crowded
+    - are there many people
+    - is it full
+    - is the restaurant full
+    - is the pizzeria full
+    - is the place full
+    - is it busy 
 - intent: ask_allergies
   examples: |
-    - do you have [gluten](allergies) free pizza?
-    - do you have [lactose](allergies) free pizza?
-    - do you have [vegetarian](allergies) pizza?
-    - do you have [vegan](allergies) pizza?
-    - do you have [gluten](allergies) free pizzas?
-    - do you have [lactose](allergies) free pizzas?
-    - do you have [vegetarian](allergies) pizzas?
-    - do you have [vegan](allergies) pizzas?
-    - do you have [gluten](allergies) free options?
-    - do you have [lactose](allergies) free options?
-    - do you have [vegetarian](allergies) options?
-    - do you have [vegan](allergies) options?
-    - do you have [gluten](allergies) alternatives?
-    - do you have [lactose](allergies) alternatives?
-    - do you have [vegetarian](allergies) alternatives?
-    - do you have [vegan](allergies) alternatives?
+    - do you have [gluten](allergies) free pizza
+    - do you have [lactose](allergies) free pizza
+    - do you have [vegetarian](allergies) pizza
+    - do you have [vegan](allergies) pizza
+    - do you have [gluten](allergies) free pizzas
+    - do you have [lactose](allergies) free pizzas
+    - do you have [vegetarian](allergies) pizzas
+    - do you have [vegan](allergies) pizzas
+    - do you have [gluten](allergies) free options
+    - do you have [lactose](allergies) free options
+    - do you have [vegetarian](allergies) options
+    - do you have [vegan](allergies) options
+    - do you have [gluten](allergies) alternatives
+    - do you have [lactose](allergies) alternatives
+    - do you have [vegetarian](allergies) alternatives
+    - do you have [vegan](allergies) alternatives
 - intent: takeaway
   examples: |
     - i want to pick up the order
@@ -439,32 +439,32 @@ nlu:
     - make a reservation
 - intent: tell_time
   examples: |
-    - 7 pm
-    - i would like to pick up the order at 7:30 am
-    - i would like to pick at nine thirthy pm
-    - i will come at 7:30 pm
-    - i will pick the order up at nine o' clock
-    - at nine pm
-    - for eight o' clock
+    - seven p.m.
+    - i would like to pick up the order at seven thirty a.m.
+    - i would like to pick at nine thirthy p.m.
+    - i will come at seven thirty p.m.
+    - i will pick the order up at nine o'clock
+    - at nine p.m.
+    - for eight o'clock
     - i would like the order to be delivered at 
-    - i would like the order to be delivered for 19:15
+    - i would like the order to be delivered for seven fifteen
     - deliver at 
-    - deliver for 9 thirty pm
+    - deliver for nine thirty p.m.
     - delivery to me for nine this evening
-    - delivery to my house at 8:00 am
-    - delivery to my home for 7:30 pm
-    - i would like to eat at 7 pm
-    - reserve a table for wednesday at 5 pm
-    - reserve a table for monday for seven pm
+    - delivery to my house at eight a.m.
+    - delivery to my home for seven thirty p.m.
+    - i would like to eat at seven p.m.
+    - reserve a table for wednesday at five p.m.
+    - reserve a table for monday for seven p.m.
     - reserve for tuesday at 
-    - next monday at seven thirty am
-    - next tuesday at pm
-    - next wednesday at 7 am
-    - next thursday at seven pm
-    - next friday at eight pm
-    - next saturday at 6 30 am
-    - next sunday at 8 pm
-    - reservation for next monday at 7 pm
+    - next monday at seven thirty a.m.
+    - next tuesday at p.m.
+    - next wednesday at seven a.m.
+    - next thursday at seven p.m.
+    - next friday at eight p.m.
+    - next saturday at six thirty a.m.
+    - next sunday at eight p.m.
+    - reservation for next monday at seven p.m.
     - reservation for this wednesday
     - reservation for this thursday
     - today at
@@ -1014,48 +1014,48 @@ nlu:
     - i am located in [strada canavere 13 savigliano](address)
 - intent: tell_number
   examples: |
-    - i want a table for [1](amounts) person
-    - i want a table for [2](amounts) people
-    - i want a table for [3](amounts) people
-    - i want a table for [1](amounts)
-    - i want a table for [2](amounts)
-    - i want a table for [3](amounts)
-    - i want to make a reservation for [1](amounts) person
-    - i want to make a reservation for [2](amounts) people
-    - i want to make a reservation for [3](amounts) people
-    - i want to make a reservation for [1](amounts)
-    - i want to make a reservation for [2](amounts)
-    - i want to make a reservation for [3](amounts)
-    - i would like to make a reservation for [1](amounts) person
-    - i would like to make a reservation for [2](amounts) people
-    - i would like to make a reservation for [3](amounts) people
-    - i would like to make a reservation for [1](amounts)
-    - i would like to make a reservation for [2](amounts)
-    - i would like to make a reservation for [3](amounts)
-    - i would like to reserve a table for [1](amounts) person
-    - i would like to reserve a table for [2](amounts) people
-    - i would like to reserve a table for [3](amounts) people
-    - i would like to reserve a table for [1](amounts)
-    - i would like to reserve a table for [2](amounts)
-    - i would like to reserve a table for [3](amounts)
-    - for [1](amounts) person
-    - for [2](amounts) people
-    - for [3](amounts) people
-    - for [1](amounts)
-    - for [2](amounts)
-    - for [3](amounts)
-    - [1](amounts) person
-    - [2](amounts) people
-    - [3](amounts) people
-    - reservation for [1](amounts)
-    - reservation for [2](amounts)
-    - reservation for [3](amounts)
-    - reservation for [1](amounts) person
-    - reservation for [2](amounts) people
-    - reservation for [3](amounts) people
-    - [1](amounts) person please
-    - [2](amounts) people please
-    - [3](amounts) people please
+    - i want a table for [one](amounts) person
+    - i want a table for [two](amounts) people
+    - i want a table for [three](amounts) people
+    - i want a table for [one](amounts)
+    - i want a table for [two](amounts)
+    - i want a table for [three](amounts)
+    - i want to make a reservation for [one](amounts) person
+    - i want to make a reservation for [two](amounts) people
+    - i want to make a reservation for [three](amounts) people
+    - i want to make a reservation for [one](amounts)
+    - i want to make a reservation for [two](amounts)
+    - i want to make a reservation for [three](amounts)
+    - i would like to make a reservation for [one](amounts) person
+    - i would like to make a reservation for [two](amounts) people
+    - i would like to make a reservation for [three](amounts) people
+    - i would like to make a reservation for [one](amounts)
+    - i would like to make a reservation for [two](amounts)
+    - i would like to make a reservation for [three](amounts)
+    - i would like to reserve a table for [one](amounts) person
+    - i would like to reserve a table for [two](amounts) people
+    - i would like to reserve a table for [three](amounts) people
+    - i would like to reserve a table for [one](amounts)
+    - i would like to reserve a table for [two](amounts)
+    - i would like to reserve a table for [three](amounts)
+    - for [one](amounts) person
+    - for [two](amounts) people
+    - for [three](amounts) people
+    - for [one](amounts)
+    - for [two](amounts)
+    - for [three](amounts)
+    - [one](amounts) person
+    - [two](amounts) people
+    - [three](amounts) people
+    - reservation for [one](amounts)
+    - reservation for [two](amounts)
+    - reservation for [three](amounts)
+    - reservation for [one](amounts) person
+    - reservation for [two](amounts) people
+    - reservation for [three](amounts) people
+    - [one](amounts) person please
+    - [two](amounts) people please
+    - [three](amounts) people please
     - my id is one
     - my id is two
     - my id is three
@@ -1071,28 +1071,30 @@ nlu:
     - thank you
     - thanks a lot
     - thank you very much
+
+
 - lookup: amounts
   examples: |
-    - 1
-    - 2
-    - 3
-    - 4
-    - 5
-    - 6
-    - 7
-    - 8
-    - 9
-    - 10
-    - 11
-    - 12
-    - 13
-    - 14
-    - 15
-    - 16
-    - 17
-    - 18
-    - 19
-    - 20
+    - one
+    - two
+    - three
+    - four
+    - five
+    - six
+    - seven
+    - eight
+    - nine
+    - ten
+    - eleven
+    - twelve
+    - thirteen
+    - fourteen
+    - fifteen
+    - sixteen
+    - seventeen
+    - eighteen
+    - nineteen
+    - twenty
 - lookup: pizza_types
   examples: |
     - margherita
@@ -1100,7 +1102,7 @@ nlu:
     - funghi
     - capricciosa
     - four seasons
-    - vegetarian
+    - veggie
     - hawaii
     - marinara
     - ham
@@ -1128,3 +1130,78 @@ nlu:
     - vegan
     - gluten
     - lactose
+
+
+- synonym: margherita
+  examples: |
+    - margheritas
+    - margarita
+    - margaritas
+- synonym: pepperoni
+  examples: |
+    - pepperonis
+    - pepper
+- synonym: funghi
+  examples: |
+    - funghis
+    - mushroom
+    - mushrooms
+    - fungi
+    - fungis
+- synonym: capricciosa
+  examples: |
+    - capricciosas
+    - capriccios
+    - capriccio
+    - capri
+- synonym: four seasons
+  examples: |
+    - four season
+- synonym: veggie
+  examples: |
+    - vegetarians
+    - vegetarian
+- synonym: hawaii
+  examples: |
+    - hawaiis
+    - hawai
+- synonym: marinara
+  examples: |
+    - marinaras
+- synonym: ham
+  examples: |
+    - prosciutto
+- synonym: salami
+  examples: |
+    - salamis
+- synonym: cheese
+  examples: |
+    - cheeses
+- synonym: coke
+  examples: |
+    - coca cola
+    - cola
+    - cokes
+    - colas
+- synonym: fanta
+  examples: |
+    - fantas
+- synonym: sprite
+  examples: |
+    - sprites
+- synonym: water
+  examples: |
+    - waters
+- synonym: tea
+  examples: |
+    - teas
+- synonym: cheesecake
+  examples: |
+    - cheesecakes
+- synonym: tiramisu
+  examples: |
+    - tiramisus
+- synonym: ice cream
+  examples: |
+    - ice creams
+    - gelato
