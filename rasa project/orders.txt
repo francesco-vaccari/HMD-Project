@@ -9,3 +9,4 @@
 9*/*[['1', 'medium', 'funghi'], ['1', 'sprite']]*/*8.0*/*table*/*2024-01-08T20:00:00.000+01:00*/*2*/*None
 2*/*[['1', 'medium', 'margherita']]*/*5.0*/*table*/*2024-01-08T19:00:00.000+01:00*/*7*/*7 pm
 10*/*[['1', 'medium', 'margherita'], ['1', 'fanta']]*/*7.0*/*table*/*2024-01-20T20:30:00.000+01:00*/*10*/*None
+11*/*[['2', 'small', 'margherita'], ['2', 'small', 'vegetarian'], ['4', 'coke'], ['1', 'large', 'marinara'], ['1', 'cheesecake'], ['2', 'small', 'vegetarian'], ['3', 'small', 'french fries'], ['3', 'small', 'marinara']]*/*83.0*/*table*/*2024-01-09T17:00:00.000+01:00*/*5*/*None

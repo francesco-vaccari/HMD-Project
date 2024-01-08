@@ -147,7 +147,7 @@ nlu:
     - i want to order a [marinara]{"entity": "pizza_types", "group": "1"} and a [salami]{"entity": "pizza_types", "group": "2"}
     - i want to order a [cheese]{"entity": "pizza_types", "group": "1"} and a [vegetarian]{"entity": "pizza_types", "group": "2"}
     - i want to order a [funghi]{"entity": "pizza_types", "group": "1"} and a [capricciosa]{"entity": "pizza_types", "group": "2"}
-    - i want to order a [cheese]{"entity": "pizza_types", "group": "1"} and a [four season]{"entity": "pizza_types", "group": "2"}
+    - i want to order a [cheese]{"entity": "pizza_types", "group": "1"} and a [four seasons]{"entity": "pizza_types", "group": "2"}
     - i would like to order a [margherita]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
     - i would like to order a [margherita]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
     - i would like to order a [funghi]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
@@ -155,7 +155,7 @@ nlu:
     - i would like to order a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
     - i would like to order a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [margherita]{"entity": "pizza_types", "group": "2"}
     - i would like to order a [cheese]{"entity": "pizza_types", "group": "1"} and a [salami]{"entity": "pizza_types", "group": "2"}
-    - i would like to order a [capricciosa]{"entity": "pizza_types", "group": "1"} and a [four season]{"entity": "pizza_types", "group": "2"}
+    - i would like to order a [capricciosa]{"entity": "pizza_types", "group": "1"} and a [four seasons]{"entity": "pizza_types", "group": "2"}
     - i would like to order a [marinara]{"entity": "pizza_types", "group": "1"} and a [ham]{"entity": "pizza_types", "group": "2"}
     - i would like to order a [vegetarian]{"entity": "pizza_types", "group": "1"} and a [french fries]{"entity": "pizza_types", "group": "2"}
     - a [margherita]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
@@ -166,7 +166,7 @@ nlu:
     - a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [margherita]{"entity": "pizza_types", "group": "2"}
     - a [ham]{"entity": "pizza_types", "group": "1"} and a [salami]{"entity": "pizza_types", "group": "2"}
     - a [marinara]{"entity": "pizza_types", "group": "1"} and a [vegetarian]{"entity": "pizza_types", "group": "2"}
-    - a [four season]{"entity": "pizza_types", "group": "1"} and a [french fries]{"entity": "pizza_types", "group": "2"}
+    - a [four seasons]{"entity": "pizza_types", "group": "1"} and a [french fries]{"entity": "pizza_types", "group": "2"}
     - a [salami]{"entity": "pizza_types", "group": "1"} and a [capricciosa]{"entity": "pizza_types", "group": "2"}
     - i want a [margherita]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
     - i want a [margherita]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
@@ -177,7 +177,7 @@ nlu:
     - i want a [capricciosa]{"entity": "pizza_types", "group": "1"} and a [french fries]{"entity": "pizza_types", "group": "2"}
     - i want a [marinara]{"entity": "pizza_types", "group": "1"} and a [salami]{"entity": "pizza_types", "group": "2"}
     - i want a [vegetarian]{"entity": "pizza_types", "group": "1"} and a [ham]{"entity": "pizza_types", "group": "2"}
-    - i want a [four season]{"entity": "pizza_types", "group": "1"} and a [cheese]{"entity": "pizza_types", "group": "2"}
+    - i want a [four seasons]{"entity": "pizza_types", "group": "1"} and a [cheese]{"entity": "pizza_types", "group": "2"}
     - i would like a [margherita]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
     - i would like a [margherita]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
     - i would like a [funghi]{"entity": "pizza_types", "group": "1"} and a [pepperoni]{"entity": "pizza_types", "group": "2"}
@@ -185,7 +185,7 @@ nlu:
     - i would like a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
     - i would like a [pepperoni]{"entity": "pizza_types", "group": "1"} and a [margherita]{"entity": "pizza_types", "group": "2"}
     - i would like a [salami]{"entity": "pizza_types", "group": "1"} and a [cheese]{"entity": "pizza_types", "group": "2"}
-    - i would like a [capricciosa]{"entity": "pizza_types", "group": "1"} and a [four season]{"entity": "pizza_types", "group": "2"}
+    - i would like a [capricciosa]{"entity": "pizza_types", "group": "1"} and a [four seasons]{"entity": "pizza_types", "group": "2"}
     - i would like a [french fries]{"entity": "pizza_types", "group": "1"} and a [ham]{"entity": "pizza_types", "group": "2"}
     - i would like a [marinara]{"entity": "pizza_types", "group": "1"} and a [vegetarian]{"entity": "pizza_types", "group": "2"}
     - i'd like a [margherita]{"entity": "pizza_types", "group": "1"} and a [funghi]{"entity": "pizza_types", "group": "2"}
@@ -198,9 +198,9 @@ nlu:
     - i want to order [two]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
     - i want to order [three]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
     - i want to order [four]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
-    - i want to order [one]{"entity": "amounts", "group": "1"} [four season]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [french fries]{"entity": "pizza_types", "group": "2"}
+    - i want to order [one]{"entity": "amounts", "group": "1"} [four seasons]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [french fries]{"entity": "pizza_types", "group": "2"}
     - i want to order [two]{"entity": "amounts", "group": "1"} [cheese]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [vegetarian]{"entity": "pizza_types", "group": "2"}
-    - i want to order [three]{"entity": "amounts", "group": "1"} [four season]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [marinara]{"entity": "pizza_types", "group": "2"}
+    - i want to order [three]{"entity": "amounts", "group": "1"} [four seasons]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [marinara]{"entity": "pizza_types", "group": "2"}
     - i want to order [four]{"entity": "amounts", "group": "1"} [ham]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "amounts", "group": "2"} [salami]{"entity": "pizza_types", "group": "2"}
     - i want to order [one]{"entity": "amounts", "group": "1"} [capricciosa]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
     - i want to order [two]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
@@ -209,9 +209,9 @@ nlu:
     - i would like to order [three]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
     - i would like to order [four]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "1"}
     - i would like to order [one]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
-    - i would like to order [two]{"entity": "amounts", "group": "1"} [four season]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [capricciosa]{"entity": "pizza_types", "group": "2"}
+    - i would like to order [two]{"entity": "amounts", "group": "1"} [four seasons]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [capricciosa]{"entity": "pizza_types", "group": "2"}
     - i would like to order [three]{"entity": "amounts", "group": "1"} [cheese]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [french fries]{"entity": "pizza_types", "group": "2"}
-    - i would like to order [four]{"entity": "amounts", "group": "1"} [vegetarian]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "amounts", "group": "2"} [four season]{"entity": "pizza_types", "group": "1"}
+    - i would like to order [four]{"entity": "amounts", "group": "1"} [vegetarian]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "amounts", "group": "2"} [four seasons]{"entity": "pizza_types", "group": "1"}
     - i would like to order [one]{"entity": "amounts", "group": "1"} [ham]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [marinara]{"entity": "pizza_types", "group": "2"}
     - i would like to order [two]{"entity": "amounts", "group": "1"} [salami]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
     - [one]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [two]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
@@ -223,7 +223,7 @@ nlu:
     - [three]{"entity": "amounts", "group": "1"} [capricciosa]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [vegetarian]{"entity": "pizza_types", "group": "2"}
     - [four]{"entity": "amounts", "group": "1"} [ham]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "amounts", "group": "1"} [marinara]{"entity": "pizza_types", "group": "1"}
     - [one]{"entity": "amounts", "group": "1"} [cheese]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [french fries]{"entity": "pizza_types", "group": "2"}
-    - [two]{"entity": "amounts", "group": "1"} [salami]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [four season]{"entity": "pizza_types", "group": "2"}
+    - [two]{"entity": "amounts", "group": "1"} [salami]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [four seasons]{"entity": "pizza_types", "group": "2"}
     - i want [one]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [two]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
     - i want [two]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
     - i want [three]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
@@ -233,7 +233,7 @@ nlu:
     - i want [three]{"entity": "amounts", "group": "1"} [marinara]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [ham]{"entity": "pizza_types", "group": "2"}
     - i want [four]{"entity": "amounts", "group": "1"} [capricciosa]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "amounts", "group": "2"} [cheese]{"entity": "pizza_types", "group": "1"}
     - i want [one]{"entity": "amounts", "group": "1"} [vegetarian]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [salami]{"entity": "pizza_types", "group": "2"}
-    - i want [two]{"entity": "amounts", "group": "1"} [french fries]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [four season]{"entity": "pizza_types", "group": "2"}
+    - i want [two]{"entity": "amounts", "group": "1"} [french fries]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [four seasons]{"entity": "pizza_types", "group": "2"}
     - i would like [one]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [two]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
     - i would like [two]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
     - i would like [three]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
@@ -243,27 +243,27 @@ nlu:
     - i would like [three]{"entity": "amounts", "group": "1"} [marinara]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [vegetarian]{"entity": "pizza_types", "group": "2"}
     - i would like [four]{"entity": "amounts", "group": "1"} [salami]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "amounts", "group": "2"} [cheese]{"entity": "pizza_types", "group": "2"}
     - i would like [one]{"entity": "amounts", "group": "1"} [french fries]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [ham]{"entity": "pizza_types", "group": "2"}
-    - i would like [two]{"entity": "amounts", "group": "1"} [four season]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [capricciosa]{"entity": "pizza_types", "group": "2"}
+    - i would like [two]{"entity": "amounts", "group": "1"} [four seasons]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [capricciosa]{"entity": "pizza_types", "group": "2"}
     - i'd like [one]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [two]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
     - i'd like [two]{"entity": "amounts", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
     - i'd like [three]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
     - i'd like [four]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "amounts", "group": "2"} [funghi]{"entity": "pizza_types", "group": "2"}
     - i'd like [one]{"entity": "amounts", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
     - i'd like [two]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
-    - i'd like [three]{"entity": "amounts", "group": "1"} [marinara]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [four season]{"entity": "pizza_types", "group": "2"}
+    - i'd like [three]{"entity": "amounts", "group": "1"} [marinara]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [four seasons]{"entity": "pizza_types", "group": "2"}
     - i'd like [four]{"entity": "amounts", "group": "1"} [salami]{"entity": "pizza_types", "group": "1"} and [one]{"entity": "amounts", "group": "2"} [french fries]{"entity": "pizza_types", "group": "2"}
     - i'd like [one]{"entity": "amounts", "group": "1"} [capricciosa]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [vegetarian]{"entity": "pizza_types", "group": "2"}
-    - i'd like [two]{"entity": "amounts", "group": "1"} [four season]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [ham]{"entity": "pizza_types", "group": "2"} 
+    - i'd like [two]{"entity": "amounts", "group": "1"} [four seasons]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [ham]{"entity": "pizza_types", "group": "2"} 
     - i want to order a [margherita]{"entity": "pizza_types", "group": "1"} a [funghi]{"entity": "pizza_types", "group": "2"} and a [pepperoni]{"entity": "pizza_types", "group": "3"}
     - i want to order a [pepperoni]{"entity": "pizza_types", "group": "1"} a [margherita]{"entity": "pizza_types", "group": "2"} and a [funghi]{"entity": "pizza_types", "group": "3"}
     - i want to order a [funghi]{"entity": "pizza_types", "group": "1"} a [pepperoni]{"entity": "pizza_types", "group": "2"} and a [margherita]{"entity": "pizza_types", "group": "3"}
-    - i want to order a [french fries]{"entity": "pizza_types", "group": "1"} a [four season]{"entity": "pizza_types", "group": "2"} and a [ham]{"entity": "pizza_types", "group": "3"}
+    - i want to order a [french fries]{"entity": "pizza_types", "group": "1"} a [four seasons]{"entity": "pizza_types", "group": "2"} and a [ham]{"entity": "pizza_types", "group": "3"}
     - i want to order a [marinara]{"entity": "pizza_types", "group": "1"} a [vegetarian]{"entity": "pizza_types", "group": "2"} and a [capricciosa]{"entity": "pizza_types", "group": "3"}
     - i want to order a [vegetarian]{"entity": "pizza_types", "group": "1"} a [salami]{"entity": "pizza_types", "group": "2"} and a [cheese]{"entity": "pizza_types", "group": "3"}
     - i would like to order a [margherita]{"entity": "pizza_types", "group": "1"} a [funghi]{"entity": "pizza_types", "group": "2"} and a [pepperoni]{"entity": "pizza_types", "group": "3"}
     - i would like to order a [pepperoni]{"entity": "pizza_types", "group": "1"} a [margherita]{"entity": "pizza_types", "group": "2"} and a [funghi]{"entity": "pizza_types", "group": "3"}
     - i would like to order a [funghi]{"entity": "pizza_types", "group": "1"} a [pepperoni]{"entity": "pizza_types", "group": "2"} and a [margherita]{"entity": "pizza_types", "group": "3"}
-    - i would like to order a [salami]{"entity": "pizza_types", "group": "1"} a [four season]{"entity": "pizza_types", "group": "2"} and a [vegetarian]{"entity": "pizza_types", "group": "3"}
+    - i would like to order a [salami]{"entity": "pizza_types", "group": "1"} a [four seasons]{"entity": "pizza_types", "group": "2"} and a [vegetarian]{"entity": "pizza_types", "group": "3"}
     - i would like to order a [vegetarian]{"entity": "pizza_types", "group": "1"} a [ham]{"entity": "pizza_types", "group": "2"} and a [french fries]{"entity": "pizza_types", "group": "3"}
     - i would like to order a [capricciosa]{"entity": "pizza_types", "group": "1"} a [cheese]{"entity": "pizza_types", "group": "2"} and a [marinara]{"entity": "pizza_types", "group": "3"}
     - a [margherita]{"entity": "pizza_types", "group": "1"} a [funghi]{"entity": "pizza_types", "group": "2"} and a [pepperoni]{"entity": "pizza_types", "group": "3"}
@@ -276,7 +276,7 @@ nlu:
     - i want a [pepperoni]{"entity": "pizza_types", "group": "1"} a [margherita]{"entity": "pizza_types", "group": "2"} and a [funghi]{"entity": "pizza_types", "group": "3"}
     - i want a [funghi]{"entity": "pizza_types", "group": "1"} a [pepperoni]{"entity": "pizza_types", "group": "2"} and a [margherita]{"entity": "pizza_types", "group": "3"}
     - i want a [french fries]{"entity": "pizza_types", "group": "1"} a [salami]{"entity": "pizza_types", "group": "2"} and a [vegetarian]{"entity": "pizza_types", "group": "3"}
-    - i want a [capricciosa]{"entity": "pizza_types", "group": "1"} a [four season]{"entity": "pizza_types", "group": "2"} and a [ham]{"entity": "pizza_types", "group": "3"}
+    - i want a [capricciosa]{"entity": "pizza_types", "group": "1"} a [four seasons]{"entity": "pizza_types", "group": "2"} and a [ham]{"entity": "pizza_types", "group": "3"}
     - i want a [marinara]{"entity": "pizza_types", "group": "1"} a [ham]{"entity": "pizza_types", "group": "2"} and a [cheese]{"entity": "pizza_types", "group": "3"}
     - i would like a [margherita]{"entity": "pizza_types", "group": "1"} a [funghi]{"entity": "pizza_types", "group": "2"} and a [pepperoni]{"entity": "pizza_types", "group": "3"}
     - i would like a [pepperoni]{"entity": "pizza_types", "group": "1"} a [margherita]{"entity": "pizza_types", "group": "2"} and a [funghi]{"entity": "pizza_types", "group": "3"}
@@ -334,13 +334,13 @@ nlu:
     - a [ham]{"entity": "pizza_types", "group": "1"}
     - a [french fries]{"entity": "pizza_types", "group": "1"}
     - a [capricciosa]{"entity": "pizza_types", "group": "1"}
-    - a [four season]{"entity": "pizza_types", "group": "1"}
+    - a [four seasons]{"entity": "pizza_types", "group": "1"}
     - a [cheese]{"entity": "pizza_types", "group": "1"}
     - a [marinara]{"entity": "pizza_types", "group": "1"}
     - a [vegetarian]{"entity": "pizza_types", "group": "1"}
     - i would like [one]{"entity": "amounts", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and a [small]{"entity": "pizza_sizes", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"}
     - i would like [two]{"entity": "amounts", "group": "1"} [capricciosa]{"entity": "pizza_types", "group": "1"} and a [extra large]{"entity": "pizza_sizes", "group": "2"} [vegetarian]{"entity": "pizza_types", "group": "2"}
-    - i would like [three]{"entity": "amounts", "group": "1"} [ham]{"entity": "pizza_types", "group": "1"} and a [large]{"entity": "pizza_sizes", "group": "2"} [four season]{"entity": "pizza_types", "group": "2"}
+    - i would like [three]{"entity": "amounts", "group": "1"} [ham]{"entity": "pizza_types", "group": "1"} and a [large]{"entity": "pizza_sizes", "group": "2"} [four seasons]{"entity": "pizza_types", "group": "2"}
     - i would like [four]{"entity": "amounts", "group": "1"} [french fries]{"entity": "pizza_types", "group": "1"} and a [small]{"entity": "pizza_sizes", "group": "2"} [cheese]{"entity": "pizza_types", "group": "2"}
     - i would like [five]{"entity": "amounts", "group": "1"} [marinara]{"entity": "pizza_types", "group": "1"} and a [medium]{"entity": "pizza_sizes", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
     - i would like [one]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [large]{"entity": "pizza_sizes", "group": "2"} [marinara]{"entity": "pizza_types", "group": "2"}
@@ -359,21 +359,21 @@ nlu:
     - [two]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [ham]{"entity": "pizza_types", "group": "1"} and [two]{"entity": "amounts", "group": "2"} [extra large]{"entity": "pizza_sizes", "group": "2"} [french fries]{"entity": "pizza_types", "group": "2"}
     - [three]{"entity": "amounts", "group": "1"} [small]{"entity": "pizza_sizes", "group": "1"} [salami]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [medium]{"entity": "pizza_sizes", "group": "2"} [capricciosa]{"entity": "pizza_types", "group": "2"}
     - i'd like to order [three]{"entity": "amounts", "group": "1"} [extra large]{"entity": "pizza_sizes", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} and [three]{"entity": "amounts", "group": "2"} [small]{"entity": "pizza_sizes", "group": "2"} [margherita]{"entity": "pizza_types", "group": "2"}
-    - i would order [one]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [ham]{"entity": "pizza_types", "group": "1"} and [two]{"entity": "amounts", "group": "2"} [large]{"entity": "pizza_sizes", "group": "2"} [four season]{"entity": "pizza_types", "group": "2"}
+    - i would order [one]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [ham]{"entity": "pizza_types", "group": "1"} and [two]{"entity": "amounts", "group": "2"} [large]{"entity": "pizza_sizes", "group": "2"} [four seasons]{"entity": "pizza_types", "group": "2"}
     - i would order [two]{"entity": "amounts", "group": "1"} [large]{"entity": "pizza_sizes", "group": "1"} [salami]{"entity": "pizza_types", "group": "1"} and [four]{"entity": "amounts", "group": "2"} [small]{"entity": "pizza_sizes", "group": "2"} [capricciosa]{"entity": "pizza_types", "group": "2"}
     - i would like [two]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [ham]{"entity": "pizza_types", "group": "1"} [three]{"entity": "amounts", "group": "2"} [extra large]{"entity": "pizza_sizes", "group": "2"} [pepperoni]{"entity": "pizza_types", "group": "2"} and [three]{"entity": "amounts", "group": "3"} [small]{"entity": "pizza_sizes", "group": "3"} [cheese]{"entity": "pizza_types", "group": "3"} 
     - i would like [one]{"entity": "amounts", "group": "1"} [small]{"entity": "pizza_sizes", "group": "1"} [salami]{"entity": "pizza_types", "group": "1"} [four]{"entity": "amounts", "group": "2"} [medium]{"entity": "pizza_sizes", "group": "2"} [capricciosa]{"entity": "pizza_types", "group": "2"} and [four]{"entity": "amounts", "group": "3"} [small]{"entity": "pizza_sizes", "group": "3"} [french fries]{"entity": "pizza_types", "group": "3"} 
-    - i want to order [two]{"entity": "amounts", "group": "1"} [small]{"entity": "pizza_sizes", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [five]{"entity": "amounts", "group": "2"} [medium]{"entity": "pizza_sizes", "group": "2"} [marinara]{"entity": "pizza_types", "group": "2"} and [two]{"entity": "amounts", "group": "3"} [medium]{"entity": "pizza_sizes", "group": "3"} [four season]{"entity": "pizza_types", "group": "3"} 
+    - i want to order [two]{"entity": "amounts", "group": "1"} [small]{"entity": "pizza_sizes", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [five]{"entity": "amounts", "group": "2"} [medium]{"entity": "pizza_sizes", "group": "2"} [marinara]{"entity": "pizza_types", "group": "2"} and [two]{"entity": "amounts", "group": "3"} [medium]{"entity": "pizza_sizes", "group": "3"} [four seasons]{"entity": "pizza_types", "group": "3"} 
     - i want to order [three]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [vegetarian]{"entity": "pizza_types", "group": "1"} [two]{"entity": "amounts", "group": "2"} [extra large]{"entity": "pizza_sizes", "group": "2"} [cheese]{"entity": "pizza_types", "group": "2"} and [one]{"entity": "amounts", "group": "3"} [small]{"entity": "pizza_sizes", "group": "3"} [capricciosa]{"entity": "pizza_types", "group": "3"} 
     - i'd like to order [one]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [margherita]{"entity": "pizza_types", "group": "1"} [three]{"entity": "amounts", "group": "2"} [large]{"entity": "pizza_sizes", "group": "2"} [marinara]{"entity": "pizza_types", "group": "2"} and [two]{"entity": "amounts", "group": "3"} [medium]{"entity": "pizza_sizes", "group": "3"} [funghi]{"entity": "pizza_types", "group": "3"} 
     - i'd like to order [two]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [salami]{"entity": "pizza_types", "group": "1"} [two]{"entity": "amounts", "group": "2"} [extra large]{"entity": "pizza_sizes", "group": "2"} [french fries]{"entity": "pizza_types", "group": "2"} and [four]{"entity": "amounts", "group": "3"} [medium]{"entity": "pizza_sizes", "group": "3"} [margherita]{"entity": "pizza_types", "group": "3"} 
     - i would order [two]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [ham]{"entity": "pizza_types", "group": "1"} [two]{"entity": "amounts", "group": "2"} [extra large]{"entity": "pizza_sizes", "group": "2"} [vegetarian]{"entity": "pizza_types", "group": "2"} and [three]{"entity": "amounts", "group": "3"} [medium]{"entity": "pizza_sizes", "group": "3"} [cheese]{"entity": "pizza_types", "group": "3"} 
-    - i would order [three]{"entity": "amounts", "group": "1"} [small]{"entity": "pizza_sizes", "group": "1"} [marinara]{"entity": "pizza_types", "group": "1"} [four]{"entity": "amounts", "group": "2"} [medium]{"entity": "pizza_sizes", "group": "2"} [french fries]{"entity": "pizza_types", "group": "2"} and [five]{"entity": "amounts", "group": "3"} [large]{"entity": "pizza_sizes", "group": "3"} [four season]{"entity": "pizza_types", "group": "3"} 
+    - i would order [three]{"entity": "amounts", "group": "1"} [small]{"entity": "pizza_sizes", "group": "1"} [marinara]{"entity": "pizza_types", "group": "1"} [four]{"entity": "amounts", "group": "2"} [medium]{"entity": "pizza_sizes", "group": "2"} [french fries]{"entity": "pizza_types", "group": "2"} and [five]{"entity": "amounts", "group": "3"} [large]{"entity": "pizza_sizes", "group": "3"} [four seasons]{"entity": "pizza_types", "group": "3"} 
     - i'd like to order [one]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} [three]{"entity": "amounts", "group": "2"} [large]{"entity": "pizza_sizes", "group": "2"} [ham]{"entity": "pizza_types", "group": "2"} and [one]{"entity": "amounts", "group": "3"} [small]{"entity": "pizza_sizes", "group": "3"} [margherita]{"entity": "pizza_types", "group": "3"} 
     - i'd like to order [one]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [pepperoni]{"entity": "pizza_types", "group": "1"} [three]{"entity": "amounts", "group": "2"} [large]{"entity": "pizza_sizes", "group": "2"} [salami]{"entity": "pizza_types", "group": "2"} and [two]{"entity": "amounts", "group": "3"} [large]{"entity": "pizza_sizes", "group": "3"} [vegetarian]{"entity": "pizza_types", "group": "3"} 
     - [two]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [ham]{"entity": "pizza_types", "group": "1"} [two]{"entity": "amounts", "group": "2"} [extra large]{"entity": "pizza_sizes", "group": "2"} [french fries]{"entity": "pizza_types", "group": "2"} and [one]{"entity": "amounts", "group": "3"} [extra large]{"entity": "pizza_sizes", "group": "3"} [marinara]{"entity": "pizza_types", "group": "3"} 
     - [three]{"entity": "amounts", "group": "1"} [small]{"entity": "pizza_sizes", "group": "1"} [salami]{"entity": "pizza_types", "group": "1"} [four]{"entity": "amounts", "group": "2"} [medium]{"entity": "pizza_sizes", "group": "2"} [capricciosa]{"entity": "pizza_types", "group": "2"} and [two]{"entity": "amounts", "group": "3"} [extra large]{"entity": "pizza_sizes", "group": "3"} [vegetarian]{"entity": "pizza_types", "group": "3"} 
-    - i would order [one]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [capricciosa]{"entity": "pizza_types", "group": "1"} [two]{"entity": "amounts", "group": "2"} [large]{"entity": "pizza_sizes", "group": "2"} [four season]{"entity": "pizza_types", "group": "2"} and [two]{"entity": "amounts", "group": "3"} [large]{"entity": "pizza_sizes", "group": "3"} [salami]{"entity": "pizza_types", "group": "3"} 
+    - i would order [one]{"entity": "amounts", "group": "1"} [medium]{"entity": "pizza_sizes", "group": "1"} [capricciosa]{"entity": "pizza_types", "group": "1"} [two]{"entity": "amounts", "group": "2"} [large]{"entity": "pizza_sizes", "group": "2"} [four seasons]{"entity": "pizza_types", "group": "2"} and [two]{"entity": "amounts", "group": "3"} [large]{"entity": "pizza_sizes", "group": "3"} [salami]{"entity": "pizza_types", "group": "3"} 
     - i would order [two]{"entity": "amounts", "group": "1"} [large]{"entity": "pizza_sizes", "group": "1"} [funghi]{"entity": "pizza_types", "group": "1"} [four]{"entity": "amounts", "group": "2"} [small]{"entity": "pizza_sizes", "group": "2"} [capricciosa]{"entity": "pizza_types", "group": "2"} and [three]{"entity": "amounts", "group": "3"} [small]{"entity": "pizza_sizes", "group": "3"} [french fries]{"entity": "pizza_types", "group": "3"} 
     - i want a [coke]{"entity": "other_item_types", "group": "1"} and a [fanta]{"entity": "other_item_types", "group": "2"}
     - i want a [fanta]{"entity": "other_item_types", "group": "1"} and a [coke]{"entity": "other_item_types", "group": "2"}
