@@ -345,21 +345,3398 @@ nlu:
     - what kind of pizzas do you offer
 - intent: ask_affluence
   examples: |
-    - how busy is it
-    - how busy is the restaurant
-    - how busy is the pizzeria
-    - how busy is the place
-    - how busy is the pizza place
+    - how busy is it on monday at one a.m.
+    - how busy is it on monday at one p.m.
+    - how busy is it on monday at two a.m.
+    - how busy is it on monday at two p.m.
+    - how busy is it on monday at three a.m.
+    - how busy is it on monday at three p.m.
+    - how busy is it on monday at four a.m.
+    - how busy is it on monday at four p.m.
+    - how busy is it on monday at five a.m.
+    - how busy is it on monday at five p.m.
+    - how busy is it on monday at six a.m.
+    - how busy is it on monday at six p.m.
+    - how busy is it on monday at seven a.m.
+    - how busy is it on monday at seven p.m.
+    - how busy is it on monday at eight a.m.
+    - how busy is it on monday at eight p.m.
+    - how busy is it on monday at nine a.m.
+    - how busy is it on monday at nine p.m.
+    - how busy is it on monday at ten a.m.
+    - how busy is it on monday at ten p.m.
+    - how busy is it on monday at eleven a.m.
+    - how busy is it on monday at eleven p.m.
+    - how busy is it on monday at twelve a.m.
+    - how busy is it on monday at twelve p.m.
+    - how busy is it on tuesday at one a.m.
+    - how busy is it on tuesday at one p.m.
+    - how busy is it on tuesday at two a.m.
+    - how busy is it on tuesday at two p.m.
+    - how busy is it on tuesday at three a.m.
+    - how busy is it on tuesday at three p.m.
+    - how busy is it on tuesday at four a.m.
+    - how busy is it on tuesday at four p.m.
+    - how busy is it on tuesday at five a.m.
+    - how busy is it on tuesday at five p.m.
+    - how busy is it on tuesday at six a.m.
+    - how busy is it on tuesday at six p.m.
+    - how busy is it on tuesday at seven a.m.
+    - how busy is it on tuesday at seven p.m.
+    - how busy is it on tuesday at eight a.m.
+    - how busy is it on tuesday at eight p.m.
+    - how busy is it on tuesday at nine a.m.
+    - how busy is it on tuesday at nine p.m.
+    - how busy is it on tuesday at ten a.m.
+    - how busy is it on tuesday at ten p.m.
+    - how busy is it on tuesday at eleven a.m.
+    - how busy is it on tuesday at eleven p.m.
+    - how busy is it on tuesday at twelve a.m.
+    - how busy is it on tuesday at twelve p.m.
+    - how busy is it on wednesday at one a.m.
+    - how busy is it on wednesday at one p.m.
+    - how busy is it on wednesday at two a.m.
+    - how busy is it on wednesday at two p.m.
+    - how busy is it on wednesday at three a.m.
+    - how busy is it on wednesday at three p.m.
+    - how busy is it on wednesday at four a.m.
+    - how busy is it on wednesday at four p.m.
+    - how busy is it on wednesday at five a.m.
+    - how busy is it on wednesday at five p.m.
+    - how busy is it on wednesday at six a.m.
+    - how busy is it on wednesday at six p.m.
+    - how busy is it on wednesday at seven a.m.
+    - how busy is it on wednesday at seven p.m.
+    - how busy is it on wednesday at eight a.m.
+    - how busy is it on wednesday at eight p.m.
+    - how busy is it on wednesday at nine a.m.
+    - how busy is it on wednesday at nine p.m.
+    - how busy is it on wednesday at ten a.m.
+    - how busy is it on wednesday at ten p.m.
+    - how busy is it on wednesday at eleven a.m.
+    - how busy is it on wednesday at eleven p.m.
+    - how busy is it on wednesday at twelve a.m.
+    - how busy is it on wednesday at twelve p.m.
+    - how busy is it on thursday at one a.m.
+    - how busy is it on thursday at one p.m.
+    - how busy is it on thursday at two a.m.
+    - how busy is it on thursday at two p.m.
+    - how busy is it on thursday at three a.m.
+    - how busy is it on thursday at three p.m.
+    - how busy is it on thursday at four a.m.
+    - how busy is it on thursday at four p.m.
+    - how busy is it on thursday at five a.m.
+    - how busy is it on thursday at five p.m.
+    - how busy is it on thursday at six a.m.
+    - how busy is it on thursday at six p.m.
+    - how busy is it on thursday at seven a.m.
+    - how busy is it on thursday at seven p.m.
+    - how busy is it on thursday at eight a.m.
+    - how busy is it on thursday at eight p.m.
+    - how busy is it on thursday at nine a.m.
+    - how busy is it on thursday at nine p.m.
+    - how busy is it on thursday at ten a.m.
+    - how busy is it on thursday at ten p.m.
+    - how busy is it on thursday at eleven a.m.
+    - how busy is it on thursday at eleven p.m.
+    - how busy is it on thursday at twelve a.m.
+    - how busy is it on thursday at twelve p.m.
+    - how busy is it on friday at one a.m.
+    - how busy is it on friday at one p.m.
+    - how busy is it on friday at two a.m.
+    - how busy is it on friday at two p.m.
+    - how busy is it on friday at three a.m.
+    - how busy is it on friday at three p.m.
+    - how busy is it on friday at four a.m.
+    - how busy is it on friday at four p.m.
+    - how busy is it on friday at five a.m.
+    - how busy is it on friday at five p.m.
+    - how busy is it on friday at six a.m.
+    - how busy is it on friday at six p.m.
+    - how busy is it on friday at seven a.m.
+    - how busy is it on friday at seven p.m.
+    - how busy is it on friday at eight a.m.
+    - how busy is it on friday at eight p.m.
+    - how busy is it on friday at nine a.m.
+    - how busy is it on friday at nine p.m.
+    - how busy is it on friday at ten a.m.
+    - how busy is it on friday at ten p.m.
+    - how busy is it on friday at eleven a.m.
+    - how busy is it on friday at eleven p.m.
+    - how busy is it on friday at twelve a.m.
+    - how busy is it on friday at twelve p.m.
+    - how busy is it on saturday at one a.m.
+    - how busy is it on saturday at one p.m.
+    - how busy is it on saturday at two a.m.
+    - how busy is it on saturday at two p.m.
+    - how busy is it on saturday at three a.m.
+    - how busy is it on saturday at three p.m.
+    - how busy is it on saturday at four a.m.
+    - how busy is it on saturday at four p.m.
+    - how busy is it on saturday at five a.m.
+    - how busy is it on saturday at five p.m.
+    - how busy is it on saturday at six a.m.
+    - how busy is it on saturday at six p.m.
+    - how busy is it on saturday at seven a.m.
+    - how busy is it on saturday at seven p.m.
+    - how busy is it on saturday at eight a.m.
+    - how busy is it on saturday at eight p.m.
+    - how busy is it on saturday at nine a.m.
+    - how busy is it on saturday at nine p.m.
+    - how busy is it on saturday at ten a.m.
+    - how busy is it on saturday at ten p.m.
+    - how busy is it on saturday at eleven a.m.
+    - how busy is it on saturday at eleven p.m.
+    - how busy is it on saturday at twelve a.m.
+    - how busy is it on saturday at twelve p.m.
+    - how busy is it on sunday at one a.m.
+    - how busy is it on sunday at one p.m.
+    - how busy is it on sunday at two a.m.
+    - how busy is it on sunday at two p.m.
+    - how busy is it on sunday at three a.m.
+    - how busy is it on sunday at three p.m.
+    - how busy is it on sunday at four a.m.
+    - how busy is it on sunday at four p.m.
+    - how busy is it on sunday at five a.m.
+    - how busy is it on sunday at five p.m.
+    - how busy is it on sunday at six a.m.
+    - how busy is it on sunday at six p.m.
+    - how busy is it on sunday at seven a.m.
+    - how busy is it on sunday at seven p.m.
+    - how busy is it on sunday at eight a.m.
+    - how busy is it on sunday at eight p.m.
+    - how busy is it on sunday at nine a.m.
+    - how busy is it on sunday at nine p.m.
+    - how busy is it on sunday at ten a.m.
+    - how busy is it on sunday at ten p.m.
+    - how busy is it on sunday at eleven a.m.
+    - how busy is it on sunday at eleven p.m.
+    - how busy is it on sunday at twelve a.m.
+    - how busy is it on sunday at twelve p.m.
+    - how busy is it on mondays at one a.m.
+    - how busy is it on mondays at one p.m.
+    - how busy is it on mondays at two a.m.
+    - how busy is it on mondays at two p.m.
+    - how busy is it on mondays at three a.m.
+    - how busy is it on mondays at three p.m.
+    - how busy is it on mondays at four a.m.
+    - how busy is it on mondays at four p.m.
+    - how busy is it on mondays at five a.m.
+    - how busy is it on mondays at five p.m.
+    - how busy is it on mondays at six a.m.
+    - how busy is it on mondays at six p.m.
+    - how busy is it on mondays at seven a.m.
+    - how busy is it on mondays at seven p.m.
+    - how busy is it on mondays at eight a.m.
+    - how busy is it on mondays at eight p.m.
+    - how busy is it on mondays at nine a.m.
+    - how busy is it on mondays at nine p.m.
+    - how busy is it on mondays at ten a.m.
+    - how busy is it on mondays at ten p.m.
+    - how busy is it on mondays at eleven a.m.
+    - how busy is it on mondays at eleven p.m.
+    - how busy is it on mondays at twelve a.m.
+    - how busy is it on mondays at twelve p.m.
+    - how busy is it on tuesdays at one a.m.
+    - how busy is it on tuesdays at one p.m.
+    - how busy is it on tuesdays at two a.m.
+    - how busy is it on tuesdays at two p.m.
+    - how busy is it on tuesdays at three a.m.
+    - how busy is it on tuesdays at three p.m.
+    - how busy is it on tuesdays at four a.m.
+    - how busy is it on tuesdays at four p.m.
+    - how busy is it on tuesdays at five a.m.
+    - how busy is it on tuesdays at five p.m.
+    - how busy is it on tuesdays at six a.m.
+    - how busy is it on tuesdays at six p.m.
+    - how busy is it on tuesdays at seven a.m.
+    - how busy is it on tuesdays at seven p.m.
+    - how busy is it on tuesdays at eight a.m.
+    - how busy is it on tuesdays at eight p.m.
+    - how busy is it on tuesdays at nine a.m.
+    - how busy is it on tuesdays at nine p.m.
+    - how busy is it on tuesdays at ten a.m.
+    - how busy is it on tuesdays at ten p.m.
+    - how busy is it on tuesdays at eleven a.m.
+    - how busy is it on tuesdays at eleven p.m.
+    - how busy is it on tuesdays at twelve a.m.
+    - how busy is it on tuesdays at twelve p.m.
+    - how busy is it on wednesdays at one a.m.
+    - how busy is it on wednesdays at one p.m.
+    - how busy is it on wednesdays at two a.m.
+    - how busy is it on wednesdays at two p.m.
+    - how busy is it on wednesdays at three a.m.
+    - how busy is it on wednesdays at three p.m.
+    - how busy is it on wednesdays at four a.m.
+    - how busy is it on wednesdays at four p.m.
+    - how busy is it on wednesdays at five a.m.
+    - how busy is it on wednesdays at five p.m.
+    - how busy is it on wednesdays at six a.m.
+    - how busy is it on wednesdays at six p.m.
+    - how busy is it on wednesdays at seven a.m.
+    - how busy is it on wednesdays at seven p.m.
+    - how busy is it on wednesdays at eight a.m.
+    - how busy is it on wednesdays at eight p.m.
+    - how busy is it on wednesdays at nine a.m.
+    - how busy is it on wednesdays at nine p.m.
+    - how busy is it on wednesdays at ten a.m.
+    - how busy is it on wednesdays at ten p.m.
+    - how busy is it on wednesdays at eleven a.m.
+    - how busy is it on wednesdays at eleven p.m.
+    - how busy is it on wednesdays at twelve a.m.
+    - how busy is it on wednesdays at twelve p.m.
+    - how busy is it on thursdays at one a.m.
+    - how busy is it on thursdays at one p.m.
+    - how busy is it on thursdays at two a.m.
+    - how busy is it on thursdays at two p.m.
+    - how busy is it on thursdays at three a.m.
+    - how busy is it on thursdays at three p.m.
+    - how busy is it on thursdays at four a.m.
+    - how busy is it on thursdays at four p.m.
+    - how busy is it on thursdays at five a.m.
+    - how busy is it on thursdays at five p.m.
+    - how busy is it on thursdays at six a.m.
+    - how busy is it on thursdays at six p.m.
+    - how busy is it on thursdays at seven a.m.
+    - how busy is it on thursdays at seven p.m.
+    - how busy is it on thursdays at eight a.m.
+    - how busy is it on thursdays at eight p.m.
+    - how busy is it on thursdays at nine a.m.
+    - how busy is it on thursdays at nine p.m.
+    - how busy is it on thursdays at ten a.m.
+    - how busy is it on thursdays at ten p.m.
+    - how busy is it on thursdays at eleven a.m.
+    - how busy is it on thursdays at eleven p.m.
+    - how busy is it on thursdays at twelve a.m.
+    - how busy is it on thursdays at twelve p.m.
+    - how busy is it on fridays at one a.m.
+    - how busy is it on fridays at one p.m.
+    - how busy is it on fridays at two a.m.
+    - how busy is it on fridays at two p.m.
+    - how busy is it on fridays at three a.m.
+    - how busy is it on fridays at three p.m.
+    - how busy is it on fridays at four a.m.
+    - how busy is it on fridays at four p.m.
+    - how busy is it on fridays at five a.m.
+    - how busy is it on fridays at five p.m.
+    - how busy is it on fridays at six a.m.
+    - how busy is it on fridays at six p.m.
+    - how busy is it on fridays at seven a.m.
+    - how busy is it on fridays at seven p.m.
+    - how busy is it on fridays at eight a.m.
+    - how busy is it on fridays at eight p.m.
+    - how busy is it on fridays at nine a.m.
+    - how busy is it on fridays at nine p.m.
+    - how busy is it on fridays at ten a.m.
+    - how busy is it on fridays at ten p.m.
+    - how busy is it on fridays at eleven a.m.
+    - how busy is it on fridays at eleven p.m.
+    - how busy is it on fridays at twelve a.m.
+    - how busy is it on fridays at twelve p.m.
+    - how busy is it on saturdays at one a.m.
+    - how busy is it on saturdays at one p.m.
+    - how busy is it on saturdays at two a.m.
+    - how busy is it on saturdays at two p.m.
+    - how busy is it on saturdays at three a.m.
+    - how busy is it on saturdays at three p.m.
+    - how busy is it on saturdays at four a.m.
+    - how busy is it on saturdays at four p.m.
+    - how busy is it on saturdays at five a.m.
+    - how busy is it on saturdays at five p.m.
+    - how busy is it on saturdays at six a.m.
+    - how busy is it on saturdays at six p.m.
+    - how busy is it on saturdays at seven a.m.
+    - how busy is it on saturdays at seven p.m.
+    - how busy is it on saturdays at eight a.m.
+    - how busy is it on saturdays at eight p.m.
+    - how busy is it on saturdays at nine a.m.
+    - how busy is it on saturdays at nine p.m.
+    - how busy is it on saturdays at ten a.m.
+    - how busy is it on saturdays at ten p.m.
+    - how busy is it on saturdays at eleven a.m.
+    - how busy is it on saturdays at eleven p.m.
+    - how busy is it on saturdays at twelve a.m.
+    - how busy is it on saturdays at twelve p.m.
+    - how busy is it on sundays at one a.m.
+    - how busy is it on sundays at one p.m.
+    - how busy is it on sundays at two a.m.
+    - how busy is it on sundays at two p.m.
+    - how busy is it on sundays at three a.m.
+    - how busy is it on sundays at three p.m.
+    - how busy is it on sundays at four a.m.
+    - how busy is it on sundays at four p.m.
+    - how busy is it on sundays at five a.m.
+    - how busy is it on sundays at five p.m.
+    - how busy is it on sundays at six a.m.
+    - how busy is it on sundays at six p.m.
+    - how busy is it on sundays at seven a.m.
+    - how busy is it on sundays at seven p.m.
+    - how busy is it on sundays at eight a.m.
+    - how busy is it on sundays at eight p.m.
+    - how busy is it on sundays at nine a.m.
+    - how busy is it on sundays at nine p.m.
+    - how busy is it on sundays at ten a.m.
+    - how busy is it on sundays at ten p.m.
+    - how busy is it on sundays at eleven a.m.
+    - how busy is it on sundays at eleven p.m.
+    - how busy is it on sundays at twelve a.m.
+    - how busy is it on sundays at twelve p.m.
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on monday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on tuesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on wednesday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on thursday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on friday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on saturday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on sunday
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on mondays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on tuesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on wednesdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on thursdays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on fridays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on saturdays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - how crowded is it on sundays
+    - is it crowded on monday at one a.m.
+    - is it crowded on monday at one p.m.
+    - is it crowded on monday at two a.m.
+    - is it crowded on monday at two p.m.
+    - is it crowded on monday at three a.m.
+    - is it crowded on monday at three p.m.
+    - is it crowded on monday at four a.m.
+    - is it crowded on monday at four p.m.
+    - is it crowded on monday at five a.m.
+    - is it crowded on monday at five p.m.
+    - is it crowded on monday at six a.m.
+    - is it crowded on monday at six p.m.
+    - is it crowded on monday at seven a.m.
+    - is it crowded on monday at seven p.m.
+    - is it crowded on monday at eight a.m.
+    - is it crowded on monday at eight p.m.
+    - is it crowded on monday at nine a.m.
+    - is it crowded on monday at nine p.m.
+    - is it crowded on monday at ten a.m.
+    - is it crowded on monday at ten p.m.
+    - is it crowded on monday at eleven a.m.
+    - is it crowded on monday at eleven p.m.
+    - is it crowded on monday at twelve a.m.
+    - is it crowded on monday at twelve p.m.
+    - is it crowded on tuesday at one a.m.
+    - is it crowded on tuesday at one p.m.
+    - is it crowded on tuesday at two a.m.
+    - is it crowded on tuesday at two p.m.
+    - is it crowded on tuesday at three a.m.
+    - is it crowded on tuesday at three p.m.
+    - is it crowded on tuesday at four a.m.
+    - is it crowded on tuesday at four p.m.
+    - is it crowded on tuesday at five a.m.
+    - is it crowded on tuesday at five p.m.
+    - is it crowded on tuesday at six a.m.
+    - is it crowded on tuesday at six p.m.
+    - is it crowded on tuesday at seven a.m.
+    - is it crowded on tuesday at seven p.m.
+    - is it crowded on tuesday at eight a.m.
+    - is it crowded on tuesday at eight p.m.
+    - is it crowded on tuesday at nine a.m.
+    - is it crowded on tuesday at nine p.m.
+    - is it crowded on tuesday at ten a.m.
+    - is it crowded on tuesday at ten p.m.
+    - is it crowded on tuesday at eleven a.m.
+    - is it crowded on tuesday at eleven p.m.
+    - is it crowded on tuesday at twelve a.m.
+    - is it crowded on tuesday at twelve p.m.
+    - is it crowded on wednesday at one a.m.
+    - is it crowded on wednesday at one p.m.
+    - is it crowded on wednesday at two a.m.
+    - is it crowded on wednesday at two p.m.
+    - is it crowded on wednesday at three a.m.
+    - is it crowded on wednesday at three p.m.
+    - is it crowded on wednesday at four a.m.
+    - is it crowded on wednesday at four p.m.
+    - is it crowded on wednesday at five a.m.
+    - is it crowded on wednesday at five p.m.
+    - is it crowded on wednesday at six a.m.
+    - is it crowded on wednesday at six p.m.
+    - is it crowded on wednesday at seven a.m.
+    - is it crowded on wednesday at seven p.m.
+    - is it crowded on wednesday at eight a.m.
+    - is it crowded on wednesday at eight p.m.
+    - is it crowded on wednesday at nine a.m.
+    - is it crowded on wednesday at nine p.m.
+    - is it crowded on wednesday at ten a.m.
+    - is it crowded on wednesday at ten p.m.
+    - is it crowded on wednesday at eleven a.m.
+    - is it crowded on wednesday at eleven p.m.
+    - is it crowded on wednesday at twelve a.m.
+    - is it crowded on wednesday at twelve p.m.
+    - is it crowded on thursday at one a.m.
+    - is it crowded on thursday at one p.m.
+    - is it crowded on thursday at two a.m.
+    - is it crowded on thursday at two p.m.
+    - is it crowded on thursday at three a.m.
+    - is it crowded on thursday at three p.m.
+    - is it crowded on thursday at four a.m.
+    - is it crowded on thursday at four p.m.
+    - is it crowded on thursday at five a.m.
+    - is it crowded on thursday at five p.m.
+    - is it crowded on thursday at six a.m.
+    - is it crowded on thursday at six p.m.
+    - is it crowded on thursday at seven a.m.
+    - is it crowded on thursday at seven p.m.
+    - is it crowded on thursday at eight a.m.
+    - is it crowded on thursday at eight p.m.
+    - is it crowded on thursday at nine a.m.
+    - is it crowded on thursday at nine p.m.
+    - is it crowded on thursday at ten a.m.
+    - is it crowded on thursday at ten p.m.
+    - is it crowded on thursday at eleven a.m.
+    - is it crowded on thursday at eleven p.m.
+    - is it crowded on thursday at twelve a.m.
+    - is it crowded on thursday at twelve p.m.
+    - is it crowded on friday at one a.m.
+    - is it crowded on friday at one p.m.
+    - is it crowded on friday at two a.m.
+    - is it crowded on friday at two p.m.
+    - is it crowded on friday at three a.m.
+    - is it crowded on friday at three p.m.
+    - is it crowded on friday at four a.m.
+    - is it crowded on friday at four p.m.
+    - is it crowded on friday at five a.m.
+    - is it crowded on friday at five p.m.
+    - is it crowded on friday at six a.m.
+    - is it crowded on friday at six p.m.
+    - is it crowded on friday at seven a.m.
+    - is it crowded on friday at seven p.m.
+    - is it crowded on friday at eight a.m.
+    - is it crowded on friday at eight p.m.
+    - is it crowded on friday at nine a.m.
+    - is it crowded on friday at nine p.m.
+    - is it crowded on friday at ten a.m.
+    - is it crowded on friday at ten p.m.
+    - is it crowded on friday at eleven a.m.
+    - is it crowded on friday at eleven p.m.
+    - is it crowded on friday at twelve a.m.
+    - is it crowded on friday at twelve p.m.
+    - is it crowded on saturday at one a.m.
+    - is it crowded on saturday at one p.m.
+    - is it crowded on saturday at two a.m.
+    - is it crowded on saturday at two p.m.
+    - is it crowded on saturday at three a.m.
+    - is it crowded on saturday at three p.m.
+    - is it crowded on saturday at four a.m.
+    - is it crowded on saturday at four p.m.
+    - is it crowded on saturday at five a.m.
+    - is it crowded on saturday at five p.m.
+    - is it crowded on saturday at six a.m.
+    - is it crowded on saturday at six p.m.
+    - is it crowded on saturday at seven a.m.
+    - is it crowded on saturday at seven p.m.
+    - is it crowded on saturday at eight a.m.
+    - is it crowded on saturday at eight p.m.
+    - is it crowded on saturday at nine a.m.
+    - is it crowded on saturday at nine p.m.
+    - is it crowded on saturday at ten a.m.
+    - is it crowded on saturday at ten p.m.
+    - is it crowded on saturday at eleven a.m.
+    - is it crowded on saturday at eleven p.m.
+    - is it crowded on saturday at twelve a.m.
+    - is it crowded on saturday at twelve p.m.
+    - is it crowded on sunday at one a.m.
+    - is it crowded on sunday at one p.m.
+    - is it crowded on sunday at two a.m.
+    - is it crowded on sunday at two p.m.
+    - is it crowded on sunday at three a.m.
+    - is it crowded on sunday at three p.m.
+    - is it crowded on sunday at four a.m.
+    - is it crowded on sunday at four p.m.
+    - is it crowded on sunday at five a.m.
+    - is it crowded on sunday at five p.m.
+    - is it crowded on sunday at six a.m.
+    - is it crowded on sunday at six p.m.
+    - is it crowded on sunday at seven a.m.
+    - is it crowded on sunday at seven p.m.
+    - is it crowded on sunday at eight a.m.
+    - is it crowded on sunday at eight p.m.
+    - is it crowded on sunday at nine a.m.
+    - is it crowded on sunday at nine p.m.
+    - is it crowded on sunday at ten a.m.
+    - is it crowded on sunday at ten p.m.
+    - is it crowded on sunday at eleven a.m.
+    - is it crowded on sunday at eleven p.m.
+    - is it crowded on sunday at twelve a.m.
+    - is it crowded on sunday at twelve p.m.
+    - is it crowded on mondays at one a.m.
+    - is it crowded on mondays at one p.m.
+    - is it crowded on mondays at two a.m.
+    - is it crowded on mondays at two p.m.
+    - is it crowded on mondays at three a.m.
+    - is it crowded on mondays at three p.m.
+    - is it crowded on mondays at four a.m.
+    - is it crowded on mondays at four p.m.
+    - is it crowded on mondays at five a.m.
+    - is it crowded on mondays at five p.m.
+    - is it crowded on mondays at six a.m.
+    - is it crowded on mondays at six p.m.
+    - is it crowded on mondays at seven a.m.
+    - is it crowded on mondays at seven p.m.
+    - is it crowded on mondays at eight a.m.
+    - is it crowded on mondays at eight p.m.
+    - is it crowded on mondays at nine a.m.
+    - is it crowded on mondays at nine p.m.
+    - is it crowded on mondays at ten a.m.
+    - is it crowded on mondays at ten p.m.
+    - is it crowded on mondays at eleven a.m.
+    - is it crowded on mondays at eleven p.m.
+    - is it crowded on mondays at twelve a.m.
+    - is it crowded on mondays at twelve p.m.
+    - is it crowded on tuesdays at one a.m.
+    - is it crowded on tuesdays at one p.m.
+    - is it crowded on tuesdays at two a.m.
+    - is it crowded on tuesdays at two p.m.
+    - is it crowded on tuesdays at three a.m.
+    - is it crowded on tuesdays at three p.m.
+    - is it crowded on tuesdays at four a.m.
+    - is it crowded on tuesdays at four p.m.
+    - is it crowded on tuesdays at five a.m.
+    - is it crowded on tuesdays at five p.m.
+    - is it crowded on tuesdays at six a.m.
+    - is it crowded on tuesdays at six p.m.
+    - is it crowded on tuesdays at seven a.m.
+    - is it crowded on tuesdays at seven p.m.
+    - is it crowded on tuesdays at eight a.m.
+    - is it crowded on tuesdays at eight p.m.
+    - is it crowded on tuesdays at nine a.m.
+    - is it crowded on tuesdays at nine p.m.
+    - is it crowded on tuesdays at ten a.m.
+    - is it crowded on tuesdays at ten p.m.
+    - is it crowded on tuesdays at eleven a.m.
+    - is it crowded on tuesdays at eleven p.m.
+    - is it crowded on tuesdays at twelve a.m.
+    - is it crowded on tuesdays at twelve p.m.
+    - is it crowded on wednesdays at one a.m.
+    - is it crowded on wednesdays at one p.m.
+    - is it crowded on wednesdays at two a.m.
+    - is it crowded on wednesdays at two p.m.
+    - is it crowded on wednesdays at three a.m.
+    - is it crowded on wednesdays at three p.m.
+    - is it crowded on wednesdays at four a.m.
+    - is it crowded on wednesdays at four p.m.
+    - is it crowded on wednesdays at five a.m.
+    - is it crowded on wednesdays at five p.m.
+    - is it crowded on wednesdays at six a.m.
+    - is it crowded on wednesdays at six p.m.
+    - is it crowded on wednesdays at seven a.m.
+    - is it crowded on wednesdays at seven p.m.
+    - is it crowded on wednesdays at eight a.m.
+    - is it crowded on wednesdays at eight p.m.
+    - is it crowded on wednesdays at nine a.m.
+    - is it crowded on wednesdays at nine p.m.
+    - is it crowded on wednesdays at ten a.m.
+    - is it crowded on wednesdays at ten p.m.
+    - is it crowded on wednesdays at eleven a.m.
+    - is it crowded on wednesdays at eleven p.m.
+    - is it crowded on wednesdays at twelve a.m.
+    - is it crowded on wednesdays at twelve p.m.
+    - is it crowded on thursdays at one a.m.
+    - is it crowded on thursdays at one p.m.
+    - is it crowded on thursdays at two a.m.
+    - is it crowded on thursdays at two p.m.
+    - is it crowded on thursdays at three a.m.
+    - is it crowded on thursdays at three p.m.
+    - is it crowded on thursdays at four a.m.
+    - is it crowded on thursdays at four p.m.
+    - is it crowded on thursdays at five a.m.
+    - is it crowded on thursdays at five p.m.
+    - is it crowded on thursdays at six a.m.
+    - is it crowded on thursdays at six p.m.
+    - is it crowded on thursdays at seven a.m.
+    - is it crowded on thursdays at seven p.m.
+    - is it crowded on thursdays at eight a.m.
+    - is it crowded on thursdays at eight p.m.
+    - is it crowded on thursdays at nine a.m.
+    - is it crowded on thursdays at nine p.m.
+    - is it crowded on thursdays at ten a.m.
+    - is it crowded on thursdays at ten p.m.
+    - is it crowded on thursdays at eleven a.m.
+    - is it crowded on thursdays at eleven p.m.
+    - is it crowded on thursdays at twelve a.m.
+    - is it crowded on thursdays at twelve p.m.
+    - is it crowded on fridays at one a.m.
+    - is it crowded on fridays at one p.m.
+    - is it crowded on fridays at two a.m.
+    - is it crowded on fridays at two p.m.
+    - is it crowded on fridays at three a.m.
+    - is it crowded on fridays at three p.m.
+    - is it crowded on fridays at four a.m.
+    - is it crowded on fridays at four p.m.
+    - is it crowded on fridays at five a.m.
+    - is it crowded on fridays at five p.m.
+    - is it crowded on fridays at six a.m.
+    - is it crowded on fridays at six p.m.
+    - is it crowded on fridays at seven a.m.
+    - is it crowded on fridays at seven p.m.
+    - is it crowded on fridays at eight a.m.
+    - is it crowded on fridays at eight p.m.
+    - is it crowded on fridays at nine a.m.
+    - is it crowded on fridays at nine p.m.
+    - is it crowded on fridays at ten a.m.
+    - is it crowded on fridays at ten p.m.
+    - is it crowded on fridays at eleven a.m.
+    - is it crowded on fridays at eleven p.m.
+    - is it crowded on fridays at twelve a.m.
+    - is it crowded on fridays at twelve p.m.
+    - is it crowded on saturdays at one a.m.
+    - is it crowded on saturdays at one p.m.
+    - is it crowded on saturdays at two a.m.
+    - is it crowded on saturdays at two p.m.
+    - is it crowded on saturdays at three a.m.
+    - is it crowded on saturdays at three p.m.
+    - is it crowded on saturdays at four a.m.
+    - is it crowded on saturdays at four p.m.
+    - is it crowded on saturdays at five a.m.
+    - is it crowded on saturdays at five p.m.
+    - is it crowded on saturdays at six a.m.
+    - is it crowded on saturdays at six p.m.
+    - is it crowded on saturdays at seven a.m.
+    - is it crowded on saturdays at seven p.m.
+    - is it crowded on saturdays at eight a.m.
+    - is it crowded on saturdays at eight p.m.
+    - is it crowded on saturdays at nine a.m.
+    - is it crowded on saturdays at nine p.m.
+    - is it crowded on saturdays at ten a.m.
+    - is it crowded on saturdays at ten p.m.
+    - is it crowded on saturdays at eleven a.m.
+    - is it crowded on saturdays at eleven p.m.
+    - is it crowded on saturdays at twelve a.m.
+    - is it crowded on saturdays at twelve p.m.
+    - is it crowded on sundays at one a.m.
+    - is it crowded on sundays at one p.m.
+    - is it crowded on sundays at two a.m.
+    - is it crowded on sundays at two p.m.
+    - is it crowded on sundays at three a.m.
+    - is it crowded on sundays at three p.m.
+    - is it crowded on sundays at four a.m.
+    - is it crowded on sundays at four p.m.
+    - is it crowded on sundays at five a.m.
+    - is it crowded on sundays at five p.m.
+    - is it crowded on sundays at six a.m.
+    - is it crowded on sundays at six p.m.
+    - is it crowded on sundays at seven a.m.
+    - is it crowded on sundays at seven p.m.
+    - is it crowded on sundays at eight a.m.
+    - is it crowded on sundays at eight p.m.
+    - is it crowded on sundays at nine a.m.
+    - is it crowded on sundays at nine p.m.
+    - is it crowded on sundays at ten a.m.
+    - is it crowded on sundays at ten p.m.
+    - is it crowded on sundays at eleven a.m.
+    - is it crowded on sundays at eleven p.m.
+    - is it crowded on sundays at twelve a.m.
+    - is it crowded on sundays at twelve p.m.
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on monday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on tuesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on wednesday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on thursday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on friday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on saturday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on sunday
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on mondays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on tuesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on wednesdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on thursdays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on fridays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on saturdays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - is it crowded on sundays
+    - are there many people on monday at one a.m.
+    - are there many people on monday at one p.m.
+    - are there many people on monday at two a.m.
+    - are there many people on monday at two p.m.
+    - are there many people on monday at three a.m.
+    - are there many people on monday at three p.m.
+    - are there many people on monday at four a.m.
+    - are there many people on monday at four p.m.
+    - are there many people on monday at five a.m.
+    - are there many people on monday at five p.m.
+    - are there many people on monday at six a.m.
+    - are there many people on monday at six p.m.
+    - are there many people on monday at seven a.m.
+    - are there many people on monday at seven p.m.
+    - are there many people on monday at eight a.m.
+    - are there many people on monday at eight p.m.
+    - are there many people on monday at nine a.m.
+    - are there many people on monday at nine p.m.
+    - are there many people on monday at ten a.m.
+    - are there many people on monday at ten p.m.
+    - are there many people on monday at eleven a.m.
+    - are there many people on monday at eleven p.m.
+    - are there many people on monday at twelve a.m.
+    - are there many people on monday at twelve p.m.
+    - are there many people on tuesday at one a.m.
+    - are there many people on tuesday at one p.m.
+    - are there many people on tuesday at two a.m.
+    - are there many people on tuesday at two p.m.
+    - are there many people on tuesday at three a.m.
+    - are there many people on tuesday at three p.m.
+    - are there many people on tuesday at four a.m.
+    - are there many people on tuesday at four p.m.
+    - are there many people on tuesday at five a.m.
+    - are there many people on tuesday at five p.m.
+    - are there many people on tuesday at six a.m.
+    - are there many people on tuesday at six p.m.
+    - are there many people on tuesday at seven a.m.
+    - are there many people on tuesday at seven p.m.
+    - are there many people on tuesday at eight a.m.
+    - are there many people on tuesday at eight p.m.
+    - are there many people on tuesday at nine a.m.
+    - are there many people on tuesday at nine p.m.
+    - are there many people on tuesday at ten a.m.
+    - are there many people on tuesday at ten p.m.
+    - are there many people on tuesday at eleven a.m.
+    - are there many people on tuesday at eleven p.m.
+    - are there many people on tuesday at twelve a.m.
+    - are there many people on tuesday at twelve p.m.
+    - are there many people on wednesday at one a.m.
+    - are there many people on wednesday at one p.m.
+    - are there many people on wednesday at two a.m.
+    - are there many people on wednesday at two p.m.
+    - are there many people on wednesday at three a.m.
+    - are there many people on wednesday at three p.m.
+    - are there many people on wednesday at four a.m.
+    - are there many people on wednesday at four p.m.
+    - are there many people on wednesday at five a.m.
+    - are there many people on wednesday at five p.m.
+    - are there many people on wednesday at six a.m.
+    - are there many people on wednesday at six p.m.
+    - are there many people on wednesday at seven a.m.
+    - are there many people on wednesday at seven p.m.
+    - are there many people on wednesday at eight a.m.
+    - are there many people on wednesday at eight p.m.
+    - are there many people on wednesday at nine a.m.
+    - are there many people on wednesday at nine p.m.
+    - are there many people on wednesday at ten a.m.
+    - are there many people on wednesday at ten p.m.
+    - are there many people on wednesday at eleven a.m.
+    - are there many people on wednesday at eleven p.m.
+    - are there many people on wednesday at twelve a.m.
+    - are there many people on wednesday at twelve p.m.
+    - are there many people on thursday at one a.m.
+    - are there many people on thursday at one p.m.
+    - are there many people on thursday at two a.m.
+    - are there many people on thursday at two p.m.
+    - are there many people on thursday at three a.m.
+    - are there many people on thursday at three p.m.
+    - are there many people on thursday at four a.m.
+    - are there many people on thursday at four p.m.
+    - are there many people on thursday at five a.m.
+    - are there many people on thursday at five p.m.
+    - are there many people on thursday at six a.m.
+    - are there many people on thursday at six p.m.
+    - are there many people on thursday at seven a.m.
+    - are there many people on thursday at seven p.m.
+    - are there many people on thursday at eight a.m.
+    - are there many people on thursday at eight p.m.
+    - are there many people on thursday at nine a.m.
+    - are there many people on thursday at nine p.m.
+    - are there many people on thursday at ten a.m.
+    - are there many people on thursday at ten p.m.
+    - are there many people on thursday at eleven a.m.
+    - are there many people on thursday at eleven p.m.
+    - are there many people on thursday at twelve a.m.
+    - are there many people on thursday at twelve p.m.
+    - are there many people on friday at one a.m.
+    - are there many people on friday at one p.m.
+    - are there many people on friday at two a.m.
+    - are there many people on friday at two p.m.
+    - are there many people on friday at three a.m.
+    - are there many people on friday at three p.m.
+    - are there many people on friday at four a.m.
+    - are there many people on friday at four p.m.
+    - are there many people on friday at five a.m.
+    - are there many people on friday at five p.m.
+    - are there many people on friday at six a.m.
+    - are there many people on friday at six p.m.
+    - are there many people on friday at seven a.m.
+    - are there many people on friday at seven p.m.
+    - are there many people on friday at eight a.m.
+    - are there many people on friday at eight p.m.
+    - are there many people on friday at nine a.m.
+    - are there many people on friday at nine p.m.
+    - are there many people on friday at ten a.m.
+    - are there many people on friday at ten p.m.
+    - are there many people on friday at eleven a.m.
+    - are there many people on friday at eleven p.m.
+    - are there many people on friday at twelve a.m.
+    - are there many people on friday at twelve p.m.
+    - are there many people on saturday at one a.m.
+    - are there many people on saturday at one p.m.
+    - are there many people on saturday at two a.m.
+    - are there many people on saturday at two p.m.
+    - are there many people on saturday at three a.m.
+    - are there many people on saturday at three p.m.
+    - are there many people on saturday at four a.m.
+    - are there many people on saturday at four p.m.
+    - are there many people on saturday at five a.m.
+    - are there many people on saturday at five p.m.
+    - are there many people on saturday at six a.m.
+    - are there many people on saturday at six p.m.
+    - are there many people on saturday at seven a.m.
+    - are there many people on saturday at seven p.m.
+    - are there many people on saturday at eight a.m.
+    - are there many people on saturday at eight p.m.
+    - are there many people on saturday at nine a.m.
+    - are there many people on saturday at nine p.m.
+    - are there many people on saturday at ten a.m.
+    - are there many people on saturday at ten p.m.
+    - are there many people on saturday at eleven a.m.
+    - are there many people on saturday at eleven p.m.
+    - are there many people on saturday at twelve a.m.
+    - are there many people on saturday at twelve p.m.
+    - are there many people on sunday at one a.m.
+    - are there many people on sunday at one p.m.
+    - are there many people on sunday at two a.m.
+    - are there many people on sunday at two p.m.
+    - are there many people on sunday at three a.m.
+    - are there many people on sunday at three p.m.
+    - are there many people on sunday at four a.m.
+    - are there many people on sunday at four p.m.
+    - are there many people on sunday at five a.m.
+    - are there many people on sunday at five p.m.
+    - are there many people on sunday at six a.m.
+    - are there many people on sunday at six p.m.
+    - are there many people on sunday at seven a.m.
+    - are there many people on sunday at seven p.m.
+    - are there many people on sunday at eight a.m.
+    - are there many people on sunday at eight p.m.
+    - are there many people on sunday at nine a.m.
+    - are there many people on sunday at nine p.m.
+    - are there many people on sunday at ten a.m.
+    - are there many people on sunday at ten p.m.
+    - are there many people on sunday at eleven a.m.
+    - are there many people on sunday at eleven p.m.
+    - are there many people on sunday at twelve a.m.
+    - are there many people on sunday at twelve p.m.
+    - are there many people on mondays at one a.m.
+    - are there many people on mondays at one p.m.
+    - are there many people on mondays at two a.m.
+    - are there many people on mondays at two p.m.
+    - are there many people on mondays at three a.m.
+    - are there many people on mondays at three p.m.
+    - are there many people on mondays at four a.m.
+    - are there many people on mondays at four p.m.
+    - are there many people on mondays at five a.m.
+    - are there many people on mondays at five p.m.
+    - are there many people on mondays at six a.m.
+    - are there many people on mondays at six p.m.
+    - are there many people on mondays at seven a.m.
+    - are there many people on mondays at seven p.m.
+    - are there many people on mondays at eight a.m.
+    - are there many people on mondays at eight p.m.
+    - are there many people on mondays at nine a.m.
+    - are there many people on mondays at nine p.m.
+    - are there many people on mondays at ten a.m.
+    - are there many people on mondays at ten p.m.
+    - are there many people on mondays at eleven a.m.
+    - are there many people on mondays at eleven p.m.
+    - are there many people on mondays at twelve a.m.
+    - are there many people on mondays at twelve p.m.
+    - are there many people on tuesdays at one a.m.
+    - are there many people on tuesdays at one p.m.
+    - are there many people on tuesdays at two a.m.
+    - are there many people on tuesdays at two p.m.
+    - are there many people on tuesdays at three a.m.
+    - are there many people on tuesdays at three p.m.
+    - are there many people on tuesdays at four a.m.
+    - are there many people on tuesdays at four p.m.
+    - are there many people on tuesdays at five a.m.
+    - are there many people on tuesdays at five p.m.
+    - are there many people on tuesdays at six a.m.
+    - are there many people on tuesdays at six p.m.
+    - are there many people on tuesdays at seven a.m.
+    - are there many people on tuesdays at seven p.m.
+    - are there many people on tuesdays at eight a.m.
+    - are there many people on tuesdays at eight p.m.
+    - are there many people on tuesdays at nine a.m.
+    - are there many people on tuesdays at nine p.m.
+    - are there many people on tuesdays at ten a.m.
+    - are there many people on tuesdays at ten p.m.
+    - are there many people on tuesdays at eleven a.m.
+    - are there many people on tuesdays at eleven p.m.
+    - are there many people on tuesdays at twelve a.m.
+    - are there many people on tuesdays at twelve p.m.
+    - are there many people on wednesdays at one a.m.
+    - are there many people on wednesdays at one p.m.
+    - are there many people on wednesdays at two a.m.
+    - are there many people on wednesdays at two p.m.
+    - are there many people on wednesdays at three a.m.
+    - are there many people on wednesdays at three p.m.
+    - are there many people on wednesdays at four a.m.
+    - are there many people on wednesdays at four p.m.
+    - are there many people on wednesdays at five a.m.
+    - are there many people on wednesdays at five p.m.
+    - are there many people on wednesdays at six a.m.
+    - are there many people on wednesdays at six p.m.
+    - are there many people on wednesdays at seven a.m.
+    - are there many people on wednesdays at seven p.m.
+    - are there many people on wednesdays at eight a.m.
+    - are there many people on wednesdays at eight p.m.
+    - are there many people on wednesdays at nine a.m.
+    - are there many people on wednesdays at nine p.m.
+    - are there many people on wednesdays at ten a.m.
+    - are there many people on wednesdays at ten p.m.
+    - are there many people on wednesdays at eleven a.m.
+    - are there many people on wednesdays at eleven p.m.
+    - are there many people on wednesdays at twelve a.m.
+    - are there many people on wednesdays at twelve p.m.
+    - are there many people on thursdays at one a.m.
+    - are there many people on thursdays at one p.m.
+    - are there many people on thursdays at two a.m.
+    - are there many people on thursdays at two p.m.
+    - are there many people on thursdays at three a.m.
+    - are there many people on thursdays at three p.m.
+    - are there many people on thursdays at four a.m.
+    - are there many people on thursdays at four p.m.
+    - are there many people on thursdays at five a.m.
+    - are there many people on thursdays at five p.m.
+    - are there many people on thursdays at six a.m.
+    - are there many people on thursdays at six p.m.
+    - are there many people on thursdays at seven a.m.
+    - are there many people on thursdays at seven p.m.
+    - are there many people on thursdays at eight a.m.
+    - are there many people on thursdays at eight p.m.
+    - are there many people on thursdays at nine a.m.
+    - are there many people on thursdays at nine p.m.
+    - are there many people on thursdays at ten a.m.
+    - are there many people on thursdays at ten p.m.
+    - are there many people on thursdays at eleven a.m.
+    - are there many people on thursdays at eleven p.m.
+    - are there many people on thursdays at twelve a.m.
+    - are there many people on thursdays at twelve p.m.
+    - are there many people on fridays at one a.m.
+    - are there many people on fridays at one p.m.
+    - are there many people on fridays at two a.m.
+    - are there many people on fridays at two p.m.
+    - are there many people on fridays at three a.m.
+    - are there many people on fridays at three p.m.
+    - are there many people on fridays at four a.m.
+    - are there many people on fridays at four p.m.
+    - are there many people on fridays at five a.m.
+    - are there many people on fridays at five p.m.
+    - are there many people on fridays at six a.m.
+    - are there many people on fridays at six p.m.
+    - are there many people on fridays at seven a.m.
+    - are there many people on fridays at seven p.m.
+    - are there many people on fridays at eight a.m.
+    - are there many people on fridays at eight p.m.
+    - are there many people on fridays at nine a.m.
+    - are there many people on fridays at nine p.m.
+    - are there many people on fridays at ten a.m.
+    - are there many people on fridays at ten p.m.
+    - are there many people on fridays at eleven a.m.
+    - are there many people on fridays at eleven p.m.
+    - are there many people on fridays at twelve a.m.
+    - are there many people on fridays at twelve p.m.
+    - are there many people on saturdays at one a.m.
+    - are there many people on saturdays at one p.m.
+    - are there many people on saturdays at two a.m.
+    - are there many people on saturdays at two p.m.
+    - are there many people on saturdays at three a.m.
+    - are there many people on saturdays at three p.m.
+    - are there many people on saturdays at four a.m.
+    - are there many people on saturdays at four p.m.
+    - are there many people on saturdays at five a.m.
+    - are there many people on saturdays at five p.m.
+    - are there many people on saturdays at six a.m.
+    - are there many people on saturdays at six p.m.
+    - are there many people on saturdays at seven a.m.
+    - are there many people on saturdays at seven p.m.
+    - are there many people on saturdays at eight a.m.
+    - are there many people on saturdays at eight p.m.
+    - are there many people on saturdays at nine a.m.
+    - are there many people on saturdays at nine p.m.
+    - are there many people on saturdays at ten a.m.
+    - are there many people on saturdays at ten p.m.
+    - are there many people on saturdays at eleven a.m.
+    - are there many people on saturdays at eleven p.m.
+    - are there many people on saturdays at twelve a.m.
+    - are there many people on saturdays at twelve p.m.
+    - are there many people on sundays at one a.m.
+    - are there many people on sundays at one p.m.
+    - are there many people on sundays at two a.m.
+    - are there many people on sundays at two p.m.
+    - are there many people on sundays at three a.m.
+    - are there many people on sundays at three p.m.
+    - are there many people on sundays at four a.m.
+    - are there many people on sundays at four p.m.
+    - are there many people on sundays at five a.m.
+    - are there many people on sundays at five p.m.
+    - are there many people on sundays at six a.m.
+    - are there many people on sundays at six p.m.
+    - are there many people on sundays at seven a.m.
+    - are there many people on sundays at seven p.m.
+    - are there many people on sundays at eight a.m.
+    - are there many people on sundays at eight p.m.
+    - are there many people on sundays at nine a.m.
+    - are there many people on sundays at nine p.m.
+    - are there many people on sundays at ten a.m.
+    - are there many people on sundays at ten p.m.
+    - are there many people on sundays at eleven a.m.
+    - are there many people on sundays at eleven p.m.
+    - are there many people on sundays at twelve a.m.
+    - are there many people on sundays at twelve p.m.
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on monday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on tuesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on wednesday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on thursday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on friday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on saturday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on sunday
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on mondays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on tuesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on wednesdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on thursdays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on fridays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on saturdays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - are there many people on sundays
+    - is it full on monday at one a.m.
+    - is it full on monday at one p.m.
+    - is it full on monday at two a.m.
+    - is it full on monday at two p.m.
+    - is it full on monday at three a.m.
+    - is it full on monday at three p.m.
+    - is it full on monday at four a.m.
+    - is it full on monday at four p.m.
+    - is it full on monday at five a.m.
+    - is it full on monday at five p.m.
+    - is it full on monday at six a.m.
+    - is it full on monday at six p.m.
+    - is it full on monday at seven a.m.
+    - is it full on monday at seven p.m.
+    - is it full on monday at eight a.m.
+    - is it full on monday at eight p.m.
+    - is it full on monday at nine a.m.
+    - is it full on monday at nine p.m.
+    - is it full on monday at ten a.m.
+    - is it full on monday at ten p.m.
+    - is it full on monday at eleven a.m.
+    - is it full on monday at eleven p.m.
+    - is it full on monday at twelve a.m.
+    - is it full on monday at twelve p.m.
+    - is it full on tuesday at one a.m.
+    - is it full on tuesday at one p.m.
+    - is it full on tuesday at two a.m.
+    - is it full on tuesday at two p.m.
+    - is it full on tuesday at three a.m.
+    - is it full on tuesday at three p.m.
+    - is it full on tuesday at four a.m.
+    - is it full on tuesday at four p.m.
+    - is it full on tuesday at five a.m.
+    - is it full on tuesday at five p.m.
+    - is it full on tuesday at six a.m.
+    - is it full on tuesday at six p.m.
+    - is it full on tuesday at seven a.m.
+    - is it full on tuesday at seven p.m.
+    - is it full on tuesday at eight a.m.
+    - is it full on tuesday at eight p.m.
+    - is it full on tuesday at nine a.m.
+    - is it full on tuesday at nine p.m.
+    - is it full on tuesday at ten a.m.
+    - is it full on tuesday at ten p.m.
+    - is it full on tuesday at eleven a.m.
+    - is it full on tuesday at eleven p.m.
+    - is it full on tuesday at twelve a.m.
+    - is it full on tuesday at twelve p.m.
+    - is it full on wednesday at one a.m.
+    - is it full on wednesday at one p.m.
+    - is it full on wednesday at two a.m.
+    - is it full on wednesday at two p.m.
+    - is it full on wednesday at three a.m.
+    - is it full on wednesday at three p.m.
+    - is it full on wednesday at four a.m.
+    - is it full on wednesday at four p.m.
+    - is it full on wednesday at five a.m.
+    - is it full on wednesday at five p.m.
+    - is it full on wednesday at six a.m.
+    - is it full on wednesday at six p.m.
+    - is it full on wednesday at seven a.m.
+    - is it full on wednesday at seven p.m.
+    - is it full on wednesday at eight a.m.
+    - is it full on wednesday at eight p.m.
+    - is it full on wednesday at nine a.m.
+    - is it full on wednesday at nine p.m.
+    - is it full on wednesday at ten a.m.
+    - is it full on wednesday at ten p.m.
+    - is it full on wednesday at eleven a.m.
+    - is it full on wednesday at eleven p.m.
+    - is it full on wednesday at twelve a.m.
+    - is it full on wednesday at twelve p.m.
+    - is it full on thursday at one a.m.
+    - is it full on thursday at one p.m.
+    - is it full on thursday at two a.m.
+    - is it full on thursday at two p.m.
+    - is it full on thursday at three a.m.
+    - is it full on thursday at three p.m.
+    - is it full on thursday at four a.m.
+    - is it full on thursday at four p.m.
+    - is it full on thursday at five a.m.
+    - is it full on thursday at five p.m.
+    - is it full on thursday at six a.m.
+    - is it full on thursday at six p.m.
+    - is it full on thursday at seven a.m.
+    - is it full on thursday at seven p.m.
+    - is it full on thursday at eight a.m.
+    - is it full on thursday at eight p.m.
+    - is it full on thursday at nine a.m.
+    - is it full on thursday at nine p.m.
+    - is it full on thursday at ten a.m.
+    - is it full on thursday at ten p.m.
+    - is it full on thursday at eleven a.m.
+    - is it full on thursday at eleven p.m.
+    - is it full on thursday at twelve a.m.
+    - is it full on thursday at twelve p.m.
+    - is it full on friday at one a.m.
+    - is it full on friday at one p.m.
+    - is it full on friday at two a.m.
+    - is it full on friday at two p.m.
+    - is it full on friday at three a.m.
+    - is it full on friday at three p.m.
+    - is it full on friday at four a.m.
+    - is it full on friday at four p.m.
+    - is it full on friday at five a.m.
+    - is it full on friday at five p.m.
+    - is it full on friday at six a.m.
+    - is it full on friday at six p.m.
+    - is it full on friday at seven a.m.
+    - is it full on friday at seven p.m.
+    - is it full on friday at eight a.m.
+    - is it full on friday at eight p.m.
+    - is it full on friday at nine a.m.
+    - is it full on friday at nine p.m.
+    - is it full on friday at ten a.m.
+    - is it full on friday at ten p.m.
+    - is it full on friday at eleven a.m.
+    - is it full on friday at eleven p.m.
+    - is it full on friday at twelve a.m.
+    - is it full on friday at twelve p.m.
+    - is it full on saturday at one a.m.
+    - is it full on saturday at one p.m.
+    - is it full on saturday at two a.m.
+    - is it full on saturday at two p.m.
+    - is it full on saturday at three a.m.
+    - is it full on saturday at three p.m.
+    - is it full on saturday at four a.m.
+    - is it full on saturday at four p.m.
+    - is it full on saturday at five a.m.
+    - is it full on saturday at five p.m.
+    - is it full on saturday at six a.m.
+    - is it full on saturday at six p.m.
+    - is it full on saturday at seven a.m.
+    - is it full on saturday at seven p.m.
+    - is it full on saturday at eight a.m.
+    - is it full on saturday at eight p.m.
+    - is it full on saturday at nine a.m.
+    - is it full on saturday at nine p.m.
+    - is it full on saturday at ten a.m.
+    - is it full on saturday at ten p.m.
+    - is it full on saturday at eleven a.m.
+    - is it full on saturday at eleven p.m.
+    - is it full on saturday at twelve a.m.
+    - is it full on saturday at twelve p.m.
+    - is it full on sunday at one a.m.
+    - is it full on sunday at one p.m.
+    - is it full on sunday at two a.m.
+    - is it full on sunday at two p.m.
+    - is it full on sunday at three a.m.
+    - is it full on sunday at three p.m.
+    - is it full on sunday at four a.m.
+    - is it full on sunday at four p.m.
+    - is it full on sunday at five a.m.
+    - is it full on sunday at five p.m.
+    - is it full on sunday at six a.m.
+    - is it full on sunday at six p.m.
+    - is it full on sunday at seven a.m.
+    - is it full on sunday at seven p.m.
+    - is it full on sunday at eight a.m.
+    - is it full on sunday at eight p.m.
+    - is it full on sunday at nine a.m.
+    - is it full on sunday at nine p.m.
+    - is it full on sunday at ten a.m.
+    - is it full on sunday at ten p.m.
+    - is it full on sunday at eleven a.m.
+    - is it full on sunday at eleven p.m.
+    - is it full on sunday at twelve a.m.
+    - is it full on sunday at twelve p.m.
+    - is it full on mondays at one a.m.
+    - is it full on mondays at one p.m.
+    - is it full on mondays at two a.m.
+    - is it full on mondays at two p.m.
+    - is it full on mondays at three a.m.
+    - is it full on mondays at three p.m.
+    - is it full on mondays at four a.m.
+    - is it full on mondays at four p.m.
+    - is it full on mondays at five a.m.
+    - is it full on mondays at five p.m.
+    - is it full on mondays at six a.m.
+    - is it full on mondays at six p.m.
+    - is it full on mondays at seven a.m.
+    - is it full on mondays at seven p.m.
+    - is it full on mondays at eight a.m.
+    - is it full on mondays at eight p.m.
+    - is it full on mondays at nine a.m.
+    - is it full on mondays at nine p.m.
+    - is it full on mondays at ten a.m.
+    - is it full on mondays at ten p.m.
+    - is it full on mondays at eleven a.m.
+    - is it full on mondays at eleven p.m.
+    - is it full on mondays at twelve a.m.
+    - is it full on mondays at twelve p.m.
+    - is it full on tuesdays at one a.m.
+    - is it full on tuesdays at one p.m.
+    - is it full on tuesdays at two a.m.
+    - is it full on tuesdays at two p.m.
+    - is it full on tuesdays at three a.m.
+    - is it full on tuesdays at three p.m.
+    - is it full on tuesdays at four a.m.
+    - is it full on tuesdays at four p.m.
+    - is it full on tuesdays at five a.m.
+    - is it full on tuesdays at five p.m.
+    - is it full on tuesdays at six a.m.
+    - is it full on tuesdays at six p.m.
+    - is it full on tuesdays at seven a.m.
+    - is it full on tuesdays at seven p.m.
+    - is it full on tuesdays at eight a.m.
+    - is it full on tuesdays at eight p.m.
+    - is it full on tuesdays at nine a.m.
+    - is it full on tuesdays at nine p.m.
+    - is it full on tuesdays at ten a.m.
+    - is it full on tuesdays at ten p.m.
+    - is it full on tuesdays at eleven a.m.
+    - is it full on tuesdays at eleven p.m.
+    - is it full on tuesdays at twelve a.m.
+    - is it full on tuesdays at twelve p.m.
+    - is it full on wednesdays at one a.m.
+    - is it full on wednesdays at one p.m.
+    - is it full on wednesdays at two a.m.
+    - is it full on wednesdays at two p.m.
+    - is it full on wednesdays at three a.m.
+    - is it full on wednesdays at three p.m.
+    - is it full on wednesdays at four a.m.
+    - is it full on wednesdays at four p.m.
+    - is it full on wednesdays at five a.m.
+    - is it full on wednesdays at five p.m.
+    - is it full on wednesdays at six a.m.
+    - is it full on wednesdays at six p.m.
+    - is it full on wednesdays at seven a.m.
+    - is it full on wednesdays at seven p.m.
+    - is it full on wednesdays at eight a.m.
+    - is it full on wednesdays at eight p.m.
+    - is it full on wednesdays at nine a.m.
+    - is it full on wednesdays at nine p.m.
+    - is it full on wednesdays at ten a.m.
+    - is it full on wednesdays at ten p.m.
+    - is it full on wednesdays at eleven a.m.
+    - is it full on wednesdays at eleven p.m.
+    - is it full on wednesdays at twelve a.m.
+    - is it full on wednesdays at twelve p.m.
+    - is it full on thursdays at one a.m.
+    - is it full on thursdays at one p.m.
+    - is it full on thursdays at two a.m.
+    - is it full on thursdays at two p.m.
+    - is it full on thursdays at three a.m.
+    - is it full on thursdays at three p.m.
+    - is it full on thursdays at four a.m.
+    - is it full on thursdays at four p.m.
+    - is it full on thursdays at five a.m.
+    - is it full on thursdays at five p.m.
+    - is it full on thursdays at six a.m.
+    - is it full on thursdays at six p.m.
+    - is it full on thursdays at seven a.m.
+    - is it full on thursdays at seven p.m.
+    - is it full on thursdays at eight a.m.
+    - is it full on thursdays at eight p.m.
+    - is it full on thursdays at nine a.m.
+    - is it full on thursdays at nine p.m.
+    - is it full on thursdays at ten a.m.
+    - is it full on thursdays at ten p.m.
+    - is it full on thursdays at eleven a.m.
+    - is it full on thursdays at eleven p.m.
+    - is it full on thursdays at twelve a.m.
+    - is it full on thursdays at twelve p.m.
+    - is it full on fridays at one a.m.
+    - is it full on fridays at one p.m.
+    - is it full on fridays at two a.m.
+    - is it full on fridays at two p.m.
+    - is it full on fridays at three a.m.
+    - is it full on fridays at three p.m.
+    - is it full on fridays at four a.m.
+    - is it full on fridays at four p.m.
+    - is it full on fridays at five a.m.
+    - is it full on fridays at five p.m.
+    - is it full on fridays at six a.m.
+    - is it full on fridays at six p.m.
+    - is it full on fridays at seven a.m.
+    - is it full on fridays at seven p.m.
+    - is it full on fridays at eight a.m.
+    - is it full on fridays at eight p.m.
+    - is it full on fridays at nine a.m.
+    - is it full on fridays at nine p.m.
+    - is it full on fridays at ten a.m.
+    - is it full on fridays at ten p.m.
+    - is it full on fridays at eleven a.m.
+    - is it full on fridays at eleven p.m.
+    - is it full on fridays at twelve a.m.
+    - is it full on fridays at twelve p.m.
+    - is it full on saturdays at one a.m.
+    - is it full on saturdays at one p.m.
+    - is it full on saturdays at two a.m.
+    - is it full on saturdays at two p.m.
+    - is it full on saturdays at three a.m.
+    - is it full on saturdays at three p.m.
+    - is it full on saturdays at four a.m.
+    - is it full on saturdays at four p.m.
+    - is it full on saturdays at five a.m.
+    - is it full on saturdays at five p.m.
+    - is it full on saturdays at six a.m.
+    - is it full on saturdays at six p.m.
+    - is it full on saturdays at seven a.m.
+    - is it full on saturdays at seven p.m.
+    - is it full on saturdays at eight a.m.
+    - is it full on saturdays at eight p.m.
+    - is it full on saturdays at nine a.m.
+    - is it full on saturdays at nine p.m.
+    - is it full on saturdays at ten a.m.
+    - is it full on saturdays at ten p.m.
+    - is it full on saturdays at eleven a.m.
+    - is it full on saturdays at eleven p.m.
+    - is it full on saturdays at twelve a.m.
+    - is it full on saturdays at twelve p.m.
+    - is it full on sundays at one a.m.
+    - is it full on sundays at one p.m.
+    - is it full on sundays at two a.m.
+    - is it full on sundays at two p.m.
+    - is it full on sundays at three a.m.
+    - is it full on sundays at three p.m.
+    - is it full on sundays at four a.m.
+    - is it full on sundays at four p.m.
+    - is it full on sundays at five a.m.
+    - is it full on sundays at five p.m.
+    - is it full on sundays at six a.m.
+    - is it full on sundays at six p.m.
+    - is it full on sundays at seven a.m.
+    - is it full on sundays at seven p.m.
+    - is it full on sundays at eight a.m.
+    - is it full on sundays at eight p.m.
+    - is it full on sundays at nine a.m.
+    - is it full on sundays at nine p.m.
+    - is it full on sundays at ten a.m.
+    - is it full on sundays at ten p.m.
+    - is it full on sundays at eleven a.m.
+    - is it full on sundays at eleven p.m.
+    - is it full on sundays at twelve a.m.
+    - is it full on sundays at twelve p.m.
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on monday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on tuesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on wednesday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on thursday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on friday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on saturday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on sunday
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on mondays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on tuesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on wednesdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on thursdays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on fridays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on saturdays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it full on sundays
+    - is it busy on monday at one a.m.
+    - is it busy on monday at one p.m.
+    - is it busy on monday at two a.m.
+    - is it busy on monday at two p.m.
+    - is it busy on monday at three a.m.
+    - is it busy on monday at three p.m.
+    - is it busy on monday at four a.m.
+    - is it busy on monday at four p.m.
+    - is it busy on monday at five a.m.
+    - is it busy on monday at five p.m.
+    - is it busy on monday at six a.m.
+    - is it busy on monday at six p.m.
+    - is it busy on monday at seven a.m.
+    - is it busy on monday at seven p.m.
+    - is it busy on monday at eight a.m.
+    - is it busy on monday at eight p.m.
+    - is it busy on monday at nine a.m.
+    - is it busy on monday at nine p.m.
+    - is it busy on monday at ten a.m.
+    - is it busy on monday at ten p.m.
+    - is it busy on monday at eleven a.m.
+    - is it busy on monday at eleven p.m.
+    - is it busy on monday at twelve a.m.
+    - is it busy on monday at twelve p.m.
+    - is it busy on tuesday at one a.m.
+    - is it busy on tuesday at one p.m.
+    - is it busy on tuesday at two a.m.
+    - is it busy on tuesday at two p.m.
+    - is it busy on tuesday at three a.m.
+    - is it busy on tuesday at three p.m.
+    - is it busy on tuesday at four a.m.
+    - is it busy on tuesday at four p.m.
+    - is it busy on tuesday at five a.m.
+    - is it busy on tuesday at five p.m.
+    - is it busy on tuesday at six a.m.
+    - is it busy on tuesday at six p.m.
+    - is it busy on tuesday at seven a.m.
+    - is it busy on tuesday at seven p.m.
+    - is it busy on tuesday at eight a.m.
+    - is it busy on tuesday at eight p.m.
+    - is it busy on tuesday at nine a.m.
+    - is it busy on tuesday at nine p.m.
+    - is it busy on tuesday at ten a.m.
+    - is it busy on tuesday at ten p.m.
+    - is it busy on tuesday at eleven a.m.
+    - is it busy on tuesday at eleven p.m.
+    - is it busy on tuesday at twelve a.m.
+    - is it busy on tuesday at twelve p.m.
+    - is it busy on wednesday at one a.m.
+    - is it busy on wednesday at one p.m.
+    - is it busy on wednesday at two a.m.
+    - is it busy on wednesday at two p.m.
+    - is it busy on wednesday at three a.m.
+    - is it busy on wednesday at three p.m.
+    - is it busy on wednesday at four a.m.
+    - is it busy on wednesday at four p.m.
+    - is it busy on wednesday at five a.m.
+    - is it busy on wednesday at five p.m.
+    - is it busy on wednesday at six a.m.
+    - is it busy on wednesday at six p.m.
+    - is it busy on wednesday at seven a.m.
+    - is it busy on wednesday at seven p.m.
+    - is it busy on wednesday at eight a.m.
+    - is it busy on wednesday at eight p.m.
+    - is it busy on wednesday at nine a.m.
+    - is it busy on wednesday at nine p.m.
+    - is it busy on wednesday at ten a.m.
+    - is it busy on wednesday at ten p.m.
+    - is it busy on wednesday at eleven a.m.
+    - is it busy on wednesday at eleven p.m.
+    - is it busy on wednesday at twelve a.m.
+    - is it busy on wednesday at twelve p.m.
+    - is it busy on thursday at one a.m.
+    - is it busy on thursday at one p.m.
+    - is it busy on thursday at two a.m.
+    - is it busy on thursday at two p.m.
+    - is it busy on thursday at three a.m.
+    - is it busy on thursday at three p.m.
+    - is it busy on thursday at four a.m.
+    - is it busy on thursday at four p.m.
+    - is it busy on thursday at five a.m.
+    - is it busy on thursday at five p.m.
+    - is it busy on thursday at six a.m.
+    - is it busy on thursday at six p.m.
+    - is it busy on thursday at seven a.m.
+    - is it busy on thursday at seven p.m.
+    - is it busy on thursday at eight a.m.
+    - is it busy on thursday at eight p.m.
+    - is it busy on thursday at nine a.m.
+    - is it busy on thursday at nine p.m.
+    - is it busy on thursday at ten a.m.
+    - is it busy on thursday at ten p.m.
+    - is it busy on thursday at eleven a.m.
+    - is it busy on thursday at eleven p.m.
+    - is it busy on thursday at twelve a.m.
+    - is it busy on thursday at twelve p.m.
+    - is it busy on friday at one a.m.
+    - is it busy on friday at one p.m.
+    - is it busy on friday at two a.m.
+    - is it busy on friday at two p.m.
+    - is it busy on friday at three a.m.
+    - is it busy on friday at three p.m.
+    - is it busy on friday at four a.m.
+    - is it busy on friday at four p.m.
+    - is it busy on friday at five a.m.
+    - is it busy on friday at five p.m.
+    - is it busy on friday at six a.m.
+    - is it busy on friday at six p.m.
+    - is it busy on friday at seven a.m.
+    - is it busy on friday at seven p.m.
+    - is it busy on friday at eight a.m.
+    - is it busy on friday at eight p.m.
+    - is it busy on friday at nine a.m.
+    - is it busy on friday at nine p.m.
+    - is it busy on friday at ten a.m.
+    - is it busy on friday at ten p.m.
+    - is it busy on friday at eleven a.m.
+    - is it busy on friday at eleven p.m.
+    - is it busy on friday at twelve a.m.
+    - is it busy on friday at twelve p.m.
+    - is it busy on saturday at one a.m.
+    - is it busy on saturday at one p.m.
+    - is it busy on saturday at two a.m.
+    - is it busy on saturday at two p.m.
+    - is it busy on saturday at three a.m.
+    - is it busy on saturday at three p.m.
+    - is it busy on saturday at four a.m.
+    - is it busy on saturday at four p.m.
+    - is it busy on saturday at five a.m.
+    - is it busy on saturday at five p.m.
+    - is it busy on saturday at six a.m.
+    - is it busy on saturday at six p.m.
+    - is it busy on saturday at seven a.m.
+    - is it busy on saturday at seven p.m.
+    - is it busy on saturday at eight a.m.
+    - is it busy on saturday at eight p.m.
+    - is it busy on saturday at nine a.m.
+    - is it busy on saturday at nine p.m.
+    - is it busy on saturday at ten a.m.
+    - is it busy on saturday at ten p.m.
+    - is it busy on saturday at eleven a.m.
+    - is it busy on saturday at eleven p.m.
+    - is it busy on saturday at twelve a.m.
+    - is it busy on saturday at twelve p.m.
+    - is it busy on sunday at one a.m.
+    - is it busy on sunday at one p.m.
+    - is it busy on sunday at two a.m.
+    - is it busy on sunday at two p.m.
+    - is it busy on sunday at three a.m.
+    - is it busy on sunday at three p.m.
+    - is it busy on sunday at four a.m.
+    - is it busy on sunday at four p.m.
+    - is it busy on sunday at five a.m.
+    - is it busy on sunday at five p.m.
+    - is it busy on sunday at six a.m.
+    - is it busy on sunday at six p.m.
+    - is it busy on sunday at seven a.m.
+    - is it busy on sunday at seven p.m.
+    - is it busy on sunday at eight a.m.
+    - is it busy on sunday at eight p.m.
+    - is it busy on sunday at nine a.m.
+    - is it busy on sunday at nine p.m.
+    - is it busy on sunday at ten a.m.
+    - is it busy on sunday at ten p.m.
+    - is it busy on sunday at eleven a.m.
+    - is it busy on sunday at eleven p.m.
+    - is it busy on sunday at twelve a.m.
+    - is it busy on sunday at twelve p.m.
+    - is it busy on mondays at one a.m.
+    - is it busy on mondays at one p.m.
+    - is it busy on mondays at two a.m.
+    - is it busy on mondays at two p.m.
+    - is it busy on mondays at three a.m.
+    - is it busy on mondays at three p.m.
+    - is it busy on mondays at four a.m.
+    - is it busy on mondays at four p.m.
+    - is it busy on mondays at five a.m.
+    - is it busy on mondays at five p.m.
+    - is it busy on mondays at six a.m.
+    - is it busy on mondays at six p.m.
+    - is it busy on mondays at seven a.m.
+    - is it busy on mondays at seven p.m.
+    - is it busy on mondays at eight a.m.
+    - is it busy on mondays at eight p.m.
+    - is it busy on mondays at nine a.m.
+    - is it busy on mondays at nine p.m.
+    - is it busy on mondays at ten a.m.
+    - is it busy on mondays at ten p.m.
+    - is it busy on mondays at eleven a.m.
+    - is it busy on mondays at eleven p.m.
+    - is it busy on mondays at twelve a.m.
+    - is it busy on mondays at twelve p.m.
+    - is it busy on tuesdays at one a.m.
+    - is it busy on tuesdays at one p.m.
+    - is it busy on tuesdays at two a.m.
+    - is it busy on tuesdays at two p.m.
+    - is it busy on tuesdays at three a.m.
+    - is it busy on tuesdays at three p.m.
+    - is it busy on tuesdays at four a.m.
+    - is it busy on tuesdays at four p.m.
+    - is it busy on tuesdays at five a.m.
+    - is it busy on tuesdays at five p.m.
+    - is it busy on tuesdays at six a.m.
+    - is it busy on tuesdays at six p.m.
+    - is it busy on tuesdays at seven a.m.
+    - is it busy on tuesdays at seven p.m.
+    - is it busy on tuesdays at eight a.m.
+    - is it busy on tuesdays at eight p.m.
+    - is it busy on tuesdays at nine a.m.
+    - is it busy on tuesdays at nine p.m.
+    - is it busy on tuesdays at ten a.m.
+    - is it busy on tuesdays at ten p.m.
+    - is it busy on tuesdays at eleven a.m.
+    - is it busy on tuesdays at eleven p.m.
+    - is it busy on tuesdays at twelve a.m.
+    - is it busy on tuesdays at twelve p.m.
+    - is it busy on wednesdays at one a.m.
+    - is it busy on wednesdays at one p.m.
+    - is it busy on wednesdays at two a.m.
+    - is it busy on wednesdays at two p.m.
+    - is it busy on wednesdays at three a.m.
+    - is it busy on wednesdays at three p.m.
+    - is it busy on wednesdays at four a.m.
+    - is it busy on wednesdays at four p.m.
+    - is it busy on wednesdays at five a.m.
+    - is it busy on wednesdays at five p.m.
+    - is it busy on wednesdays at six a.m.
+    - is it busy on wednesdays at six p.m.
+    - is it busy on wednesdays at seven a.m.
+    - is it busy on wednesdays at seven p.m.
+    - is it busy on wednesdays at eight a.m.
+    - is it busy on wednesdays at eight p.m.
+    - is it busy on wednesdays at nine a.m.
+    - is it busy on wednesdays at nine p.m.
+    - is it busy on wednesdays at ten a.m.
+    - is it busy on wednesdays at ten p.m.
+    - is it busy on wednesdays at eleven a.m.
+    - is it busy on wednesdays at eleven p.m.
+    - is it busy on wednesdays at twelve a.m.
+    - is it busy on wednesdays at twelve p.m.
+    - is it busy on thursdays at one a.m.
+    - is it busy on thursdays at one p.m.
+    - is it busy on thursdays at two a.m.
+    - is it busy on thursdays at two p.m.
+    - is it busy on thursdays at three a.m.
+    - is it busy on thursdays at three p.m.
+    - is it busy on thursdays at four a.m.
+    - is it busy on thursdays at four p.m.
+    - is it busy on thursdays at five a.m.
+    - is it busy on thursdays at five p.m.
+    - is it busy on thursdays at six a.m.
+    - is it busy on thursdays at six p.m.
+    - is it busy on thursdays at seven a.m.
+    - is it busy on thursdays at seven p.m.
+    - is it busy on thursdays at eight a.m.
+    - is it busy on thursdays at eight p.m.
+    - is it busy on thursdays at nine a.m.
+    - is it busy on thursdays at nine p.m.
+    - is it busy on thursdays at ten a.m.
+    - is it busy on thursdays at ten p.m.
+    - is it busy on thursdays at eleven a.m.
+    - is it busy on thursdays at eleven p.m.
+    - is it busy on thursdays at twelve a.m.
+    - is it busy on thursdays at twelve p.m.
+    - is it busy on fridays at one a.m.
+    - is it busy on fridays at one p.m.
+    - is it busy on fridays at two a.m.
+    - is it busy on fridays at two p.m.
+    - is it busy on fridays at three a.m.
+    - is it busy on fridays at three p.m.
+    - is it busy on fridays at four a.m.
+    - is it busy on fridays at four p.m.
+    - is it busy on fridays at five a.m.
+    - is it busy on fridays at five p.m.
+    - is it busy on fridays at six a.m.
+    - is it busy on fridays at six p.m.
+    - is it busy on fridays at seven a.m.
+    - is it busy on fridays at seven p.m.
+    - is it busy on fridays at eight a.m.
+    - is it busy on fridays at eight p.m.
+    - is it busy on fridays at nine a.m.
+    - is it busy on fridays at nine p.m.
+    - is it busy on fridays at ten a.m.
+    - is it busy on fridays at ten p.m.
+    - is it busy on fridays at eleven a.m.
+    - is it busy on fridays at eleven p.m.
+    - is it busy on fridays at twelve a.m.
+    - is it busy on fridays at twelve p.m.
+    - is it busy on saturdays at one a.m.
+    - is it busy on saturdays at one p.m.
+    - is it busy on saturdays at two a.m.
+    - is it busy on saturdays at two p.m.
+    - is it busy on saturdays at three a.m.
+    - is it busy on saturdays at three p.m.
+    - is it busy on saturdays at four a.m.
+    - is it busy on saturdays at four p.m.
+    - is it busy on saturdays at five a.m.
+    - is it busy on saturdays at five p.m.
+    - is it busy on saturdays at six a.m.
+    - is it busy on saturdays at six p.m.
+    - is it busy on saturdays at seven a.m.
+    - is it busy on saturdays at seven p.m.
+    - is it busy on saturdays at eight a.m.
+    - is it busy on saturdays at eight p.m.
+    - is it busy on saturdays at nine a.m.
+    - is it busy on saturdays at nine p.m.
+    - is it busy on saturdays at ten a.m.
+    - is it busy on saturdays at ten p.m.
+    - is it busy on saturdays at eleven a.m.
+    - is it busy on saturdays at eleven p.m.
+    - is it busy on saturdays at twelve a.m.
+    - is it busy on saturdays at twelve p.m.
+    - is it busy on sundays at one a.m.
+    - is it busy on sundays at one p.m.
+    - is it busy on sundays at two a.m.
+    - is it busy on sundays at two p.m.
+    - is it busy on sundays at three a.m.
+    - is it busy on sundays at three p.m.
+    - is it busy on sundays at four a.m.
+    - is it busy on sundays at four p.m.
+    - is it busy on sundays at five a.m.
+    - is it busy on sundays at five p.m.
+    - is it busy on sundays at six a.m.
+    - is it busy on sundays at six p.m.
+    - is it busy on sundays at seven a.m.
+    - is it busy on sundays at seven p.m.
+    - is it busy on sundays at eight a.m.
+    - is it busy on sundays at eight p.m.
+    - is it busy on sundays at nine a.m.
+    - is it busy on sundays at nine p.m.
+    - is it busy on sundays at ten a.m.
+    - is it busy on sundays at ten p.m.
+    - is it busy on sundays at eleven a.m.
+    - is it busy on sundays at eleven p.m.
+    - is it busy on sundays at twelve a.m.
+    - is it busy on sundays at twelve p.m.
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on monday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on tuesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on wednesday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on thursday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on friday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on saturday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on sunday
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on mondays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on tuesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on wednesdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on thursdays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on fridays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on saturdays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy on sundays
+    - is it busy
     - is it crowded
-    - is the restaurant crowded
-    - is the pizzeria crowded
-    - is the place crowded
-    - are there many people
     - is it full
-    - is the restaurant full
-    - is the pizzeria full
-    - is the place full
-    - is it busy 
+    - are there many people
+    - how busy is it
+    - how crowded is it
+    - how full is it
+    - how many people are there
+    - is it busy today
+    - is it crowded today
+    - is it full today
+    - are there many people today
+    - how busy is it today
+    - how crowded is it today
+    - how full is it today
+    - how many people are there today
+    - is it busy right now
+    - is it crowded right now
+    - is it full right now
+    - are there many people right now
+    - how busy is it right now
+    - how crowded is it right now
+    - how full is it right now
+    - how many people are there right now
+    - is it busy tomorrow
+    - is it crowded tomorrow
+    - is it full tomorrow
+    - are there many people tomorrow
+    - how busy is it tomorrow
+    - how crowded is it tomorrow
+    - how full is it tomorrow
+    - how many people are there tomorrow
 - intent: ask_allergies
   examples: |
     - what [vegan](allergies) pizzas do you have
@@ -368,7 +3745,7 @@ nlu:
     - what are your [vegan](allergies) options
     - i'm looking for pizzas without any [meat](allergies)
     - i'm looking for pizzas without any [milk](allergies)
-    - which pizzas are suitable for [vegetarians](allergies)
+    - which pizzas are suitable for [vegetarian](allergies) people
     - which pizzas are suitable for [vegans](allergies)
     - do you have any pizzas without [meat](allergies)
     - do you have any pizzas without [milk](allergies)
@@ -3441,7 +6818,7 @@ nlu:
     - funghi
     - capricciosa
     - four seasons
-    - veggie
+    - vegetarian
     - hawaii
     - marinara
     - ham
@@ -3474,7 +6851,6 @@ nlu:
   examples: |
     - meat
     - meatless
-    - vegetarians
 - synonym: vegan
   examples: |
     - vegans
@@ -3507,10 +6883,10 @@ nlu:
 - synonym: four seasons
   examples: |
     - four season
-- synonym: veggie
+- synonym: vegetarian
   examples: |
     - vegetarians
-    - vegetarian
+    - veggie
 - synonym: hawaii
   examples: |
     - hawaiis
