@@ -354,15 +354,15 @@ class ActionChangeOrderConfirmed(Action):
             else:
                 id = "".join(id)
             if id is None:
-                dispatcher.utter_message(text="Sorry, I didn't get that. What is the id of the order you want to cancel? Please insert only the id in your message.")
-                return [SlotSet("last_message", "What is the id of the order you want to cancel? Please insert only the id in your message.")]
-            dispatcher.utter_message(text="You inserted the id: <" + str(id) + ">.")
+                dispatcher.utter_message(text="Sorry, I didn't get that. What is the order number of the order you want to cancel?")
+                return [SlotSet("last_message", "What is the order number of the order you want to cancel?")]
+            dispatcher.utter_message(text="Retrieving information for order number " + str(id) + ".")
 
             ordination = retrieve_order(id)
             if ordination is None:
-                dispatcher.utter_message(text="Sorry, I couldn't find any order with that id.")
-                dispatcher.utter_message(text="What is the id of the order you want to cancel? Please insert only the id in your message.")
-                return [SlotSet("last_message", "What is the id of the order you want to cancel? Please insert only the id in your message."), SlotSet("order_id", None)]
+                dispatcher.utter_message(text="Sorry, I couldn't find any order with that order number.")
+                dispatcher.utter_message(text="What is the order number of the order you want to cancel?")
+                return [SlotSet("last_message", "What is the order number of the order you want to cancel?"), SlotSet("order_id", None)]
             
             order = eval(ordination[1])
             total = ordination[2]
@@ -397,9 +397,9 @@ class ActionChangeOrderConfirmed(Action):
 
             return [SlotSet("asking_id", False), SlotSet("last_message", "Do you confirm you want to cancel this order?"), SlotSet("order_id", id), SlotSet("asking_cancel", True)]
 
-        dispatcher.utter_message(text="First I need the order id you were given during checkout. Please tell me your order id?")
+        dispatcher.utter_message(text="First I need the order number you were given during checkout. Please tell me your order number?")
 
-        return [SlotSet("change_order_procedure", True), SlotSet("asking_change_order", False), SlotSet("last_message", "What is the id of the order you want to change?"), SlotSet("asking_id", True)]
+        return [SlotSet("change_order_procedure", True), SlotSet("asking_change_order", False), SlotSet("last_message", "What is the order number of the order you want to change?"), SlotSet("asking_id", True)]
 
 
 class ActionChangeOrderNotConfirmed(Action):
@@ -808,7 +808,7 @@ class ActionSaveOrder(Action):
 
         order_id = save_new_order(method, order, total, time, n_people, address)
 
-        dispatcher.utter_message(text="If you want to cancel your order in the future, please remember your order id: " + str(order_id) + ".")
+        dispatcher.utter_message(text="If you want to cancel your order in the future, please remember your order number: " + str(order_id) + ".")
         dispatcher.utter_message(text="The procedure is complete! Thank you for using PizzaBot. Goodbye!")
 
         return []
