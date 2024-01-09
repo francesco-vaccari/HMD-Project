@@ -20,6 +20,8 @@ Possibilità di richiedere informazioni riguardo al ristorante:
 - orari di apertura
 - menu
 - affluenza (con o senza giorno specificato)
+- costo ordine fino a quel momento
+- cosa può fare il bot
 
 Gestire se l’utente chiede riguardo allergie/intolleranze:
 - proporre opzioni alternative nel menu (con o senza specifica)
