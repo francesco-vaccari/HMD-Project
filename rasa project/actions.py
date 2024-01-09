@@ -299,8 +299,8 @@ class ActionOrderIncorrect(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
 
-        dispatcher.utter_message(text="I'm sorry, I misunderstood. Try rephrasing you order. What would you like to order?")
-        return [SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", False), SlotSet("last_message", "Sorry for my confusion, what would you like to order?")]
+        dispatcher.utter_message(text="I'm sorry, I misunderstood. Try rephrasing you order or saying one item at a time. What would you like to order?")
+        return [SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", False), SlotSet("last_message", "What would you like to order?")]
 
 
 class ActionChangeOrder(Action):
