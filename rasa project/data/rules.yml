@@ -254,3 +254,13 @@ rules:
   steps:
   - intent: thank_you
   - action: action_you_are_welcome
+
+- rule: utter cost
+  steps:
+  - intent: ask_cost
+  - action: action_utter_cost
+
+- rule: utter functions
+  steps:
+  - intent: ask_functions
+  - action: action_utter_functions

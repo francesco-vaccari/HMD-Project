@@ -18,6 +18,12 @@ def get_amount_for_group(amounts, group):
             return amount[0]
     return "1"
 
+def get_amounts():
+    return ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]
+
+def get_sizes():
+    return ["small", "medium", "large", "extra large"]
+
 def get_menu():
     return ["margherita", "pepperoni", "funghi", "capricciosa", "four seasons", "vegetarian", "french fries", "marinara", "ham", "salami", "cheese", 
             "coke", "fanta", "sprite", "water", "tea", 
@@ -172,7 +178,10 @@ class ActionOrder(Action):
                 # if entity['group'] exists append value and group
                 # else append value and -1
                 if 'group' in entity:
-                    amounts.append((entity['value'], entity['group']))
+                    if entity['value'] == 'a':
+                        amounts.append(('1', entity['group']))
+                    if str(entity['value']) in get_amounts():
+                        amounts.append((str(entity['value']), entity['group']))
                 else:
                     amounts.append((entity['value'], -1))
             elif entity['entity'] == 'pizza_types':
@@ -182,7 +191,8 @@ class ActionOrder(Action):
                     temp_pizza_types.append((entity['value'], -1))
             elif entity['entity'] == 'pizza_sizes':
                 if 'group' in entity:
-                    pizza_sizes.append((entity['value'], entity['group']))
+                    if entity['value'] in get_sizes():
+                        pizza_sizes.append((entity['value'], entity['group']))
                 else:
                     pizza_sizes.append((entity['value'], -1))
             elif entity['entity'] == 'other_item_types':
@@ -371,14 +381,13 @@ class ActionChangeOrderConfirmed(Action):
             n_people = ordination[5]
             address = ordination[6]
 
-            utter="The order you made consists of:\n"
+            utter="The order you made consists of: "
             for elem in order:
-                utter += "- "
                 for value in elem:
                     utter += value + " "
-                utter = utter[:-1] + "\n"
-            utter = utter[:-1] + "\nThe total is "
-            utter += total + "€.\n"
+                utter = utter[:-1] + " "
+            utter = utter[:-1] + ". The total is "
+            utter += total + "€. "
             if method == 'takeaway':
                 parsed_date = parse_date(date)
                 date_utter = parsed_date['hour_date'] + ":" + parsed_date['minute_date'] + " " + parsed_date['am/pm']
@@ -426,14 +435,13 @@ class ActionConfirmOrder(Action):
         dispatcher.utter_message(text="Your order has been confirmed.")
         
         order = tracker.get_slot("order")
-        utter = "Your order consists of:\n"
+        utter = "Your order consists of: "
         for elem in order:
-            utter += "- "
             for value in elem:
                 utter += value + " "
-            utter = utter[:-1] + "\n"
-        utter = utter[:-1] + "\nThe total is "
-        utter += str(get_total(order)) + "€."
+            utter = utter[:-1] + " "
+        utter = utter[:-1] + ". The total is "
+        utter += str(get_total(order)) + "€. "
         dispatcher.utter_message(text=utter)
 
         dispatcher.utter_message(text="Would you like to do take away, have the order delivered to you or do you prefer to eat here?")
@@ -459,6 +467,37 @@ class ActionUtterMenu(Action):
         utter += " Today we recommend " + recommendation + "."
 
         dispatcher.utter_message(text=utter)
+
+        return [FollowupAction(name = "action_repeat_last_message")]
+
+
+class ActionUtterCost(Action):
+    def name(self) -> Text:
+        return "action_utter_cost"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict]:
+
+        order = tracker.get_slot("order")
+        if order is None or len(order) == 0:
+            dispatcher.utter_message(text="You haven't ordered anything yet.")
+            return [FollowupAction(name = "action_repeat_last_message")]
+        total = get_total(order)
+        dispatcher.utter_message(text="The total is " + str(total) + "€. ")
+
+        return [FollowupAction(name = "action_repeat_last_message")]
+
+
+class ActionUtterFunctions(Action):
+    def name(self) -> Text:
+        return "action_utter_functions"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict]:
+
+        dispatcher.utter_message(text="I'm here to handle you ordination or to cancel a previous order. Ask for the menu or options for intolerances if you'd like.")
 
         return [FollowupAction(name = "action_repeat_last_message")]
 
@@ -630,9 +669,9 @@ class ActionTakeaway(Action):
             return [SlotSet("asking_time_takeaway", False), SlotSet("time", date), SlotSet("last_message", "The procedure is complete. Thank you for using PizzaBot! Goodbye!"), FollowupAction(name = "action_save_order")]
 
         utter = "You have decided to do takeaway."
-        utter += "\nOur address is Sommarive Street, 9, 38123 Povo TN."
-        utter += "\nPayment will be done at takeaway."
-        utter += "\nWhen would you like to pick up your order?"
+        utter += " Our address is Sommarive Street, 9, 38123 Povo TN."
+        utter += " Payment will be done at takeaway."
+        utter += " When would you like to pick up your order?"
 
         dispatcher.utter_message(text=utter)
 
@@ -670,8 +709,8 @@ class ActionDelivery(Action):
             return [SlotSet("asking_address", False), SlotSet("last_message", "The procedure is complete. Thank you for using PizzaBot! Goodbye!"), FollowupAction(name = "action_save_order")]
         
         utter = "You have decided to have the order delivered."
-        utter += "\nPayment will be done at delivery time."
-        utter += "\nWhen would you like the order to be delivered?"
+        utter += " Payment will be done at delivery time."
+        utter += " When would you like the order to be delivered?"
         dispatcher.utter_message(text=utter)
 
         return [SlotSet("choosing_eating_place", False), SlotSet("last_message", "When would you like the order to be delivered?"), SlotSet("asking_time_delivery", True), SlotSet("method", "delivery")]
@@ -715,7 +754,7 @@ class ActionTable(Action):
             return [SlotSet("asking_time_table", False), SlotSet("time", date), SlotSet("last_message", "The procedure is complete. Thank you for using PizzaBot! Goodbye!"), FollowupAction(name = "action_save_order")]
 
         utter = "You have decided to make a reservation."
-        utter += "\nI just need some more information.\nHow many people do you want to make the reservation for?"
+        utter += " I just need some more information. How many people do you want to make the reservation for?"
         dispatcher.utter_message(text=utter)
 
         return [SlotSet("choosing_eating_place", False), SlotSet("asking_people", True), SlotSet("last_message", "How many people do you want to make the reservation for?"), SlotSet("method", "table")]

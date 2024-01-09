@@ -19,6 +19,8 @@ intents:
 - tell_address
 - tell_number
 - thank_you
+- ask_cost
+- ask_functions
 entities:
 - allergies
 - time
@@ -203,6 +205,8 @@ actions:
 - action_change_order_confirmed
 - action_change_order_not_confirmed
 - action_you_are_welcome
+- action_utter_cost
+- action_utter_functions
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
