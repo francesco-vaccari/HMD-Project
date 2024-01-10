@@ -9,7 +9,10 @@ pipeline:
   analyzer: "char_wb"
   min_ngram: 1
   max_ngram: 4
-- name: LogisticRegressionClassifier
+- name: DIETClassifier
+  epochs: 2
+  constrain_similarities: True
+  entity_recognition: False
 - name: CRFEntityExtractor
   "features": [
     ["low", "title", "upper"],
@@ -42,6 +45,8 @@ pipeline:
 - name: ResponseSelector
   epochs: 2
   constrain_similarities: True
+- name: FallbackClassifier
+  threshold: 0.7
 
 policies:
 - name: TEDPolicy

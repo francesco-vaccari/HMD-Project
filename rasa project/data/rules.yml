@@ -2,6 +2,11 @@ version: "3.1"
 
 rules:
 
+- rule: fallback
+  steps:
+  - intent: nlu_fallback
+  - action: action_repeat_last_message
+
 - rule: greet
   steps:
   - intent: greet
