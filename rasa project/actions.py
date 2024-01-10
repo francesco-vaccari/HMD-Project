@@ -25,15 +25,15 @@ def get_sizes():
     return ["small", "medium", "large", "extra large"]
 
 def get_menu():
-    return ["margherita", "pepperoni", "funghi", "capricciosa", "four seasons", "vegetarian", "french fries", "marinara", "ham", "salami", "cheese", 
+    return ["margherita", "pepperoni", "funghi", "capricciosa", "hawaii", "vegetarian", "french fries", "marinara", "ham", "salami", "cheese", 
             "coke", "fanta", "sprite", "water", "tea", 
             "cheesecake", "tiramisu", "ice cream"]
 
 def get_menu_pizzas():
-    return ["margherita", "pepperoni", "funghi", "capricciosa", "four seasons", "vegetarian", "french fries", "marinara", "ham", "salami", "cheese"]
+    return ["margherita", "pepperoni", "funghi", "capricciosa", "hawaii", "vegetarian", "french fries", "marinara", "ham", "salami", "cheese"]
 
 def get_menu_prices():
-    return {"margherita": 5, "pepperoni": 6, "funghi": 6, "capricciosa": 7, "four seasons": 8, "vegetarian": 7, "french fries": 7, "marinara": 6, "ham": 1, "salami": 1, "cheese": 1,
+    return {"margherita": 5, "pepperoni": 6, "funghi": 6, "capricciosa": 7, "hawaii": 8, "vegetarian": 7, "french fries": 7, "marinara": 6, "ham": 1, "salami": 1, "cheese": 1,
             "coke": 2, "fanta": 2, "sprite": 2, "water": 1, "tea": 1,
             "cheesecake": 3, "tiramisu": 3, "ice cream": 2}
 
@@ -145,7 +145,7 @@ def get_vegan_options():
     return ["marinara"]
 
 def get_vegetarian_options():
-    return ["margherita", "pepperoni", "funghi", "capricciosa", "four seasons", "vegetarian", "french fries", "marinara"]
+    return ["margherita", "pepperoni", "funghi", "capricciosa", "hawaii", "vegetarian", "french fries", "marinara"]
 
 def get_gluten_options():
     return []

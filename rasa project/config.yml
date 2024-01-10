@@ -5,7 +5,9 @@ language: en
 pipeline:
 - name: WhitespaceTokenizer
 - name: RegexFeaturizer
+  case_sensitive: False
 - name: CountVectorsFeaturizer
+  lowercase: True
   analyzer: "char_wb"
   min_ngram: 1
   max_ngram: 4

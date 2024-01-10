@@ -32,28 +32,24 @@ entities:
     - 2
     - 3
     - 4
-    - 5
 - pizza_types:
     groups:
     - 1
     - 2
     - 3
     - 4
-    - 5
 - pizza_sizes:
     groups:
     - 1
     - 2
     - 3
     - 4
-    - 5
 - other_item_types:
     groups:
     - 1
     - 2
     - 3
     - 4
-    - 5
 slots:
   amounts:
     type: list
