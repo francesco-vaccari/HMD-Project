@@ -13,4 +13,6 @@
 12*/*[['1', 'coke']]*/*2.0*/*table*/*2024-01-11T20:00:00.000+01:00*/*3*/*None
 13*/*[['7', 'medium', 'margherita'], ['1', 'large', 'pepperoni'], ['1', 'coke']]*/*44.0*/*table*/*2024-01-15T21:00:00.000+01:00*/*8*/*None
 14*/*[['1', 'coke'], ['1', 'medium', 'margherita']]*/*7.0*/*takeaway*/*2024-01-10T20:00:00.000+01:00*/*None*/*8
-16*/*[['2', 'small', 'margherita'], ['2', 'small', 'pepperoni'], ['3', 'coke']]*/*24.0*/*takeaway*/*2024-01-11T19:30:00.000+01:00*/*None*/*and a large pepperni and three
+16*/*[['2', 'small', 'margherita'], ['2', 'small', 'pepperoni'], ['3', 'coke']]*/*24.0*/*takeaway*/*2024-01-11T19:30:00.000+01:00*/*None*/*None
+15*/*[['2', 'large', 'margherita'], ['2', 'large', 'pepperoni'], ['1', 'fanta']]*/*28.0*/*table*/*2024-01-13T21:00:00.000+01:00*/*2*/*None
+17*/*[['1', 'medium', 'cheese']]*/*1.0*/*delivery*/*2024-01-11T19:30:00.000+01:00*/*None*/*None

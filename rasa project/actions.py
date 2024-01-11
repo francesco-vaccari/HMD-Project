@@ -278,7 +278,7 @@ class ActionOrder(Action):
                         break
                 if conflict:
                     dispatcher.utter_message(text="Looks like you asked for vegetarian options but you also ordered something that is not vegetarian.")
-            dispatcher.utter_message(text="Is you order correct?")
+            dispatcher.utter_message(text="Is your order correct?")
         else:
             dispatcher.utter_message(text="Is it correct?")
 
@@ -826,7 +826,7 @@ class ActionUtterOpeningHours(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
-        dispatcher.utter_message(text="We are open from 18:00 to 23:00 on weekdays and from 11:00 to midnight on weekends.")
+        dispatcher.utter_message(text="We are open from 6 p.m. to 11 p.m. on weekdays and from 11 a.m. to midnight on weekends.")
         return [FollowupAction(name = "action_repeat_last_message")]
 
 
