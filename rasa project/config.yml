@@ -4,6 +4,7 @@ language: en
 
 pipeline:
 - name: WhitespaceTokenizer
+  case_sensitive: False
 - name: RegexFeaturizer
   case_sensitive: False
 - name: CountVectorsFeaturizer
@@ -12,7 +13,7 @@ pipeline:
   min_ngram: 1
   max_ngram: 4
 - name: DIETClassifier
-  epochs: 2
+  epochs: 1
   constrain_similarities: True
   entity_recognition: False
 - name: CRFEntityExtractor
