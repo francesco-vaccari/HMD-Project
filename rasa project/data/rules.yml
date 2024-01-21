@@ -2,6 +2,11 @@ version: "3.1"
 
 rules:
 
+- rule: nothing_else
+  steps:
+  - intent: nothing_else
+  - action: action_order
+
 - rule: fallback
   steps:
   - intent: nlu_fallback

@@ -21,6 +21,7 @@ intents:
 - thank_you
 - ask_cost
 - ask_functions
+- nothing_else
 entities:
 - allergies
 - time

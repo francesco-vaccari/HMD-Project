@@ -157,7 +157,7 @@ class ActionOrder(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
-        
+
         if tracker.get_slot("order_confirmed"):
             dispatcher.utter_message(text="I'm sorry but your order has already been confirmed.")
             return [FollowupAction(name = "action_repeat_last_message"), SlotSet("asking_change_order", False)]
@@ -218,9 +218,17 @@ class ActionOrder(Action):
             else:
                 dispatcher.utter_message(text="Sorry, we don't have " + item[0] + " in our menu.")
         
+        if tracker.get_intent_of_latest_message() == "nothing_else":
+            if len(old_order) == 0:
+                dispatcher.utter_message(text="What would you like to order?")
+                return [SlotSet("asking_anything_else", False), SlotSet("asking_correct", False), SlotSet("order_confirmed", False), SlotSet("asking_change_order", False), SlotSet("last_message", "What would you like to order?")]
+            else:
+                return [FollowupAction(name = "action_confirm_order")]
+
         # general order, no specific item, like "i want to order a pizza"
         if len(pizza_types) == 0 and len(other_items_types) == 0:
-            return [SlotSet("order", old_order), SlotSet("asking_anything_else", False), SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", False), SlotSet("asking_change_order", False), FollowupAction(name = "action_repeat_last_message")]
+            dispatcher.utter_message(text="What would you like to order?")
+            return [SlotSet("order", old_order), SlotSet("asking_anything_else", False), SlotSet("asking_correct", False), SlotSet("temp_order", None), SlotSet("order_confirmed", False), SlotSet("asking_change_order", False), SlotSet("last_message", "What would you like to order?")]
         
         # try to match items with amounts and sizes
         for pizza in pizza_types:
@@ -331,7 +339,7 @@ class ActionChangeOrder(Action):
             dispatcher.utter_message(text="I'm sorry, you cannot change an order once confirmed.")
             return [FollowupAction(name = "action_repeat_last_message")]
         
-        dispatcher.utter_message(text="Do you wish to cancel an order made in a previous call/conversation?")
+        dispatcher.utter_message(text="Do you wish to cancel an order made in a previous call?")
         return [SlotSet("asking_change_order", True), SlotSet("last_message", "Do you wish to cancel an order made in a previous call/conversation?")]
 
 
