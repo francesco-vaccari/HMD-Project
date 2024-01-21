@@ -1,0 +1,276 @@
+version: "3.1"
+
+rules:
+
+- rule: nothing_else
+  steps:
+  - intent: nothing_else
+  - action: action_order
+
+- rule: fallback
+  steps:
+  - intent: nlu_fallback
+  - action: action_repeat_last_message
+
+- rule: greet
+  steps:
+  - intent: greet
+  - action: action_utter_greet
+
+- rule: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: action_utter_imabot
+
+- rule: out of scope
+  steps:
+  - intent: out_of_scope
+  - action: action_utter_out_of_scope
+
+- rule: pizza order
+  condition:
+  - slot_was_set:
+    - change_order_procedure: False
+  steps:
+  - intent: order
+  - action: action_order
+
+- rule: asking correct
+  condition:
+  - slot_was_set:
+    - asking_correct: True
+  steps:
+  - intent: confirm
+  - action: action_order_correct
+
+- rule: asking incorrect
+  condition:
+  - slot_was_set:
+    - asking_correct: True
+  steps:
+  - intent: deny
+  - action: action_order_incorrect
+
+- rule: asking anything else
+  condition:
+  - slot_was_set:
+    - asking_anything_else: True
+  steps:
+  - intent: confirm
+  - action: action_order
+
+- rule: end order
+  condition:
+  - slot_was_set:
+    - asking_anything_else: True
+  steps:
+  - intent: deny
+  - action: action_confirm_order
+
+- rule: change order
+  condition:
+  - slot_was_set:
+    - change_order_procedure: False
+  steps:
+  - intent: change_order
+  - action: action_change_order
+
+- rule: takeaway
+  condition:
+  - slot_was_set:
+    - choosing_eating_place: True
+  steps:
+  - intent: takeaway
+  - action: action_takeaway
+
+- rule: delivery
+  condition:
+  - slot_was_set:
+    - choosing_eating_place: True
+  steps:
+  - intent: delivery
+  - action: action_delivery
+
+- rule: table
+  condition:
+  - slot_was_set:
+    - choosing_eating_place: True
+  steps:
+  - intent: table
+  - action: action_table
+
+- rule: ask address
+  steps:
+  - intent: ask_address
+  - action: action_utter_address
+
+- rule: ask opening hours
+  steps:
+  - intent: ask_opening_hours
+  - action: action_utter_opening_hours
+
+- rule: ask menu
+  steps:
+  - intent: ask_menu
+  - action: action_utter_menu
+
+- rule: ask affluence
+  steps:
+  - intent: ask_affluence
+  - action: action_utter_affluence
+
+- rule: ask allergies
+  steps:
+  - intent: ask_allergies
+  - action: action_utter_allergies
+
+- rule: tell time takeaway
+  condition:
+  - slot_was_set:
+    - asking_time_takeaway: True
+  steps:
+  - intent: tell_time
+  - action: action_takeaway
+
+- rule: tell time delivery
+  condition:
+  - slot_was_set:
+    - asking_time_delivery: True
+  steps:
+  - intent: tell_time
+  - action: action_delivery
+
+- rule: tell time table
+  condition:
+  - slot_was_set:
+    - asking_time_table: True
+  steps:
+  - intent: tell_time
+  - action: action_table
+
+- rule: tell address
+  condition:
+  - slot_was_set:
+    - asking_address: True
+  steps:
+  - intent: tell_address
+  - action: action_delivery
+
+- rule: tell people
+  condition:
+  - slot_was_set:
+    - asking_people: True
+  steps:
+  - intent: tell_number
+  - action: action_table
+
+- rule: asking change order
+  condition:
+  - slot_was_set:
+    - asking_change_order: True
+  steps:
+  - intent: confirm
+  - action: action_change_order_confirmed
+
+- rule: asking change order
+  condition:
+  - slot_was_set:
+    - asking_change_order: True
+  steps:
+  - intent: deny
+  - action: action_change_order_not_confirmed
+
+- rule: say again 5
+  condition:
+  - slot_was_set:
+    - time
+  steps:
+  - intent: tell_time
+  - action: action_repeat_last_message
+
+- rule: say again 6
+  condition:
+  - slot_was_set:
+    - choosing_eating_place: False
+  steps:
+  - intent: takeaway
+  - action: action_repeat_last_message
+
+- rule: say again 7
+  condition:
+  - slot_was_set:
+    - choosing_eating_place: False
+  steps:
+  - intent: delivery
+  - action: action_repeat_last_message
+
+- rule: say again 8
+  condition:
+  - slot_was_set:
+    - choosing_eating_place: False
+  steps:
+  - intent: table
+  - action: action_repeat_last_message
+
+- rule: say again 9
+  condition:
+  - slot_was_set:
+    - asking_address: False
+  steps:
+  - intent: tell_address
+  - action: action_repeat_last_message
+
+- rule: change order procedure
+  condition:
+  - slot_was_set:
+    - change_order_procedure: True
+  steps:
+  - intent: change_order
+  - action: action_change_order_confirmed
+
+- rule: change order procedure 2
+  condition:
+  - slot_was_set:
+    - change_order_procedure: True
+  steps:
+  - intent: order
+  - action: action_repeat_last_message
+
+- rule: tell id
+  condition:
+  - slot_was_set:
+    - asking_id: True
+  steps:
+  - intent: tell_number
+  - action: action_change_order_confirmed
+
+- rule: confirm cancel order
+  condition:
+  - slot_was_set:
+    - asking_cancel: True
+  steps:
+  - intent: confirm
+  - action: action_change_order_confirmed
+
+- rule: deny cancel order
+  condition:
+  - slot_was_set:
+    - asking_cancel: True
+  steps:
+  - intent: deny
+  - action: action_change_order_confirmed
+
+- rule: thank you
+  steps:
+  - intent: thank_you
+  - action: action_you_are_welcome
+
+- rule: utter cost
+  steps:
+  - intent: ask_cost
+  - action: action_utter_cost
+
+- rule: utter functions
+  steps:
+  - intent: ask_functions
+  - action: action_utter_functions
