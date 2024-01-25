@@ -16,3 +16,4 @@
 16*/*[['2', 'small', 'margherita'], ['2', 'small', 'pepperoni'], ['3', 'coke']]*/*24.0*/*takeaway*/*2024-01-11T19:30:00.000+01:00*/*None*/*None
 15*/*[['2', 'large', 'margherita'], ['2', 'large', 'pepperoni'], ['1', 'fanta']]*/*28.0*/*table*/*2024-01-13T21:00:00.000+01:00*/*2*/*None
 17*/*[['1', 'medium', 'cheese']]*/*1.0*/*delivery*/*2024-01-11T19:30:00.000+01:00*/*None*/*None
+18*/*[['3', 'large', 'margherita'], ['2', 'medium', 'french fries'], ['1', 'coke']]*/*34.0*/*takeaway*/*2024-01-25T21:00:00.000+01:00*/*None*/*None
