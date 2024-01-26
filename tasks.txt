@@ -7,7 +7,6 @@ More complex ordering system:
 - handle additions to order outside of single sentence order
 
 Drink/dessert come possibilità da ordinare:
-- se alcol -> dire controllo persona/carta identità tavolo/delivery/asporto
 - fanta/coke/tea/sprite/acqua
 - cheesecake/tiramisu
 
