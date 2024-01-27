@@ -7,10 +7,9 @@ More complex ordering system:
 - handle additions to order outside of single sentence order
 
 Drink/dessert come possibilità da ordinare:
-- se alcol -> dire controllo persona/carta identità tavolo/delivery/asporto
 - fanta/coke/tea/sprite/acqua
 - cheesecake/tiramisu
-/Users/francesco/.Trash/HMD-Project/tasks.txt
+
 Eliminare ordine fatto in precedenza:
 - recuperare ordine con order id
 - eliminare ordine
