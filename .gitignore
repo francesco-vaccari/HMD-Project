@@ -1,3 +1,4 @@
 .DS_Store
 .rasa/
 __pycache__/
+models/
