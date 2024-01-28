@@ -1,0 +1,177 @@
+{
+  "amounts.1": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3739,
+    "confused_with": {}
+  },
+  "pizza_sizes.4": {
+    "precision": 1.0,
+    "recall": 0.9729119638826185,
+    "f1-score": 0.9862700228832951,
+    "support": 443,
+    "confused_with": {
+      "pizza_sizes.3": 12
+    }
+  },
+  "other_item_types.4": {
+    "precision": 1.0,
+    "recall": 0.9955035971223022,
+    "f1-score": 0.9977467327625057,
+    "support": 1112,
+    "confused_with": {
+      "other_item_types.3": 5
+    }
+  },
+  "address": {
+    "precision": 0.9961089494163424,
+    "recall": 1.0,
+    "f1-score": 0.9980506822612086,
+    "support": 512,
+    "confused_with": {}
+  },
+  "pizza_sizes.3": {
+    "precision": 0.9864712514092446,
+    "recall": 0.9954493742889647,
+    "f1-score": 0.9909399773499433,
+    "support": 879,
+    "confused_with": {
+      "pizza_sizes.2": 4
+    }
+  },
+  "pizza_sizes.1": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1847,
+    "confused_with": {}
+  },
+  "pizza_types.3": {
+    "precision": 0.987378640776699,
+    "recall": 0.9921951219512195,
+    "f1-score": 0.9897810218978103,
+    "support": 1025,
+    "confused_with": {
+      "pizza_types.2": 6,
+      "pizza_types.1": 2
+    }
+  },
+  "other_item_types.2": {
+    "precision": 0.998234255444379,
+    "recall": 1.0,
+    "f1-score": 0.9991163475699558,
+    "support": 3392,
+    "confused_with": {}
+  },
+  "amounts.3": {
+    "precision": 0.9969742813918305,
+    "recall": 0.9984848484848485,
+    "f1-score": 0.9977289931869796,
+    "support": 1980,
+    "confused_with": {
+      "amounts.2": 3
+    }
+  },
+  "other_item_types.1": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3923,
+    "confused_with": {}
+  },
+  "amounts": {
+    "precision": 0.984,
+    "recall": 0.984,
+    "f1-score": 0.984,
+    "support": 125,
+    "confused_with": {}
+  },
+  "pizza_types.4": {
+    "precision": 1.0,
+    "recall": 0.9728155339805825,
+    "f1-score": 0.9862204724409448,
+    "support": 515,
+    "confused_with": {
+      "pizza_types.3": 13,
+      "pizza_types.2": 1
+    }
+  },
+  "allergies": {
+    "precision": 1.0,
+    "recall": 0.6,
+    "f1-score": 0.7499999999999999,
+    "support": 5,
+    "confused_with": {
+      "address": 1,
+      "pizza_types.1": 1
+    }
+  },
+  "other_item_types.3": {
+    "precision": 0.9978012313104662,
+    "recall": 0.9973626373626374,
+    "f1-score": 0.9975818861288196,
+    "support": 2275,
+    "confused_with": {
+      "other_item_types.2": 6
+    }
+  },
+  "pizza_types.1": {
+    "precision": 0.9934548854604955,
+    "recall": 1.0,
+    "f1-score": 0.9967166979362102,
+    "support": 2125,
+    "confused_with": {}
+  },
+  "pizza_sizes.2": {
+    "precision": 0.9971711456859972,
+    "recall": 1.0,
+    "f1-score": 0.9985835694050991,
+    "support": 1410,
+    "confused_with": {}
+  },
+  "pizza_types.2": {
+    "precision": 0.9956467661691543,
+    "recall": 0.9937926753569212,
+    "f1-score": 0.9947188567878223,
+    "support": 1611,
+    "confused_with": {
+      "pizza_types.1": 10
+    }
+  },
+  "amounts.4": {
+    "precision": 0.9979529170931423,
+    "recall": 0.9938837920489296,
+    "f1-score": 0.9959141981613892,
+    "support": 981,
+    "confused_with": {
+      "amounts.3": 6
+    }
+  },
+  "amounts.2": {
+    "precision": 0.999003984063745,
+    "recall": 1.0,
+    "f1-score": 0.9995017438963627,
+    "support": 3009,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9975414078674948,
+    "recall": 0.9976705060178594,
+    "f1-score": 0.9976059527660951,
+    "support": 30908
+  },
+  "macro avg": {
+    "precision": 0.9963262267484998,
+    "recall": 0.9734947128673171,
+    "f1-score": 0.9822563790878078,
+    "support": 30908
+  },
+  "weighted avg": {
+    "precision": 0.9975501902024063,
+    "recall": 0.9976705060178594,
+    "f1-score": 0.9975942987440714,
+    "support": 30908
+  },
+  "accuracy": 0.998642746524213
+}

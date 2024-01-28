@@ -1,0 +1,210 @@
+[
+  {
+    "text": "where are you located",
+    "intent": "ask_address",
+    "intent_prediction": {
+      "name": "ask_opening_hours",
+      "confidence": 0.31840580701828003
+    }
+  },
+  {
+    "text": "who's the US President",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "ask_functions",
+      "confidence": 0.285713791847229
+    }
+  },
+  {
+    "text": "what's the weather like today",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "ask_cost",
+      "confidence": 0.21056191623210907
+    }
+  },
+  {
+    "text": "deliver to my house",
+    "intent": "delivery",
+    "intent_prediction": {
+      "name": "change_order",
+      "confidence": 0.3468274176120758
+    }
+  },
+  {
+    "text": "deliver to me",
+    "intent": "delivery",
+    "intent_prediction": {
+      "name": "takeaway",
+      "confidence": 0.2580975890159607
+    }
+  },
+  {
+    "text": "nope",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "order",
+      "confidence": 0.9431697130203247
+    }
+  },
+  {
+    "text": "is this a bot",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.3550027906894684
+    }
+  },
+  {
+    "text": "what is the menu",
+    "intent": "ask_menu",
+    "intent_prediction": {
+      "name": "ask_address",
+      "confidence": 0.25064995884895325
+    }
+  },
+  {
+    "text": "what do you specialize in",
+    "intent": "ask_functions",
+    "intent_prediction": {
+      "name": "ask_menu",
+      "confidence": 0.2984946072101593
+    }
+  },
+  {
+    "text": "what can you do",
+    "intent": "ask_functions",
+    "intent_prediction": {
+      "name": "ask_menu",
+      "confidence": 0.23981143534183502
+    }
+  },
+  {
+    "text": "sure",
+    "intent": "confirm",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.1277584284543991
+    }
+  },
+  {
+    "text": "indeed",
+    "intent": "confirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.47010135650634766
+    }
+  },
+  {
+    "text": "yep",
+    "intent": "confirm",
+    "intent_prediction": {
+      "name": "order",
+      "confidence": 0.9996380805969238
+    }
+  },
+  {
+    "text": "i would like to come and get the food",
+    "intent": "takeaway",
+    "intent_prediction": {
+      "name": "table",
+      "confidence": 0.3375604748725891
+    }
+  },
+  {
+    "text": "my address is 3222 state rt 11 malone",
+    "intent": "tell_address",
+    "intent_prediction": {
+      "name": "tell_number",
+      "confidence": 0.8197007775306702
+    }
+  },
+  {
+    "text": "deliver to strada mongallo 4 case sparse",
+    "intent": "tell_address",
+    "intent_prediction": {
+      "name": "order",
+      "confidence": 0.9891841411590576
+    }
+  },
+  {
+    "text": "deliver to vicolo societa' operaia 2 pinerolo",
+    "intent": "tell_address",
+    "intent_prediction": {
+      "name": "order",
+      "confidence": 0.6799398064613342
+    }
+  },
+  {
+    "text": "how many people are there",
+    "intent": "ask_affluence",
+    "intent_prediction": {
+      "name": "ask_allergies",
+      "confidence": 0.3726910650730133
+    }
+  },
+  {
+    "text": "how many people are there tomorrow",
+    "intent": "ask_affluence",
+    "intent_prediction": {
+      "name": "ask_allergies",
+      "confidence": 0.30837205052375793
+    }
+  },
+  {
+    "text": "for  22",
+    "intent": "tell_time",
+    "intent_prediction": {
+      "name": "tell_number",
+      "confidence": 0.9430346488952637
+    }
+  },
+  {
+    "text": "reservation for 2",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "tell_time",
+      "confidence": 0.5944568514823914
+    }
+  },
+  {
+    "text": "8",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "order",
+      "confidence": 0.5698820948600769
+    }
+  },
+  {
+    "text": "3",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "tell_time",
+      "confidence": 0.543491542339325
+    }
+  },
+  {
+    "text": "16",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "order",
+      "confidence": 0.6404465436935425
+    }
+  },
+  {
+    "text": "pizza please",
+    "intent": "order",
+    "intent_prediction": {
+      "name": "ask_menu",
+      "confidence": 0.3062950074672699
+    }
+  },
+  {
+    "text": "i want to order pizza",
+    "intent": "order",
+    "intent_prediction": {
+      "name": "change_order",
+      "confidence": 0.2684811055660248
+    }
+  }
+]

@@ -1,0 +1,5 @@
+rasa test nlu --config config.yml alternative_config.yml --runs 1 --percentages 0 --out comparison_nlu
+rasa train --config config.yml --fixed-model-name main
+rasa train --config alternative_config.yml --fixed-model-name alternative
+rasa test core -m models/main.tar.gz --stories test_stories.yml --out core_main
+rasa test core -m models/alternative.tar.gz --stories test_stories.yml --out core_alternative
