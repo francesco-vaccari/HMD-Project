@@ -1,0 +1,3 @@
+rasa test nlu --config config.yml alternative_config.yml --runs 1 --percentages 0
+rasa train --config config.yml --fixed-model-name main
+rasa train --config alternative_config.yml --fixed-model-name alternative
