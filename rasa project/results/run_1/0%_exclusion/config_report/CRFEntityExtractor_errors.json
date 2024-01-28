@@ -1,0 +1,3716 @@
+[
+  {
+    "text": "which pizzas are suitable for vegans",
+    "entities": [
+      {
+        "start": 30,
+        "end": 36,
+        "value": "vegans",
+        "entity": "allergies"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "which pizzas are safe for people with dairy allergies",
+    "entities": [
+      {
+        "start": 38,
+        "end": 43,
+        "value": "dairy",
+        "entity": "allergies"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "are there pizzas without dairy",
+    "entities": [
+      {
+        "start": 25,
+        "end": 30,
+        "value": "dairy",
+        "entity": "allergies"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "9",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.5526814509550086,
+        "group": "4",
+        "confidence_group": 0.852675035273181,
+        "value": "9",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "12",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "12",
+        "entity": "amounts"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "11",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "11",
+        "entity": "amounts"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.5508155923409856,
+        "group": "4",
+        "confidence_group": 0.8717343099216129,
+        "value": "11",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "16",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "16",
+        "entity": "amounts"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.5426047954002718,
+        "group": "4",
+        "confidence_group": 0.8650355809910711,
+        "value": "16",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "14",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.6920816750994627,
+        "group": "4",
+        "confidence_group": 0.8416386504080401,
+        "value": "14",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "19",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "19",
+        "entity": "amounts"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "11",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.5508155923409856,
+        "group": "4",
+        "confidence_group": 0.8717343099216129,
+        "value": "11",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "9",
+    "entities": [
+      {
+        "start": 0,
+        "end": 1,
+        "value": "9",
+        "entity": "amounts"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.5526814509550086,
+        "group": "4",
+        "confidence_group": 0.852675035273181,
+        "value": "9",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "3",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 0,
+        "end": 1,
+        "confidence_entity": 0.6467207362046073,
+        "group": "4",
+        "confidence_group": 0.8471424222591355,
+        "value": "3",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "13",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.722420078255687,
+        "group": "4",
+        "confidence_group": 0.8392281420043897,
+        "value": "13",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "18",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "18",
+        "entity": "amounts"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i want 6 large capriccios 16 gelato extra large mushrooms ice creams",
+    "entities": [
+      {
+        "start": 7,
+        "end": 8,
+        "value": "6",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 9,
+        "end": 14,
+        "value": "large",
+        "entity": "pizza_sizes",
+        "group": "1"
+      },
+      {
+        "start": 15,
+        "end": 25,
+        "value": "capriccios",
+        "entity": "pizza_types",
+        "group": "1"
+      },
+      {
+        "start": 26,
+        "end": 28,
+        "value": "16",
+        "entity": "amounts",
+        "group": "2"
+      },
+      {
+        "start": 29,
+        "end": 35,
+        "value": "gelato",
+        "entity": "other_item_types",
+        "group": "2"
+      },
+      {
+        "start": 36,
+        "end": 47,
+        "value": "extra large",
+        "entity": "pizza_sizes",
+        "group": "3"
+      },
+      {
+        "start": 48,
+        "end": 57,
+        "value": "mushrooms",
+        "entity": "pizza_types",
+        "group": "3"
+      },
+      {
+        "start": 58,
+        "end": 68,
+        "value": "ice creams",
+        "entity": "other_item_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 7,
+        "end": 8,
+        "confidence_entity": 0.9997233788025697,
+        "group": "1",
+        "confidence_group": 0.9996381762701257,
+        "value": "6",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.9999559783924092,
+        "group": "1",
+        "confidence_group": 0.9997612620318431,
+        "value": "large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 15,
+        "end": 25,
+        "confidence_entity": 0.9999941758856312,
+        "group": "1",
+        "confidence_group": 0.9983456106943033,
+        "value": "capricciosa",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 26,
+        "end": 28,
+        "confidence_entity": 0.9999773664692777,
+        "group": "2",
+        "confidence_group": 0.9963448349459925,
+        "value": "16",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 29,
+        "end": 35,
+        "confidence_entity": 0.9998347151590653,
+        "group": "2",
+        "confidence_group": 0.992688575588794,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 36,
+        "end": 47,
+        "confidence_entity": 0.9999389305752387,
+        "group": "3",
+        "confidence_group": 0.6140446360394044,
+        "value": "extra large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 48,
+        "end": 57,
+        "confidence_entity": 0.999856038604833,
+        "group": "3",
+        "confidence_group": 0.6104824811792143,
+        "value": "funghi",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 58,
+        "end": 68,
+        "confidence_entity": 0.9997502745273735,
+        "group": "3",
+        "confidence_group": 0.484654522597007,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i would like Coca-Cola extra large fungi",
+    "entities": [
+      {
+        "start": 13,
+        "end": 22,
+        "value": "Coca-Cola",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 23,
+        "end": 34,
+        "value": "extra large",
+        "entity": "pizza_sizes",
+        "group": "2"
+      },
+      {
+        "start": 35,
+        "end": 40,
+        "value": "fungi",
+        "entity": "pizza_types",
+        "group": "2"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "other_item_types",
+        "start": 13,
+        "end": 22,
+        "confidence_entity": 0.999289667584112,
+        "group": "1",
+        "confidence_group": 0.9999997602070119,
+        "value": "coke",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 23,
+        "end": 34,
+        "confidence_entity": 0.9999593395872068,
+        "group": "4",
+        "confidence_group": 0.5218142120871743,
+        "value": "extra large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 35,
+        "end": 40,
+        "confidence_entity": 0.9997679104023034,
+        "group": "4",
+        "confidence_group": 0.5156527351422011,
+        "value": "funghi",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i would like 10 ice creams coca cola ice cream",
+    "entities": [
+      {
+        "start": 13,
+        "end": 15,
+        "value": "10",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 16,
+        "end": 26,
+        "value": "ice creams",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 27,
+        "end": 36,
+        "value": "coca cola",
+        "entity": "other_item_types",
+        "group": "2"
+      },
+      {
+        "start": 37,
+        "end": 46,
+        "value": "ice cream",
+        "entity": "other_item_types",
+        "group": "3"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 13,
+        "end": 15,
+        "confidence_entity": 0.999877022332544,
+        "group": "1",
+        "confidence_group": 0.9998284991799671,
+        "value": "10",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 16,
+        "end": 26,
+        "confidence_entity": 0.9999680207509511,
+        "group": "1",
+        "confidence_group": 0.9963188025867876,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 27,
+        "end": 36,
+        "confidence_entity": 0.9999590850680584,
+        "group": "2",
+        "confidence_group": 0.8438214918753443,
+        "value": "coca cola",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 37,
+        "end": 46,
+        "confidence_entity": 0.9999017882497895,
+        "group": "2",
+        "confidence_group": 0.5136957358780762,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can i get 12 sprites Capri large capriccios coca cola",
+    "entities": [
+      {
+        "start": 10,
+        "end": 12,
+        "value": "12",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 13,
+        "end": 20,
+        "value": "sprites",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 21,
+        "end": 26,
+        "value": "Capri",
+        "entity": "pizza_types",
+        "group": "2"
+      },
+      {
+        "start": 27,
+        "end": 32,
+        "value": "large",
+        "entity": "pizza_sizes",
+        "group": "3"
+      },
+      {
+        "start": 33,
+        "end": 43,
+        "value": "capriccios",
+        "entity": "pizza_types",
+        "group": "3"
+      },
+      {
+        "start": 44,
+        "end": 53,
+        "value": "coca cola",
+        "entity": "other_item_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 10,
+        "end": 12,
+        "confidence_entity": 0.9998302939137034,
+        "group": "1",
+        "confidence_group": 0.9997580945895309,
+        "value": "12",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 13,
+        "end": 20,
+        "confidence_entity": 0.9998021231304676,
+        "group": "1",
+        "confidence_group": 0.9966415766299264,
+        "value": "sprite",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 21,
+        "end": 26,
+        "confidence_entity": 0.9969913431273829,
+        "group": "2",
+        "confidence_group": 0.9355158877900953,
+        "value": "capricciosa",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 27,
+        "end": 32,
+        "confidence_entity": 0.9999295934354597,
+        "group": "3",
+        "confidence_group": 0.8488516914655022,
+        "value": "large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 33,
+        "end": 43,
+        "confidence_entity": 0.9999672208585277,
+        "group": "3",
+        "confidence_group": 0.8480428905996056,
+        "value": "capricciosa",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 44,
+        "end": 53,
+        "confidence_entity": 0.9998931021521654,
+        "group": "3",
+        "confidence_group": 0.5451388070329933,
+        "value": "coca cola",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i would like to order extra large hawaiis 20 cola extra large pepperoni ice cream",
+    "entities": [
+      {
+        "start": 22,
+        "end": 33,
+        "value": "extra large",
+        "entity": "pizza_sizes",
+        "group": "1"
+      },
+      {
+        "start": 34,
+        "end": 41,
+        "value": "hawaiis",
+        "entity": "pizza_types",
+        "group": "1"
+      },
+      {
+        "start": 42,
+        "end": 44,
+        "value": "20",
+        "entity": "amounts",
+        "group": "2"
+      },
+      {
+        "start": 45,
+        "end": 49,
+        "value": "cola",
+        "entity": "other_item_types",
+        "group": "2"
+      },
+      {
+        "start": 50,
+        "end": 61,
+        "value": "extra large",
+        "entity": "pizza_sizes",
+        "group": "3"
+      },
+      {
+        "start": 62,
+        "end": 71,
+        "value": "pepperoni",
+        "entity": "pizza_types",
+        "group": "3"
+      },
+      {
+        "start": 72,
+        "end": 81,
+        "value": "ice cream",
+        "entity": "other_item_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza_sizes",
+        "start": 22,
+        "end": 33,
+        "confidence_entity": 0.9998742404427948,
+        "group": "1",
+        "confidence_group": 0.999917073785517,
+        "value": "extra large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 34,
+        "end": 41,
+        "confidence_entity": 0.9999764036200111,
+        "group": "1",
+        "confidence_group": 0.9966268764277645,
+        "value": "hawaii",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 42,
+        "end": 44,
+        "confidence_entity": 0.9999512778536497,
+        "group": "2",
+        "confidence_group": 0.9938261244814721,
+        "value": "20",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 45,
+        "end": 49,
+        "confidence_entity": 0.9998284715095289,
+        "group": "2",
+        "confidence_group": 0.9909045160594229,
+        "value": "coke",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 50,
+        "end": 61,
+        "confidence_entity": 0.9999382369421351,
+        "group": "3",
+        "confidence_group": 0.5956513783427627,
+        "value": "extra large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 62,
+        "end": 71,
+        "confidence_entity": 0.9998777020574751,
+        "group": "3",
+        "confidence_group": 0.5841878155865244,
+        "value": "pepperoni",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 72,
+        "end": 81,
+        "confidence_entity": 0.9999254905998263,
+        "group": "3",
+        "confidence_group": 0.5153559196583074,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i want 15 fanta 15 french fries coca cola Hawaiian",
+    "entities": [
+      {
+        "start": 7,
+        "end": 9,
+        "value": "15",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 10,
+        "end": 15,
+        "value": "fanta",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 16,
+        "end": 18,
+        "value": "15",
+        "entity": "amounts",
+        "group": "2"
+      },
+      {
+        "start": 19,
+        "end": 31,
+        "value": "french fries",
+        "entity": "pizza_types",
+        "group": "2"
+      },
+      {
+        "start": 32,
+        "end": 41,
+        "value": "coca cola",
+        "entity": "other_item_types",
+        "group": "3"
+      },
+      {
+        "start": 42,
+        "end": 50,
+        "value": "Hawaiian",
+        "entity": "pizza_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 7,
+        "end": 9,
+        "confidence_entity": 0.9999525735944804,
+        "group": "1",
+        "confidence_group": 0.9998559799144449,
+        "value": "15",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 10,
+        "end": 15,
+        "confidence_entity": 0.9999929833472649,
+        "group": "1",
+        "confidence_group": 0.9998311412834988,
+        "value": "fanta",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 16,
+        "end": 18,
+        "confidence_entity": 0.9999193200668218,
+        "group": "2",
+        "confidence_group": 0.9959062679296096,
+        "value": "15",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 19,
+        "end": 31,
+        "confidence_entity": 0.9999598594144116,
+        "group": "2",
+        "confidence_group": 0.9879958376043712,
+        "value": "french fries",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 32,
+        "end": 41,
+        "confidence_entity": 0.9999511469532079,
+        "group": "2",
+        "confidence_group": 0.5751806890596105,
+        "value": "coca cola",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 42,
+        "end": 50,
+        "confidence_entity": 0.9981310768141858,
+        "group": "3",
+        "confidence_group": 0.5489202712680543,
+        "value": "hawaii",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i want funghis without meat 16 fantas 2 coke",
+    "entities": [
+      {
+        "start": 7,
+        "end": 14,
+        "value": "funghis",
+        "entity": "pizza_types",
+        "group": "1"
+      },
+      {
+        "start": 15,
+        "end": 27,
+        "value": "without meat",
+        "entity": "pizza_types",
+        "group": "2"
+      },
+      {
+        "start": 28,
+        "end": 30,
+        "value": "16",
+        "entity": "amounts",
+        "group": "3"
+      },
+      {
+        "start": 31,
+        "end": 37,
+        "value": "fantas",
+        "entity": "other_item_types",
+        "group": "3"
+      },
+      {
+        "start": 38,
+        "end": 39,
+        "value": "2",
+        "entity": "amounts",
+        "group": "4"
+      },
+      {
+        "start": 40,
+        "end": 44,
+        "value": "coke",
+        "entity": "other_item_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pizza_types",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.9972004541806284,
+        "group": "1",
+        "confidence_group": 0.9999999991160113,
+        "value": "funghi",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 15,
+        "end": 27,
+        "confidence_entity": 0.9995883111149175,
+        "group": "1",
+        "confidence_group": 0.6641800208304492,
+        "value": "without meat",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 28,
+        "end": 30,
+        "confidence_entity": 0.9999176452595817,
+        "group": "2",
+        "confidence_group": 0.66703015315281,
+        "value": "16",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 31,
+        "end": 37,
+        "confidence_entity": 0.9998361430979096,
+        "group": "2",
+        "confidence_group": 0.6569710475380083,
+        "value": "fanta",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 38,
+        "end": 39,
+        "confidence_entity": 0.9999636184355791,
+        "group": "3",
+        "confidence_group": 0.6588717000397292,
+        "value": "2",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 40,
+        "end": 44,
+        "confidence_entity": 0.9999555533924309,
+        "group": "3",
+        "confidence_group": 0.6412393079312004,
+        "value": "coke",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can i get 19 cheeses margherita 1 large French fries ice cream",
+    "entities": [
+      {
+        "start": 10,
+        "end": 12,
+        "value": "19",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 13,
+        "end": 20,
+        "value": "cheeses",
+        "entity": "pizza_types",
+        "group": "1"
+      },
+      {
+        "start": 21,
+        "end": 31,
+        "value": "margherita",
+        "entity": "pizza_types",
+        "group": "2"
+      },
+      {
+        "start": 32,
+        "end": 33,
+        "value": "1",
+        "entity": "amounts",
+        "group": "3"
+      },
+      {
+        "start": 34,
+        "end": 39,
+        "value": "large",
+        "entity": "pizza_sizes",
+        "group": "3"
+      },
+      {
+        "start": 40,
+        "end": 52,
+        "value": "French fries",
+        "entity": "pizza_types",
+        "group": "3"
+      },
+      {
+        "start": 53,
+        "end": 62,
+        "value": "ice cream",
+        "entity": "other_item_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 10,
+        "end": 12,
+        "confidence_entity": 0.9995753830379963,
+        "group": "1",
+        "confidence_group": 0.9963671747855278,
+        "value": "19",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 13,
+        "end": 20,
+        "confidence_entity": 0.9922123325576203,
+        "group": "1",
+        "confidence_group": 0.999965970256667,
+        "value": "cheese",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 21,
+        "end": 31,
+        "confidence_entity": 0.999668735844643,
+        "group": "2",
+        "confidence_group": 0.923444341160303,
+        "value": "margherita",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 32,
+        "end": 33,
+        "confidence_entity": 0.999961898552985,
+        "group": "3",
+        "confidence_group": 0.8936411185819515,
+        "value": "1",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 34,
+        "end": 39,
+        "confidence_entity": 0.9998625111103756,
+        "group": "3",
+        "confidence_group": 0.8916546579600958,
+        "value": "large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 40,
+        "end": 52,
+        "confidence_entity": 0.9999965261259518,
+        "group": "3",
+        "confidence_group": 0.8784470981429822,
+        "value": "french fries",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 53,
+        "end": 62,
+        "confidence_entity": 0.999887209778494,
+        "group": "3",
+        "confidence_group": 0.5361950682453405,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i would like to order Coca-Cola 2 extra large hawaiian ice creams ice creams",
+    "entities": [
+      {
+        "start": 22,
+        "end": 31,
+        "value": "Coca-Cola",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 32,
+        "end": 33,
+        "value": "2",
+        "entity": "amounts",
+        "group": "2"
+      },
+      {
+        "start": 34,
+        "end": 45,
+        "value": "extra large",
+        "entity": "pizza_sizes",
+        "group": "2"
+      },
+      {
+        "start": 46,
+        "end": 54,
+        "value": "hawaiian",
+        "entity": "pizza_types",
+        "group": "2"
+      },
+      {
+        "start": 55,
+        "end": 65,
+        "value": "ice creams",
+        "entity": "other_item_types",
+        "group": "3"
+      },
+      {
+        "start": 66,
+        "end": 76,
+        "value": "ice creams",
+        "entity": "other_item_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "other_item_types",
+        "start": 22,
+        "end": 31,
+        "confidence_entity": 0.9997112021889035,
+        "group": "1",
+        "confidence_group": 0.9999998650860441,
+        "value": "coke",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 32,
+        "end": 33,
+        "confidence_entity": 0.9998600744624276,
+        "group": "2",
+        "confidence_group": 0.9993834388483851,
+        "value": "2",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 34,
+        "end": 45,
+        "confidence_entity": 0.9999691341936848,
+        "group": "2",
+        "confidence_group": 0.9982914456536454,
+        "value": "extra large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 46,
+        "end": 54,
+        "confidence_entity": 0.9999403364739465,
+        "group": "2",
+        "confidence_group": 0.9921201581358442,
+        "value": "hawaii",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 55,
+        "end": 65,
+        "confidence_entity": 0.9999572410386435,
+        "group": "2",
+        "confidence_group": 0.5798235410431128,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 66,
+        "end": 76,
+        "confidence_entity": 0.9996413068517228,
+        "group": "3",
+        "confidence_group": 0.5364416495339561,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "10 pepperoni sprite 14 coca cola ice creams",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "10",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 3,
+        "end": 12,
+        "value": "pepperoni",
+        "entity": "pizza_types",
+        "group": "1"
+      },
+      {
+        "start": 13,
+        "end": 19,
+        "value": "sprite",
+        "entity": "other_item_types",
+        "group": "2"
+      },
+      {
+        "start": 20,
+        "end": 22,
+        "value": "14",
+        "entity": "amounts",
+        "group": "3"
+      },
+      {
+        "start": 23,
+        "end": 32,
+        "value": "coca cola",
+        "entity": "other_item_types",
+        "group": "3"
+      },
+      {
+        "start": 33,
+        "end": 43,
+        "value": "ice creams",
+        "entity": "other_item_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9985663345287151,
+        "group": "1",
+        "confidence_group": 0.9937150439038527,
+        "value": "10",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 3,
+        "end": 12,
+        "confidence_entity": 0.9996850037757745,
+        "group": "1",
+        "confidence_group": 0.9999814980517691,
+        "value": "pepperoni",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 13,
+        "end": 19,
+        "confidence_entity": 0.9999700759404611,
+        "group": "2",
+        "confidence_group": 0.9977696508535697,
+        "value": "sprite",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 20,
+        "end": 22,
+        "confidence_entity": 0.9999703885777419,
+        "group": "3",
+        "confidence_group": 0.9825694135027486,
+        "value": "14",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 23,
+        "end": 32,
+        "confidence_entity": 0.9999828192071669,
+        "group": "3",
+        "confidence_group": 0.9502279904831846,
+        "value": "coca cola",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 33,
+        "end": 43,
+        "confidence_entity": 0.9996429079504732,
+        "group": "3",
+        "confidence_group": 0.6712207564318362,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can i have 9 ice cream 3 tiramisu coca cola mushrooms",
+    "entities": [
+      {
+        "start": 11,
+        "end": 12,
+        "value": "9",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 13,
+        "end": 22,
+        "value": "ice cream",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 23,
+        "end": 24,
+        "value": "3",
+        "entity": "amounts",
+        "group": "2"
+      },
+      {
+        "start": 25,
+        "end": 33,
+        "value": "tiramisu",
+        "entity": "other_item_types",
+        "group": "2"
+      },
+      {
+        "start": 34,
+        "end": 43,
+        "value": "coca cola",
+        "entity": "other_item_types",
+        "group": "3"
+      },
+      {
+        "start": 44,
+        "end": 53,
+        "value": "mushrooms",
+        "entity": "pizza_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 11,
+        "end": 12,
+        "confidence_entity": 0.9998646488217312,
+        "group": "1",
+        "confidence_group": 0.9981421928781861,
+        "value": "9",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 13,
+        "end": 22,
+        "confidence_entity": 0.9999914140246959,
+        "group": "1",
+        "confidence_group": 0.988818258078976,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 23,
+        "end": 24,
+        "confidence_entity": 0.9999590506757883,
+        "group": "2",
+        "confidence_group": 0.9521040968415765,
+        "value": "3",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 25,
+        "end": 33,
+        "confidence_entity": 0.9999528499839071,
+        "group": "2",
+        "confidence_group": 0.9477113765910428,
+        "value": "tiramisu",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 34,
+        "end": 43,
+        "confidence_entity": 0.9999099913715229,
+        "group": "3",
+        "confidence_group": 0.6601907806942284,
+        "value": "coca cola",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 44,
+        "end": 53,
+        "confidence_entity": 0.9971690448458196,
+        "group": "3",
+        "confidence_group": 0.4810245244800319,
+        "value": "funghi",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i'd like 9 cola large fungi 19 extra large French fries large ham",
+    "entities": [
+      {
+        "start": 9,
+        "end": 10,
+        "value": "9",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 11,
+        "end": 15,
+        "value": "cola",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 16,
+        "end": 21,
+        "value": "large",
+        "entity": "pizza_sizes",
+        "group": "2"
+      },
+      {
+        "start": 22,
+        "end": 27,
+        "value": "fungi",
+        "entity": "pizza_types",
+        "group": "2"
+      },
+      {
+        "start": 28,
+        "end": 30,
+        "value": "19",
+        "entity": "amounts",
+        "group": "3"
+      },
+      {
+        "start": 31,
+        "end": 42,
+        "value": "extra large",
+        "entity": "pizza_sizes",
+        "group": "3"
+      },
+      {
+        "start": 43,
+        "end": 55,
+        "value": "French fries",
+        "entity": "pizza_types",
+        "group": "3"
+      },
+      {
+        "start": 56,
+        "end": 61,
+        "value": "large",
+        "entity": "pizza_sizes",
+        "group": "4"
+      },
+      {
+        "start": 62,
+        "end": 65,
+        "value": "ham",
+        "entity": "pizza_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 9,
+        "end": 10,
+        "confidence_entity": 0.9998994969522147,
+        "group": "1",
+        "confidence_group": 0.9999562859188048,
+        "value": "9",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 11,
+        "end": 15,
+        "confidence_entity": 0.9998675922289794,
+        "group": "1",
+        "confidence_group": 0.9985158583221493,
+        "value": "coke",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 16,
+        "end": 21,
+        "confidence_entity": 0.9998970211417271,
+        "group": "2",
+        "confidence_group": 0.7801436987583935,
+        "value": "large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 22,
+        "end": 27,
+        "confidence_entity": 0.9999920217184189,
+        "group": "2",
+        "confidence_group": 0.7751357583294441,
+        "value": "funghi",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 28,
+        "end": 30,
+        "confidence_entity": 0.9999578943501437,
+        "group": "3",
+        "confidence_group": 0.7669346493352671,
+        "value": "19",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 31,
+        "end": 42,
+        "confidence_entity": 0.999972952320221,
+        "group": "3",
+        "confidence_group": 0.7057069401007842,
+        "value": "extra large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 43,
+        "end": 55,
+        "confidence_entity": 0.9999851945359128,
+        "group": "3",
+        "confidence_group": 0.6195032862595828,
+        "value": "french fries",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 56,
+        "end": 61,
+        "confidence_entity": 0.9998292168243631,
+        "group": "3",
+        "confidence_group": 0.5274181174868173,
+        "value": "large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 62,
+        "end": 65,
+        "confidence_entity": 0.9999159378136292,
+        "group": "3",
+        "confidence_group": 0.518089256021187,
+        "value": "ham",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i want 14 tiramisus 20 coca cola extra large hawaiians ice cream",
+    "entities": [
+      {
+        "start": 7,
+        "end": 9,
+        "value": "14",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 10,
+        "end": 19,
+        "value": "tiramisus",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 20,
+        "end": 22,
+        "value": "20",
+        "entity": "amounts",
+        "group": "2"
+      },
+      {
+        "start": 23,
+        "end": 32,
+        "value": "coca cola",
+        "entity": "other_item_types",
+        "group": "2"
+      },
+      {
+        "start": 33,
+        "end": 44,
+        "value": "extra large",
+        "entity": "pizza_sizes",
+        "group": "3"
+      },
+      {
+        "start": 45,
+        "end": 54,
+        "value": "hawaiians",
+        "entity": "pizza_types",
+        "group": "3"
+      },
+      {
+        "start": 55,
+        "end": 64,
+        "value": "ice cream",
+        "entity": "other_item_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 7,
+        "end": 9,
+        "confidence_entity": 0.999911937411348,
+        "group": "1",
+        "confidence_group": 0.9998333362425387,
+        "value": "14",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 10,
+        "end": 19,
+        "confidence_entity": 0.9999137937638602,
+        "group": "1",
+        "confidence_group": 0.9997723123456398,
+        "value": "tiramisu",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 20,
+        "end": 22,
+        "confidence_entity": 0.9999568205253119,
+        "group": "2",
+        "confidence_group": 0.9995159398396353,
+        "value": "20",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 23,
+        "end": 32,
+        "confidence_entity": 0.9999820828888673,
+        "group": "2",
+        "confidence_group": 0.9983141088419114,
+        "value": "coca cola",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 33,
+        "end": 44,
+        "confidence_entity": 0.9999585415820702,
+        "group": "2",
+        "confidence_group": 0.687017233586916,
+        "value": "extra large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 45,
+        "end": 54,
+        "confidence_entity": 0.9999603941808548,
+        "group": "2",
+        "confidence_group": 0.6681505295557323,
+        "value": "hawaii",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 55,
+        "end": 64,
+        "confidence_entity": 0.9999270745411362,
+        "group": "3",
+        "confidence_group": 0.6097003192936705,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can i have 11 pepperonis without meat 18 medium margheritas",
+    "entities": [
+      {
+        "start": 11,
+        "end": 13,
+        "value": "11",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 14,
+        "end": 24,
+        "value": "pepperonis",
+        "entity": "pizza_types",
+        "group": "1"
+      },
+      {
+        "start": 25,
+        "end": 37,
+        "value": "without meat",
+        "entity": "pizza_types",
+        "group": "2"
+      },
+      {
+        "start": 38,
+        "end": 40,
+        "value": "18",
+        "entity": "amounts",
+        "group": "3"
+      },
+      {
+        "start": 41,
+        "end": 47,
+        "value": "medium",
+        "entity": "pizza_sizes",
+        "group": "3"
+      },
+      {
+        "start": 48,
+        "end": 59,
+        "value": "margheritas",
+        "entity": "pizza_types",
+        "group": "3"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 11,
+        "end": 13,
+        "confidence_entity": 0.9996988243605279,
+        "group": "1",
+        "confidence_group": 0.9815202015611437,
+        "value": "11",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 14,
+        "end": 24,
+        "confidence_entity": 0.9993845377805253,
+        "group": "1",
+        "confidence_group": 0.9999723184190212,
+        "value": "pepperoni",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 25,
+        "end": 37,
+        "confidence_entity": 0.9997258443013309,
+        "group": "1",
+        "confidence_group": 0.6435328173530098,
+        "value": "without meat",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 38,
+        "end": 40,
+        "confidence_entity": 0.9998809598640923,
+        "group": "2",
+        "confidence_group": 0.6479368444655366,
+        "value": "18",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 41,
+        "end": 47,
+        "confidence_entity": 0.9999602267327481,
+        "group": "2",
+        "confidence_group": 0.6431646701816884,
+        "value": "medium",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 48,
+        "end": 59,
+        "confidence_entity": 0.999947516885732,
+        "group": "2",
+        "confidence_group": 0.6266820426861252,
+        "value": "margherita",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "gelato colas large veggie ice cream",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "gelato",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 7,
+        "end": 12,
+        "value": "colas",
+        "entity": "other_item_types",
+        "group": "2"
+      },
+      {
+        "start": 13,
+        "end": 18,
+        "value": "large",
+        "entity": "pizza_sizes",
+        "group": "3"
+      },
+      {
+        "start": 19,
+        "end": 25,
+        "value": "veggie",
+        "entity": "pizza_types",
+        "group": "3"
+      },
+      {
+        "start": 26,
+        "end": 35,
+        "value": "ice cream",
+        "entity": "other_item_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "other_item_types",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9991296924923698,
+        "group": "1",
+        "confidence_group": 0.9999928483376466,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.9995539350156467,
+        "group": "2",
+        "confidence_group": 0.8995750034934018,
+        "value": "coke",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.9998975527167835,
+        "group": "3",
+        "confidence_group": 0.7113815959902173,
+        "value": "large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 19,
+        "end": 25,
+        "confidence_entity": 0.9999714252943244,
+        "group": "3",
+        "confidence_group": 0.7102782280293494,
+        "value": "vegetarian",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 26,
+        "end": 35,
+        "confidence_entity": 0.9999272178190122,
+        "group": "3",
+        "confidence_group": 0.46191277811856035,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i would like to order coca cola without meat capricciosa",
+    "entities": [
+      {
+        "start": 22,
+        "end": 31,
+        "value": "coca cola",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 32,
+        "end": 44,
+        "value": "without meat",
+        "entity": "pizza_types",
+        "group": "2"
+      },
+      {
+        "start": 45,
+        "end": 56,
+        "value": "capricciosa",
+        "entity": "pizza_types",
+        "group": "3"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "other_item_types",
+        "start": 22,
+        "end": 31,
+        "confidence_entity": 0.999858362641848,
+        "group": "1",
+        "confidence_group": 0.9999769692308209,
+        "value": "coca cola",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 32,
+        "end": 44,
+        "confidence_entity": 0.9989900768012775,
+        "group": "1",
+        "confidence_group": 0.7526400905683579,
+        "value": "without meat",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 45,
+        "end": 56,
+        "confidence_entity": 0.9981725152434676,
+        "group": "2",
+        "confidence_group": 0.7397718878005171,
+        "value": "capricciosa",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i want 13 fantas 11 ice creams ice cream",
+    "entities": [
+      {
+        "start": 7,
+        "end": 9,
+        "value": "13",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 10,
+        "end": 16,
+        "value": "fantas",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 17,
+        "end": 19,
+        "value": "11",
+        "entity": "amounts",
+        "group": "2"
+      },
+      {
+        "start": 20,
+        "end": 30,
+        "value": "ice creams",
+        "entity": "other_item_types",
+        "group": "2"
+      },
+      {
+        "start": 31,
+        "end": 40,
+        "value": "ice cream",
+        "entity": "other_item_types",
+        "group": "3"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 7,
+        "end": 9,
+        "confidence_entity": 0.9999327626385858,
+        "group": "1",
+        "confidence_group": 0.9998340876922913,
+        "value": "13",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 10,
+        "end": 16,
+        "confidence_entity": 0.9998366519068175,
+        "group": "1",
+        "confidence_group": 0.9995824369922008,
+        "value": "fanta",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 17,
+        "end": 19,
+        "confidence_entity": 0.9999698875883241,
+        "group": "2",
+        "confidence_group": 0.9993953025720251,
+        "value": "11",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 20,
+        "end": 30,
+        "confidence_entity": 0.9999665827160978,
+        "group": "2",
+        "confidence_group": 0.9967556224458328,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 31,
+        "end": 40,
+        "confidence_entity": 0.9999016152819857,
+        "group": "2",
+        "confidence_group": 0.5056712456776148,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "cola 1 cheesecake large without meat small marinara",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "cola",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 5,
+        "end": 6,
+        "value": "1",
+        "entity": "amounts",
+        "group": "2"
+      },
+      {
+        "start": 7,
+        "end": 17,
+        "value": "cheesecake",
+        "entity": "other_item_types",
+        "group": "2"
+      },
+      {
+        "start": 18,
+        "end": 23,
+        "value": "large",
+        "entity": "pizza_sizes",
+        "group": "3"
+      },
+      {
+        "start": 24,
+        "end": 36,
+        "value": "without meat",
+        "entity": "pizza_types",
+        "group": "3"
+      },
+      {
+        "start": 37,
+        "end": 42,
+        "value": "small",
+        "entity": "pizza_sizes",
+        "group": "4"
+      },
+      {
+        "start": 43,
+        "end": 51,
+        "value": "marinara",
+        "entity": "pizza_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "other_item_types",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9994324467957761,
+        "group": "1",
+        "confidence_group": 0.9999772053245674,
+        "value": "coke",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 5,
+        "end": 6,
+        "confidence_entity": 0.999968084389756,
+        "group": "2",
+        "confidence_group": 0.9993017841417985,
+        "value": "1",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 7,
+        "end": 17,
+        "confidence_entity": 0.9999086724182104,
+        "group": "2",
+        "confidence_group": 0.994002491884894,
+        "value": "cheesecake",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 18,
+        "end": 23,
+        "confidence_entity": 0.999739367512855,
+        "group": "3",
+        "confidence_group": 0.9684928867286795,
+        "value": "large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 24,
+        "end": 36,
+        "confidence_entity": 0.9991502174614194,
+        "group": "3",
+        "confidence_group": 0.9504879939222518,
+        "value": "without meat",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 37,
+        "end": 42,
+        "confidence_entity": 0.9998996793013195,
+        "group": "3",
+        "confidence_group": 0.5102535504836063,
+        "value": "small",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 43,
+        "end": 51,
+        "confidence_entity": 0.9999343429014284,
+        "group": "3",
+        "confidence_group": 0.4883300413740489,
+        "value": "marinara",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can i get 18 waters hawaiis ice creams capricciosa",
+    "entities": [
+      {
+        "start": 10,
+        "end": 12,
+        "value": "18",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 13,
+        "end": 19,
+        "value": "waters",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 20,
+        "end": 27,
+        "value": "hawaiis",
+        "entity": "pizza_types",
+        "group": "2"
+      },
+      {
+        "start": 28,
+        "end": 38,
+        "value": "ice creams",
+        "entity": "other_item_types",
+        "group": "3"
+      },
+      {
+        "start": 39,
+        "end": 50,
+        "value": "capricciosa",
+        "entity": "pizza_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 10,
+        "end": 12,
+        "confidence_entity": 0.9998396884099107,
+        "group": "1",
+        "confidence_group": 0.9997868008384183,
+        "value": "18",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 13,
+        "end": 19,
+        "confidence_entity": 0.9998227509928106,
+        "group": "1",
+        "confidence_group": 0.9989444605958863,
+        "value": "water",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 20,
+        "end": 27,
+        "confidence_entity": 0.9968870586840617,
+        "group": "2",
+        "confidence_group": 0.974763734438564,
+        "value": "hawaii",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 28,
+        "end": 38,
+        "confidence_entity": 0.9999170300501694,
+        "group": "3",
+        "confidence_group": 0.7107282784346391,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 39,
+        "end": 50,
+        "confidence_entity": 0.9985422341800082,
+        "group": "3",
+        "confidence_group": 0.4982529823351003,
+        "value": "capricciosa",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can i get 10 extra large hawaiian a cheesecake 10 ice creams ice cream",
+    "entities": [
+      {
+        "start": 10,
+        "end": 12,
+        "value": "10",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 13,
+        "end": 24,
+        "value": "extra large",
+        "entity": "pizza_sizes",
+        "group": "1"
+      },
+      {
+        "start": 25,
+        "end": 33,
+        "value": "hawaiian",
+        "entity": "pizza_types",
+        "group": "1"
+      },
+      {
+        "start": 34,
+        "end": 35,
+        "value": "a",
+        "entity": "amounts",
+        "group": "2"
+      },
+      {
+        "start": 36,
+        "end": 46,
+        "value": "cheesecake",
+        "entity": "other_item_types",
+        "group": "2"
+      },
+      {
+        "start": 47,
+        "end": 49,
+        "value": "10",
+        "entity": "amounts",
+        "group": "3"
+      },
+      {
+        "start": 50,
+        "end": 60,
+        "value": "ice creams",
+        "entity": "other_item_types",
+        "group": "3"
+      },
+      {
+        "start": 61,
+        "end": 70,
+        "value": "ice cream",
+        "entity": "other_item_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 10,
+        "end": 12,
+        "confidence_entity": 0.9998139878857374,
+        "group": "1",
+        "confidence_group": 0.9994723815822838,
+        "value": "10",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 13,
+        "end": 24,
+        "confidence_entity": 0.9999694153724569,
+        "group": "1",
+        "confidence_group": 0.9983967929912047,
+        "value": "extra large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 25,
+        "end": 33,
+        "confidence_entity": 0.999988370762808,
+        "group": "1",
+        "confidence_group": 0.9960974227139728,
+        "value": "hawaii",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 34,
+        "end": 35,
+        "confidence_entity": 0.9999058155795558,
+        "group": "2",
+        "confidence_group": 0.9928629654015939,
+        "value": "1",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 36,
+        "end": 46,
+        "confidence_entity": 0.9999121628768053,
+        "group": "2",
+        "confidence_group": 0.9906983404259593,
+        "value": "cheesecake",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 47,
+        "end": 49,
+        "confidence_entity": 0.9999677089278582,
+        "group": "3",
+        "confidence_group": 0.9792500552867466,
+        "value": "10",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 50,
+        "end": 60,
+        "confidence_entity": 0.9999665649188757,
+        "group": "3",
+        "confidence_group": 0.9511669199057263,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 61,
+        "end": 70,
+        "confidence_entity": 0.9999016149363128,
+        "group": "3",
+        "confidence_group": 0.5156542932114317,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i want to order colas 1 cheesecake extra large capricciosas extra large ham",
+    "entities": [
+      {
+        "start": 16,
+        "end": 21,
+        "value": "colas",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 22,
+        "end": 23,
+        "value": "1",
+        "entity": "amounts",
+        "group": "2"
+      },
+      {
+        "start": 24,
+        "end": 34,
+        "value": "cheesecake",
+        "entity": "other_item_types",
+        "group": "2"
+      },
+      {
+        "start": 35,
+        "end": 46,
+        "value": "extra large",
+        "entity": "pizza_sizes",
+        "group": "3"
+      },
+      {
+        "start": 47,
+        "end": 59,
+        "value": "capricciosas",
+        "entity": "pizza_types",
+        "group": "3"
+      },
+      {
+        "start": 60,
+        "end": 71,
+        "value": "extra large",
+        "entity": "pizza_sizes",
+        "group": "4"
+      },
+      {
+        "start": 72,
+        "end": 75,
+        "value": "ham",
+        "entity": "pizza_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "other_item_types",
+        "start": 16,
+        "end": 21,
+        "confidence_entity": 0.9996669203017665,
+        "group": "1",
+        "confidence_group": 0.999999826861438,
+        "value": "coke",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 22,
+        "end": 23,
+        "confidence_entity": 0.9999698101347737,
+        "group": "2",
+        "confidence_group": 0.9958651765482831,
+        "value": "1",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 24,
+        "end": 34,
+        "confidence_entity": 0.999886251222091,
+        "group": "2",
+        "confidence_group": 0.9917476542737317,
+        "value": "cheesecake",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 35,
+        "end": 46,
+        "confidence_entity": 0.9999389497848631,
+        "group": "3",
+        "confidence_group": 0.6522679497800946,
+        "value": "extra large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 47,
+        "end": 59,
+        "confidence_entity": 0.999922895402202,
+        "group": "3",
+        "confidence_group": 0.6420274879713112,
+        "value": "capricciosa",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 60,
+        "end": 71,
+        "confidence_entity": 0.9999380175882041,
+        "group": "3",
+        "confidence_group": 0.5430666462283854,
+        "value": "extra large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 72,
+        "end": 75,
+        "confidence_entity": 0.9998524745092872,
+        "group": "3",
+        "confidence_group": 0.5116761651447702,
+        "value": "ham",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can i have fanta 14 teas ice cream extra large capricciosas",
+    "entities": [
+      {
+        "start": 11,
+        "end": 16,
+        "value": "fanta",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 17,
+        "end": 19,
+        "value": "14",
+        "entity": "amounts",
+        "group": "2"
+      },
+      {
+        "start": 20,
+        "end": 24,
+        "value": "teas",
+        "entity": "other_item_types",
+        "group": "2"
+      },
+      {
+        "start": 25,
+        "end": 34,
+        "value": "ice cream",
+        "entity": "other_item_types",
+        "group": "3"
+      },
+      {
+        "start": 35,
+        "end": 46,
+        "value": "extra large",
+        "entity": "pizza_sizes",
+        "group": "4"
+      },
+      {
+        "start": 47,
+        "end": 59,
+        "value": "capricciosas",
+        "entity": "pizza_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "other_item_types",
+        "start": 11,
+        "end": 16,
+        "confidence_entity": 0.9999737168395962,
+        "group": "1",
+        "confidence_group": 0.9999989305683549,
+        "value": "fanta",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 17,
+        "end": 19,
+        "confidence_entity": 0.9999841385252942,
+        "group": "2",
+        "confidence_group": 0.997507380778831,
+        "value": "14",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 20,
+        "end": 24,
+        "confidence_entity": 0.9998592303115635,
+        "group": "2",
+        "confidence_group": 0.9952404492749043,
+        "value": "tea",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 25,
+        "end": 34,
+        "confidence_entity": 0.9999781828442189,
+        "group": "3",
+        "confidence_group": 0.5382512534291438,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 35,
+        "end": 46,
+        "confidence_entity": 0.999958762032442,
+        "group": "3",
+        "confidence_group": 0.5513116818299917,
+        "value": "extra large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 47,
+        "end": 59,
+        "confidence_entity": 0.9999022036235806,
+        "group": "3",
+        "confidence_group": 0.5189467882606188,
+        "value": "capricciosa",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i'd like 5 gelato coca cola coca cola extra large Hawaiian",
+    "entities": [
+      {
+        "start": 9,
+        "end": 10,
+        "value": "5",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 11,
+        "end": 17,
+        "value": "gelato",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 18,
+        "end": 27,
+        "value": "coca cola",
+        "entity": "other_item_types",
+        "group": "2"
+      },
+      {
+        "start": 28,
+        "end": 37,
+        "value": "coca cola",
+        "entity": "other_item_types",
+        "group": "3"
+      },
+      {
+        "start": 38,
+        "end": 49,
+        "value": "extra large",
+        "entity": "pizza_sizes",
+        "group": "4"
+      },
+      {
+        "start": 50,
+        "end": 58,
+        "value": "Hawaiian",
+        "entity": "pizza_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 9,
+        "end": 10,
+        "confidence_entity": 0.9999074205517011,
+        "group": "1",
+        "confidence_group": 0.999892718314366,
+        "value": "5",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 11,
+        "end": 17,
+        "confidence_entity": 0.9998373763836667,
+        "group": "1",
+        "confidence_group": 0.9997337583112732,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 18,
+        "end": 27,
+        "confidence_entity": 0.9999372938753802,
+        "group": "2",
+        "confidence_group": 0.8980998462763645,
+        "value": "coca cola",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 28,
+        "end": 37,
+        "confidence_entity": 0.999960293200508,
+        "group": "2",
+        "confidence_group": 0.837256305535157,
+        "value": "coca cola",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 38,
+        "end": 49,
+        "confidence_entity": 0.999958333260923,
+        "group": "3",
+        "confidence_group": 0.5696790707778818,
+        "value": "extra large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 50,
+        "end": 58,
+        "confidence_entity": 0.9998770753585858,
+        "group": "3",
+        "confidence_group": 0.529906218269574,
+        "value": "hawaii",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i want to order 6 ice cream French fries 4 tiramisu",
+    "entities": [
+      {
+        "start": 16,
+        "end": 17,
+        "value": "6",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 18,
+        "end": 27,
+        "value": "ice cream",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 28,
+        "end": 40,
+        "value": "French fries",
+        "entity": "pizza_types",
+        "group": "2"
+      },
+      {
+        "start": 41,
+        "end": 42,
+        "value": "4",
+        "entity": "amounts",
+        "group": "3"
+      },
+      {
+        "start": 43,
+        "end": 51,
+        "value": "tiramisu",
+        "entity": "other_item_types",
+        "group": "3"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 16,
+        "end": 17,
+        "confidence_entity": 0.9998085301815747,
+        "group": "1",
+        "confidence_group": 0.9998120976088009,
+        "value": "6",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 18,
+        "end": 27,
+        "confidence_entity": 0.9999836345204283,
+        "group": "1",
+        "confidence_group": 0.9997927656881961,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 28,
+        "end": 40,
+        "confidence_entity": 0.9999361915569122,
+        "group": "1",
+        "confidence_group": 0.8114255388435038,
+        "value": "french fries",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 41,
+        "end": 42,
+        "confidence_entity": 0.9998590142767287,
+        "group": "2",
+        "confidence_group": 0.8075687859359448,
+        "value": "4",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 43,
+        "end": 51,
+        "confidence_entity": 0.9999172327494404,
+        "group": "2",
+        "confidence_group": 0.7988674853741067,
+        "value": "tiramisu",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "i would like 7 tiramisus 15 ice cream 11 extra large without meat",
+    "entities": [
+      {
+        "start": 13,
+        "end": 14,
+        "value": "7",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 15,
+        "end": 24,
+        "value": "tiramisus",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 25,
+        "end": 27,
+        "value": "15",
+        "entity": "amounts",
+        "group": "2"
+      },
+      {
+        "start": 28,
+        "end": 37,
+        "value": "ice cream",
+        "entity": "other_item_types",
+        "group": "2"
+      },
+      {
+        "start": 38,
+        "end": 40,
+        "value": "11",
+        "entity": "amounts",
+        "group": "3"
+      },
+      {
+        "start": 41,
+        "end": 52,
+        "value": "extra large",
+        "entity": "pizza_sizes",
+        "group": "3"
+      },
+      {
+        "start": 53,
+        "end": 65,
+        "value": "without meat",
+        "entity": "pizza_types",
+        "group": "3"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 13,
+        "end": 14,
+        "confidence_entity": 0.9999124866203899,
+        "group": "1",
+        "confidence_group": 0.9999005915632594,
+        "value": "7",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 15,
+        "end": 24,
+        "confidence_entity": 0.9999152686662627,
+        "group": "1",
+        "confidence_group": 0.9865542153644772,
+        "value": "tiramisu",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 25,
+        "end": 27,
+        "confidence_entity": 0.9999744736124234,
+        "group": "2",
+        "confidence_group": 0.9836786412979452,
+        "value": "15",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 28,
+        "end": 37,
+        "confidence_entity": 0.9999913760546373,
+        "group": "2",
+        "confidence_group": 0.9079690034634614,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 38,
+        "end": 40,
+        "confidence_entity": 0.9999159609685789,
+        "group": "3",
+        "confidence_group": 0.9052682960924517,
+        "value": "11",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 41,
+        "end": 52,
+        "confidence_entity": 0.999972920946393,
+        "group": "3",
+        "confidence_group": 0.6241114593620444,
+        "value": "extra large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 53,
+        "end": 65,
+        "confidence_entity": 0.9973853149908357,
+        "group": "4",
+        "confidence_group": 0.517542412098079,
+        "value": "without meat",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can i have 19 fries 2 waters ice creams extra large mushroom",
+    "entities": [
+      {
+        "start": 11,
+        "end": 13,
+        "value": "19",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 14,
+        "end": 19,
+        "value": "fries",
+        "entity": "pizza_types",
+        "group": "1"
+      },
+      {
+        "start": 20,
+        "end": 21,
+        "value": "2",
+        "entity": "amounts",
+        "group": "2"
+      },
+      {
+        "start": 22,
+        "end": 28,
+        "value": "waters",
+        "entity": "other_item_types",
+        "group": "2"
+      },
+      {
+        "start": 29,
+        "end": 39,
+        "value": "ice creams",
+        "entity": "other_item_types",
+        "group": "3"
+      },
+      {
+        "start": 40,
+        "end": 51,
+        "value": "extra large",
+        "entity": "pizza_sizes",
+        "group": "4"
+      },
+      {
+        "start": 52,
+        "end": 60,
+        "value": "mushroom",
+        "entity": "pizza_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 11,
+        "end": 13,
+        "confidence_entity": 0.9995386615605153,
+        "group": "1",
+        "confidence_group": 0.9470674390617575,
+        "value": "19",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 14,
+        "end": 19,
+        "confidence_entity": 0.9964917879359061,
+        "group": "1",
+        "confidence_group": 0.9999868433178791,
+        "value": "french fries",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "amounts",
+        "start": 20,
+        "end": 21,
+        "confidence_entity": 0.999971891339165,
+        "group": "2",
+        "confidence_group": 0.9987502847330326,
+        "value": "2",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 22,
+        "end": 28,
+        "confidence_entity": 0.9998885454486665,
+        "group": "2",
+        "confidence_group": 0.996484879494072,
+        "value": "water",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 29,
+        "end": 39,
+        "confidence_entity": 0.9999600084642389,
+        "group": "3",
+        "confidence_group": 0.7118713539270987,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 40,
+        "end": 51,
+        "confidence_entity": 0.9999584850744865,
+        "group": "3",
+        "confidence_group": 0.5293300213993044,
+        "value": "extra large",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 52,
+        "end": 60,
+        "confidence_entity": 0.9997730904130872,
+        "group": "3",
+        "confidence_group": 0.4806464519216536,
+        "value": "funghi",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "can i have 4 ice creams small chips coca cola french fries",
+    "entities": [
+      {
+        "start": 11,
+        "end": 12,
+        "value": "4",
+        "entity": "amounts",
+        "group": "1"
+      },
+      {
+        "start": 13,
+        "end": 23,
+        "value": "ice creams",
+        "entity": "other_item_types",
+        "group": "1"
+      },
+      {
+        "start": 24,
+        "end": 29,
+        "value": "small",
+        "entity": "pizza_sizes",
+        "group": "2"
+      },
+      {
+        "start": 30,
+        "end": 35,
+        "value": "chips",
+        "entity": "pizza_types",
+        "group": "2"
+      },
+      {
+        "start": 36,
+        "end": 45,
+        "value": "coca cola",
+        "entity": "other_item_types",
+        "group": "3"
+      },
+      {
+        "start": 46,
+        "end": 58,
+        "value": "french fries",
+        "entity": "pizza_types",
+        "group": "4"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amounts",
+        "start": 11,
+        "end": 12,
+        "confidence_entity": 0.9998405529206974,
+        "group": "1",
+        "confidence_group": 0.9975111823013231,
+        "value": "4",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 13,
+        "end": 23,
+        "confidence_entity": 0.9999547282214916,
+        "group": "1",
+        "confidence_group": 0.9981423514388303,
+        "value": "ice cream",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_sizes",
+        "start": 24,
+        "end": 29,
+        "confidence_entity": 0.9999133578833472,
+        "group": "2",
+        "confidence_group": 0.7060771403479537,
+        "value": "small",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 30,
+        "end": 35,
+        "confidence_entity": 0.9999018866833973,
+        "group": "2",
+        "confidence_group": 0.7038894573852704,
+        "value": "french fries",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "other_item_types",
+        "start": 36,
+        "end": 45,
+        "confidence_entity": 0.9999489606672034,
+        "group": "2",
+        "confidence_group": 0.7194778042276997,
+        "value": "coca cola",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "pizza_types",
+        "start": 46,
+        "end": 58,
+        "confidence_entity": 0.9999130872896651,
+        "group": "2",
+        "confidence_group": 0.5919138830443319,
+        "value": "french fries",
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

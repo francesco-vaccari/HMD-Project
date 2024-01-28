@@ -1,0 +1,203 @@
+{
+  "order": {
+    "precision": 1.0,
+    "recall": 0.9998160073597057,
+    "f1-score": 0.9999079952157511,
+    "support": 5435,
+    "confused_with": {
+      "out_of_scope": 1
+    }
+  },
+  "ask_affluence": {
+    "precision": 0.9943661971830986,
+    "recall": 0.9915730337078652,
+    "f1-score": 0.9929676511954993,
+    "support": 356,
+    "confused_with": {
+      "ask_cost": 1,
+      "ask_opening_hours": 1
+    }
+  },
+  "out_of_scope": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "takeaway": 1,
+      "ask_allergies": 1
+    }
+  },
+  "change_order": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 8,
+    "confused_with": {}
+  },
+  "greet": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "deny": 2
+    }
+  },
+  "ask_address": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "delivery": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 2,
+    "confused_with": {}
+  },
+  "bot_challenge": {
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1-score": 0.8571428571428571,
+    "support": 3,
+    "confused_with": {}
+  },
+  "deny": {
+    "precision": 0.16666666666666666,
+    "recall": 0.5,
+    "f1-score": 0.25,
+    "support": 2,
+    "confused_with": {
+      "confirm": 1
+    }
+  },
+  "tell_address": {
+    "precision": 1.0,
+    "recall": 0.9439252336448598,
+    "f1-score": 0.9711538461538461,
+    "support": 107,
+    "confused_with": {
+      "tell_number": 4,
+      "delivery": 1
+    }
+  },
+  "tell_time": {
+    "precision": 0.991812865497076,
+    "recall": 0.9988221436984688,
+    "f1-score": 0.9953051643192488,
+    "support": 849,
+    "confused_with": {
+      "tell_number": 1
+    }
+  },
+  "confirm": {
+    "precision": 0.5,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.4,
+    "support": 3,
+    "confused_with": {
+      "deny": 2
+    }
+  },
+  "table": {
+    "precision": 1.0,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.9090909090909091,
+    "support": 6,
+    "confused_with": {
+      "tell_number": 1
+    }
+  },
+  "ask_allergies": {
+    "precision": 0.5555555555555556,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.6666666666666667,
+    "support": 6,
+    "confused_with": {
+      "ask_menu": 1
+    }
+  },
+  "tell_number": {
+    "precision": 0.9934426229508196,
+    "recall": 0.99235807860262,
+    "f1-score": 0.9929000546149646,
+    "support": 916,
+    "confused_with": {
+      "tell_time": 7
+    }
+  },
+  "nothing_else": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "ask_menu": 1
+    }
+  },
+  "ask_opening_hours": {
+    "precision": 0.6,
+    "recall": 1.0,
+    "f1-score": 0.7499999999999999,
+    "support": 3,
+    "confused_with": {}
+  },
+  "ask_functions": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "ask_allergies": 2,
+      "ask_opening_hours": 1
+    }
+  },
+  "takeaway": {
+    "precision": 0.8,
+    "recall": 1.0,
+    "f1-score": 0.888888888888889,
+    "support": 4,
+    "confused_with": {}
+  },
+  "ask_cost": {
+    "precision": 0.75,
+    "recall": 0.75,
+    "f1-score": 0.75,
+    "support": 4,
+    "confused_with": {
+      "ask_functions": 1
+    }
+  },
+  "ask_menu": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "ask_affluence": 2,
+      "ask_allergies": 1
+    }
+  },
+  "accuracy": 0.9954639709694142,
+  "macro avg": {
+    "precision": 0.6080243130723754,
+    "recall": 0.6750711665244532,
+    "f1-score": 0.6297154301566016,
+    "support": 7716
+  },
+  "weighted avg": {
+    "precision": 0.9953067563021191,
+    "recall": 0.9954639709694142,
+    "f1-score": 0.9952763042350371,
+    "support": 7716
+  },
+  "micro avg": {
+    "precision": 0.9954639709694142,
+    "recall": 0.9954639709694142,
+    "f1-score": 0.9954639709694142,
+    "support": 7716
+  }
+}
