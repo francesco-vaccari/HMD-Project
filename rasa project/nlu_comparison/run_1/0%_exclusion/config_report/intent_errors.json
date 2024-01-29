@@ -1,0 +1,114 @@
+[
+  {
+    "text": "good morning",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "takeaway",
+      "confidence": 0.2838412821292877
+    }
+  },
+  {
+    "text": "give me the directions to time square",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "ask_opening_hours",
+      "confidence": 0.5788432955741882
+    }
+  },
+  {
+    "text": "list your features",
+    "intent": "ask_functions",
+    "intent_prediction": {
+      "name": "ask_address",
+      "confidence": 0.8011690974235535
+    }
+  },
+  {
+    "text": "what can you do",
+    "intent": "ask_functions",
+    "intent_prediction": {
+      "name": "ask_menu",
+      "confidence": 0.7200655341148376
+    }
+  },
+  {
+    "text": "definitely",
+    "intent": "confirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7600030303001404
+    }
+  },
+  {
+    "text": "for Saturday",
+    "intent": "tell_time",
+    "intent_prediction": {
+      "name": "ask_affluence",
+      "confidence": 0.14102189242839813
+    }
+  },
+  {
+    "text": "for  6",
+    "intent": "tell_time",
+    "intent_prediction": {
+      "name": "tell_number",
+      "confidence": 0.9999990463256836
+    }
+  },
+  {
+    "text": "i want to make a reservation for 18",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "tell_time",
+      "confidence": 0.6731308698654175
+    }
+  },
+  {
+    "text": "i want to make a reservation for 13",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "tell_time",
+      "confidence": 0.6731308698654175
+    }
+  },
+  {
+    "text": "i would like a pizza",
+    "intent": "order",
+    "intent_prediction": {
+      "name": "table",
+      "confidence": 0.45954304933547974
+    }
+  },
+  {
+    "text": "can i get without meat",
+    "intent": "order",
+    "intent_prediction": {
+      "name": "ask_allergies",
+      "confidence": 0.3564540147781372
+    }
+  },
+  {
+    "text": "i would like to order pizza",
+    "intent": "order",
+    "intent_prediction": {
+      "name": "table",
+      "confidence": 0.20325736701488495
+    }
+  },
+  {
+    "text": "i'd like a pizza please",
+    "intent": "order",
+    "intent_prediction": {
+      "name": "table",
+      "confidence": 0.24889512360095978
+    }
+  },
+  {
+    "text": "can i get vegetarian",
+    "intent": "order",
+    "intent_prediction": {
+      "name": "ask_allergies",
+      "confidence": 0.25432223081588745
+    }
+  }
+]

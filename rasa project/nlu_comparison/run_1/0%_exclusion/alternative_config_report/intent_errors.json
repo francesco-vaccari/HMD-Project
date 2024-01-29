@@ -1,0 +1,330 @@
+[
+  {
+    "text": "good morning",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "ask_affluence",
+      "confidence": 0.195993572473526
+    }
+  },
+  {
+    "text": "give me the directions to time square",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "delivery",
+      "confidence": 0.34014081954956055
+    }
+  },
+  {
+    "text": "what is your pizza menu",
+    "intent": "ask_menu",
+    "intent_prediction": {
+      "name": "ask_address",
+      "confidence": 0.583674967288971
+    }
+  },
+  {
+    "text": "menu",
+    "intent": "ask_menu",
+    "intent_prediction": {
+      "name": "order",
+      "confidence": 0.16392917931079865
+    }
+  },
+  {
+    "text": "what can you do",
+    "intent": "ask_functions",
+    "intent_prediction": {
+      "name": "ask_menu",
+      "confidence": 0.2870177626609802
+    }
+  },
+  {
+    "text": "indeed",
+    "intent": "confirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.582679033279419
+    }
+  },
+  {
+    "text": "what is the final price",
+    "intent": "ask_cost",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.35482820868492126
+    }
+  },
+  {
+    "text": "what's the total i need to pay",
+    "intent": "ask_cost",
+    "intent_prediction": {
+      "name": "delivery",
+      "confidence": 0.17665505409240723
+    }
+  },
+  {
+    "text": "what's the final price",
+    "intent": "ask_cost",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.2151762843132019
+    }
+  },
+  {
+    "text": "i would like to make a reservation for a table",
+    "intent": "table",
+    "intent_prediction": {
+      "name": "tell_number",
+      "confidence": 0.4829048216342926
+    }
+  },
+  {
+    "text": "i want to book a table",
+    "intent": "table",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.26457810401916504
+    }
+  },
+  {
+    "text": "i want to book a table in the pizzeria",
+    "intent": "table",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.3821577727794647
+    }
+  },
+  {
+    "text": "book a table",
+    "intent": "table",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.778153121471405
+    }
+  },
+  {
+    "text": "what vegetarian pizzas do you have",
+    "intent": "ask_allergies",
+    "intent_prediction": {
+      "name": "ask_menu",
+      "confidence": 0.43351513147354126
+    }
+  },
+  {
+    "text": "i need a pizza without gluten",
+    "intent": "ask_allergies",
+    "intent_prediction": {
+      "name": "order",
+      "confidence": 0.5514927506446838
+    }
+  },
+  {
+    "text": "strada serre 13 alba",
+    "intent": "tell_address",
+    "intent_prediction": {
+      "name": "order",
+      "confidence": 0.4915308952331543
+    }
+  },
+  {
+    "text": "my address is viale del sole 23 savigliano",
+    "intent": "tell_address",
+    "intent_prediction": {
+      "name": "tell_number",
+      "confidence": 0.3690732419490814
+    }
+  },
+  {
+    "text": "my address is 250 hartford avenue, bellingham ma 2019",
+    "intent": "tell_address",
+    "intent_prediction": {
+      "name": "tell_number",
+      "confidence": 0.714240550994873
+    }
+  },
+  {
+    "text": "viale senatore alfredo bouvier 27 cesana torinese",
+    "intent": "tell_address",
+    "intent_prediction": {
+      "name": "order",
+      "confidence": 0.8749859929084778
+    }
+  },
+  {
+    "text": "vicolo gonella 4 gassino torinese",
+    "intent": "tell_address",
+    "intent_prediction": {
+      "name": "order",
+      "confidence": 0.9512794017791748
+    }
+  },
+  {
+    "text": "it's rotta golf 15 fiano",
+    "intent": "tell_address",
+    "intent_prediction": {
+      "name": "order",
+      "confidence": 0.21470172703266144
+    }
+  },
+  {
+    "text": "case sparse gerbioli 7 bagnasco",
+    "intent": "tell_address",
+    "intent_prediction": {
+      "name": "order",
+      "confidence": 0.9997361302375793
+    }
+  },
+  {
+    "text": "is it full",
+    "intent": "ask_affluence",
+    "intent_prediction": {
+      "name": "confirm",
+      "confidence": 0.19202812016010284
+    }
+  },
+  {
+    "text": "for May",
+    "intent": "tell_time",
+    "intent_prediction": {
+      "name": "tell_number",
+      "confidence": 0.38120055198669434
+    }
+  },
+  {
+    "text": "for  6",
+    "intent": "tell_time",
+    "intent_prediction": {
+      "name": "tell_number",
+      "confidence": 0.8133966326713562
+    }
+  },
+  {
+    "text": "17",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "tell_time",
+      "confidence": 0.3491550087928772
+    }
+  },
+  {
+    "text": "4",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "order",
+      "confidence": 0.3271162807941437
+    }
+  },
+  {
+    "text": "1",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "tell_time",
+      "confidence": 0.35775065422058105
+    }
+  },
+  {
+    "text": "25",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "tell_time",
+      "confidence": 0.7227519154548645
+    }
+  },
+  {
+    "text": "737",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.19089147448539734
+    }
+  },
+  {
+    "text": "2",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "tell_time",
+      "confidence": 0.2765229046344757
+    }
+  },
+  {
+    "text": "2",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "tell_time",
+      "confidence": 0.2765229046344757
+    }
+  },
+  {
+    "text": "8",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "tell_time",
+      "confidence": 0.5029202103614807
+    }
+  },
+  {
+    "text": "reservation for 15",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "tell_time",
+      "confidence": 0.5956947803497314
+    }
+  },
+  {
+    "text": "reservation for 20",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "tell_time",
+      "confidence": 0.6077853441238403
+    }
+  },
+  {
+    "text": "80",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "tell_address",
+      "confidence": 0.22627002000808716
+    }
+  },
+  {
+    "text": "7",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "tell_time",
+      "confidence": 0.4879193603992462
+    }
+  },
+  {
+    "text": "20",
+    "intent": "tell_number",
+    "intent_prediction": {
+      "name": "tell_time",
+      "confidence": 0.7742640376091003
+    }
+  },
+  {
+    "text": "pizza please",
+    "intent": "order",
+    "intent_prediction": {
+      "name": "ask_address",
+      "confidence": 0.12875396013259888
+    }
+  },
+  {
+    "text": "can i get without meat",
+    "intent": "order",
+    "intent_prediction": {
+      "name": "ask_allergies",
+      "confidence": 0.18344751000404358
+    }
+  },
+  {
+    "text": "i would like to order pizza",
+    "intent": "order",
+    "intent_prediction": {
+      "name": "table",
+      "confidence": 0.19524040818214417
+    }
+  }
+]

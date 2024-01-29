@@ -1,0 +1,178 @@
+{
+  "ask_opening_hours": {
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1-score": 0.8571428571428571,
+    "support": 3,
+    "confused_with": {}
+  },
+  "ask_allergies": {
+    "precision": 0.7142857142857143,
+    "recall": 1.0,
+    "f1-score": 0.8333333333333333,
+    "support": 5,
+    "confused_with": {}
+  },
+  "ask_affluence": {
+    "precision": 0.9972067039106145,
+    "recall": 1.0,
+    "f1-score": 0.9986013986013986,
+    "support": 357,
+    "confused_with": {}
+  },
+  "ask_menu": {
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1-score": 0.8571428571428571,
+    "support": 3,
+    "confused_with": {}
+  },
+  "tell_address": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 97,
+    "confused_with": {}
+  },
+  "bot_challenge": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "ask_cost": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "ask_functions": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 4,
+    "confused_with": {
+      "ask_address": 1,
+      "ask_menu": 1
+    }
+  },
+  "deny": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 2,
+    "confused_with": {}
+  },
+  "order": {
+    "precision": 1.0,
+    "recall": 0.9990774907749077,
+    "f1-score": 0.9995385325334565,
+    "support": 5420,
+    "confused_with": {
+      "table": 3,
+      "ask_allergies": 2
+    }
+  },
+  "tell_time": {
+    "precision": 0.9976442873969376,
+    "recall": 0.9976442873969376,
+    "f1-score": 0.9976442873969376,
+    "support": 849,
+    "confused_with": {
+      "ask_affluence": 1,
+      "tell_number": 1
+    }
+  },
+  "change_order": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 8,
+    "confused_with": {}
+  },
+  "takeaway": {
+    "precision": 0.8,
+    "recall": 1.0,
+    "f1-score": 0.888888888888889,
+    "support": 4,
+    "confused_with": {}
+  },
+  "delivery": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "table": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 6,
+    "confused_with": {}
+  },
+  "confirm": {
+    "precision": 1.0,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.8,
+    "support": 3,
+    "confused_with": {
+      "deny": 1
+    }
+  },
+  "out_of_scope": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "ask_opening_hours": 1
+    }
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "takeaway": 1
+    }
+  },
+  "tell_number": {
+    "precision": 0.9989071038251366,
+    "recall": 0.9978165938864629,
+    "f1-score": 0.9983615510649919,
+    "support": 916,
+    "confused_with": {
+      "tell_time": 2
+    }
+  },
+  "nothing_else": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9983097126511506,
+    "recall": 0.9981799271970879,
+    "f1-score": 0.998244815705649,
+    "support": 7692
+  },
+  "macro avg": {
+    "precision": 0.8670688571375867,
+    "recall": 0.8830602519362486,
+    "f1-score": 0.8581993519719028,
+    "support": 7692
+  },
+  "weighted avg": {
+    "precision": 0.9985187808508419,
+    "recall": 0.9981799271970879,
+    "f1-score": 0.9982012227993559,
+    "support": 7692
+  },
+  "accuracy": 0.9981799271970879
+}

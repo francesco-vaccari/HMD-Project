@@ -5,7 +5,7 @@ commands = [
     "rasa test nlu --config config.yml alternative_config.yml --runs 1 --percentages 0 --out nlu_comparison",
     "rasa train --config config.yml --fixed-model-name main",
     "rasa train --config alternative_config.yml --fixed-model-name alternative",
-    "rasa test core -m models/main.tar.gz --stories test_stories.yml --out core_main"
+    "rasa test core -m models/main.tar.gz --stories test_stories.yml --out core_main",
     "rasa test core -m models/alternative.tar.gz --stories test_stories.yml --out core_alternative"
 ]
 
@@ -14,7 +14,7 @@ with open("log.txt", "a") as log_file:
     # Iterate over each command
     for command in commands:
         # Execute the command and capture the output
-        print(f"Executing command: {command}")
+        print(f"Executing command: {command}\n")
         try:
             output = subprocess.check_output(command, shell=True, stderr=subprocess.STDOUT, universal_newlines=True)
             # Write the command and its output to the log file

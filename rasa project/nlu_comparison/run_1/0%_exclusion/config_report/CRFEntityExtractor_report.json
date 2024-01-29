@@ -1,0 +1,194 @@
+{
+  "pizza_sizes.3": {
+    "precision": 0.6456494325346784,
+    "recall": 0.5577342047930284,
+    "f1-score": 0.598480420806546,
+    "support": 918,
+    "confused_with": {
+      "pizza_sizes.2": 236,
+      "pizza_sizes.4": 170
+    }
+  },
+  "pizza_types.3": {
+    "precision": 0.6521739130434783,
+    "recall": 0.5351976856316297,
+    "f1-score": 0.5879237288135594,
+    "support": 1037,
+    "confused_with": {
+      "pizza_types.4": 244,
+      "pizza_types.2": 232
+    }
+  },
+  "other_item_types.2": {
+    "precision": 0.8276075518415351,
+    "recall": 0.7944147355912062,
+    "f1-score": 0.8106715173563741,
+    "support": 3366,
+    "confused_with": {
+      "other_item_types.4": 377,
+      "other_item_types.3": 315
+    }
+  },
+  "address": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 558,
+    "confused_with": {}
+  },
+  "amounts": {
+    "precision": 0.9776119402985075,
+    "recall": 0.9632352941176471,
+    "f1-score": 0.9703703703703703,
+    "support": 136,
+    "confused_with": {}
+  },
+  "pizza_sizes.2": {
+    "precision": 0.7942188575361322,
+    "recall": 0.7986159169550173,
+    "f1-score": 0.7964113181504486,
+    "support": 1445,
+    "confused_with": {
+      "pizza_sizes.3": 161,
+      "pizza_sizes.4": 130
+    }
+  },
+  "allergies": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "amounts.4": {
+    "precision": 0.44813278008298757,
+    "recall": 0.7667342799188641,
+    "f1-score": 0.5656565656565657,
+    "support": 986,
+    "confused_with": {
+      "amounts.3": 166,
+      "amounts.2": 64
+    }
+  },
+  "amounts.1": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3746,
+    "confused_with": {}
+  },
+  "pizza_sizes.1": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1802,
+    "confused_with": {}
+  },
+  "pizza_types.2": {
+    "precision": 0.8018252933507171,
+    "recall": 0.7760252365930599,
+    "f1-score": 0.7887143315165116,
+    "support": 1585,
+    "confused_with": {
+      "pizza_types.3": 195,
+      "pizza_types.4": 148
+    }
+  },
+  "other_item_types.3": {
+    "precision": 0.6694772344013491,
+    "recall": 0.5194068905364152,
+    "f1-score": 0.5849705304518664,
+    "support": 2293,
+    "confused_with": {
+      "other_item_types.4": 614,
+      "other_item_types.2": 488
+    }
+  },
+  "pizza_types.1": {
+    "precision": 0.9902248289345064,
+    "recall": 0.9975381585425899,
+    "f1-score": 0.9938680402256562,
+    "support": 2031,
+    "confused_with": {
+      "pizza_types.2": 5
+    }
+  },
+  "pizza_types.4": {
+    "precision": 0.46227709190672156,
+    "recall": 0.6646942800788954,
+    "f1-score": 0.5453074433656958,
+    "support": 507,
+    "confused_with": {
+      "pizza_types.3": 101,
+      "pizza_types.2": 67
+    }
+  },
+  "pizza_sizes.4": {
+    "precision": 0.4746059544658494,
+    "recall": 0.5969162995594713,
+    "f1-score": 0.5287804878048781,
+    "support": 454,
+    "confused_with": {
+      "pizza_sizes.3": 120,
+      "pizza_sizes.2": 63
+    }
+  },
+  "amounts.2": {
+    "precision": 0.8345890410958904,
+    "recall": 0.7987545067191085,
+    "f1-score": 0.8162786802880589,
+    "support": 3051,
+    "confused_with": {
+      "amounts.4": 403,
+      "amounts.3": 211
+    }
+  },
+  "amounts.3": {
+    "precision": 0.7274041937816341,
+    "recall": 0.51510496671787,
+    "f1-score": 0.603117505995204,
+    "support": 1953,
+    "confused_with": {
+      "amounts.4": 528,
+      "amounts.2": 419
+    }
+  },
+  "other_item_types.1": {
+    "precision": 1.0,
+    "recall": 0.9992481203007518,
+    "f1-score": 0.9996239187664536,
+    "support": 3990,
+    "confused_with": {
+      "other_item_types.2": 3
+    }
+  },
+  "other_item_types.4": {
+    "precision": 0.45906113537117904,
+    "recall": 0.7127118644067797,
+    "f1-score": 0.5584329349269589,
+    "support": 1180,
+    "confused_with": {
+      "other_item_types.3": 273,
+      "other_item_types.2": 66
+    }
+  },
+  "micro avg": {
+    "precision": 0.8124416094842305,
+    "recall": 0.8123892665013046,
+    "f1-score": 0.8124154371496682,
+    "support": 31043
+  },
+  "macro avg": {
+    "precision": 0.7770978551918508,
+    "recall": 0.7892806547611755,
+    "f1-score": 0.7762425154997445,
+    "support": 31043
+  },
+  "weighted avg": {
+    "precision": 0.8263968765932453,
+    "recall": 0.8123892665013046,
+    "f1-score": 0.814407829395489,
+    "support": 31043
+  },
+  "accuracy": 0.9065212160102671
+}
