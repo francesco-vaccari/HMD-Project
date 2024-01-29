@@ -812,7 +812,7 @@ class ActionUtterGreet(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
-        dispatcher.utter_message(text="Hello, I am PizzaBot, here to handle you order.")
+        dispatcher.utter_message(text="Hello, I am PizzaBot, I can help you help make an order or cancel a previous one.")
         return [FollowupAction(name = "action_repeat_last_message")]
 
 
