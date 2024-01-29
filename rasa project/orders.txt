@@ -22,3 +22,4 @@
 21*/*[['1', 'large', 'margherita'], ['2', 'medium', 'pepperoni']]*/*18.0*/*takeaway*/*2024-01-28T19:00:00.000+01:00*/*None*/*None
 22*/*[['1', 'large', 'margherita'], ['2', 'medium', 'pepperoni']]*/*18.0*/*takeaway*/*2024-01-28T19:00:00.000+01:00*/*None*/*None
 23*/*[['1', 'large', 'margherita'], ['2', 'small', 'pepperoni']]*/*16.0*/*takeaway*/*2024-01-28T19:00:00.000+01:00*/*None*/*None
+24*/*[['1', 'medium', 'marinara']]*/*6.0*/*takeaway*/*2024-01-29T19:30:00.000+01:00*/*None*/*None
