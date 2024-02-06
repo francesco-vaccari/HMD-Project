@@ -25,3 +25,7 @@
 24*/*[['1', 'medium', 'marinara']]*/*6.0*/*takeaway*/*2024-01-29T19:30:00.000+01:00*/*None*/*None
 25*/*[['3', 'medium', 'margherita'], ['4', 'medium', 'pepperoni'], ['3', 'medium', 'marinara'], ['2', 'coke'], ['2', 'tea']]*/*63.0*/*takeaway*/*2024-02-03T21:00:00.000+01:00*/*None*/*None
 26*/*[['2', 'medium', 'margherita'], ['2', 'medium', 'funghi'], ['2', 'medium', 'pepperoni'], ['2', 'ice cream'], ['2', 'coke'], ['1', 'sprite'], ['1', 'cheesecake']]*/*47.0*/*takeaway*/*2024-02-03T21:00:00.000+01:00*/*None*/*None
+27*/*[['1', 'medium', 'margherita']]*/*5.0*/*table*/*2024-02-03T21:00:00.000+01:00*/*1*/*None
+28*/*[['1', 'medium', 'marinara'], ['7', 'medium', 'margherita']]*/*41.0*/*takeaway*/*2024-02-03T21:00:00.000+01:00*/*None*/*how much does a marinara cost
+29*/*[['1', 'medium', 'marinara'], ['2', 'medium', 'capricciosa'], ['3', 'medium', 'funghi'], ['4', 'medium', 'hawaii']]*/*70.0*/*takeaway*/*2024-02-04T21:00:00.000+01:00*/*None*/*None
+30*/*[['1', 'large', 'salami'], ['1', 'medium', 'pepperoni'], ['1', 'medium', 'hawaii'], ['1', 'large', 'vegetarian']]*/*24.0*/*takeaway*/*2024-02-04T21:00:00.000+01:00*/*None*/*None
